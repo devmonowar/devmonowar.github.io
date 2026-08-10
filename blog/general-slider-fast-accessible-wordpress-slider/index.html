@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ⚠️ NOT LAUNCHED YET. Delete this one line on every page to let Google in. -->
+<meta name="robots" content="noindex, nofollow">
+
+<title>How to Build a Fast, Accessible WordPress Slider with General Slider</title>
+<meta name="description" content="Most WordPress sliders load jQuery and unused CSS on every page. How to install General Slider instead — no jQuery, and accessible by default.">
+<link rel="canonical" href="https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Monowar Hossain">
+<meta property="og:title" content="How to Build a Fast, Accessible WordPress Slider with General Slider">
+<meta property="og:description" content="No jQuery, accessible by default, and assets that load only on pages that actually show a slider.">
+<meta property="og:url" content="https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-08-10">
+<meta property="article:author" content="Monowar Hossain">
+<meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/#post",
+      "headline": "How to Build a Fast, Accessible WordPress Slider with General Slider",
+      "description": "Most WordPress sliders load jQuery and unused CSS on every page. Here is how to install and set up General Slider.",
+      "datePublished": "2026-08-10",
+      "dateModified": "2026-08-10",
+      "inLanguage": "en",
+      "image": "https://devmonowar.github.io/assets/img/og-image.jpg",
+      "mainEntityOfPage": "https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/",
+      "isPartOf": { "@id": "https://devmonowar.github.io/blog/#blog" },
+      "author": { "@id": "https://devmonowar.github.io/#person" },
+      "publisher": { "@id": "https://devmonowar.github.io/#person" },
+      "about": { "@type": "SoftwareApplication", "name": "General Slider", "url": "https://wordpress.org/plugins/general-slider/" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does General Slider load jQuery?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The front end uses the lightweight, dependency-free Splide engine." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will General Slider slow down my site?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. CSS and JavaScript load only on pages that contain a slider, images are lazy-loaded, and a slider only initialises once it is scrolled into view." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need Elementor to use General Slider?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. A dedicated Elementor widget is included if Elementor is active, but the block and the shortcode work with any theme." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I build a slider automatically from my posts?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Switch the slides source to dynamic and pick posts, pages, or WooCommerce products." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://devmonowar.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://devmonowar.github.io/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "General Slider guide" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MH</span> Monowar Hossain</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap-narrow">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li aria-current="page">General Slider guide</li>
+    </ol>
+  </nav>
+
+  <article class="article">
+
+    <header class="article-head">
+      <h1>How to build a fast, accessible slider in WordPress with General Slider</h1>
+      <p class="meta">
+        <span>By Monowar Hossain</span>
+        <time datetime="2026-08-10">10 August 2026</time>
+      </p>
+    </header>
+
+    <div class="note">
+      <p><strong>Summary.</strong> Most WordPress slider plugins either load jQuery and a pile of unused CSS and JavaScript on every page, or lock the good design presets behind a Pro upgrade. General Slider is built on the lightweight Splide engine — no jQuery, accessible by default, and assets load only on pages that actually show a slider.</p>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#problem">The problem</a></li>
+        <li><a href="#solution">The solution</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#install">Step-by-step installation</a></li>
+        <li><a href="#first-slider">Building your first slider</a></li>
+        <li><a href="#design">Design presets and skins</a></li>
+        <li><a href="#mistakes">Common mistakes to avoid</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="problem">The problem</h2>
+    <p>A slider sounds like a simple feature, but it is one of the most common places a WordPress site picks up weight it does not need — jQuery dependencies, render-blocking CSS, and JavaScript that runs on every page even when there is no slider on it.</p>
+    <p>Slower pages mean worse Core Web Vitals, and worse Core Web Vitals eventually means worse rankings. The frustrating part is that most of that cost is paid on pages that do not contain a slider at all.</p>
+
+    <h2 id="solution">The solution</h2>
+    <p>General Slider lets you build a reusable slider once, then drop it anywhere with a block, a shortcode, or an Elementor widget — no page builder and no code required.</p>
+    <p>It is built on <a href="https://splidejs.com/">Splide</a>, a lightweight slider engine with no dependencies, so there is no jQuery on the front end. Assets are added only to pages that actually contain a slider.</p>
+
+    <h2 id="requirements">Requirements</h2>
+    <ul>
+      <li>WordPress 6.0 or later</li>
+      <li>PHP 7.4 or later</li>
+      <li>No page builder required. The block and the shortcode work with any theme, and an Elementor widget is included automatically if Elementor is active.</li>
+    </ul>
+
+    <h2 id="install">Step-by-step installation</h2>
+    <ol>
+      <li>In your WordPress dashboard, go to <strong>Plugins → Add New</strong> and search for <strong>General Slider</strong>.</li>
+      <li>Click <strong>Install Now</strong>, then <strong>Activate</strong>.</li>
+      <li>Go to <strong>General Slider → Add New</strong> to build your first slider, or open <strong>General Slider → Settings</strong> to import a ready-made demo instead.</li>
+      <li>A starter demo is created automatically on first activation, so a fresh install already has something to look at.</li>
+    </ol>
+
+    <figure>
+      <img src="/assets/img/blog/general-slider/general-slider-plugin-search-install.jpg"
+           width="1200" height="503" loading="lazy" decoding="async"
+           alt="General Slider shown in the WordPress Plugins, Add New search results with an Activate button">
+      <figcaption>Search for General Slider under Plugins → Add New, then install and activate it.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/assets/img/blog/general-slider/general-slider-edit-slider-screen.jpg"
+           width="1200" height="583" loading="lazy" decoding="async"
+           alt="The General Slider edit screen showing the slide fields on the left and the slider settings panel on the right">
+      <figcaption>The edit screen: slide fields on the left, design preset and navigation skin on the right.</figcaption>
+    </figure>
+
+    <h2 id="first-slider">Building your first slider</h2>
+    <p>You can add slides by hand, or switch <strong>Slides source</strong> to <em>Pull slides from posts (dynamic)</em> and let the slider build itself from your latest posts, pages, or WooCommerce products.</p>
+    <p>Once the slider is published, embed it in any of three ways:</p>
+    <ul>
+      <li><strong>Block</strong> — add the <em>General Slider</em> block and pick your slider from the list.</li>
+      <li><strong>Shortcode</strong> — <code>[general_slider id="123"]</code></li>
+      <li><strong>Elementor</strong> — drag in the <em>General Slider</em> widget.</li>
+    </ul>
+    <p>The exact shortcode for each slider is shown on its own edit screen, so you never have to guess the ID.</p>
+
+    <figure>
+      <img src="/assets/img/blog/general-slider/general-slider-hero-slider-front-end.jpg"
+           width="1200" height="556" loading="lazy" decoding="async"
+           alt="A published General Slider hero slider on the front end, with a heading, subtitle, call-to-action button and navigation arrows">
+      <figcaption>A published hero slider on the front end, with arrows, dots and a pause control.</figcaption>
+    </figure>
+
+    <h2 id="design">Design presets and skins</h2>
+    <p>Design presets control the slide layout — hero, split, minimal, testimonial, fullscreen. Navigation and frame skins control the arrows, dots and frame, and you can mix any skin with any preset.</p>
+    <p>On top of that, each slide can have a background video, text entrance animations, and its own accent colour, all set from the slider's settings box. None of it needs code.</p>
+    <p>You can see every preset and skin side by side in the <a href="https://devmonowar.github.io/wp-plugin-demo-library/general-slider/">live demo library</a> before you build anything.</p>
+
+    <figure>
+      <img src="/assets/img/blog/general-slider/general-slider-design-presets-skins.jpg"
+           width="1200" height="905" loading="lazy" decoding="async"
+           alt="The General Slider demo library showing six ready-made sliders, each using a different design preset and navigation skin">
+      <figcaption>The demo library — each card is a different preset and skin combination you can import in one click.</figcaption>
+    </figure>
+
+    <h2 id="mistakes">Common mistakes to avoid</h2>
+    <ul>
+      <li><strong>Forgetting to publish the slider.</strong> A slider has to be published, not saved as a draft, before it will appear on the front end. This is the single most common support question I get.</li>
+      <li><strong>Pointing the block or shortcode at the wrong slider.</strong> Check that the ID matches the slider you meant. The correct shortcode is printed on each slider's edit screen.</li>
+      <li><strong>Not clearing the cache.</strong> If you use a caching plugin and your changes do not show up, clear the site cache after editing a slider.</li>
+    </ul>
+
+    <h2 id="faq">FAQ</h2>
+    <dl class="faq">
+      <dt>Does it load jQuery?</dt>
+      <dd>No. The front end uses the lightweight, dependency-free Splide engine.</dd>
+
+      <dt>Will it slow down my site?</dt>
+      <dd>No. CSS and JavaScript load only on pages that contain a slider, images are lazy-loaded, and a slider only initialises once it is scrolled into view.</dd>
+
+      <dt>Do I need Elementor?</dt>
+      <dd>No. A dedicated Elementor widget is included if Elementor is active, but the block and the shortcode work with any theme.</dd>
+
+      <dt>Can I build a slider automatically from my posts?</dt>
+      <dd>Yes. Switch <strong>Slides source</strong> to dynamic and pick posts, pages, or WooCommerce products.</dd>
+    </dl>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>If your current slider plugin is adding weight to pages that do not even use it, that is exactly the problem General Slider was built to fix — a fast, accessible slider that only loads where it is actually needed.</p>
+    <p class="card-links">
+      <a href="https://wordpress.org/plugins/general-slider/">Download on WordPress.org</a>
+      <a href="https://github.com/devmonowar/general-slider">Source on GitHub</a>
+      <a href="https://devmonowar.github.io/wp-plugin-demo-library/general-slider/">Browse the demos</a>
+    </p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="/blog/advanced-testimonial-wordpress-testimonials-guide/">How to add customer testimonials in WordPress</a></li>
+      <li><a href="/blog/free-widgets-for-elementor-guide/">How to install Free Widgets For Elementor</a></li>
+    </ul>
+
+    <div class="author-box">
+      <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specializing in custom themes, plugins, Elementor, ACF, and performance optimization. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
+      <p class="card-links">
+        <a href="/about/">About me</a>
+        <a href="https://github.com/devmonowar" rel="me">GitHub</a>
+        <a href="https://profiles.wordpress.org/kstmonowar/" rel="me">WordPress.org</a>
+        <a href="https://www.linkedin.com/in/devmonowar" rel="me">LinkedIn</a>
+      </p>
+      <p class="small muted">Published 10 August 2026 · Last updated 10 August 2026</p>
+    </div>
+
+  </article>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monowar Hossain · Dhaka, Bangladesh</span>
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://github.com/devmonowar">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

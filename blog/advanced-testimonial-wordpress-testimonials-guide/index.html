@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ⚠️ NOT LAUNCHED YET. Delete this one line on every page to let Google in. -->
+<meta name="robots" content="noindex, nofollow">
+
+<title>How to Add Customer Testimonials in WordPress — Advanced Testimonial Guide</title>
+<meta name="description" content="A complete guide to Advanced Testimonial: display layouts, card styles, a front-end submission form, and star ratings in Google.">
+<link rel="canonical" href="https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Monowar Hossain">
+<meta property="og:title" content="How to Add Customer Testimonials in WordPress — Advanced Testimonial Guide">
+<meta property="og:description" content="Layouts, card styles, a front-end submission form, and star ratings in Google — without a page-builder addon pack.">
+<meta property="og:url" content="https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-08-10">
+<meta property="article:author" content="Monowar Hossain">
+<meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/#post",
+      "headline": "How to Add Customer Testimonials in WordPress: A Complete Guide to Advanced Testimonial",
+      "description": "Display layouts, card styles, a front-end submission form, and Schema.org review markup for star ratings in Google.",
+      "datePublished": "2026-08-10",
+      "dateModified": "2026-08-10",
+      "inLanguage": "en",
+      "image": "https://devmonowar.github.io/assets/img/og-image.jpg",
+      "mainEntityOfPage": "https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/",
+      "isPartOf": { "@id": "https://devmonowar.github.io/blog/#blog" },
+      "author": { "@id": "https://devmonowar.github.io/#person" },
+      "publisher": { "@id": "https://devmonowar.github.io/#person" },
+      "about": { "@type": "SoftwareApplication", "name": "Advanced Testimonial", "url": "https://wordpress.org/plugins/advanced-testimonial/" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need Elementor to use Advanced Testimonial?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The shortcode and the Gutenberg block work with any theme. If Elementor is active, a widget appears automatically." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can testimonials include video?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Paste a YouTube, Vimeo, or self-hosted MP4 URL on any testimonial and it opens in a lightbox on click." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will Advanced Testimonial slow down my site?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. CSS and JavaScript load only on pages that actually display testimonials, and there is no jQuery." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my testimonials be deleted if I uninstall the plugin?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No, not by default. You have to explicitly opt in under Settings then Advanced first." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://devmonowar.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://devmonowar.github.io/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "Advanced Testimonial guide" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MH</span> Monowar Hossain</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap-narrow">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li aria-current="page">Advanced Testimonial guide</li>
+    </ol>
+  </nav>
+
+  <article class="article">
+
+    <header class="article-head">
+      <h1>How to add customer testimonials in WordPress: a complete guide to Advanced Testimonial</h1>
+      <p class="meta">
+        <span>By Monowar Hossain</span>
+        <time datetime="2026-08-10">10 August 2026</time>
+      </p>
+    </header>
+
+    <div class="note">
+      <p><strong>Summary.</strong> Social proof sells, but most WordPress testimonial plugins are either too basic — one boring layout — or bloated page-builder addons you do not need. I built Advanced Testimonial to be the focused middle ground: a set of display layouts and card styles, a front-end submission form, and Schema.org markup for star ratings in Google, all in one lightweight plugin.</p>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#problem">The problem</a></li>
+        <li><a href="#solution">The solution</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#install">Step-by-step installation</a></li>
+        <li><a href="#display">Displaying testimonials</a></li>
+        <li><a href="#collect">Collecting testimonials from visitors</a></li>
+        <li><a href="#mistakes">Common mistakes to avoid</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="problem">The problem</h2>
+    <p>Testimonials are one of the highest-converting elements you can put on a page, but most WordPress solutions force a trade-off.</p>
+    <p>Basic plugins give you one static layout with no way to collect new reviews. All-in-one page-builder addon packs give you a testimonial widget buried inside dozens of others you will never touch, adding weight to every page on your site.</p>
+
+    <h2 id="solution">The solution</h2>
+    <p>Advanced Testimonial is a plugin built only for testimonials. Reviews get a proper post type with Groups, and each review carries its own fields — rating, company, verified badge, video.</p>
+    <p>Several display layouts and card styles can be mixed freely, and the plugin ships with built-in <strong>Schema.org review markup</strong>, so Google can show star ratings as a rich snippet next to your search result.</p>
+
+    <h2 id="requirements">Requirements</h2>
+    <ul>
+      <li>WordPress 6.5 or later</li>
+      <li>PHP 7.4 or later</li>
+      <li>No page builder required. The shortcode and block editor work out of the box, and an Elementor widget is added automatically if Elementor is active.</li>
+    </ul>
+
+    <h2 id="install">Step-by-step installation</h2>
+    <ol>
+      <li>In your WordPress dashboard, go to <strong>Plugins → Add New</strong> and search for <strong>Advanced Testimonial</strong>.</li>
+      <li>Click <strong>Install Now</strong>, then <strong>Activate</strong>.</li>
+      <li>A new <strong>Testimonials</strong> menu appears in your dashboard sidebar.</li>
+      <li>Add your first testimonial, or open <strong>Testimonials → Settings → Tools</strong> and use the one-click starter demo to see it working immediately.</li>
+    </ol>
+
+    <figure>
+      <img src="/assets/img/blog/advanced-testimonial/advanced-testimonial-plugin-search-install.jpg"
+           width="1200" height="576" loading="lazy" decoding="async"
+           alt="Advanced Testimonial shown in the WordPress Plugins, Add New search results">
+      <figcaption>Search for Advanced Testimonial under Plugins → Add New, then install and activate it.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/assets/img/blog/advanced-testimonial/advanced-testimonial-demo-library.jpg"
+           width="1200" height="584" loading="lazy" decoding="async"
+           alt="The Advanced Testimonial demo library in the WordPress admin, with ready-made sets grouped by industry">
+      <figcaption>The one-click demo library, if you would rather start from a ready-made set than an empty screen.</figcaption>
+    </figure>
+
+    <h2 id="display">Displaying testimonials</h2>
+    <p>Use the shortcode anywhere:</p>
+    <pre><code>[advanced_testimonial layout="grid" columns="3" group="clients" limit="9" order="desc"]</code></pre>
+    <p>Or add the <strong>Advanced Testimonial</strong> block in the editor — it has the same controls with a live preview.</p>
+    <p>The available layouts are grid, list, card, carousel, marquee, masonry and spotlight. Card styles — classic, modern, minimal, bubble, bold, glass, gradient, outline and retro — are picked with the <code>style</code> attribute, and you can use a different style per block if you like.</p>
+
+    <figure>
+      <img src="/assets/img/blog/advanced-testimonial/advanced-testimonial-grid-layout.jpg"
+           width="1200" height="689" loading="lazy" decoding="async"
+           alt="Advanced Testimonial grid layout on the front end, showing testimonial cards with star ratings and verified customer badges">
+      <figcaption>The grid layout, with star ratings and verified badges on each card.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/assets/img/blog/advanced-testimonial/advanced-testimonial-card-styles.jpg"
+           width="1200" height="829" loading="lazy" decoding="async"
+           alt="The Advanced Testimonial card styles shown side by side — classic, modern, minimal, bubble, bold, glass, gradient, outline and retro">
+      <figcaption>Every card style side by side. Mix a different one per block if you want.</figcaption>
+    </figure>
+
+    <h2 id="collect">Collecting testimonials from visitors</h2>
+    <p>Add this to any page and visitors can submit their own testimonial directly from your site:</p>
+    <pre><code>[at_form title="Leave a review" group="clients"]</code></pre>
+    <p>Submissions arrive as <strong>Pending</strong>, so you review them before they go live. Spam protection is built in — nonce, honeypot and rate limiting — and the defaults are safe.</p>
+
+    <figure>
+      <img src="/assets/img/blog/advanced-testimonial/advanced-testimonial-submission-form.jpg"
+           width="1200" height="827" loading="lazy" decoding="async"
+           alt="The front-end testimonial submission form where a visitor can leave their name, star rating and review">
+      <figcaption>The front-end form visitors use to leave a review.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/assets/img/blog/advanced-testimonial/advanced-testimonial-pending-submissions.jpg"
+           width="1200" height="577" loading="lazy" decoding="async"
+           alt="The WordPress admin Testimonials list showing a new visitor submission with Pending status">
+      <figcaption>Submissions land as Pending in the admin, so nothing goes live before you approve it.</figcaption>
+    </figure>
+
+    <h2 id="mistakes">Common mistakes to avoid</h2>
+    <ul>
+      <li><strong>Forgetting to group testimonials.</strong> If you plan to show different sets on different pages — per service or per product — set up Groups under <strong>Testimonials → Groups</strong> before you start adding reviews. Reorganising later is more work than doing it first.</li>
+      <li><strong>Not checking the submission form settings.</strong> The defaults are safe, but if unexpected spam gets through, look at <strong>Settings → Submission Form</strong>.</li>
+      <li><strong>Assuming Elementor is required.</strong> It is not. The shortcode and the block work on any theme.</li>
+    </ul>
+
+    <h2 id="faq">FAQ</h2>
+    <dl class="faq">
+      <dt>Do I need Elementor to use this plugin?</dt>
+      <dd>No. The shortcode and Gutenberg block work with any theme. If Elementor is active, a widget appears automatically.</dd>
+
+      <dt>Can testimonials include video?</dt>
+      <dd>Yes. Paste a YouTube, Vimeo, or self-hosted MP4 URL on any testimonial and it opens in a lightbox on click.</dd>
+
+      <dt>Will it slow down my site?</dt>
+      <dd>No. CSS and JavaScript load only on pages that actually display testimonials, and there is no jQuery.</dd>
+
+      <dt>Will my testimonials be deleted if I uninstall the plugin?</dt>
+      <dd>No, not by default. You have to explicitly opt in under <strong>Settings → Advanced</strong> first.</dd>
+    </dl>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>If you need real, manageable testimonials rather than a giant addon pack, Advanced Testimonial gives you the layouts, the styles, and a form to collect new reviews — without adding weight to pages that do not need it.</p>
+    <p class="card-links">
+      <a href="https://wordpress.org/plugins/advanced-testimonial/">Download on WordPress.org</a>
+      <a href="https://github.com/devmonowar/advanced-testimonial">Source on GitHub</a>
+      <a href="https://devmonowar.github.io/wp-plugin-demo-library/advanced-testimonial/">Browse the demos</a>
+    </p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="/blog/general-slider-fast-accessible-wordpress-slider/">How to build a fast, accessible slider in WordPress</a></li>
+      <li><a href="/blog/free-widgets-for-elementor-guide/">How to install Free Widgets For Elementor</a></li>
+    </ul>
+
+    <div class="author-box">
+      <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specializing in custom themes, plugins, Elementor, ACF, and performance optimization. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
+      <p class="card-links">
+        <a href="/about/">About me</a>
+        <a href="https://github.com/devmonowar" rel="me">GitHub</a>
+        <a href="https://profiles.wordpress.org/kstmonowar/" rel="me">WordPress.org</a>
+        <a href="https://www.linkedin.com/in/devmonowar" rel="me">LinkedIn</a>
+      </p>
+      <p class="small muted">Published 10 August 2026 · Last updated 10 August 2026</p>
+    </div>
+
+  </article>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monowar Hossain · Dhaka, Bangladesh</span>
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://github.com/devmonowar">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

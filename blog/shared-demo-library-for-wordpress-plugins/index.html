@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ⚠️ NOT LAUNCHED YET. Delete this one line on every page to let Google in. -->
+<meta name="robots" content="noindex, nofollow">
+
+<title>How I Built a Shared Demo Library for My WordPress Plugins</title>
+<meta name="description" content="Bundling demo content inside a plugin means a new release for every demo. Here is the shared static library I built on GitHub Pages instead.">
+<link rel="canonical" href="https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Monowar Hossain">
+<meta property="og:title" content="How I Built a Shared Demo Library for My WordPress Plugins">
+<meta property="og:description" content="One shared static library every plugin fetches from, so new demos ship in minutes instead of days.">
+<meta property="og:url" content="https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-08-10">
+<meta property="article:author" content="Monowar Hossain">
+<meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/#post",
+      "headline": "How I Built a Shared Demo Library for My WordPress Plugins",
+      "description": "A case study on splitting demo content out of the plugin release cycle using a static library on GitHub Pages.",
+      "datePublished": "2026-08-10",
+      "dateModified": "2026-08-10",
+      "inLanguage": "en",
+      "image": "https://devmonowar.github.io/assets/img/og-image.jpg",
+      "mainEntityOfPage": "https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/",
+      "isPartOf": { "@id": "https://devmonowar.github.io/blog/#blog" },
+      "author": { "@id": "https://devmonowar.github.io/#person" },
+      "publisher": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does the shared demo library slow down the plugins that use it?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. It is only contacted when a user actively opens the Demo Library screen or imports a demo, and it is a plain static file request to GitHub Pages, not an API with any processing." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is any of my site data sent to this service?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. It is a one-way, read-only download of public demo files — JSON and images. Nothing about your site is ever sent to it." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a demo be added without releasing a new plugin version?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, that is the entire point. New JSON and images are committed to the repository and appear in the plugin's Demo Library once the manifest cache expires, or after a manual refresh." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://devmonowar.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://devmonowar.github.io/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "Shared demo library case study" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MH</span> Monowar Hossain</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap-narrow">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li aria-current="page">Shared demo library case study</li>
+    </ol>
+  </nav>
+
+  <article class="article">
+
+    <header class="article-head">
+      <h1>How I built a shared demo library for my WordPress plugins</h1>
+      <p class="meta">
+        <span>By Monowar Hossain</span>
+        <time datetime="2026-08-10">10 August 2026</time>
+        <span>Case study</span>
+      </p>
+    </header>
+
+    <div class="note">
+      <p><strong>Summary.</strong> Every plugin I maintain has a "Demo Library" feature that lets users import ready-made content in one click. Instead of bundling those demos inside each plugin, I built one shared, free, static library — JSON plus images — hosted on GitHub Pages, which every plugin fetches from. Here is the problem it solves, how it is structured, and what I would do differently.</p>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#problem">The problem</a></li>
+        <li><a href="#solution">The solution</a></li>
+        <li><a href="#structure">How it is structured</a></li>
+        <li><a href="#consume">How a plugin consumes it</a></li>
+        <li><a href="#differently">What I would do differently</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="problem">The problem</h2>
+    <p>When a WordPress plugin ships pre-built demo content, the usual approach is to bundle it inside the plugin's own ZIP — images, JSON, everything.</p>
+    <p>That means every time you want to add one new demo, you have to cut a whole new plugin release, bump the version, and wait for WordPress.org to process it. It also bloats the plugin package with images most users will never import.</p>
+
+    <h2 id="solution">The solution</h2>
+    <p>I built <a href="https://github.com/devmonowar/wp-plugin-demo-library">wp-plugin-demo-library</a> — a repository that contains <strong>only</strong> demo resources, JSON manifests and images, served for free over GitHub Pages and consumed by each plugin's built-in Demo Library screen.</p>
+    <p>New demos can be added or updated at any time, with no plugin release at all.</p>
+    <p>It deliberately contains <strong>zero plugin code</strong>. Nothing in this repository is ever bundled into a WordPress.org package. It is pure content infrastructure.</p>
+
+    <h2 id="structure">How it is structured</h2>
+    <pre><code>wp-plugin-demo-library/
+├── general-slider/
+│   ├── demo-library.json   # manifest: list of demos + metadata
+│   ├── demos/              # one JSON per demo
+│   ├── previews/           # card thumbnails
+│   └── assets/             # images, fonts, svg, video
+└── advanced-testimonial/
+    ├── demo-library.json
+    ├── demos/
+    ├── previews/
+    └── assets/</code></pre>
+    <p>Each plugin gets its own top-level folder, so adding support for a new plugin is just adding a new folder. There is no shared code to touch.</p>
+
+    <h2 id="consume">How a plugin consumes it</h2>
+    <p>Each plugin fetches its own <code>demo-library.json</code> server-side, caches it for about six hours, and renders one card per demo. Demos are version-gated by a <code>requires</code> field, so an older plugin install is never offered a demo that needs a newer feature.</p>
+    <p>On import, the plugin downloads that demo's JSON, sideloads every image straight into the site's media library, and creates the actual content — sliders, testimonials, and so on.</p>
+    <p>The connection only ever happens when a user opens the Demo Library screen or clicks Import. It is a plain, read-only file request, and it is disclosed to users as an external service in each plugin's <code>readme.txt</code>.</p>
+
+    <p>This is what the user actually sees. Two different plugins, two different sets of demos — but both screens are reading from the same repository, and neither plugin ships a single demo image in its own ZIP.</p>
+
+    <figure>
+      <img src="/assets/img/blog/advanced-testimonial/advanced-testimonial-demo-library.jpg"
+           width="1200" height="584" loading="lazy" decoding="async"
+           alt="The Demo Library screen inside Advanced Testimonial, showing demo sets grouped by industry with an Import Demo button on each card">
+      <figcaption>Advanced Testimonial's Demo Library — the category filters and cards are built from <code>demo-library.json</code>.</figcaption>
+    </figure>
+
+    <figure>
+      <img src="/assets/img/blog/free-widgets-for-elementor/free-widgets-for-elementor-demo-library.jpg"
+           width="1200" height="581" loading="lazy" decoding="async"
+           alt="The Demo Library screen inside Free Widgets For Elementor, listing ready-made Elementor sections with a one-click Import button">
+      <figcaption>The same screen in Free Widgets For Elementor. Different demos, same repository, no shared code between the two plugins.</figcaption>
+    </figure>
+
+    <h2 id="differently">What I would do differently</h2>
+    <p>If I were starting this over, I would standardise the demo JSON shape across plugins from day one. Right now each plugin defines its own shape — a slider's <code>slides</code> array looks nothing like a testimonial's <code>testimonials</code> array.</p>
+    <p>That is fine at two plugins. It will need a shared convention as more plugins join, and retrofitting one is more work than agreeing on it up front.</p>
+
+    <h2 id="faq">FAQ</h2>
+    <dl class="faq">
+      <dt>Does this slow down the plugins that use it?</dt>
+      <dd>No. It is only contacted when a user actively opens the Demo Library screen or imports a demo, and it is a plain static file request to GitHub Pages, not an API with any processing.</dd>
+
+      <dt>Is any of my site data sent to this service?</dt>
+      <dd>No. It is a one-way, read-only download of public demo files — JSON and images. Nothing about your site is ever sent to it.</dd>
+
+      <dt>Can I add a demo without releasing a new plugin version?</dt>
+      <dd>Yes, that is the entire point. Commit new JSON and images to the repository and they appear in the plugin's Demo Library once the manifest cache expires, or after a manual refresh.</dd>
+    </dl>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>Splitting demo content out of the plugin release cycle turned out to be a small architectural decision with an outsized payoff. New demos ship in minutes instead of days, and none of my plugins carry image weight they do not need in their WordPress.org package.</p>
+    <p class="card-links">
+      <a href="https://devmonowar.github.io/wp-plugin-demo-library/">Browse the demo gallery</a>
+      <a href="https://github.com/devmonowar/wp-plugin-demo-library">Source on GitHub</a>
+    </p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="/blog/general-slider-fast-accessible-wordpress-slider/">How to build a fast, accessible slider in WordPress</a></li>
+      <li><a href="/blog/advanced-testimonial-wordpress-testimonials-guide/">How to add customer testimonials in WordPress</a></li>
+    </ul>
+
+    <div class="author-box">
+      <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specializing in custom themes, plugins, Elementor, ACF, and performance optimization. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
+      <p class="card-links">
+        <a href="/about/">About me</a>
+        <a href="https://github.com/devmonowar" rel="me">GitHub</a>
+        <a href="https://profiles.wordpress.org/kstmonowar/" rel="me">WordPress.org</a>
+        <a href="https://www.linkedin.com/in/devmonowar" rel="me">LinkedIn</a>
+      </p>
+      <p class="small muted">Published 10 August 2026 · Last updated 10 August 2026</p>
+    </div>
+
+  </article>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monowar Hossain · Dhaka, Bangladesh</span>
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://github.com/devmonowar">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
