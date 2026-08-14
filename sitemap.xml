@@ -45,11 +45,9 @@
   <!-- The Janitorix Media Audit guide is deliberately left out until WordPress.org
        approves the plugin name. Its URL contains the slug, and GitHub Pages cannot
        301-redirect if the name changes again. Add it back after approval. -->
-  <url>
-    <loc>https://devmonowar.github.io/blog/portolite-section-based-wordpress-theme/</loc>
-    <lastmod>2026-08-11</lastmod>
-    <priority>0.7</priority>
-  </url>
+  <!-- The PortoLite guide is deliberately left out until the theme name is final and
+       approved on ThemeForest. Same reason as Janitorix: the slug carries the name and
+       GitHub Pages cannot 301-redirect. Add it back after approval. -->
   <url>
     <loc>https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/</loc>
     <lastmod>2026-08-11</lastmod>
