@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Why WordPress Sliders Are Slow — and How to Check Yours</title>
+<meta name="description" content="Most slider weight is not the images. It is jQuery, assets on pages with no slider, and layout shift. How to measure your own in five minutes with DevTools.">
+<link rel="canonical" href="https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Monowar Hossain">
+<meta property="og:title" content="Why WordPress Sliders Are Slow — and How to Check Yours">
+<meta property="og:description" content="jQuery you never chose, assets on pages with no slider, and a layout that jumps. The four real causes, and how to measure your own in five minutes.">
+<meta property="og:url" content="https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-08-20">
+<meta property="article:author" content="Monowar Hossain">
+<meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/#post",
+      "headline": "Why WordPress Sliders Are Slow — and How to Check Yours",
+      "description": "The four real causes of slider weight in WordPress, and a five-minute method for measuring your own using Chrome DevTools and PageSpeed Insights.",
+      "datePublished": "2026-08-20",
+      "dateModified": "2026-08-20",
+      "inLanguage": "en",
+      "image": "https://devmonowar.github.io/assets/img/og-image.jpg",
+      "mainEntityOfPage": "https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/",
+      "isPartOf": { "@id": "https://devmonowar.github.io/blog/#blog" },
+      "author": { "@id": "https://devmonowar.github.io/#person" },
+      "publisher": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do sliders hurt SEO?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Not directly. Google has no rule against sliders. But they affect Core Web Vitals, and those are a ranking signal. A fast slider is fine; a slow one costs you the same as any other slow element on the page." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is jQuery really that bad for a WordPress slider?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It is not bad, it is usually unnecessary. Around 30 KB gzipped plus parse and execute time, for something a modern slider library does without it. If your theme already loads jQuery, one more consumer costs little extra. The problem is loading it only for the slider." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if my slider causes layout shift?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Throttle the connection to Slow 4G in Chrome DevTools and reload while watching the page. If content below the slider jumps down when it appears, that is the shift. PageSpeed Insights also reports it under CLS." }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I lazy-load slider images?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, except the first one. The first slide is usually the Largest Contentful Paint element, and lazy-loading it delays the exact metric Google measures." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a reasonable size for a slide image?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Roughly the width the slider renders at. For a full-width slider, 1600 to 1920 pixels is plenty, saved as WebP. A 3000 pixel original downloads two or three times the data for no visible gain." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://devmonowar.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://devmonowar.github.io/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "Why WordPress sliders are slow" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MH</span> Monowar Hossain</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap-narrow">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li aria-current="page">Why WordPress sliders are slow</li>
+    </ol>
+  </nav>
+
+  <article class="article">
+
+    <header class="article-head">
+      <h1>Why WordPress sliders are slow — and how to check yours</h1>
+      <p class="meta">
+        <span>By Monowar Hossain</span>
+        <time datetime="2026-08-20">20 August 2026</time>
+      </p>
+    </header>
+
+    <div class="note">
+      <p><strong>Summary.</strong> A slider is one of the easiest ways to make a WordPress page heavy, and the images are only part of it. The rest is a JavaScript dependency you never chose, assets loading on pages that have no slider on them, and a layout that jumps while the page is still loading. Four causes, and a five-minute way to check which of them apply to your site.</p>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#jquery">Cause 1: jQuery, the dependency you did not choose</a></li>
+        <li><a href="#everywhere">Cause 2: assets loading on pages with no slider</a></li>
+        <li><a href="#shift">Cause 3: the layout jump</a></li>
+        <li><a href="#images">Cause 4: images, the big one</a></li>
+        <li><a href="#measure">How to measure your slider in five minutes</a></li>
+        <li><a href="#good">What good looks like</a></li>
+        <li><a href="#fix">What to actually do about it</a></li>
+        <li><a href="#mistakes">Common mistakes</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="jquery">Cause 1: jQuery, the dependency you did not choose</h2>
+    <p>A lot of WordPress slider plugins are built on <strong>Slick</strong>. Slick is a jQuery plugin, and its own JavaScript is genuinely small — around 15 KB gzipped. jQuery is not. Roughly <strong>30 KB gzipped</strong>, about 85 KB before compression.</p>
+    <p>So the "15 KB slider" is a 45 KB slider. Two thirds of it is a library the slider needs and your page almost certainly does not.</p>
+    <p>File size is not even the worst part of it. jQuery has to be downloaded, parsed and executed before your slider script is allowed to start. On a mid-range Android phone that parse-and-execute step costs more than the download did, and nobody puts that number in a plugin description.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Library</th><th>Gzipped</th><th>Needs jQuery?</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Splide</td><td>~12 KB</td><td>No</td></tr>
+          <tr><td>Swiper</td><td>~25–40 KB depending on modules</td><td>No</td></tr>
+          <tr><td>Slick</td><td>~15 KB <strong>+ ~30 KB jQuery</strong></td><td>Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Those figures were right when I wrote this, but library versions move. Check them yourself on <a href="https://bundlephobia.com" rel="noopener">Bundlephobia</a> rather than trusting a number in a blog post, including this one.</p>
+    <p>If your theme already loads jQuery for something else, the extra cost is smaller. But "something else already made this mistake" is a poor reason to make it twice.</p>
+
+    <h2 id="everywhere">Cause 2: assets loading on pages with no slider</h2>
+    <p>This is the one I run into most, and it takes ten seconds to check.</p>
+    <p>Plenty of slider plugins enqueue their CSS and JavaScript on <code>wp_enqueue_scripts</code> with no condition at all. Every page on the site then downloads the slider library — your contact page, your blog posts, your privacy policy. None of which contain a slider.</p>
+    <p>Go and open your own contact page and search the source for your slider plugin's name. If it is in there, you are paying for a slider on a page that has none, on every single visit.</p>
+    <p>A well-built plugin registers its assets and enqueues them only when the block, shortcode or widget is actually on the page. This is not difficult to do. It is just easy to skip.</p>
+
+    <h2 id="shift">Cause 3: the layout jump</h2>
+    <p>Load a page with a slider on a slow connection and watch it. The text appears, the slider initialises a second later, and everything below it jumps down the page.</p>
+    <p>That jump is <strong>Cumulative Layout Shift</strong>, and Google measures it. The threshold is <strong>0.1</strong>. One unsized slider can go past that on its own.</p>
+    <p>The cause is simple enough: the slider container has no height until JavaScript runs and drops the slides into it. So the browser reserves nothing, then has to make room all at once.</p>
+    <p>The fix is simple too. The container needs a height reserved before the script runs — an <code>aspect-ratio</code>, a <code>min-height</code>, or explicit <code>width</code> and <code>height</code> on the slide images. Whether your plugin bothers to do that is not something any description will tell you. You have to look.</p>
+
+    <h2 id="images">Cause 4: images, the big one</h2>
+    <p>Everything above is measured in tens of kilobytes. Slider images are measured in <strong>megabytes</strong>. This is where the real weight is, and it is the part people skip past because it is less interesting than arguing about JavaScript.</p>
+    <p>Three things go wrong, and I see the first one constantly:</p>
+    <ul>
+      <li><strong>Uploading the full-size photo as a slide.</strong> A 3000px JPEG straight off a phone, displayed in a slider that renders at 1200px. The browser downloads every pixel of it and throws most of them away.</li>
+      <li><strong>Lazy-loading the first slide.</strong> WordPress adds <code>loading="lazy"</code> to images automatically, which is the right default nearly everywhere — and the wrong one here. The first slide is usually your <strong>Largest Contentful Paint</strong> element, so lazy-loading it delays the exact thing Google is timing. First slide eager, everything after it lazy.</li>
+      <li><strong>Loading all ten slides up front.</strong> Nine of those downloads happen for a visitor who never clicks the arrow.</li>
+    </ul>
+
+    <h2 id="measure">How to measure your slider in five minutes</h2>
+    <p>No paid tool, no plugin. All of this is already in Chrome.</p>
+
+    <p><strong>Step 1 — find out what is actually loading.</strong><br>
+    Open a page with your slider. Press <code>F12</code>, go to the <strong>Network</strong> tab, tick <strong>Disable cache</strong>, and reload. Sort by <strong>Size</strong>. You are looking for <code>jquery.min.js</code>, your slider plugin's JS and CSS, and your slide images.</p>
+
+    <p><strong>Step 2 — find out how much of it is used.</strong><br>
+    In DevTools press <code>Ctrl+Shift+P</code>, type <strong>Coverage</strong>, hit record, then reload. It shows what percentage of each CSS and JS file the page actually ran. Seeing slider CSS come back 70–90% unused is completely normal, and that red bar is more persuasive than any argument you could write.</p>
+
+    <p><strong>Step 3 — check a page with no slider.</strong><br>
+    Load your contact page. In the Network tab, search for your slider plugin's name. Anything that shows up is pure waste.</p>
+
+    <p><strong>Step 4 — get the scores.</strong><br>
+    Run the page through <a href="https://pagespeed.web.dev" rel="noopener">PageSpeed Insights</a>. Look at <strong>LCP</strong> and <strong>CLS</strong>, and use the mobile numbers — that is what Google uses for ranking.</p>
+
+    <p><strong>Step 5 — watch the jump.</strong><br>
+    In the Network tab set throttling to <strong>Slow 4G</strong>, reload, and watch. If the page visibly jumps when the slider appears, you have a CLS problem, whatever the score says.</p>
+
+    <h2 id="good">What good looks like</h2>
+    <p>Google's Core Web Vitals thresholds, on mobile:</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Metric</th><th>Good</th><th>Needs work</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>LCP — largest element painted</td><td>≤ 2.5s</td><td>&gt; 4.0s</td></tr>
+          <tr><td>CLS — layout shift</td><td>≤ 0.1</td><td>&gt; 0.25</td></tr>
+          <tr><td>INP — interaction response</td><td>≤ 200ms</td><td>&gt; 500ms</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>For the slider itself, a reasonable target:</p>
+    <ul>
+      <li><strong>No jQuery</strong> on the front end unless something else genuinely needs it</li>
+      <li><strong>Under about 50 KB</strong> of slider CSS and JS combined, gzipped</li>
+      <li><strong>Zero</strong> slider assets on pages without a slider</li>
+      <li><strong>No visible jump</strong> when the slider initialises</li>
+      <li>First slide <strong>eager</strong>, the rest <strong>lazy</strong></li>
+    </ul>
+
+    <h2 id="fix">What to actually do about it</h2>
+    <p>In rough order of how much you get back for the effort:</p>
+    <ol>
+      <li><strong>Resize your slide images</strong> before uploading. Nothing else on this list comes close. A slide image should be about the width the slider renders at, served as WebP.</li>
+      <li><strong>Set the first slide to load eagerly</strong>, the rest lazily.</li>
+      <li><strong>Check whether assets load site-wide.</strong> If they do, and your plugin has no setting for it, that is a plugin problem, not a settings problem.</li>
+      <li><strong>Reserve the slider's height in CSS</strong> so nothing jumps.</li>
+      <li><strong>Then, if it is still heavy</strong>, look at whether your slider needs jQuery at all.</li>
+    </ol>
+    <p>Point 5 is last for a reason. Swapping plugins is the most disruptive thing on this list and usually the smallest win. Do the first four, measure again, and there is a fair chance you never get to it.</p>
+    <p>If you do end up switching, judge the dependency rather than the marketing. Open the plugin in the directory, look at what it actually loads, and run the five-minute test on its demo page.</p>
+
+    <div class="note">
+      <p><strong>Disclosure.</strong> I build a slider plugin myself — <a href="/blog/general-slider-fast-accessible-wordpress-slider/">General Slider</a>. I built it on Splide rather than jQuery, and made it load nothing on pages without a slider, because these are the four things that annoyed me about every slider I had used before. I have deliberately kept it out of the comparisons above. Measure your own site and make your own decision.</p>
+    </div>
+
+    <h2 id="mistakes">Common mistakes</h2>
+    <ul>
+      <li><strong>Judging a slider by its own file size</strong> and ignoring what it depends on.</li>
+      <li><strong>Testing on desktop.</strong> Google ranks on mobile. Test on mobile.</li>
+      <li><strong>Testing with your cache plugin on.</strong> You will measure the cache, not the slider. Test in an incognito window with caching disabled, then again with it on.</li>
+      <li><strong>Optimising the library and ignoring the images.</strong> 30 KB of JavaScript is not your problem when a slide is 2 MB.</li>
+      <li><strong>Lazy-loading the first slide.</strong> It is the one image that must not be lazy.</li>
+      <li><strong>Assuming a plugin only loads where it is used.</strong> Check the contact page. It takes ten seconds.</li>
+    </ul>
+
+    <h2 id="faq">FAQ</h2>
+    <dl class="faq">
+      <dt>Do sliders hurt SEO?</dt>
+      <dd>Not directly — Google has no rule against sliders. But they affect Core Web Vitals, and those are a ranking signal. A fast slider is fine; a slow one costs you the same as any other slow element.</dd>
+
+      <dt>Is jQuery really that bad?</dt>
+      <dd>It is not bad, it is usually unnecessary. Around 30 KB gzipped plus parse time, for something a modern slider library does without it. If your theme already loads jQuery, one more consumer of it costs little extra — the problem is loading it <em>only</em> for the slider.</dd>
+
+      <dt>How do I know if my slider causes layout shift?</dt>
+      <dd>Throttle to Slow 4G in DevTools and reload while watching the page. If content below the slider jumps down when it appears, that is the shift. PageSpeed Insights will also report it under CLS.</dd>
+
+      <dt>Should I lazy-load slider images?</dt>
+      <dd>Yes, except the first one. The first slide is usually your LCP element, and lazy-loading it directly delays the metric Google measures.</dd>
+
+      <dt>What is a reasonable size for a slide image?</dt>
+      <dd>Roughly the width the slider renders at — for a full-width slider, around 1600–1920px is plenty — saved as WebP. A 3000px original downloads two or three times the data for no visible gain.</dd>
+
+      <dt>My PageSpeed score is fine. Do I still need to care?</dt>
+      <dd>Check the mobile score, not desktop, and check a real page rather than the homepage you optimised. If mobile LCP is under 2.5s and CLS is under 0.1 on your actual slider page, you are fine — go do something more useful.</dd>
+    </dl>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>Sliders get blamed for slow sites, and the slider is rarely the whole story. It is a 30 KB dependency nobody asked for, assets on pages that do not need them, a container with no reserved height, and a 2 MB photo — four separate problems that happen to arrive together.</p>
+    <p>All four are measurable, and measuring them takes five minutes with tools already sitting on your machine. Do that before you change anything. Otherwise you are guessing, and guessing usually means rebuilding the wrong thing.</p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="/blog/general-slider-fast-accessible-wordpress-slider/">How to build a fast, accessible slider in WordPress with General Slider</a></li>
+      <li><a href="/blog/free-widgets-for-elementor-guide/">How to install Free Widgets For Elementor</a></li>
+    </ul>
+
+    <div class="author-box">
+      <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specializing in custom themes, plugins, Elementor, ACF, and performance optimization. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
+      <p class="card-links">
+        <a href="/about/">About me</a>
+        <a href="https://github.com/devmonowar" rel="me">GitHub</a>
+        <a href="https://profiles.wordpress.org/kstmonowar/" rel="me">WordPress.org</a>
+        <a href="https://www.linkedin.com/in/devmonowar" rel="me">LinkedIn</a>
+      </p>
+      <p class="small muted">Published 20 August 2026 · Last updated 20 August 2026</p>
+    </div>
+
+  </article>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monowar Hossain · Dhaka, Bangladesh</span>
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://github.com/devmonowar">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
