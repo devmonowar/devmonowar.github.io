@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -27,6 +27,11 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/</loc>
     <lastmod>2026-08-20</lastmod>
@@ -47,9 +52,11 @@
     <lastmod>2026-08-11</lastmod>
     <priority>0.7</priority>
   </url>
-  <!-- The Janitorix Media Audit guide is deliberately left out until WordPress.org
-       approves the plugin name. Its URL contains the slug, and GitHub Pages cannot
-       301-redirect if the name changes again. Add it back after approval. -->
+  <url>
+    <loc>https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <priority>0.7</priority>
+  </url>
   <!-- The PortoLite guide is deliberately left out until the theme name is final and
        approved on ThemeForest. Same reason as Janitorix: the slug carries the name and
        GitHub Pages cannot 301-redirect. Add it back after approval. -->

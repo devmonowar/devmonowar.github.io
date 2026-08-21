@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>What the WordPress.org Plugin Review Actually Flagged in My Plugin</title>
+<meta name="description" content="Two rounds of the WordPress.org plugin review, three weeks apart: what they flagged, the code before and after, and what happens after the approval email.">
+<link rel="canonical" href="https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Monowar Hossain">
+<meta property="og:title" content="What the WordPress.org Plugin Review Actually Flagged in My Plugin">
+<meta property="og:description" content="The name, one script tag, a three-letter prefix, then sanitizing, escaping and unsafe SQL. What the review flagged, the code before and after, and the mistake I made twice.">
+<meta property="og:url" content="https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-08-21">
+<meta property="article:author" content="Monowar Hossain">
+<meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/#post",
+      "headline": "What the WordPress.org Plugin Review Actually Flagged in My Plugin",
+      "description": "A first-hand account of two WordPress.org plugin review rounds: a name that was too generic, inline JavaScript, a three-letter prefix, unsanitized input, unescaped output and unsafe SQL — with the code before and after each fix.",
+      "datePublished": "2026-08-21",
+      "dateModified": "2026-08-21",
+      "inLanguage": "en",
+      "image": "https://devmonowar.github.io/assets/img/og-image.jpg",
+      "mainEntityOfPage": "https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/",
+      "isPartOf": { "@id": "https://devmonowar.github.io/blog/#blog" },
+      "author": { "@id": "https://devmonowar.github.io/#person" },
+      "publisher": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the first review email written by a human?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Often not. Mine said outright that it was an automated pre-review and might not have been read by a human, with the machine-generated parts marked ✨. The second round was explicitly a manual check by a volunteer." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a review take?",
+          "acceptedAnswer": { "@type": "Answer", "text": "There is no fixed time. Mine ran from late July to 20 August 2026, about three and a half weeks across two rounds, with roughly two weeks between replies. Their email says you may hear back within a few days, a week or two, or occasionally longer. They are volunteers. Do not ask for a status update unless you have been waiting a month or more, because by their own account it slows the queue down." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a plugin be rejected permanently?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Updates that resolve only a small portion of the reported issues may be rejected, and plugins rejected that way \"will not be reviewed again.\"" }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to use the name they suggest?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. You have to solve the problem, which is a name that is too generic or too close to something already there. What you replace it with is your choice." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to fix every Plugin Check warning?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Plugin Check's own FAQ says only the Plugin repo category has to pass. What matters is that the warnings you leave behind are ones you can defend." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I think they are wrong?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Their email invites it. It says there may be false positives, and asks you to request clarification clearly and with an example. Fix everything else first, then ask. Do not hold up a whole round over one disputed line." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my plugin live as soon as it is approved?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Approval gives you SVN commit access. Until you push the files yourself the public page stays empty, and it can take up to 72 hours after that for search results to catch up." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://devmonowar.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://devmonowar.github.io/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "What the WordPress.org plugin review flagged" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MH</span> Monowar Hossain</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap-narrow">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li aria-current="page">What the WordPress.org plugin review flagged</li>
+    </ol>
+  </nav>
+
+  <article class="article">
+
+    <header class="article-head">
+      <h1>What the WordPress.org plugin review actually flagged in my plugin</h1>
+      <p class="meta">
+        <span>By Monowar Hossain</span>
+        <time datetime="2026-08-21">21 August 2026</time>
+      </p>
+    </header>
+
+    <div class="note">
+      <p><strong>Summary.</strong> I submitted a plugin to WordPress.org in late July 2026. It came back twice: once over the name, once over the code. Approval came on 20 August, about three and a half weeks after I first hit submit. Neither round was unfair. Both times the problem had been sitting in my repository for months, and both times I had configured my own linter to keep quiet about it. So: what they flagged, the code before and after, the mistake I managed to make twice, and what actually happens once the approval email lands.</p>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#automated">The first email may not be from a human</a></li>
+        <li><a href="#name">Round 1: the name</a></li>
+        <li><a href="#inline-js">Round 1: one script tag, seven problems</a></li>
+        <li><a href="#prefix">Round 1: a three-letter prefix</a></li>
+        <li><a href="#sanitize">Round 2: sanitizing input</a></li>
+        <li><a href="#escape">Round 2: escaping output</a></li>
+        <li><a href="#sql">Round 2: unsafe SQL</a></li>
+        <li><a href="#twice">The mistake I made twice</a></li>
+        <li><a href="#lint">What lint will never catch</a></li>
+        <li><a href="#reply">Replying to the review</a></li>
+        <li><a href="#approved">Approved — and still not live</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#conclusion">Where this stands</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="automated">The first email may not be from a human</h2>
+    <p>This is the part I wish I had known before I opened it.</p>
+    <p>Two days after submitting, an email arrived. Buried in the header was this:</p>
+    <blockquote>
+      <p>🤖 Please note that this message was generated using a combination of humans, algorithms, and AI in varying proportions. <strong>It may not have been reviewed by a human.</strong> All AI outputs are marked with the ✨ emoji.</p>
+    </blockquote>
+    <p>It called itself an automated pre-review. Three weeks later a second email came, and that one opened differently: <em>"the volunteers have <strong>manually checked</strong> it."</em></p>
+    <p>So there are really two gates. A machine screens for the obvious mechanical problems first. Only once you are through that does a person open your code.</p>
+    <p>That changes how you should read the first email. It is a checklist, not a verdict. Clear it fast, do not argue with it, get to the human.</p>
+
+    <h2 id="name">Round 1: the name</h2>
+    <p>I had called it <strong>Unused Image Cleaner</strong>. The ✨-marked verdict:</p>
+    <blockquote>
+      <p>The display name is too generic and closely matches existing plugin names built around the exact phrase "Unused Image Cleaner," which makes it confusing in the directory.</p>
+    </blockquote>
+    <p>Fair enough, and I should have checked first. Search the directory for that phrase and you get a wall of plugins doing roughly the same job.</p>
+    <p>Finding a replacement was harder than I expected, because of how they define "similar":</p>
+    <blockquote>
+      <p>We also look into similar naming patterns, <strong>lookalike names or meanings</strong>.</p>
+    </blockquote>
+    <p>Meanings, not spellings. My first idea was <em>ImageJanitor Guard</em>. Dead on arrival: the directory already has <strong>Upload Janitor</strong>, described as <em>"Clean up unused images and other files from your uploads folder."</em> Different words, same idea. Two more candidates went the same way. Both already existed.</p>
+    <p>The rule that finally helped was this one:</p>
+    <blockquote>
+      <p>❌ Changing the plugin name by adding an additional letter or a generic word (Advanced, Simple, etc) will probably not solve this problem at all.</p>
+      <p>✅ You could try adding a coined term, your personal brand or a unique identifier <strong>at the beginning</strong> of the name.</p>
+    </blockquote>
+    <p>At the beginning, not the end. So I made up a word and put it first.</p>
+    <p>Two more things about names that are easy to miss. They check your username, your plugin URLs, your icon and banner, not only the title. And the slug is a separate request. Changing it in your code does nothing; you have to state the permalink you want in your reply, and after approval it can never be changed again.</p>
+    <p><strong>The real lesson:</strong> search the directory before you write a line of code. Rename afterwards and your slug, prefix, constants, hooks, database tables and repository URL all move at once.</p>
+
+    <h2 id="inline-js">Round 1: one script tag, seven problems</h2>
+    <p>They quoted exactly one line, a <code>&lt;script&gt;</code> tag in an admin page.</p>
+    <p>One line. But the email also says this, and it is the sentence everybody skims:</p>
+    <blockquote>
+      <p>Then <strong>search your codebase for other occurrences of the same issues</strong>, even if they are not explicitly mentioned in this review.</p>
+    </blockquote>
+    <p>So I searched. That block had six relatives I had forgotten about: inline <code>onsubmit=</code> handlers spread across two admin pages.</p>
+
+<pre><code>// Before — inline handler in the middle of a template
+&lt;form onsubmit="return confirm('Delete permanently?');"&gt;
+
+// After — a data attribute, bound by the enqueued script
+&lt;form data-janitorix-confirm="Delete permanently?"&gt;</code></pre>
+
+    <p>The plugin emits no inline JavaScript at all now. Fixing only the quoted line would probably have cost me another round, and their warning about that is not gentle: updates that resolve only a small portion of the reported issues may be rejected, and plugins rejected that way <em>"will not be reviewed again."</em></p>
+
+    <h2 id="prefix">Round 1: a three-letter prefix</h2>
+    <p>Mine was <code>uic</code>. Their rule is four characters minimum, and the handbook recommends five. It is not only function names either: classes, <code>define()</code>, every option and transient key, shortcodes, post types, registered scripts, AJAX actions, namespaces.</p>
+    <p>Replacing it was the biggest mechanical job of the whole review. A nine-character prefix had to reach constants, options, the cron event, seven <code>admin_post_*</code> actions, three public hooks, five database tables, the WP-CLI command, the CSS classes.</p>
+    <p>Here is the part that stings. My <code>phpcs.xml.dist</code> excluded the short-prefix sniff, under a comment I had written myself arguing that <code>uic</code> was fine because it had "already shipped". PHPCS had been telling me the truth the whole time. I had told it to be quiet.</p>
+
+    <h2 id="sanitize">Round 2: sanitizing input</h2>
+    <p>The name and slug were accepted, and this time a person had read the code. Three issues, all security.</p>
+    <p>The first:</p>
+
+<pre><code>// Before
+'from' =&gt; $this-&gt;date( isset( $_GET['from'] ) ? wp_unslash( $_GET['from'] ) : '' ),
+// phpcs:ignore ...InputNotSanitized -- date() validates against a strict Y-m-d whitelist</code></pre>
+
+    <p>My defence was true. <code>date()</code> validates against <code>^\d{4}-\d{2}-\d{2}$</code> and throws away anything else, so nothing unvalidated ever reached a query.</p>
+    <p>It still deserved the flag. There is no <code>sanitize_*()</code> call in that line, and a <code>phpcs:ignore</code> sitting on top of it is a sign saying <em>look here</em> to anyone reading the file.</p>
+
+<pre><code>// After
+'from' =&gt; $this-&gt;date( isset( $_GET['from'] ) ? sanitize_text_field( wp_unslash( $_GET['from'] ) ) : '' ),</code></pre>
+
+    <p>Sanitize first, validate after, ignore comment gone. Their mantra is <strong>sanitize early, escape late, always validate.</strong> Doing two out of three is not doing it.</p>
+
+    <h2 id="escape">Round 2: escaping output</h2>
+    <p>They flagged a variable going into <code>wp_add_inline_script()</code>. The real problem sat one level below the quoted line, and I would not have found it from the line alone: <strong>my plugin shipped no asset files at all.</strong> The CSS and JavaScript lived inside PHP as heredoc strings, registered against a handle with no source file, then pushed out inline.</p>
+    <p>I had told myself this was clever. One fewer HTTP request. It is not clever: the browser cannot cache any of it, and anyone reading that file has to take a giant PHP string on trust.</p>
+    <p>They are real files now, enqueued by URL. The only thing still inlined is a small <code>wp_json_encode()</code> object with two translated strings and one setting.</p>
+    <p>The other half was a one-flag fix:</p>
+
+<pre><code>// Before
+echo wp_json_encode( $data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES );
+
+// After
+echo wp_json_encode( $data, JSON_PRETTY_PRINT );</code></pre>
+
+    <p><code>JSON_UNESCAPED_SLASHES</code> switches off escaping that <code>wp_json_encode()</code> does deliberately.</p>
+
+    <h2 id="sql">Round 2: unsafe SQL</h2>
+    <p>This was the big one. Every query built its table name by concatenation:</p>
+
+<pre><code>// Before
+$wpdb-&gt;get_results(
+    // phpcs:ignore -- Tables::logs() returns a hardcoded prefix + literal, never user input
+    $wpdb-&gt;prepare( 'SELECT * FROM ' . Tables::logs() . ' WHERE attachment_id = %d', $id )
+);</code></pre>
+
+    <p>Their tooling even noted that <code>prepare()</code> was being called correctly, then flagged it anyway. When I swept the codebase myself it came to 112 query sites across 22 files.</p>
+    <p>My comment was, again, factually correct. <code>Tables::logs()</code> returns <code>$wpdb-&gt;prefix</code> plus a hardcoded literal, and no user input can reach it. But "my helper is safe" is not something a reviewer can verify at a glance, and it is not something a static analyser can verify at all.</p>
+    <p>WordPress 6.2 added <code>%i</code>, an identifier placeholder, for exactly this:</p>
+
+<pre><code>// After
+$wpdb-&gt;get_results(
+    $wpdb-&gt;prepare( 'SELECT * FROM %i WHERE attachment_id = %d', Tables::logs(), $id )
+);</code></pre>
+
+    <p>Every table identifier goes through <code>%i</code> now, mine as well as core's <code>$wpdb-&gt;posts</code>, <code>postmeta</code> and the rest. For <code>IN ( … )</code> lists they handed me the pattern outright:</p>
+
+<pre><code>// Before
+$in = implode( ',', array_map( 'intval', $ids ) );
+
+// After
+$placeholders = implode( ',', array_fill( 0, count( $ids ), '%d' ) );
+$wpdb-&gt;prepare( "SELECT … WHERE id IN ( $placeholders )", $ids );</code></pre>
+
+    <p>Yes, <code>intval()</code> on every element was already safe. That is not the point. The next person to edit that line is me in six months, and I have to <em>spot</em> the <code>intval</code> to keep it safe. With <code>%d</code> I have to spot nothing at all.</p>
+    <p>One knock-on effect: <code>%i</code> needs WordPress 6.2, so <code>Requires at least</code> moved up from 6.0. That version is from April 2023, and the plugin had never been published, so there was nobody to break.</p>
+
+    <h2 id="twice">The mistake I made twice</h2>
+    <p>When round 2 arrived, Plugin Check reported <strong>35</strong> SQL warnings.</p>
+    <p>My own <code>composer lint</code> reported <strong>0 errors, 0 warnings.</strong></p>
+    <p>Because <code>phpcs.xml.dist</code> had this in it:</p>
+
+<pre><code>&lt;exclude name="WordPress.DB.PreparedSQL.InterpolatedNotPrepared"/&gt;
+&lt;exclude name="WordPress.DB.PreparedSQL.NotPrepared"/&gt;</code></pre>
+
+    <figure>
+      <img src="/assets/img/blog/wordpress-plugin-review/wordpress-plugin-review-phpcs-exclude.jpg"
+           width="1200" height="1451" loading="lazy" decoding="async"
+           alt="phpcs.xml.dist excluding two PreparedSQL sniffs, and a terminal where the same ruleset reports no violations while those two sniffs, switched back on, report 17 errors">
+      <figcaption>The two lines that hid the problem, with the justification I wrote myself sitting above them. Run with the project's own ruleset the linter has nothing to say. Switch those two sniffs back on and the same files report 17 errors. Plugin Check, running a wider set of SQL checks, counted 35.</figcaption>
+    </figure>
+
+    <p>The exact two sniffs the reviewer flagged. Same shape as the prefix in round 1. <strong>Twice in one review, I had switched off the check that would have caught the thing that pended me.</strong></p>
+    <p>Both exclusions are gone, and the code passes with the sniffs enabled, which is the only version of that report worth anything. A green run from a config you wrote yourself proves nothing.</p>
+    <p><strong>Never silence a sniff to make a report look green.</strong> If a rule genuinely does not apply, silence that one line with a comment explaining why. Not the whole rule, project-wide, in a file you will forget you edited.</p>
+    <p>Four warnings are still there on purpose, in a dynamic WHERE builder and a bulk INSERT. Both assemble a query string from literal SQL fragments and placeholders, never from a value. If a reviewer asks, that is my answer, and it is a far better position than having silenced them.</p>
+
+    <h2 id="lint">What lint will never catch</h2>
+    <p><strong><code>%i</code> cannot take a qualified column name.</strong> I had written <code>%i</code> for things like <code>r.status</code>. WordPress quotes that as one identifier — <code>`r.status`</code> — which is not a real column, and it would have broken my filters silently. PHPCS was happy. PHPStan was happy. It turned up when I clicked the filter on a live site and nothing came back.</p>
+    <p><strong>Plugin Check scans your whole folder</strong> — <code>vendor/</code>, <code>tests/</code>, <code>tools/</code>, none of which ship. Checking my working directory produced an alarming number. The one that counts comes from the built ZIP, installed under the right folder name. Get the folder name wrong and it invents hundreds of bogus text-domain errors on its own.</p>
+
+    <figure>
+      <img src="/assets/img/blog/wordpress-plugin-review/wordpress-plugin-review-plugin-check-clean.jpg"
+           width="1200" height="863" loading="lazy" decoding="async"
+           alt="A terminal showing Plugin Check run against the built plugin ZIP, reporting 158 warnings by check and no errors">
+      <figcaption>The check that counts: the shipped ZIP, extracted under its real slug, rather than the working folder. Plenty of warnings, every one of them a deliberate direct database call. No errors, which is the part that matters, because only the Plugin repo category has to pass.</figcaption>
+    </figure>
+    <p>There was also an afternoon when I was certain I had introduced a bug: a freshly uploaded image would not trash. It was my own 24-hour safety rule doing its job. On a brand-new test site <em>every</em> image is under 24 hours old. Which made me realise a real user would hit the same thing on day one and decide the plugin was broken, so I added a notice explaining why a row is protected. Nobody asked for that. It was the most useful change I made all month.</p>
+
+    <h2 id="reply">Replying to the review</h2>
+    <p>They are unusually direct about what they want back:</p>
+    <blockquote>
+      <p>Your reply is brief and to the point… there is no need to describe every change you made, and please <strong>avoid unnecessary verbosity or AI-generated filler.</strong></p>
+    </blockquote>
+    <p>Mine ran to four sentences. That I had fixed all three issues. That I had swept the rest of the codebase for the same patterns rather than only the lines they listed. And a note about the minimum WordPress version going up, so that would not look odd. Nothing else. No changelog, no walkthrough of each fix.</p>
+    <p>Reply on the same thread, not a new email and not to the upload confirmation. That thread is what puts you back in the queue.</p>
+
+    <h2 id="approved">Approved — and still not live</h2>
+    <p>Five days after that reply, two emails arrived one minute apart. Both said approved.</p>
+    <p>I assumed that was the finish line. It is not. It is a handover, and there are four things in it worth knowing before you get there.</p>
+    <p><strong>Nothing is public until you upload it yourself.</strong> Approval grants your account commit access to a Subversion repository, usually within an hour. Your public plugin page exists as a URL, but it stays invisible until you push your files. Their wording is blunt: <em>"we are unable to do that for you."</em> No SVN push, no plugin.</p>
+    <p><strong>SVN here is a release system, not Git.</strong> That sentence is in their email, and it is the switch that matters. You do not push work in progress and tidy up later. You push versions that are ready to install.</p>
+    <p><strong>Your SVN password is not your WordPress.org password.</strong> You generate it separately, in the Account &amp; Security section of your profile. Your username is your WordPress.org username, case sensitive, never your email address. Two of the most common first-day failures are sitting right there.</p>
+    <p><strong>Then you wait again.</strong> The directory is big enough that search results and your profile page can take up to 72 hours to catch up. Live and findable are not the same day.</p>
+    <p>One more line from that email is worth reading twice:</p>
+    <blockquote>
+      <p>A successful review does not guarantee that your plugin is entirely free from security issues or guideline violations — we are all human and mistakes happen.</p>
+    </blockquote>
+    <p>From that point on the plugin can be reviewed at any time: by the Plugins Team, by independent experts, by community members, by automated scanners. If something turns up it can be closed, temporarily or permanently. They also ask you to whitelist their email address, because if they cannot reach you, that on its own is grounds for closing your plugin.</p>
+    <p>Approval is not a certificate. It is the start of the part where you keep the thing compliant.</p>
+
+    <h2 id="faq">FAQ</h2>
+    <dl class="faq">
+      <dt>Is the first review email written by a human?</dt>
+      <dd>Often not. Mine said outright that it was an automated pre-review and might not have been read by a human, with the machine-generated parts marked ✨. The second round was explicitly a manual check by a volunteer.</dd>
+
+      <dt>How long does a review take?</dt>
+      <dd>There is no fixed time. Mine ran from late July to 20 August 2026, about three and a half weeks across two rounds, with roughly two weeks between replies. Their email says you may hear back within a few days, a week or two, or occasionally longer. They are volunteers. Do not ask for a status update unless you have been waiting a month or more, because by their own account it slows the queue down.</dd>
+
+      <dt>Can a plugin be rejected permanently?</dt>
+      <dd>Yes. Updates that resolve only a small portion of the reported issues may be rejected, and plugins rejected that way <em>"will not be reviewed again."</em></dd>
+
+      <dt>Do I have to use the name they suggest?</dt>
+      <dd>No. You have to solve the problem, which is a name that is too generic or too close to something already there. What you replace it with is your choice.</dd>
+
+      <dt>Do I need to fix every Plugin Check warning?</dt>
+      <dd>No. Plugin Check's own FAQ says only the <em>Plugin repo</em> category has to pass. What matters is that the warnings you leave behind are ones you can defend.</dd>
+
+      <dt>What if I think they are wrong?</dt>
+      <dd>Their email invites it. It says there may be false positives, and asks you to request clarification clearly and with an example. Fix everything else first, then ask. Do not hold up a whole round over one disputed line.</dd>
+
+      <dt>Is my plugin live as soon as it is approved?</dt>
+      <dd>No. Approval gives you SVN commit access. Until you push the files yourself the public page stays empty, and it can take up to 72 hours after that for search results to catch up.</dd>
+    </dl>
+
+    <h2 id="conclusion">Where this stands</h2>
+    <p>The plugin was approved on 20 August 2026 and it is in the directory now, as <a href="https://wordpress.org/plugins/janitorix-media-audit/">Janitorix Media Audit</a>. That is the plugin all of this was about. If you want the version of the story that is about media libraries rather than review queues, I wrote that up <a href="/blog/how-to-find-unused-images-in-wordpress/">separately</a>.</p>
+    <p>Both rounds stung, and both were fair. Nothing in either email was an ambush. Every item was something my own tooling had already told me, or would have, if I had not gone out of my way to switch it off. The code that went live is in better shape than what I first submitted, which is the point of the whole thing.</p>
+    <p>If you are about to submit a plugin, do three things first. Search the directory for your name, lookalike meanings included. Delete every exclusion from <code>phpcs.xml.dist</code> and see what falls out. Run Plugin Check on the built ZIP, not on your working folder.</p>
+    <p>That is most of a review round, and you can do it this afternoon.</p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="/blog/how-to-find-unused-images-in-wordpress/">How to find unused images in WordPress — and delete them safely</a></li>
+      <li><a href="/blog/why-wordpress-sliders-are-slow/">Why WordPress sliders are slow — and how to check yours</a></li>
+      <li><a href="/blog/shared-demo-library-for-wordpress-plugins/">How I built a shared demo library for my WordPress plugins</a></li>
+    </ul>
+
+    <div class="author-box">
+      <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specializing in custom themes, plugins, Elementor, ACF, and performance optimization. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
+      <p class="card-links">
+        <a href="/about/">About me</a>
+        <a href="https://github.com/devmonowar" rel="me">GitHub</a>
+        <a href="https://profiles.wordpress.org/kstmonowar/" rel="me">WordPress.org</a>
+        <a href="https://www.linkedin.com/in/devmonowar" rel="me">LinkedIn</a>
+      </p>
+      <p class="small muted">Published 21 August 2026 · Last updated 21 August 2026</p>
+    </div>
+
+  </article>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monowar Hossain · Dhaka, Bangladesh</span>
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://github.com/devmonowar">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
