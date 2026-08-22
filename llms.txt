@@ -1,0 +1,41 @@
+# Monowar Hossain
+
+> WordPress plugin developer from Dhaka, Bangladesh. He builds free, open-source
+> plugins published on WordPress.org — General Slider, Advanced Testimonial,
+> Free Widgets For Elementor and Janitorix Media Audit — and writes guides and
+> case studies about building them.
+
+This site is hand-written static HTML: no framework, no JavaScript, no CDN and no
+external requests. Every plugin listed here is free and GPL-licensed, with the
+source on GitHub and support handled in the WordPress.org forums.
+
+## Pages
+
+- [Home](https://devmonowar.github.io/): who Monowar Hossain is and what he builds.
+- [About](https://devmonowar.github.io/about/): how he started with WordPress, the plugins he maintains, and how he works.
+- [Plugins](https://devmonowar.github.io/plugins/): all four free WordPress plugins, with what each one does.
+- [Blog](https://devmonowar.github.io/blog/): guides and case studies on WordPress plugin development.
+- [Contact](https://devmonowar.github.io/contact/): email, plugin support forums, GitHub issues and profile links.
+
+## Plugins
+
+- [General Slider](https://wordpress.org/plugins/general-slider/): a fast, accessible WordPress slider that loads no jQuery and ships its assets only on pages that use it. Source: https://github.com/devmonowar/general-slider
+- [Advanced Testimonial](https://wordpress.org/plugins/advanced-testimonial/): testimonial layouts, card styles, a front-end submission form and Schema.org review markup. Source: https://github.com/devmonowar/advanced-testimonial
+- [Free Widgets For Elementor](https://wordpress.org/plugins/free-widgets-for-elementor/): pricing table, flip box, countdown timer and team cards — the widgets Elementor's free core does not include. Source: https://github.com/devmonowar/free-widgets-for-elementor
+- [Janitorix Media Audit](https://wordpress.org/plugins/janitorix-media-audit/): finds which images in the WordPress media library are genuinely unused, so they can be deleted without breaking a page. Source: https://github.com/devmonowar/janitorix-media-audit
+
+## Writing
+
+- [How to find unused images in WordPress](https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/): why "unattached" is not the same as unused, where a reference hides, and how to delete safely.
+- [What the WordPress.org plugin review actually flagged in my plugin](https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/): two review rounds over three and a half weeks — the name, a script tag, a three-letter prefix, then sanitizing, escaping and unsafe SQL.
+- [Why WordPress sliders are slow](https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/): the weight is rarely the images — it is jQuery you never chose and assets loading on pages with no slider.
+- [How to build a fast, accessible slider in WordPress](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/): setting up a slider that loads no jQuery and locks nothing behind a Pro upgrade.
+- [How to add customer testimonials in WordPress](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/): layouts, card styles, a front-end submission form and review markup, without a page-builder addon pack.
+- [How to install Free Widgets For Elementor](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/): what each widget does and why a giant addon pack is not needed to get them.
+- [How I built a shared demo library for my WordPress plugins](https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/): bundling demos inside a plugin forces a release per demo — the static library built instead.
+
+## Optional
+
+- [RSS feed](https://devmonowar.github.io/feed.xml): every blog post, newest first.
+- [Sitemap](https://devmonowar.github.io/sitemap.xml): all indexable pages.
+- [GitHub](https://github.com/devmonowar): source for every plugin listed above.

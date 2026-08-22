@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+
+  <title>Monowar Hossain — WordPress Guides</title>
+  <link>https://devmonowar.github.io/blog/</link>
+  <description>Guides and case studies on WordPress plugin development by Monowar Hossain — sliders, testimonials, Elementor widgets and media cleanup.</description>
+  <language>en</language>
+  <copyright>Copyright 2026 Monowar Hossain</copyright>
+  <lastBuildDate>Sun, 23 Aug 2026 00:00:00 +0000</lastBuildDate>
+  <atom:link href="https://devmonowar.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+
+  <image>
+    <url>https://devmonowar.github.io/assets/img/og-image.jpg</url>
+    <title>Monowar Hossain — WordPress Guides</title>
+    <link>https://devmonowar.github.io/blog/</link>
+  </image>
+
+  <item>
+    <title>How to find unused images in WordPress — and delete them safely</title>
+    <link>https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/</guid>
+    <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>WordPress never tells you where an image is used, and "unattached" is not the same as unused. Where a reference hides, how to search every one of those places, and how to delete without breaking a page.</description>
+  </item>
+
+  <item>
+    <title>What the WordPress.org plugin review actually flagged in my plugin</title>
+    <link>https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/</guid>
+    <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+    <category>Case study</category>
+    <description>Two rounds, three and a half weeks: the name, one script tag, a three-letter prefix, then sanitizing, escaping and unsafe SQL. The code before and after each fix, and the mistake I made twice.</description>
+  </item>
+
+  <item>
+    <title>Why WordPress sliders are slow — and how to check yours</title>
+    <link>https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/</guid>
+    <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Most of the weight is not the images. It is jQuery you never chose, assets loading on pages with no slider, and a layout that jumps. How to measure your own in five minutes.</description>
+  </item>
+
+  <item>
+    <title>How to build a fast, accessible slider in WordPress with General Slider</title>
+    <link>https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/</guid>
+    <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Most slider plugins load jQuery and half a megabyte of unused CSS on every page, or lock the good presets behind a Pro upgrade. Here is how to set up one that does neither.</description>
+  </item>
+
+  <item>
+    <title>How to add customer testimonials in WordPress: a complete guide to Advanced Testimonial</title>
+    <link>https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/</guid>
+    <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Layouts, card styles, a front-end submission form, and Schema.org markup so Google can show star ratings next to your result — without a page-builder addon pack.</description>
+  </item>
+
+  <item>
+    <title>How to install Free Widgets For Elementor: the widgets Elementor's free core does not include</title>
+    <link>https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/</guid>
+    <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>Pricing table, flip box, countdown timer, team cards. What each widget does, how to install it, and why you do not need a giant addon pack to get them.</description>
+  </item>
+
+  <item>
+    <title>How I built a shared demo library for my WordPress plugins</title>
+    <link>https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/</guid>
+    <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+    <category>Case study</category>
+    <description>Bundling demo content inside a plugin means a new release for every new demo. Here is the shared static library I built instead, and what I would do differently.</description>
+  </item>
+
+</channel>
+</rss>
