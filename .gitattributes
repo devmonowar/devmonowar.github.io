@@ -1,0 +1,13 @@
+# core.autocrlf=true would otherwise write CRLF into every file on checkout.
+# Nothing here breaks in a browser, but tools/check-site.js reads these files
+# line by line, and a stray CR makes it misread them. Decision: personal-seo
+# decisions.md -> section "cha", item 8.
+* text=auto eol=lf
+
+# Fonts and images must never be touched.
+*.woff2 binary
+*.jpg   binary
+*.jpeg  binary
+*.png   binary
+*.gif   binary
+*.webp  binary
