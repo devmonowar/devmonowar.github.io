@@ -490,14 +490,14 @@ th { font-weight: 600; color: var(--heading); background: var(--surface-2); }
 .article ul, .article ol { margin-bottom: 24px; }
 .article > :last-child { margin-bottom: 0; }
 
-.toc {
+.toc, .related {
   background: var(--surface);
   border-radius: var(--radius);
   padding: 26px 32px;
   margin: 0 0 40px;
   box-shadow: var(--shadow);
 }
-.toc h2 {
+.toc h2, .related h2 {
   margin: 0 0 14px;
   font-size: .78rem;
   letter-spacing: .13em;
@@ -505,8 +505,10 @@ th { font-weight: 600; color: var(--heading); background: var(--surface-2); }
   color: var(--muted);
   font-weight: 700;
 }
-.toc ol { margin: 0; padding-left: 20px; }
-.toc li { margin-bottom: 7px; }
+.toc ol, .related ul { margin: 0; padding-left: 20px; }
+.toc li, .related li { margin-bottom: 7px; }
+/* Same card as the table of contents, but it sits after the article, not before. */
+.related { margin: 58px 0 0; }
 
 .faq dt { font-weight: 600; color: var(--heading); margin-top: 28px; font-size: 1.03rem; }
 .faq dd { margin: 8px 0 0; color: var(--body); }
