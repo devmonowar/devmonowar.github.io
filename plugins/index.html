@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Free WordPress Plugins by Monowar Hossain</title>
-<meta name="description" content="Free, open-source WordPress plugins by Monowar Hossain: General Slider, Advanced Testimonial, Free Widgets For Elementor and Janitorix Media Audit.">
+<meta name="description" content="Free, open-source WordPress plugins by Monowar Hossain: General Slider, Advanced Testimonial, Free Widgets For Elementor, Janitorix Media Audit and CrawlWatch.">
 <link rel="canonical" href="https://devmonowar.github.io/plugins/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Monowar Hossain">
 <meta property="og:title" content="Free WordPress Plugins by Monowar Hossain">
-<meta property="og:description" content="Free, open-source WordPress plugins: General Slider, Advanced Testimonial, Free Widgets For Elementor and Janitorix Media Audit.">
+<meta property="og:description" content="Free, open-source WordPress plugins: General Slider, Advanced Testimonial, Free Widgets For Elementor, Janitorix Media Audit and CrawlWatch.">
 <meta property="og:url" content="https://devmonowar.github.io/plugins/">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
@@ -87,6 +87,19 @@
       "operatingSystem": "WordPress",
       "softwareRequirements": "WordPress 6.2 or later, PHP 7.4 or later",
       "description": "Audits a WordPress media library and proves an image is unused before recommending deletion, scoring confidence and risk separately.",
+      "license": "https://www.gnu.org/licenses/gpl-2.0.html",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "CrawlWatch – AI Bot Insights",
+      "url": "https://wordpress.org/plugins/crawlwatch-ai-bot-insights/",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "WordPress",
+      "softwareRequirements": "WordPress 6.2 or later, PHP 7.4 or later",
+      "description": "Shows which AI crawlers read a WordPress site and which URLs they take, tracks referrals from AI assistants, and generates llms.txt and per-bot robots.txt rules. No API key, and nothing leaves the server.",
       "license": "https://www.gnu.org/licenses/gpl-2.0.html",
       "isAccessibleForFree": true,
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -228,6 +241,34 @@
       <a href="https://wordpress.org/plugins/janitorix-media-audit/">Download on WordPress.org</a>
       <a href="https://github.com/devmonowar/janitorix-media-audit">Source on GitHub</a>
       <a href="/blog/how-to-find-unused-images-in-wordpress/">How to find unused images</a>
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>CrawlWatch – AI Bot Insights</h2>
+    <p class="muted">Shows you the traffic your analytics never mentions.</p>
+    <p>GPTBot, ClaudeBot, PerplexityBot and Google-Extended read your site every day, and none of it shows up in a normal analytics dashboard. You cannot tell which pages they took, whether anyone arrived from an AI assistant afterwards, or whether your site is worth reading in the first place.</p>
+    <p>CrawlWatch logs those visits and puts them somewhere you can see them. It recognises more than forty AI crawlers, and every visit is stored in one table on your own server. There is no API key, no account, and no external service.</p>
+    <h3>What it does</h3>
+    <ul>
+      <li>Shows which AI bots visited and exactly which URLs they read</li>
+      <li>Tracks referrals — visitors arriving from ChatGPT, Perplexity, Gemini or Claude</li>
+      <li>Generates <code>llms.txt</code> and <code>ai.txt</code> in one click, with a full-content version for deeper context</li>
+      <li>Allows or blocks each AI bot in <code>robots.txt</code> from a preview screen, with no code</li>
+      <li>Scores how ready your site is for AI readers, from 0 to 100, and ranks the quickest fixes</li>
+      <li>Blocking an AI training bot does not touch Google search — regular Googlebot is never managed here</li>
+    </ul>
+    <h3>What it does not do</h3>
+    <ul>
+      <li>Sends nothing off your server — every row lives in one local table</li>
+      <li>Never stores a raw IP address; they are hashed, and truncated before hashing</li>
+      <li>Adds no CSS or JavaScript to the front end, and a normal human visit costs zero extra queries</li>
+      <li>Keeps logs for 30 days by default, and deletes older rows on a daily schedule</li>
+    </ul>
+    <p>One thing worth knowing before you install it: tracking runs in PHP, so a full-page cache that serves a page without running PHP will hide those visits. The plugin detects the common caching plugins and says so on its own screens rather than quietly showing you an empty chart.</p>
+    <p class="card-links">
+      <a href="https://wordpress.org/plugins/crawlwatch-ai-bot-insights/">Download on WordPress.org</a>
+      <a href="https://github.com/devmonowar/crawlwatch-ai-bot-insights">Source on GitHub</a>
     </p>
   </section>
 
