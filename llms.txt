@@ -14,11 +14,11 @@ source on GitHub and support handled in the WordPress.org forums.
 - [Home](https://devmonowar.github.io/): who Monowar Hossain is and what he builds.
 - [About](https://devmonowar.github.io/about/): how he started with WordPress, the plugins he maintains, and how he works.
 - [Plugins](https://devmonowar.github.io/plugins/): every free WordPress plugin he maintains, with what each one does.
-- [General Slider](https://devmonowar.github.io/plugins/general-slider/): a free WordPress slider without jQuery — what it does, screenshots, and FAQ.
-- [Janitorix Media Audit](https://devmonowar.github.io/plugins/janitorix-media-audit/): a free unused-image cleaner that proves each file is unused before suggesting Trash.
-- [Advanced Testimonial](https://devmonowar.github.io/plugins/advanced-testimonial/): a free testimonial plugin with layouts, a front-end review form, and Schema.org markup.
-- [Free Widgets For Elementor](https://devmonowar.github.io/plugins/free-widgets-for-elementor/): the widgets the free Elementor core leaves out — free forever, no Pro.
-- [CrawlWatch – AI Bot Insights](https://devmonowar.github.io/plugins/crawlwatch-ai-bot-insights/): AI crawler traffic, referrals, readiness score, llms.txt and per-bot robots.txt rules.
+- [General Slider](https://devmonowar.github.io/general-slider/): a free WordPress slider without jQuery — what it does, screenshots, and FAQ.
+- [Janitorix Media Audit](https://devmonowar.github.io/janitorix-media-audit/): a free unused-image cleaner that proves each file is unused before suggesting Trash.
+- [Advanced Testimonial](https://devmonowar.github.io/advanced-testimonial/): a free testimonial plugin with layouts, a front-end review form, and Schema.org markup.
+- [Free Widgets For Elementor](https://devmonowar.github.io/free-widgets-for-elementor/): the widgets the free Elementor core leaves out — free forever, no Pro.
+- [CrawlWatch – AI Bot Insights](https://devmonowar.github.io/crawlwatch-ai-bot-insights/): AI crawler traffic, referrals, readiness score, llms.txt and per-bot robots.txt rules.
 - [Blog](https://devmonowar.github.io/blog/): guides and case studies on WordPress plugin development.
 - [Contact](https://devmonowar.github.io/contact/): email, plugin support forums, GitHub issues and profile links.
 
