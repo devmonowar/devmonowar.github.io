@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Janitorix Media Audit — Unused Image Cleaner for WordPress</title>
+<meta name="description" content="Janitorix Media Audit finds unused WordPress images and proves each one — confidence and risk scored separately, Trash-only, never one-click delete.">
+<link rel="canonical" href="https://devmonowar.github.io/plugins/janitorix-media-audit/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Monowar Hossain">
+<meta property="og:title" content="Janitorix Media Audit — Unused Image Cleaner for WordPress">
+<meta property="og:description" content="Finds unused images in the media library, scores confidence and risk separately, and only ever moves files to Trash.">
+<meta property="og:url" content="https://devmonowar.github.io/plugins/janitorix-media-audit/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+
+<link rel="alternate" type="application/rss+xml" title="Monowar Hossain — WordPress Guides" href="/feed.xml">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://devmonowar.github.io/plugins/janitorix-media-audit/#page",
+      "url": "https://devmonowar.github.io/plugins/janitorix-media-audit/",
+      "name": "Janitorix Media Audit — Unused Image Cleaner for WordPress",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://devmonowar.github.io/#website" },
+      "about": { "@type": "SoftwareApplication", "name": "Janitorix Media Audit", "url": "https://wordpress.org/plugins/janitorix-media-audit/" },
+      "author": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Janitorix Media Audit",
+      "url": "https://wordpress.org/plugins/janitorix-media-audit/",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "WordPress",
+      "softwareRequirements": "WordPress 6.2 or later, PHP 7.4 or later",
+      "description": "Audits a WordPress media library and proves an image is unused before recommending deletion, scoring confidence and risk separately.",
+      "license": "https://www.gnu.org/licenses/gpl-2.0.html",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does it delete images permanently?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. It only ever moves files to Trash, so anything can be restored. There is no one-click permanent delete." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if the plugin is wrong about an image?",
+          "acceptedAnswer": { "@type": "Answer", "text": "That is what the risk score is for. Anything at medium risk or above is never offered for Trash, however confident the scan is." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will it touch my logo or header image?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. The site logo, icon and header are refused outright, as is anything uploaded in the last 24 hours." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I run a scan from WP-CLI?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The plugin ships WP-CLI commands for scanning, explaining a verdict, previewing deletions and calibrating the engines." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a Pro version?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Confidence and risk scoring, Trash-only cleanup and WP-CLI — everything is in the free plugin, reviewed by the WordPress.org team before release." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://devmonowar.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Plugins", "item": "https://devmonowar.github.io/plugins/" },
+        { "@type": "ListItem", "position": 3, "name": "Janitorix Media Audit" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MH</span> Monowar Hossain</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/plugins/" aria-current="page">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap-narrow">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/plugins/">Plugins</a></li>
+      <li aria-current="page">Janitorix Media Audit</li>
+    </ol>
+  </nav>
+
+  <article class="article">
+
+    <header class="article-head">
+      <h1>Janitorix Media Audit — an unused image cleaner that proves it first</h1>
+      <p class="meta">
+        <span>By Monowar Hossain</span>
+        <time datetime="2026-09-12">12 September 2026</time>
+      </p>
+    </header>
+
+    <div class="note">
+      <p><strong>Summary.</strong> Janitorix Media Audit finds the images in your WordPress media library that nothing uses — then shows its evidence before it suggests deleting anything. Every file gets two separate scores, one for confidence and one for risk, and the plugin only ever moves files to Trash. Free, no Pro version.</p>
+    </div>
+
+    <h2 id="asymmetry">Deleting is cheap until it is wrong</h2>
+    <p>Every media library fills up the same way: old banners, replaced logos, test uploads, the three spare photos from a post that used one. Leaving them costs a few kilobytes each. Deleting one that is still referenced — a Customizer background, an ACF field, a page-builder section — breaks a page you might not open for weeks.</p>
+    <p>Most cleanup tools treat those two mistakes as equal. They scan, they flag, they hand you a delete button. This plugin starts from the opposite end: the cost of being wrong is the whole design. That is why "is this used?" is never one answer here. It is two.</p>
+
+    <h2 id="two-scores">Two scores, not one guess</h2>
+    <p>Each image is checked by scanners covering post content, Gutenberg blocks and synced patterns, full-site-editing templates, the Customizer, theme options, widgets, menus, Elementor, ACF, WooCommerce, and the theme's own PHP, CSS and JavaScript files. The result comes back as two judgements:</p>
+    <ul>
+      <li><strong>Confidence</strong> — how sure the plugin is that the image is genuinely unused.</li>
+      <li><strong>Risk</strong> — how much damage deleting it would cause <em>if the plugin is wrong</em>.</li>
+    </ul>
+    <p>A stray test upload and an unreferenced site logo can score identically on confidence and need opposite treatment. That is why risk is scored on its own, and why anything at medium risk or above is never offered for Trash at all.</p>
+
+    <figure>
+      <img src="/assets/img/blog/unused-images/wordpress-image-reference-locations.jpg"
+           width="1200" height="792" loading="lazy" decoding="async"
+           alt="Diagram of the six places a WordPress image reference can live — post content, post meta, options, term and user meta, theme files, and a URL assembled at render time — labelled by whether each stores the URL or the attachment ID">
+      <figcaption>What the scanners are up against: a reference can live in six different places, and they do not all store the same thing.</figcaption>
+    </figure>
+
+    <h2 id="refusals">What it refuses to do</h2>
+    <ul>
+      <li>Will not recommend deleting anything if scan coverage was too low — it asks for a rescan instead</li>
+      <li>Will never touch a site logo, icon or header — refused outright, not just scored low</li>
+      <li>Will not touch anything uploaded in the last 24 hours — it may not have been placed yet</li>
+      <li>Never deletes in one step — Trash first, always, so anything can be restored</li>
+    </ul>
+
+    <h2 id="cli">For the terminal-inclined</h2>
+    <p>The whole thing also runs from WP-CLI: scan the library, ask why one image got the verdict it did, preview exactly what would be deleted without deleting anything, and calibrate the engines against known answers. The read-only preview is the same evidence the admin screens show, in CSV form.</p>
+
+    <h2 id="faq">FAQ</h2>
+    <dl class="faq">
+      <dt>Does it delete images permanently?</dt>
+      <dd>No. It only ever moves files to Trash, so anything can be restored. There is no one-click permanent delete.</dd>
+
+      <dt>What if the plugin is wrong about an image?</dt>
+      <dd>That is what the risk score is for. Anything at medium risk or above is never offered for Trash, however confident the scan is.</dd>
+
+      <dt>Will it touch my logo or header image?</dt>
+      <dd>No. The site logo, icon and header are refused outright, as is anything uploaded in the last 24 hours.</dd>
+
+      <dt>Can I run a scan from WP-CLI?</dt>
+      <dd>Yes. Scan, explain, preview deletions and calibrate — all from the command line.</dd>
+
+      <dt>Is there a Pro version?</dt>
+      <dd>No. Confidence and risk scoring, Trash-only cleanup and WP-CLI — everything is in the free plugin, reviewed by the WordPress.org team before release.</dd>
+    </dl>
+
+    <h2 id="start">Understand first, or install first</h2>
+    <p>If you want to understand the problem first — where a reference can hide and how to check one image by hand — that is the <a href="/blog/how-to-find-unused-images-in-wordpress/">full guide</a>. If you want the tool, it is one search away in your dashboard.</p>
+    <p class="card-links">
+      <a href="https://wordpress.org/plugins/janitorix-media-audit/">Download on WordPress.org</a>
+      <a href="https://github.com/devmonowar/janitorix-media-audit">Source on GitHub</a>
+    </p>
+
+    <nav class="related" aria-label="Related reading">
+      <h2>Keep reading</h2>
+      <ul>
+        <li><a href="/blog/how-to-find-unused-images-in-wordpress/">How to find unused images in WordPress</a> — the manual method behind what this plugin automates</li>
+        <li><a href="/blog/wordpress-plugin-review-what-they-flagged/">What the WordPress.org plugin review flagged</a> — the two review rounds this plugin passed to get listed</li>
+        <li><a href="/plugins/">All free plugins</a> — everything else I maintain</li>
+      </ul>
+    </nav>
+
+    <div class="author-box">
+      <img class="author-photo" src="/assets/img/monowar-hossain-400.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Monowar Hossain">
+      <div class="author-bio">
+      <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specializing in custom themes, plugins, Elementor, ACF, and performance optimization. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
+      <p class="card-links">
+        <a href="/about/">About me</a>
+        <a href="https://github.com/devmonowar" rel="me">GitHub</a>
+        <a href="https://profiles.wordpress.org/kstmonowar/" rel="me">WordPress.org</a>
+        <a href="https://www.linkedin.com/in/devmonowar" rel="me">LinkedIn</a>
+      </p>
+      <p class="small muted">Published 12 September 2026</p>
+      </div>
+    </div>
+
+  </article>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monowar Hossain · Dhaka, Bangladesh</span>
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://github.com/devmonowar">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
