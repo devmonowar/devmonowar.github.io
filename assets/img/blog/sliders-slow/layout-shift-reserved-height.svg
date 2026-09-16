@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Diagram comparing a slider with no reserved height that pushes text down against one with reserved height where text stays still">
+  <rect width="1200" height="630" fill="#f7f5f0"/>
+  <g font-family="Georgia, serif">
+    <text x="60" y="70" font-size="30" fill="#b3402a">No reserved height — the page jumps</text>
+    <rect x="60" y="100" width="480" height="60" rx="6" fill="#d8d2c4"/>
+    <text x="80" y="138" font-size="20" fill="#555">headline and intro text…</text>
+    <rect x="60" y="175" width="480" height="180" rx="6" fill="#b3402a" opacity="0.85"/>
+    <text x="80" y="265" font-size="22" fill="#fff">slider appears late,</text>
+    <text x="80" y="295" font-size="22" fill="#fff">pushes everything down</text>
+    <rect x="60" y="370" width="480" height="60" rx="6" fill="#d8d2c4"/>
+    <text x="80" y="408" font-size="20" fill="#555">…rest of the page (moved)</text>
+    <text x="660" y="70" font-size="30" fill="#3d8b4f">Height reserved — nothing moves</text>
+    <rect x="660" y="100" width="480" height="60" rx="6" fill="#d8d2c4"/>
+    <text x="680" y="138" font-size="20" fill="#555">headline and intro text…</text>
+    <rect x="660" y="175" width="480" height="180" rx="6" fill="#e4ded1" stroke="#3d8b4f" stroke-width="3" stroke-dasharray="10 6"/>
+    <text x="680" y="255" font-size="22" fill="#555">space held by</text>
+    <text x="680" y="285" font-size="22" fill="#555">aspect-ratio / min-height</text>
+    <rect x="660" y="370" width="480" height="60" rx="6" fill="#d8d2c4"/>
+    <text x="680" y="408" font-size="20" fill="#555">…rest of the page (still here)</text>
+  </g>
+</svg>

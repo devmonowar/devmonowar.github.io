@@ -181,6 +181,13 @@
     <p>The cause is simple enough: the slider container has no height until JavaScript runs and drops the slides into it. So the browser reserves nothing, then has to make room all at once.</p>
     <p>The fix is simple too. The container needs a height reserved before the script runs — an <code>aspect-ratio</code>, a <code>min-height</code>, or explicit <code>width</code> and <code>height</code> on the slide images. Whether your plugin bothers to do that is not something any description will tell you. You have to look.</p>
 
+    <figure>
+      <img src="/assets/img/blog/sliders-slow/layout-shift-reserved-height.svg"
+           width="1200" height="630" loading="lazy" decoding="async"
+           alt="Diagram: on the left a slider with no reserved height pushes the text below it down when it loads; on the right a dashed placeholder holds the space so nothing moves">
+      <figcaption>Illustration, not a screenshot: without a reserved height the slider shoves the page down when it initialises; with one, the space is already waiting.</figcaption>
+    </figure>
+
     <h2 id="images">Cause 4: images, the big one</h2>
     <p>Everything above is measured in tens of kilobytes. Slider images are measured in <strong>megabytes</strong>. This is where the real weight is, and it is the part people skip past because it is less interesting than arguing about JavaScript.</p>
     <p>Three things go wrong, and I see the first one constantly:</p>
@@ -189,6 +196,13 @@
       <li><strong>Lazy-loading the first slide.</strong> WordPress adds <code>loading="lazy"</code> to images automatically, which is the right default nearly everywhere — and the wrong one here. The first slide is usually your <strong>Largest Contentful Paint</strong> element, so lazy-loading it delays the exact thing Google is timing. First slide eager, everything after it lazy.</li>
       <li><strong>Loading all ten slides up front.</strong> Nine of those downloads happen for a visitor who never clicks the arrow.</li>
     </ul>
+
+    <figure>
+      <img src="/assets/img/blog/sliders-slow/slider-weight-breakdown.svg"
+           width="1200" height="630" loading="lazy" decoding="async"
+           alt="Bar chart: slide images at around 2 megabytes tower over jQuery at 30 kilobytes and slider libraries at 12 to 40 kilobytes">
+      <figcaption>Illustration with rough proportions: the images outweigh everything else combined. Argue about JavaScript all you like — the megabytes are in the photos.</figcaption>
+    </figure>
 
     <h2 id="measure">How to measure your slider in five minutes</h2>
     <p>No paid tool, no plugin. All of this is already in Chrome.</p>
