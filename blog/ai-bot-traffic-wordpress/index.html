@@ -180,6 +180,13 @@
     <p>Read it left to right. An IP address. The date. The page it asked for — <code>/pricing/</code>, in this case, which already tells you something, because bots that only read your homepage behave differently from bots reading your pricing page. Then <code>200</code>, meaning your server handed the page over without complaint. The bytes it carried home. And at the very end, the user-agent introducing itself as <code>GPTBot</code>, with a link to OpenAI's own page about it.</p>
     <p>One line is trivia. A thousand lines is a story: which bot keeps coming back, which pages it likes, whether it visits at 3am like a polite guest or hammers fifty pages a minute. And here is the catch I keep coming back to — the bots that never introduce themselves never appear in this story at all. Logs show you the honest visitors. They say nothing about the quiet ones.</p>
 
+    <figure>
+      <img src="/assets/img/blog/crawlwatch/crawlwatch-overview-dashboard.png"
+           width="1920" height="1080" loading="lazy" decoding="async"
+           alt="The CrawlWatch overview dashboard showing total AI hits, unique bots, AI referrals, a readiness score and a hits-per-day chart">
+      <figcaption>The same log data, readable: which bots came, what they took, and what to fix first — without opening access.log ever again.</figcaption>
+    </figure>
+
     <h2 id="block">Should you block them?</h2>
     <p>Most guides go quiet right here and hand you a snippet to paste. I think that is backwards. The snippet takes ten seconds; the decision deserves ten minutes. So here is how I actually think about it, both sides, no cheerleading.</p>
     <ul>
@@ -204,6 +211,13 @@ Disallow: /</code></pre>
     <p>If robots.txt is the keep-out sign, <code>llms.txt</code> is the note you leave for the guests you invited in. It is a young convention, not a standard anyone enforces: a Markdown file at <code>/llms.txt</code> that describes your site the way language models digest best. What the site is. What each section covers. Which pages actually matter.</p>
     <p>People misunderstand the purpose, so let me say it plainly: this is not about feeding the models. They already have your pages — that battle is over. It is about <strong>accuracy</strong>. A model working from your own summary quotes you correctly. A model reconstructing you from scraped fragments invents things, confidently, in your name. I have seen my own plugin described wrong by an assistant, and it is a strange feeling.</p>
     <p>The file costs an hour to write well. Whether every assistant reads it is still unsettled — conventions take years, and some may never bother. But there is no downside to having one, and the upside is being cited correctly instead of creatively.</p>
+
+    <figure>
+      <img src="/assets/img/blog/crawlwatch/crawlwatch-files-llms-robots.png"
+           width="1280" height="665" loading="lazy" decoding="async"
+           alt="The CrawlWatch Files screen with the generated llms.txt on the left and per-bot robots.txt checkboxes on the right">
+      <figcaption>Both files in one place: the generated llms.txt on the left, a per-bot allow-or-block checkbox for robots.txt on the right.</figcaption>
+    </figure>
 
     <h2 id="referrals">The visitors the assistants send you</h2>
     <p>Now the second kind of visitor, because I suspect this number will surprise you the way it surprised me. Open your analytics, find referrals, and pull out <code>chatgpt.com</code>, <code>perplexity.ai</code>, <code>copilot.microsoft.com</code> and their friends. Whatever number comes out — that is your <strong>AI referral traffic</strong>. Real humans, arriving because a machine recommended you. There is something funny about that, and something worth money.</p>
