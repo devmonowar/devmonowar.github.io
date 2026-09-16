@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>AI Bot Traffic in WordPress — See It, Measure It, Decide What to Do</title>
+<meta name="description" content="AI crawlers are reading your WordPress site right now and WordPress shows you nothing about it. How to see AI bot traffic in your logs, what each visitor means, and how to decide between blocking and welcoming them.">
+<link rel="canonical" href="https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Monowar Hossain">
+<meta property="og:title" content="AI Bot Traffic in WordPress — See It, Measure It, Decide What to Do">
+<meta property="og:description" content="Your content is training data and referral traffic at the same time. How to see which AI bots visit your WordPress site, read a log line, use robots.txt honestly, and write an llms.txt.">
+<meta property="og:url" content="https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-09-16">
+<meta property="article:author" content="Monowar Hossain">
+<meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+
+<link rel="alternate" type="application/rss+xml" title="Monowar Hossain — WordPress Guides" href="/feed.xml">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/#post",
+      "headline": "AI Bot Traffic in WordPress — See It, Measure It, Decide What to Do",
+      "description": "How to see which AI crawlers visit a WordPress site, what a log line means, the honest limits of robots.txt, when blocking helps and when it costs you, and what llms.txt is for.",
+      "datePublished": "2026-09-16",
+      "dateModified": "2026-09-16",
+      "inLanguage": "en",
+      "image": "https://devmonowar.github.io/assets/img/og-image.jpg",
+      "mainEntityOfPage": "https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/",
+      "isPartOf": { "@id": "https://devmonowar.github.io/blog/#blog" },
+      "author": { "@id": "https://devmonowar.github.io/#person" },
+      "publisher": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know if AI bots are visiting my WordPress site?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Check your server access logs for crawler user-agents like GPTBot, CCBot, ClaudeBot or PerplexityBot. WordPress itself records nothing about them, so if you never look at the logs, the visits are invisible. A plugin that watches the logs can show you the same thing inside the admin." }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I block GPTBot and other AI crawlers?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It depends what you want. Blocking keeps your content out of future training data, but it does not remove what is already trained on, and it can cost you citations and visitors from AI answers. Block when bandwidth or principle demands it, not by default." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does robots.txt stop AI crawlers?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The well-behaved ones obey it: GPTBot, CCBot, Google-Extended and most named crawlers check robots.txt before fetching. But robots.txt is a request, not a lock. Crawlers that do not identify themselves never read it, and a few named ones have been accused of fetching anyway." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is llms.txt and do I need one?",
+          "acceptedAnswer": { "@type": "Answer", "text": "llms.txt is a proposed convention: a Markdown file at /llms.txt that summarises your site for large language models, so they quote you accurately instead of guessing from scraped pages. It costs one small file. Whether assistants will universally read it is still unsettled, but there is no downside to having one." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do visitors arriving from ChatGPT show up in my analytics?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Usually yes, as referral traffic from chatgpt.com, perplexity.ai and similar domains. They look like ordinary referrals, so unless you segment them you will never know how many of your visitors an AI assistant sent you." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will blocking AI bots hurt my Google rankings?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Googlebot and Google-Extended are separate crawlers with separate user-agents. Blocking GPTBot, CCBot or ClaudeBot in robots.txt touches none of Google's search crawling, and your rankings do not move." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://devmonowar.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://devmonowar.github.io/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "AI bot traffic in WordPress" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MH</span> Monowar Hossain</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap-narrow">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li aria-current="page">AI bot traffic in WordPress</li>
+    </ol>
+  </nav>
+
+  <article class="article">
+
+    <header class="article-head">
+      <h1>AI bot traffic in WordPress — see it, measure it, decide what to do</h1>
+      <p class="meta">
+        <span>By Monowar Hossain</span>
+        <time datetime="2026-09-16">16 September 2026</time>
+      </p>
+    </header>
+
+    <div class="note">
+      <p><strong>Summary.</strong> I opened my server logs one morning expecting the usual Googlebot entries and found strangers instead — GPTBot, CCBot, names I had never invited. WordPress had shown me none of it. Not a counter, not a notice, nothing. This post is what I wish I had found that morning: how to see AI bot traffic on a WordPress site, what each kind of visit actually means, and how I learned to decide per bot instead of copying somebody's blocklist.</p>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <h2>On this page</h2>
+      <ol>
+        <li><a href="#two-kinds">Two kinds of AI visitors, and why they matter differently</a></li>
+        <li><a href="#see">Seeing the crawlers in your logs</a></li>
+        <li><a href="#read-line">Reading one log line</a></li>
+        <li><a href="#block">Should you block them?</a></li>
+        <li><a href="#robots">robots.txt, honestly</a></li>
+        <li><a href="#llms">What llms.txt is actually for</a></li>
+        <li><a href="#referrals">The visitors the assistants send you</a></li>
+        <li><a href="#plugin">If you want a plugin to watch this</a></li>
+        <li><a href="#mistakes">Common mistakes</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="two-kinds">Two kinds of AI visitors, and why they matter differently</h2>
+    <p>Here is the confusion I see everywhere, and I had it too: people say "AI bot traffic" like it is one thing. It is two, and they want opposite things from you.</p>
+    <p>First come the <strong>crawlers</strong>. They fetch your pages to learn from them. <code>GPTBot</code> gathers training data for OpenAI. <code>CCBot</code> feeds Common Crawl, the nonprofit dataset half the industry trains on. Then there is <code>ClaudeBot</code> and <code>anthropic-ai</code> for Anthropic, <code>Bytespider</code> for ByteDance, <code>PerplexityBot</code> fetching pages so it can cite them in answers. None of them click anything. None of them buy anything. They take your words and leave.</p>
+    <p>Then there are the <strong>referrals</strong>, and these walk in the other direction. Someone asks an AI assistant a question, the assistant links to your page, and a living human being lands on your site. In analytics they look like ordinary referrals from <code>chatgpt.com</code> or <code>perplexity.ai</code>. They read. They click. Some of them convert. This is the traffic you actually want — which is why the block-or-allow question is trickier than the angry threads make it sound.</p>
+
+    <h2 id="see">Seeing the crawlers in your logs</h2>
+    <p>WordPress keeps no record of who reads your site. None. No visitor log, no bot list, nothing you can open in the admin. The record lives one floor below WordPress, in the server's <strong>access log</strong>. Every hosting panel has one — look under Statistics or Metrics — and the file is usually called <code>access.log</code>.</p>
+    <p>I want to be honest about this part: the first time you open that file, it is ugly. Thousands of lines, IPs, timestamps, noise. Do not read it. Search it. Open find-in-page and type the names. The regulars:</p>
+    <ul>
+      <li><strong>GPTBot / ChatGPT-User / OAI-SearchBot</strong> — OpenAI (training, user actions, search)</li>
+      <li><strong>CCBot</strong> — Common Crawl, the nonprofit dataset behind many models</li>
+      <li><strong>anthropic-ai / ClaudeBot</strong> — Anthropic</li>
+      <li><strong>PerplexityBot</strong> — Perplexity, fetching pages to cite</li>
+      <li><strong>Bytespider</strong> — ByteDance</li>
+      <li><strong>Google-Extended / Applebot-Extended</strong> — Google's and Apple's opt-out training crawlers, separate from their search crawlers</li>
+      <li><strong>Meta-ExternalAgent</strong> — Meta</li>
+    </ul>
+    <p>If your site has been up for a year, every one of these has visited. That was the part that surprised me — not that they came, but how long they had been coming while I looked at nothing but the WordPress dashboard. The question was never whether. It was whether anyone was watching.</p>
+
+    <h2 id="read-line">Reading one log line</h2>
+    <p>A log line looks scary exactly once. Then somebody shows you where to look, and you cannot unsee it. Here is a typical one:</p>
+<pre><code>203.0.113.40 - - [12/Sep/2026:10:14:02 +0000] "GET /pricing/ HTTP/1.1" 200 48210
+"-" "Mozilla/5.0 ... compatible; GPTBot/1.2; +https://openai.com/gptbot"</code></pre>
+    <p>Read it left to right. An IP address. The date. The page it asked for — <code>/pricing/</code>, in this case, which already tells you something, because bots that only read your homepage behave differently from bots reading your pricing page. Then <code>200</code>, meaning your server handed the page over without complaint. The bytes it carried home. And at the very end, the user-agent introducing itself as <code>GPTBot</code>, with a link to OpenAI's own page about it.</p>
+    <p>One line is trivia. A thousand lines is a story: which bot keeps coming back, which pages it likes, whether it visits at 3am like a polite guest or hammers fifty pages a minute. And here is the catch I keep coming back to — the bots that never introduce themselves never appear in this story at all. Logs show you the honest visitors. They say nothing about the quiet ones.</p>
+
+    <h2 id="block">Should you block them?</h2>
+    <p>Most guides go quiet right here and hand you a snippet to paste. I think that is backwards. The snippet takes ten seconds; the decision deserves ten minutes. So here is how I actually think about it, both sides, no cheerleading.</p>
+    <ul>
+      <li><strong>The case for blocking.</strong> Your content becomes training data for products that compete with you for the same readers. Crawlers cost bandwidth — on a small VPS, an aggressive crawl is a bill and a slowdown. And there is a principle in it: your work, your permission.</li>
+      <li><strong>The case against.</strong> Blocking does not remove anything already trained on; that data is baked in. Assistants that cannot read your site cite your competitors instead, and the referral visitors in the previous section go to them. For most small sites, obscurity is a bigger threat than being quoted.</li>
+    </ul>
+    <p>My own answer, for what it is worth: I block the bandwidth hogs and the crawlers that give me nothing back, and I welcome the ones that cite pages and send actual humans. PerplexityBot can stay; it links to things. A nameless scraper pulling a thousand pages at midnight cannot. And I revisit the list about once a year, because the cast keeps changing and a decision from 2024 is not a decision, it is a habit.</p>
+
+    <h2 id="robots">robots.txt, honestly</h2>
+    <p>So much for the thinking. The mechanism is <code>robots.txt</code> — and before you trust it, you should know exactly what it is. A text file. A request. That is all. Here is what asking the major AI crawlers to stay out looks like:</p>
+<pre><code>User-agent: GPTBot
+User-agent: CCBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Bytespider
+Disallow: /</code></pre>
+    <p>The polite ones obey. GPTBot, CCBot, Google-Extended, most crawlers with real names on them — they check <code>robots.txt</code> before fetching, because ignoring it publicly would be embarrassing for a company that size. But understand what you just did: you put up a sign. There is no lock behind it and no one enforcing it. A crawler that hides its name never reads your sign, and a few named ones have been caught fetching pages they were told not to. Keep the sign up — it is correct and necessary — and then check the logs to see who listened. The log check is the part everyone forgets.</p>
+    <p>One thing people always ask me at this point, usually worried: <strong>will this hurt my Google rankings?</strong> No. Googlebot crawls for search under its own name, and Google-Extended — the training opt-out — is a separate user-agent entirely. Refuse one, welcome the other. Your search traffic will not move. I have done exactly this and watched Search Console stay flat.</p>
+
+    <h2 id="llms">What llms.txt is actually for</h2>
+    <p>If robots.txt is the keep-out sign, <code>llms.txt</code> is the note you leave for the guests you invited in. It is a young convention, not a standard anyone enforces: a Markdown file at <code>/llms.txt</code> that describes your site the way language models digest best. What the site is. What each section covers. Which pages actually matter.</p>
+    <p>People misunderstand the purpose, so let me say it plainly: this is not about feeding the models. They already have your pages — that battle is over. It is about <strong>accuracy</strong>. A model working from your own summary quotes you correctly. A model reconstructing you from scraped fragments invents things, confidently, in your name. I have seen my own plugin described wrong by an assistant, and it is a strange feeling.</p>
+    <p>The file costs an hour to write well. Whether every assistant reads it is still unsettled — conventions take years, and some may never bother. But there is no downside to having one, and the upside is being cited correctly instead of creatively.</p>
+
+    <h2 id="referrals">The visitors the assistants send you</h2>
+    <p>Now the second kind of visitor, because I suspect this number will surprise you the way it surprised me. Open your analytics, find referrals, and pull out <code>chatgpt.com</code>, <code>perplexity.ai</code>, <code>copilot.microsoft.com</code> and their friends. Whatever number comes out — that is your <strong>AI referral traffic</strong>. Real humans, arriving because a machine recommended you. There is something funny about that, and something worth money.</p>
+    <p>Two things follow from knowing the number. First, it becomes the scoreboard for everything above: if it climbs after you publish an llms.txt and keep your content quotable, the welcoming strategy is paying off. Second, these visitors arrive strange — they land mid-question, half-answered, impatient. The pages they land on should answer fast and link onward. Watch the landing pages, not just the totals. Totals flatter; landing pages teach.</p>
+
+    <h2 id="plugin">If you want a plugin to watch this</h2>
+    <p>I will say what I always say about this category: nobody opens access logs every morning. Not you, not me, nobody with a site to run. So eventually a tool watches them for you. When you go looking for one, ignore the screenshots and ask these instead:</p>
+    <ul>
+      <li><strong>Does it show you which bot, which page, and how often</strong> — or just a total count? A total tells you nothing to act on.</li>
+      <li><strong>Does it separate crawlers from AI referrals?</strong> A tool that mixes the two will have you blocking the visitors you wanted.</li>
+      <li><strong>Does it manage robots.txt rules per bot</strong>, instead of one all-or-nothing switch? Your decision for PerplexityBot and your decision for Bytespider are not the same decision.</li>
+      <li><strong>Does it write the llms.txt for you?</strong> The file is small but fiddly; generating it from your actual content beats a blank template.</li>
+      <li><strong>Does everything happen on your own server?</strong> A bot-watching tool that phones your visitor data home is solving one privacy problem by creating another.</li>
+    </ul>
+
+    <div class="note">
+      <p><strong>Disclosure.</strong> I build one of these — <a href="https://wordpress.org/plugins/crawlwatch-ai-bot-insights/">CrawlWatch — AI Bot Insights</a> — because after writing all of the above for myself, I wanted it in one place: the log-watching, the per-bot robots.txt control, the llms.txt generator, the referral tracking, all on my own server. Everything I tried had three of the five. It is free and open source. Use it or do not. The checks above work either way, and honestly I would rather you understood what you are looking at than trusted anybody's dashboard. Mine included.</p>
+    </div>
+
+    <h2 id="mistakes">Common mistakes</h2>
+    <p>I have made three of these myself. The rest I have watched other people make in forum threads, which is almost as instructive:</p>
+    <ul>
+      <li><strong>Copying a blocklist without deciding.</strong> Someone else's robots.txt encodes someone else's trade-offs. Decide first, paste second.</li>
+      <li><strong>Blocking everything including the citers.</strong> The nuclear option feels decisive and costs you every AI referral you would have had.</li>
+      <li><strong>Trusting robots.txt as enforcement.</strong> It is a request. Check the logs afterwards to see who listened.</li>
+      <li><strong>Blocking Google-Extended by accident.</strong> It sits next to Googlebot in every example snippet. Read before you paste, or your search crawler stays welcome while you meant to block training — or the reverse.</li>
+      <li><strong>Forgetting the referrals exist.</strong> Half the story is humans arriving from assistants. If you never segment them, you will make the whole decision looking at half the data.</li>
+      <li><strong>Writing llms.txt once and never updating it.</strong> A stale summary misquotes you with confidence. Regenerate it when the site changes.</li>
+    </ul>
+
+    <h2 id="faq">FAQ</h2>
+    <dl class="faq">
+      <dt>How do I know if AI bots are visiting my WordPress site?</dt>
+      <dd>Check your server access logs for crawler user-agents like GPTBot, CCBot, ClaudeBot or PerplexityBot. WordPress itself records nothing about them, so if you never look at the logs, the visits are invisible. A plugin that watches the logs can show you the same thing inside the admin.</dd>
+
+      <dt>Should I block GPTBot and other AI crawlers?</dt>
+      <dd>It depends what you want. Blocking keeps your content out of future training data, but it does not remove what is already trained on, and it can cost you citations and visitors from AI answers. Block when bandwidth or principle demands it, not by default.</dd>
+
+      <dt>Does robots.txt stop AI crawlers?</dt>
+      <dd>The well-behaved ones obey it: GPTBot, CCBot, Google-Extended and most named crawlers check robots.txt before fetching. But robots.txt is a request, not a lock. Crawlers that do not identify themselves never read it, and a few named ones have been accused of fetching anyway.</dd>
+
+      <dt>What is llms.txt and do I need one?</dt>
+      <dd>llms.txt is a proposed convention: a Markdown file at /llms.txt that summarises your site for large language models, so they quote you accurately instead of guessing from scraped pages. It costs one small file. Whether assistants will universally read it is still unsettled, but there is no downside to having one.</dd>
+
+      <dt>Do visitors arriving from ChatGPT show up in my analytics?</dt>
+      <dd>Usually yes, as referral traffic from chatgpt.com, perplexity.ai and similar domains. They look like ordinary referrals, so unless you segment them you will never know how many of your visitors an AI assistant sent you.</dd>
+
+      <dt>Will blocking AI bots hurt my Google rankings?</dt>
+      <dd>No. Googlebot and Google-Extended are separate crawlers with separate user-agents. Blocking GPTBot, CCBot or ClaudeBot in robots.txt touches none of Google's search crawling, and your rankings do not move.</dd>
+    </dl>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>So that is the whole picture, and it fits in one paragraph: AI bot traffic on a WordPress site is two stories — crawlers taking your words, assistants sending you readers. Open the logs so both become visible. Decide per bot, not all at once. Write the decision into robots.txt knowing it is a request, then verify in the logs like someone who does not trust signs. And leave an llms.txt out for the honest ones, so they quote you right.</p>
+    <p>That morning I found strangers in my logs, I felt behind. Now I think being behind is the normal state — the cast of crawlers changes every year, and nobody gets to decide once and relax. Do the looking, make the decision, and check again next year. The worst case is a quiet log file. The alternative is letting every crawler's defaults decide for you, on your content, every day, while your dashboard shows you nothing.</p>
+
+    <h2>Related guides</h2>
+    <ul>
+      <li><a href="/blog/wordpress-plugin-review-what-they-flagged/">What the WordPress.org plugin review actually flagged in my plugin</a></li>
+      <li><a href="/blog/how-to-find-unused-images-in-wordpress/">How to find unused images in WordPress — and delete them safely</a></li>
+      <li><a href="/plugins/">The plugins I build</a></li>
+    </ul>
+
+    <nav class="related" aria-label="Related reading">
+      <h2>Keep reading</h2>
+      <ul>
+        <li><a href="/blog/wordpress-plugin-review-what-they-flagged/">What the WordPress.org plugin review actually flagged</a> — the two review rounds a plugin goes through before release</li>
+        <li><a href="/blog/how-to-find-unused-images-in-wordpress/">How to find unused images in WordPress</a> — the other invisible traffic on your server: files nobody opens</li>
+        <li><a href="/crawlwatch-ai-bot-insights/">CrawlWatch — AI Bot Insights</a> — the plugin that watches all of the above for you</li>
+      </ul>
+    </nav>
+
+    <div class="author-box">
+      <img class="author-photo" src="/assets/img/monowar-hossain-400.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Monowar Hossain">
+      <div class="author-bio">
+      <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
+      <p class="card-links">
+        <a href="/about/">About me</a>
+        <a href="https://github.com/devmonowar" rel="me">GitHub</a>
+        <a href="https://profiles.wordpress.org/kstmonowar/" rel="me">WordPress.org</a>
+        <a href="https://www.linkedin.com/in/devmonowar" rel="me">LinkedIn</a>
+      </p>
+      <p class="small muted">Published 16 September 2026 · Last updated 16 September 2026</p>
+      </div>
+    </div>
+
+  </article>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monowar Hossain · Dhaka, Bangladesh</span>
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://github.com/devmonowar">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -52,6 +52,11 @@
     <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/</loc>
+    <lastmod>2026-09-16</lastmod>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/</loc>
     <lastmod>2026-08-21</lastmod>
