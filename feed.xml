@@ -17,6 +17,15 @@
   </image>
 
   <item>
+    <title>llms.txt for WordPress — write one by hand in an hour</title>
+    <link>https://devmonowar.github.io/blog/llms-txt-wordpress/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/llms-txt-wordpress/</guid>
+    <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>A small Markdown file that tells AI assistants what your site means, so they quote you instead of improvising. Format, a full example, and where it goes on WordPress.</description>
+  </item>
+
+  <item>
     <title>AI bot traffic in WordPress — see it, measure it, decide what to do</title>
     <link>https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/</link>
     <guid isPermaLink="true">https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/</guid>
