@@ -2,7 +2,7 @@
 
 > WordPress plugin developer from Dhaka, Bangladesh. He builds free, open-source
 > plugins published on WordPress.org — General Slider, Advanced Testimonial,
-> Free Widgets For Elementor, Janitorix Media Audit and CrawlWatch — and writes guides and
+> Free Widgets For Elementor, Janitorix Media Audit, CrawlWatch and ScheduleLens — and writes guides and
 > case studies about building them.
 
 This site is hand-written static HTML: no framework, no JavaScript, no CDN and no
@@ -19,6 +19,7 @@ source on GitHub and support handled in the WordPress.org forums.
 - [Advanced Testimonial](https://devmonowar.github.io/advanced-testimonial/): a free testimonial plugin with layouts, a front-end review form, and Schema.org markup.
 - [Free Widgets For Elementor](https://devmonowar.github.io/free-widgets-for-elementor/): the widgets the free Elementor core leaves out — free forever, no Pro.
 - [CrawlWatch – AI Bot Insights](https://devmonowar.github.io/crawlwatch-ai-bot-insights/): AI crawler traffic, referrals, readiness score, llms.txt and per-bot robots.txt rules.
+- [ScheduleLens – Cron Viewer & Manager](https://devmonowar.github.io/schedulelens-cron-viewer/): every scheduled job in plain words — run, pause, delete, custom jobs, wp-cron health check.
 - [Blog](https://devmonowar.github.io/blog/): guides and case studies on WordPress plugin development.
 - [Contact](https://devmonowar.github.io/contact/): email, plugin support forums, GitHub issues and profile links.
 
@@ -29,6 +30,7 @@ source on GitHub and support handled in the WordPress.org forums.
 - [Free Widgets For Elementor](https://wordpress.org/plugins/free-widgets-for-elementor/): pricing table, flip box, countdown timer and team cards — the widgets Elementor's free core does not include. Source: https://github.com/devmonowar/free-widgets-for-elementor
 - [Janitorix Media Audit](https://wordpress.org/plugins/janitorix-media-audit/): finds which images in the WordPress media library are genuinely unused, so they can be deleted without breaking a page. Source: https://github.com/devmonowar/janitorix-media-audit
 - [CrawlWatch – AI Bot Insights](https://wordpress.org/plugins/crawlwatch-ai-bot-insights/): logs which AI crawlers read a WordPress site and which URLs they take, tracks referrals from AI assistants, and generates llms.txt and per-bot robots.txt rules. Nothing leaves the server and no API key is needed. Source: https://github.com/devmonowar/crawlwatch-ai-bot-insights
+- [ScheduleLens – Cron Viewer & Manager](https://wordpress.org/plugins/schedulelens-cron-viewer/): shows every scheduled job in plain words — run, pause, resume or delete jobs, custom jobs without code, wp-cron health check with fix steps. Admin-only, no tracking. Source: https://github.com/devmonowar/schedulelens-cron-viewer
 
 ## Writing
 

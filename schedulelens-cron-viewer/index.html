@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ScheduleLens Cron Viewer &amp; Manager — WordPress Cron Jobs in Plain Words</title>
+<meta name="description" content="ScheduleLens shows every scheduled job on your WordPress site in plain words — run, pause, or delete jobs and fix missed schedule and wp-cron issues. Free, admin-only, nothing leaves your server.">
+<link rel="canonical" href="https://devmonowar.github.io/schedulelens-cron-viewer/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Monowar Hossain">
+<meta property="og:title" content="ScheduleLens Cron Viewer &amp; Manager — WordPress Cron Jobs in Plain Words">
+<meta property="og:description" content="Every scheduled job on one screen, missed-schedule fixes, and a wp-cron health check — free, admin-only, no tracking.">
+<meta property="og:url" content="https://devmonowar.github.io/schedulelens-cron-viewer/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ScheduleLens Cron Viewer &amp; Manager — WordPress Cron Jobs in Plain Words">
+<meta name="twitter:description" content="Every scheduled job on one screen, missed-schedule fixes, and a wp-cron health check — free, admin-only, no tracking.">
+<meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
+
+<link rel="alternate" type="application/rss+xml" title="Monowar Hossain — WordPress Guides" href="/feed.xml">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://devmonowar.github.io/schedulelens-cron-viewer/#page",
+      "url": "https://devmonowar.github.io/schedulelens-cron-viewer/",
+      "name": "ScheduleLens Cron Viewer & Manager — WordPress Cron Jobs in Plain Words",
+      "inLanguage": "en",
+      "isPartOf": { "@id": "https://devmonowar.github.io/#website" },
+      "about": { "@type": "SoftwareApplication", "name": "ScheduleLens – Cron Viewer & Manager", "url": "https://wordpress.org/plugins/schedulelens-cron-viewer/" },
+      "author": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ScheduleLens – Cron Viewer & Manager",
+      "url": "https://wordpress.org/plugins/schedulelens-cron-viewer/",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "WordPress",
+      "softwareRequirements": "WordPress 6.0 or later, PHP 7.4 or later",
+      "description": "Shows every scheduled job on a WordPress site in plain words — run, pause, resume or delete jobs, add custom jobs without code, and check wp-cron health with fix steps. Admin-only, no frontend load, no tracking.",
+      "license": "https://www.gnu.org/licenses/gpl-2.0.html",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why do scheduled posts miss schedule?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Low traffic, caching, or DISABLE_WP_CRON can stop schedules from firing. The Health tab shows whether wp-cron is enabled and reachable, with Green, Yellow or Red plus fix steps — for example setting up a real server cron that hits wp-cron.php." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I run a cron job manually?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Find the event under Tools, Cron Manager and click Run now. The run is logged in the Log tab with its duration." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I pause a cron job without deleting it?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Click Pause and the job is kept as a backup — it will not run until you resume it. Core jobs cannot be deleted; the plugin blocks that with a warning." }
+        },
+        {
+          "@type": "Question",
+          "name": "Will it slow down my site?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. It runs on admin pages only and adds no CSS or JavaScript to the front end." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it send data outside my server?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Everything stays in wp_options with autoload off, and nothing personal is stored. The only request it ever makes is a loopback check to your own wp-cron.php for the Health tab." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://devmonowar.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Plugins", "item": "https://devmonowar.github.io/plugins/" },
+        { "@type": "ListItem", "position": 3, "name": "ScheduleLens – Cron Viewer & Manager" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MH</span> Monowar Hossain</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/plugins/" aria-current="page">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap-narrow">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/plugins/">Plugins</a></li>
+      <li aria-current="page">ScheduleLens – Cron Viewer &amp; Manager</li>
+    </ol>
+  </nav>
+
+  <article class="article">
+
+    <header class="article-head">
+      <h1>ScheduleLens — every cron job in plain words</h1>
+      <p class="meta">
+        <span>By Monowar Hossain</span>
+        <time datetime="2026-09-18">18 September 2026</time>
+      </p>
+    </header>
+
+    <div class="note">
+      <p><strong>Summary.</strong> ScheduleLens is a free WordPress plugin that shows every scheduled job on one screen — what runs, when it runs next, and which plugin put it there. You can run a job now, pause it without deleting it, add a custom job without code, and check whether wp-cron itself is healthy. Admin-only, no frontend load, no tracking.</p>
+    </div>
+
+    <h2 id="invisible">The jobs WordPress runs when nobody is watching</h2>
+    <p>WordPress runs dozens of scheduled jobs in the background — publishing scheduled posts, checking for updates, and whatever each installed plugin queued up. When one of them silently stops, the symptom is always somewhere else: a post that never publishes, a check that never runs. And there is no screen in WordPress that lists them.</p>
+    <p>ScheduleLens is that screen. Every event with its repeat interval, next run time, and source — which plugin added it — in plain words, with overdue jobs carrying a red badge and core jobs a gray one so the two are never confused.</p>
+
+    <figure>
+      <img src="/assets/img/blog/schedulelens/schedulelens-events-list.png"
+           width="1366" height="1514" loading="lazy" decoding="async"
+           alt="The ScheduleLens events list showing scheduled jobs with their repeat interval, next run time and source plugin">
+      <figcaption>Every event — repeat, next run, source plugin — with overdue jobs badged red.</figcaption>
+    </figure>
+
+    <h2 id="actions">Run, pause, delete — without code</h2>
+    <p>Find the event and click Run now to fire it manually, with the run logged along with its duration. Pause keeps a job as a backup so it stops running without being deleted, and Delete removes custom jobs — core jobs are protected and the plugin blocks their deletion with a warning. A custom job can be added without writing PHP, but only by triggering a hook that already exists; executing arbitrary code was left out on purpose. Custom intervals start at a minimum of sixty seconds.</p>
+
+    <h2 id="health">A health check with fix steps</h2>
+    <p>The Health tab answers the one question that matters when schedules misbehave: is wp-cron itself working? Enabled, reachable, late count and total, shown as Green, Yellow or Red — each with the fix steps next to it, such as pointing a real server cron at <code>wp-cron.php</code>. The last hundred runs sit in a log with durations and prune themselves after a few days, so the evidence is there when something goes wrong at three in the morning.</p>
+
+    <figure>
+      <img src="/assets/img/blog/schedulelens/schedulelens-health-tab.png"
+           width="1366" height="900" loading="lazy" decoding="async"
+           alt="The ScheduleLens Health tab showing wp-cron status with Green, Yellow or Red indicators and fix steps">
+      <figcaption>Green, Yellow or Red — and what to do about it, on the same screen.</figcaption>
+    </figure>
+
+    <h2 id="honest">One honest limitation</h2>
+    <p>WordPress cron only fires when somebody visits the site, so on a very quiet site schedules will always run late no matter what screen you watch them on. The plugin says exactly that on its own Health tab instead of pretending the schedule is fine. If your site is that quiet, the fix is a real server cron — the screen tells you so.</p>
+
+    <h2 id="faq">FAQ</h2>
+    <dl class="faq">
+      <dt>Why do scheduled posts miss schedule?</dt>
+      <dd>Low traffic, caching, or DISABLE_WP_CRON can stop schedules from firing. The Health tab shows whether wp-cron is enabled and reachable, with Green, Yellow or Red plus fix steps — for example setting up a real server cron that hits wp-cron.php.</dd>
+
+      <dt>How do I run a cron job manually?</dt>
+      <dd>Find the event under Tools, Cron Manager and click Run now. The run is logged in the Log tab with its duration.</dd>
+
+      <dt>Can I pause a cron job without deleting it?</dt>
+      <dd>Yes. Click Pause and the job is kept as a backup — it will not run until you resume it. Core jobs cannot be deleted; the plugin blocks that with a warning.</dd>
+
+      <dt>Will it slow down my site?</dt>
+      <dd>No. It runs on admin pages only and adds no CSS or JavaScript to the front end.</dd>
+
+      <dt>Does it send data outside my server?</dt>
+      <dd>No. Everything stays in wp_options with autoload off, and nothing personal is stored. The only request it ever makes is a loopback check to your own wp-cron.php for the Health tab.</dd>
+    </dl>
+
+    <h2 id="start">Install it and open Tools, Cron Manager</h2>
+    <p>Install it from your dashboard like any other plugin, open the Cron Manager under Tools, and look at what your site has been doing behind your back. If a post ever misses schedule again, the Health tab is the first place to look.</p>
+    <p class="card-links">
+      <a href="https://wordpress.org/plugins/schedulelens-cron-viewer/">Download on WordPress.org</a>
+      <a href="https://github.com/devmonowar/schedulelens-cron-viewer">Source on GitHub</a>
+    </p>
+
+    <nav class="related" aria-label="Related reading">
+      <h2>Keep reading</h2>
+      <ul>
+        <li><a href="/plugins/">All free plugins</a> — everything else I maintain</li>
+        <li><a href="/janitorix-media-audit/">Janitorix Media Audit</a> — another plugin for quiet site hygiene, for the media library</li>
+        <li><a href="/crawlwatch-ai-bot-insights/">CrawlWatch — AI Bot Insights</a> — the traffic your analytics never mentions</li>
+      </ul>
+    </nav>
+
+    <div class="author-box">
+      <img class="author-photo" src="/assets/img/monowar-hossain-400.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Monowar Hossain">
+      <div class="author-bio">
+      <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
+      <p class="card-links">
+        <a href="/about/">About me</a>
+        <a href="https://github.com/devmonowar" rel="me">GitHub</a>
+        <a href="https://profiles.wordpress.org/kstmonowar/" rel="me">WordPress.org</a>
+        <a href="https://www.linkedin.com/in/devmonowar" rel="me">LinkedIn</a>
+      </p>
+      <p class="small muted">Published 18 September 2026</p>
+      </div>
+    </div>
+
+  </article>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monowar Hossain · Dhaka, Bangladesh</span>
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="https://github.com/devmonowar">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Free WordPress Plugins by Monowar Hossain</title>
-<meta name="description" content="Free, open-source WordPress plugins by Monowar Hossain: General Slider, Advanced Testimonial, Free Widgets For Elementor, Janitorix Media Audit and CrawlWatch.">
+<meta name="description" content="Free, open-source WordPress plugins by Monowar Hossain: General Slider, Advanced Testimonial, Free Widgets For Elementor, Janitorix Media Audit, CrawlWatch and ScheduleLens.">
 <link rel="canonical" href="https://devmonowar.github.io/plugins/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Monowar Hossain">
 <meta property="og:title" content="Free WordPress Plugins by Monowar Hossain">
-<meta property="og:description" content="Free, open-source WordPress plugins: General Slider, Advanced Testimonial, Free Widgets For Elementor, Janitorix Media Audit and CrawlWatch.">
+<meta property="og:description" content="Free, open-source WordPress plugins: General Slider, Advanced Testimonial, Free Widgets For Elementor, Janitorix Media Audit, CrawlWatch and ScheduleLens.">
 <meta property="og:url" content="https://devmonowar.github.io/plugins/">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
@@ -21,7 +21,7 @@
 <meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Free WordPress Plugins by Monowar Hossain">
-<meta name="twitter:description" content="Free, open-source WordPress plugins: General Slider, Advanced Testimonial, Free Widgets For Elementor, Janitorix Media Audit and CrawlWatch.">
+<meta name="twitter:description" content="Free, open-source WordPress plugins: General Slider, Advanced Testimonial, Free Widgets For Elementor, Janitorix Media Audit, CrawlWatch and ScheduleLens.">
 <meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
 
 <link rel="alternate" type="application/rss+xml" title="Monowar Hossain — WordPress Guides" href="/feed.xml">
@@ -102,6 +102,19 @@
       "operatingSystem": "WordPress",
       "softwareRequirements": "WordPress 6.2 or later, PHP 7.4 or later",
       "description": "Shows which AI crawlers read a WordPress site and which URLs they take, tracks referrals from AI assistants, and generates llms.txt and per-bot robots.txt rules. No API key, and nothing leaves the server.",
+      "license": "https://www.gnu.org/licenses/gpl-2.0.html",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@id": "https://devmonowar.github.io/#person" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "ScheduleLens – Cron Viewer & Manager",
+      "url": "https://wordpress.org/plugins/schedulelens-cron-viewer/",
+      "applicationCategory": "BrowserApplication",
+      "operatingSystem": "WordPress",
+      "softwareRequirements": "WordPress 6.0 or later, PHP 7.4 or later",
+      "description": "Shows every scheduled job on a WordPress site in plain words — run, pause, resume or delete jobs, add custom jobs without code, and check wp-cron health with fix steps. Admin-only, no frontend load, no tracking.",
       "license": "https://www.gnu.org/licenses/gpl-2.0.html",
       "isAccessibleForFree": true,
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
@@ -277,6 +290,27 @@
       <a href="https://github.com/devmonowar/crawlwatch-ai-bot-insights">Source on GitHub</a>
       <a href="/blog/ai-bot-traffic-wordpress/">Full guide</a>
       <a href="/crawlwatch-ai-bot-insights/">About this plugin</a>
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>ScheduleLens – Cron Viewer &amp; Manager</h2>
+    <p class="muted">Every cron job in plain words.</p>
+    <p>WordPress runs dozens of scheduled jobs in the background, and there is no screen that lists them. When one silently stops, the symptom shows up somewhere else — a post that never publishes, a check that never runs.</p>
+    <p>ScheduleLens is that screen. Every event with its repeat interval, next run time, and which plugin added it — overdue jobs badged red, core jobs gray. Run a job now, pause it without deleting it, add a custom job without code, and check wp-cron health with fix steps on the same screen.</p>
+    <h3>What it does</h3>
+    <ul>
+      <li>Lists all cron events with repeat, next run, and source plugin</li>
+      <li>Run now, Pause / Resume, Delete custom jobs — core jobs protected</li>
+      <li>Adds custom jobs without code (existing hook only, no PHP execution)</li>
+      <li>Health tab: enabled, reachable, late count, total — Green / Yellow / Red with fix steps</li>
+      <li>Keeps a log of the last 100 runs with duration, auto-pruned after a few days</li>
+      <li>Admin pages only — no CSS or JavaScript on the front end, no tracking</li>
+    </ul>
+    <p class="card-links">
+      <a href="https://wordpress.org/plugins/schedulelens-cron-viewer/">Download on WordPress.org</a>
+      <a href="https://github.com/devmonowar/schedulelens-cron-viewer">Source on GitHub</a>
+      <a href="/schedulelens-cron-viewer/">About this plugin</a>
     </p>
   </section>
 
