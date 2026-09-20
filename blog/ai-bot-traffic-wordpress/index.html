@@ -177,21 +177,21 @@
     <p>WordPress keeps no record of who reads your site. None. No visitor log, no bot list, nothing you can open in the admin. The record lives one floor below WordPress, in the server's <strong>access log</strong>. Every hosting panel has one — look under Statistics or Metrics — and the file is usually called <code>access.log</code>.</p>
     <p>I want to be honest about this part: the first time you open that file, it is ugly. Thousands of lines, IPs, timestamps, noise. Do not read it. Search it. Open find-in-page and type the names. The regulars:</p>
     <ul>
-      <li><strong>GPTBot / ChatGPT-User / OAI-SearchBot</strong> — OpenAI (training, user actions, search)</li>
+      <li><strong>GPTBot / OAI-SearchBot / ChatGPT-User</strong> — OpenAI, but three different jobs: GPTBot gathers training data, OAI-SearchBot decides what ChatGPT Search can cite (blocking it hides you from answers without affecting training), and ChatGPT-User fetches pages when a user explicitly asks (it generally ignores robots.txt)</li>
       <li><strong>CCBot</strong> — Common Crawl, the nonprofit dataset behind many models</li>
-      <li><strong>anthropic-ai / ClaudeBot</strong> — Anthropic</li>
-      <li><strong>PerplexityBot</strong> — Perplexity, fetching pages to cite</li>
+      <li><strong>anthropic-ai / ClaudeBot / Claude-SearchBot</strong> — Anthropic: the first two feed training, Claude-SearchBot feeds Claude search answers</li>
+      <li><strong>PerplexityBot / Perplexity-User</strong> — Perplexity: the bot surfaces pages in search results (it does not train models), the user agent fetches on request</li>
       <li><strong>Bytespider</strong> — ByteDance</li>
       <li><strong>Google-Extended / Applebot-Extended</strong> — Google's and Apple's opt-out training crawlers, separate from their search crawlers</li>
       <li><strong>Meta-ExternalAgent</strong> — Meta</li>
     </ul>
-    <p>If your site has been up for a year, every one of these has visited. That was the part that surprised me — not that they came, but how long they had been coming while I looked at nothing but the WordPress dashboard. The question was never whether. It was whether anyone was watching.</p>
+    <p>If your site has been up for a year, every one of these has visited. That was the part that surprised me — not that they came, but how long they had been coming while I looked at nothing but the WordPress dashboard. The question was never whether. It was whether anyone was watching. Every name above documents itself — <a href="https://platform.openai.com/docs/bots" rel="noopener">OpenAI's crawler overview</a>, <a href="https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web" rel="noopener">Anthropic's crawling article</a>, <a href="https://docs.perplexity.ai/guides/perplexitybot" rel="noopener">Perplexity's bot guide</a>, <a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers" rel="noopener">Google's crawler list</a> — so when a new name appears in your logs, its own docs are the first place to check what it actually governs.</p>
 
     <h2 id="read-line">Reading one log line</h2>
     <p>A log line looks scary exactly once. Then somebody shows you where to look, and you cannot unsee it. Here is a typical one:</p>
 <pre><code>203.0.113.40 - - [12/Sep/2026:10:14:02 +0000] "GET /pricing/ HTTP/1.1" 200 48210
 "-" "Mozilla/5.0 ... compatible; GPTBot/1.2; +https://openai.com/gptbot"</code></pre>
-    <p>Read it left to right. An IP address. The date. The page it asked for — <code>/pricing/</code>, in this case, which already tells you something, because bots that only read your homepage behave differently from bots reading your pricing page. Then <code>200</code>, meaning your server handed the page over without complaint. The bytes it carried home. And at the very end, the user-agent introducing itself as <code>GPTBot</code>, with a link to OpenAI's own page about it.</p>
+    <p>Read it left to right. An IP address. The date. The page it asked for — <code>/pricing/</code>, in this case, which already tells you something, because bots that only read your homepage behave differently from bots reading your pricing page. Then <code>200</code>, meaning your server handed the page over without complaint. The bytes it carried home. And at the very end, the user-agent introducing itself as <code>GPTBot</code>, with a link to <a href="https://openai.com/gptbot" rel="noopener">OpenAI's own page about it</a>.</p>
     <p>One line is trivia. A thousand lines is a story: which bot keeps coming back, which pages it likes, whether it visits at 3am like a polite guest or hammers fifty pages a minute. And here is the catch I keep coming back to — the bots that never introduce themselves never appear in this story at all. Logs show you the honest visitors. They say nothing about the quiet ones.</p>
 
     <figure>
@@ -248,7 +248,7 @@ Disallow: /</code></pre>
     </ul>
 
     <div class="note">
-      <p><strong>Disclosure.</strong> I build one of these — <a href="https://wordpress.org/plugins/crawlwatch-ai-bot-insights/">CrawlWatch — AI Bot Insights</a> — because after writing all of the above for myself, I wanted it in one place: the log-watching, the per-bot robots.txt control, the llms.txt generator, the referral tracking, all on my own server. Everything I tried had three of the five. It is free and open source. Use it or do not. The checks above work either way, and honestly I would rather you understood what you are looking at than trusted anybody's dashboard. Mine included.</p>
+      <p><strong>Disclosure.</strong> I build one of these — <a href="https://wordpress.org/plugins/crawlwatch-ai-bot-insights/">CrawlWatch — AI Bot Insights</a> — which logs visits from 40+ AI crawlers, because after writing all of the above for myself, I wanted it in one place: the log-watching, the per-bot robots.txt control, the llms.txt generator, the referral tracking, all on my own server. Everything I tried had three of the five. It is free and open source. Use it or do not. The checks above work either way, and honestly I would rather you understood what you are looking at than trusted anybody's dashboard. Mine included.</p>
     </div>
 
     <h2 id="mistakes">Common mistakes</h2>
