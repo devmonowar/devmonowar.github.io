@@ -41,6 +41,8 @@ source on GitHub and support handled in the WordPress.org forums.
 - [How to add customer testimonials in WordPress](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/): layouts, card styles, a front-end submission form and review markup, without a page-builder addon pack.
 - [How to install Free Widgets For Elementor](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/): what each widget does and why a giant addon pack is not needed to get them.
 - [How I built a shared demo library for my WordPress plugins](https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/): bundling demos inside a plugin forces a release per demo — the static library built instead.
+- [Write llms.txt by hand in an hour](https://devmonowar.github.io/blog/llms-txt-wordpress/): what llms.txt is, the exact format that works, a copyable example, and the mistakes that make one useless.
+- [AI bot traffic in WordPress](https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/): how to see it, measure it, and decide what to do about it.
 
 ## Optional
 

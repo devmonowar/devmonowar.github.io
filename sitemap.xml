@@ -59,46 +59,66 @@
 
   <url>
     <loc>https://devmonowar.github.io/blog/llms-txt-wordpress/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-09-16</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devmonowar.github.io/wp-plugin-demo-library/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devmonowar.github.io/wp-plugin-demo-library/general-slider/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devmonowar.github.io/wp-plugin-demo-library/advanced-testimonial/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devmonowar.github.io/wp-plugin-demo-library/free-widgets-for-elementor/</loc>
     <lastmod>2026-09-18</lastmod>
     <priority>0.7</priority>
   </url>
