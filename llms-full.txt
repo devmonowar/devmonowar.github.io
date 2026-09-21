@@ -1,0 +1,2336 @@
+# devmonowar.github.io - full content
+
+> Complete text of every page on Monowar Hossain's site (devmonowar), WordPress plugin developer from Dhaka, Bangladesh. Generated for AI assistants that need more than the summary in /llms.txt.
+
+
+## Home
+
+(https://devmonowar.github.io/)
+
+# Monowar Hossain
+
+ WordPress Developer - Plugin Developer - Open Source Contributor 
+ 
+ I build free, open-source WordPress plugins from Dhaka, Bangladesh. My plugins are published on WordPress.org and run on real sites every day. Online, people know me as devmonowar . 
+ 
+ [See my plugins](/plugins/)
+ [About Monowar Hossain](/about/)
+
+ What I build 
+ 
+## Plugins on WordPress.org
+
+ Each one started as a real problem on a real site, not as an idea for a product. All free, all GPL, all reviewed by the WordPress.org team before release. 
+
+### General Slider
+
+ A slider built on the lightweight Splide engine — no jQuery, accessible by default, and its CSS and JavaScript load only on pages that actually show a slider. 
+ 
+ [WordPress.org](https://wordpress.org/plugins/general-slider/)
+ [GitHub](https://github.com/devmonowar/general-slider)
+ [Guide](/blog/general-slider-fast-accessible-wordpress-slider/)
+ [About this plugin](/general-slider/)
+
+### Advanced Testimonial
+
+ A plugin built only for testimonials — several display layouts and card styles, a front-end submission form, and Schema.org review markup so Google can show star ratings. 
+ 
+ [WordPress.org](https://wordpress.org/plugins/advanced-testimonial/)
+ [GitHub](https://github.com/devmonowar/advanced-testimonial)
+ [Guide](/blog/advanced-testimonial-wordpress-testimonials-guide/)
+ [About this plugin](/advanced-testimonial/)
+
+### Free Widgets For Elementor
+
+ The widgets Elementor's free core is missing — Pricing Table, Flip Box, Countdown Timer and more — without a giant addon pack or an upgrade prompt. 
+ 
+ [WordPress.org](https://wordpress.org/plugins/free-widgets-for-elementor/)
+ [GitHub](https://github.com/devmonowar/free-widgets-for-elementor)
+ [Guide](/blog/free-widgets-for-elementor-guide/)
+ [About this plugin](/free-widgets-for-elementor/)
+
+### Janitorix Media Audit
+
+ Proves an image is unused before it recommends deleting it. Confidence and risk are scored separately, and the evidence behind every verdict is there to inspect. 
+ 
+ [WordPress.org](https://wordpress.org/plugins/janitorix-media-audit/)
+ [GitHub](https://github.com/devmonowar/janitorix-media-audit)
+ [Guide](/blog/how-to-find-unused-images-in-wordpress/)
+ [About this plugin](/janitorix-media-audit/)
+
+### CrawlWatch – AI Bot Insights
+
+ Shows which AI crawlers read your site and which pages they take, tracks visitors arriving from AI assistants, and writes your llms.txt for you. Nothing leaves your server. 
+ 
+ [WordPress.org](https://wordpress.org/plugins/crawlwatch-ai-bot-insights/)
+ [GitHub](https://github.com/devmonowar/crawlwatch-ai-bot-insights)
+ [Guide](/blog/ai-bot-traffic-wordpress/)
+ [About this plugin](/crawlwatch-ai-bot-insights/)
+
+### ScheduleLens – Cron Viewer & Manager
+
+ Every scheduled job on one screen — run, pause, or delete jobs and fix missed schedule and wp-cron issues. Admin-only, no frontend load, no tracking. 
+ 
+ [WordPress.org](https://wordpress.org/plugins/schedulelens-cron-viewer/)
+ [GitHub](https://github.com/devmonowar/schedulelens-cron-viewer)
+ [About this plugin](/schedulelens-cron-viewer/)
+
+ [Read more about each plugin →](/plugins/) 
+
+ Skills 
+ 
+## What I work with
+
+ WordPress 
+ PHP 
+ JavaScript 
+ Elementor 
+ Advanced Custom Fields 
+ HTML 
+ CSS 
+ Git 
+
+ Writing 
+ 
+## Latest guides
+
+ What the problem was, what I did about it, and what I would tell someone doing the same thing. 
+
+## [llms.txt for WordPress — write one by hand in an hour](/blog/llms-txt-wordpress/)
+
+ A small file that tells AI assistants what your site means, so they quote you instead of improvising. Format plus a full example. 
+
+## [AI bot traffic in WordPress — see it, measure it, decide what to do](/blog/ai-bot-traffic-wordpress/)
+
+ AI crawlers are reading your site right now and WordPress shows you nothing about it. How to see them in your logs and decide per bot. 
+
+## [How to build a fast, accessible slider in WordPress with General Slider](/blog/general-slider-fast-accessible-wordpress-slider/)
+
+ Why most slider plugins add weight to pages that do not even use them, and how to set up one that does not. 
+
+ [Read all guides →](/blog/) 
+
+ Demos 
+ 
+## See the demos before you import
+
+ Every ready-made demo my plugins ship with is catalogued in one place — a screenshot and a description of each, so you know what you are importing before you import it. 
+ [Open the demo library](https://devmonowar.github.io/wp-plugin-demo-library/) 
+
+ Elsewhere 
+ 
+## Where to find me
+
+ GitHub [github.com/devmonowar](https://github.com/devmonowar) 
+ WordPress.org [profiles.wordpress.org/kstmonowar](https://profiles.wordpress.org/kstmonowar/) 
+ LinkedIn [linkedin.com/in/devmonowar](https://www.linkedin.com/in/devmonowar) 
+ Facebook [facebook.com/kstmonowar](https://www.facebook.com/kstmonowar) 
+ Threads [threads.com/@devmonowar](https://www.threads.com/@devmonowar) 
+ Email [devmonowar@gmail.com](mailto:devmonowar@gmail.com)
+
+
+## About
+
+(https://devmonowar.github.io/about/)
+
+[Home](/) 
+ About 
+
+# About Monowar Hossain
+
+ My name is Monowar Hossain . I am a WordPress plugin developer from Dhaka, Bangladesh, known online as devmonowar — I maintain six free plugins on WordPress.org, published since 2021, with the source on GitHub. 
+
+## Who I am
+
+ I build things for WordPress, and almost all of it is free and open source — anyone can download it, read the code, and change it. Twelve public repositories carry the work, and every plugin goes through the WordPress.org review before release. 
+ Right now I maintain a set of plugins published on WordPress.org, and I run a shared demo library that shows what every ready-made demo looks like before anyone imports it. 
+
+## How I started
+
+ I finished a Diploma in Engineering at Magura Polytechnic Institute in 2016. I did not begin with WordPress. I started with plain HTML and CSS, then moved to PHP because I wanted to understand what was actually happening behind the pages I was putting together. 
+ WordPress kept me for one simple reason: when something did not work the way I wanted, I could open the code and fix it. That is exactly how my first plugin began. I needed a slider that did not slow a site down, I could not find one I was happy with, so I wrote my own. Later I cleaned it up and published it on WordPress.org so other people could use it too. 
+
+## How I work
+
+ Every plugin I have released follows the same three rules, and they came from problems I hit myself. 
+ 
+ Load only what the page needs. A plugin should not add CSS and JavaScript to pages that do not use its feature. This is the single most common reason a WordPress site gets slow, and it is avoidable. 
+ Do one job properly. I would rather ship a plugin that does testimonials well than an addon pack with dozens of widgets where you use three and pay for the weight of the rest. 
+ Be honest about limits. If a plugin cannot be certain about something, it should say so instead of guessing. That idea shaped Janitorix Media Audit completely — it refuses to recommend deleting an image unless it can show the evidence behind that verdict. 
+
+## What I build and why
+
+ None of these started as a product idea. Each one started as something that annoyed me on a real site. 
+ 
+ General Slider — I needed a slider that loads fast and still works for someone using a keyboard or a screen reader. Most sliders are heavy and skip the accessibility part entirely. 
+ Advanced Testimonial — a client wanted the same customer reviews in several places on their site, each in a different layout. Copying the text meant several places to update every time a review changed. 
+ Free Widgets For Elementor — Elementor's free version is missing a few widgets nearly every site needs. The usual fix is a giant addon pack. I built [a focused alternative](/blog/free-widgets-for-elementor-guide/) instead. 
+ Janitorix Media Audit — media libraries fill up with images no page uses any more, and the existing cleanup tools mostly guess. Leaving an unused image costs a few kilobytes; deleting one that is still referenced breaks the site. Those two mistakes are not equal, so the plugin does not treat them as equal. The method it uses is written out in full: [how to find unused images in WordPress](/blog/how-to-find-unused-images-in-wordpress/). 
+ CrawlWatch – AI Bot Insights — AI assistants had been reading my site for months and I had no way of knowing it. Analytics does not count a crawler, and the server log is not something most site owners will ever open. So the plugin logs those visits, shows which pages were taken, and lets you allow or block each bot without writing a line of robots.txt by hand. 
+ ScheduleLens – Cron Viewer & Manager — WordPress runs its scheduled jobs invisibly, so a missed schedule always looks like some other bug. I wanted one screen that lists every job in plain words and lets me run or pause it there — and a health check that admits when the quiet site itself is the problem. 
+
+## Open source
+
+ I keep my work free because that is how I learned. When I was starting out I read other people's plugin code to figure out how WordPress really worked. That code was free for me, so mine is free too. 
+ Free does not mean unfinished. Every plugin goes through [the WordPress.org review](/blog/wordpress-plugin-review-what-they-flagged/) before release, ships with documentation and a changelog, and I answer the support topics on the forum myself. If something is broken, I would much rather hear about it and fix it. 
+
+## What I am learning now
+
+ Two things have most of my attention. The first is performance — how to keep a plugin small enough that adding it to a site is not a trade-off. I wrote up [what actually makes a WordPress slider slow](/blog/why-wordpress-sliders-are-slow/) and how to measure it yourself. The second is accessibility, which I did not take seriously enough early on: making sure what I build works with a keyboard and a screen reader, not only with a mouse. 
+ Writing the guides on this site is part of how I work on both. Explaining something to another developer is the fastest way to find out whether I actually understand it — and it is usually while writing the steps down that I notice the one I had been getting away with. 
+
+## Quick facts
+
+ Name Monowar Hossain 
+ Known online as devmonowar 
+ Title WordPress Developer - Plugin Developer - Open Source Contributor 
+ Location Dhaka, Bangladesh 
+ Works with WordPress, PHP, JavaScript, Elementor, ACF, HTML, CSS, Git 
+ Education Diploma in Engineering, Magura Polytechnic Institute (2016) 
+ Email [devmonowar@gmail.com](mailto:devmonowar@gmail.com) 
+
+## Find me online
+
+ GitHub [github.com/devmonowar](https://github.com/devmonowar) 
+ WordPress.org [profiles.wordpress.org/kstmonowar](https://profiles.wordpress.org/kstmonowar/) 
+ LinkedIn [linkedin.com/in/devmonowar](https://www.linkedin.com/in/devmonowar) 
+ Facebook [facebook.com/devmonowarwp](https://www.facebook.com/devmonowarwp) 
+ Threads [threads.com/@devmonowar](https://www.threads.com/@devmonowar) 
+ Stack Overflow [Monowar Hossain](https://stackoverflow.com/users/11740249/monowar-hossain) 
+ Medium [medium.com/@devmonowar](https://medium.com/@devmonowar) 
+ Mastodon [mastodon.social/@devmonowar](https://mastodon.social/@devmonowar) 
+ Dev.to [dev.to/devmonowar](https://dev.to/devmonowar) 
+ Instagram [instagram.com/devmonowar](https://www.instagram.com/devmonowar/) 
+ Pinterest [pinterest.com/devmonowar](https://www.pinterest.com/devmonowar/) 
+ Packagist [packagist.org/packages/devmonowar](https://packagist.org/packages/devmonowar/) 
+ Demo library [WordPress Plugin Demo Library](https://devmonowar.github.io/wp-plugin-demo-library/) 
+
+ [Get in touch](/contact/)
+
+
+## Plugins
+
+(https://devmonowar.github.io/plugins/)
+
+[Home](/) 
+ Plugins 
+
+# Plugins
+
+ Everything here is free, GPL licensed, and open source. There is no Pro version, no licence key, and no upgrade prompt in any of them. The plugins on WordPress.org were reviewed by the WordPress.org team before release. 
+
+## General Slider
+
+ A slider that does not slow your site down. 
+ A slider sounds like a simple feature, but it is one of the most common places a WordPress site picks up weight it does not need — jQuery dependencies, render-blocking CSS, and JavaScript that runs on every page even when there is no slider on it. 
+ General Slider is built on [Splide](https://splidejs.com/), a lightweight slider engine with no dependencies. There is no jQuery on the front end, and the CSS and JavaScript are only added to pages that actually contain a slider. 
+ 
+### What it does
+
+ Build a slider once, then drop it anywhere with a block, a shortcode, or an Elementor widget 
+ Works without a page builder — the block and shortcode work with any theme 
+ Pull slides automatically from your latest posts, pages, or WooCommerce products 
+ Design presets and navigation skins you can mix freely, plus per-slide background video and an accent colour 
+ Keyboard and screen-reader accessible by default 
+ Images lazy-load, and a slider only starts once it is scrolled into view 
+
+ [Download on WordPress.org](https://wordpress.org/plugins/general-slider/)
+ [Source on GitHub](https://github.com/devmonowar/general-slider)
+ [See the demos](https://devmonowar.github.io/wp-plugin-demo-library/general-slider/)
+ [Full guide](/blog/general-slider-fast-accessible-wordpress-slider/)
+ [General Slider - fast WordPress slider without jQuery](/general-slider/)
+
+## Advanced Testimonial
+
+ Customer reviews, added once and shown anywhere. 
+ Most WordPress testimonial solutions force a trade-off. Basic plugins give you one static layout and no way to collect new reviews. All-in-one page-builder addon packs bury a testimonial widget inside dozens of others you will never use, adding weight to every page on the site. 
+ Advanced Testimonial is built only for testimonials. Reviews get their own post type with Groups, and each review carries its own fields — rating, company, verified badge, video. It ships with Schema.org review markup, so Google can show star ratings next to your search result. 
+ 
+### What it does
+
+ Several display layouts — grid, list, card, carousel, marquee, masonry and spotlight 
+ A set of card styles you can mix, with a different style per block if you want 
+ A front-end form so visitors can submit their own review, with spam protection built in 
+ Submissions arrive as pending, so nothing goes live before you approve it 
+ Group testimonials so different pages can show different sets 
+ Video testimonials from YouTube, Vimeo or a self-hosted file, opened in a lightbox 
+ Your testimonials are never deleted on uninstall unless you explicitly opt in 
+
+ [Download on WordPress.org](https://wordpress.org/plugins/advanced-testimonial/)
+ [Source on GitHub](https://github.com/devmonowar/advanced-testimonial)
+ [See the demos](https://devmonowar.github.io/wp-plugin-demo-library/advanced-testimonial/)
+ [Full guide](/blog/advanced-testimonial-wordpress-testimonials-guide/)
+ [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/)
+
+## Free Widgets For Elementor
+
+ The widgets Elementor's free core is missing. 
+ If you have built more than a couple of sites with the free version of Elementor, you have hit this wall: you need a pricing table, or a flip box, or a simple countdown timer, and the free core does not have them. The usual fix is installing a giant addon pack that ships dozens of widgets when you need three. 
+ This plugin adds only what the free core is actually missing — nothing you already have, nothing you will not use. Each widget's CSS and JavaScript load only on the pages where that widget is used. 
+ 
+### What is inside
+
+ Pricing Table — header, price, feature list, button, optional featured highlight 
+ Flip Box — a 3D hover or click flip to a back face with a call to action 
+ Team — photo, role, bio and social links for team member cards 
+ Call To Action — title, text, button and background in a styled box 
+ Countdown Timer — counts down to a date and time, with an optional expired message 
+ Post Grid — a responsive grid of posts with image, title, meta, excerpt and read-more 
+ Logo Carousel — a responsive logo carousel with arrows, dots and autoplay 
+ Table of Contents — an auto-generated page outline with smooth scroll and scrollspy 
+ 
+ Elementor Pro is not required, and there is no locked feature anywhere in it. A built-in demo library lets you import ready-made sections in one click. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/free-widgets-for-elementor/)
+ [Source on GitHub](https://github.com/devmonowar/free-widgets-for-elementor)
+ [Full guide](/blog/free-widgets-for-elementor-guide/)
+ [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/)
+
+## Janitorix Media Audit
+
+ Proves an image is unused before it suggests deleting it. 
+ Every WordPress media library fills up with images nobody uses any more — old banners, replaced logos, test uploads. Most cleanup plugins scan the uploads folder, flag whatever looks unused, and hand you a delete button. 
+ The trouble is that the cost of being wrong is not symmetric. Leaving an unused image costs a few kilobytes. Deleting one that is still referenced somewhere — a Customizer background, an ACF field, a page-builder section — breaks your site, and you might not notice for weeks. 
+ 
+### How it is different
+
+ Janitorix Media Audit never blends "is this used?" into a single guess. Every image gets two separate judgements: 
+ 
+ Confidence — how sure the plugin is that the image is genuinely unused, based on scanners covering post content, Gutenberg blocks and synced patterns, full-site-editing templates, the Customizer, theme options, widgets, menus, Elementor, ACF, WooCommerce, and the theme's own PHP, CSS and JavaScript files. 
+ Risk — how much damage deleting it would cause if the plugin is wrong . 
+ 
+ A site logo nobody explicitly references and a stray test upload can score identically on confidence, but they need opposite treatment. That is why risk is scored on its own. 
+ 
+### What it refuses to do
+
+ Will not recommend deleting anything if scan coverage was too low — it asks for a rescan instead 
+ Will not offer Trash for anything at medium risk or above, however confident the scan is 
+ Will never touch a site's logo, icon or header — those are refused outright, not just scored low 
+ Will not touch an image uploaded in the last 24 hours 
+ Never deletes in one step — Trash first, always 
+ 
+ It is free and open source, and the whole review that got it into the directory is written up in [what the WordPress.org plugin review flagged](/blog/wordpress-plugin-review-what-they-flagged/). 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/janitorix-media-audit/)
+ [Source on GitHub](https://github.com/devmonowar/janitorix-media-audit)
+ [How to find unused images](/blog/how-to-find-unused-images-in-wordpress/)
+ [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/)
+
+## CrawlWatch – AI Bot Insights
+
+ Shows you the traffic your analytics never mentions. 
+ GPTBot, ClaudeBot, PerplexityBot and Google-Extended read your site every day, and none of it shows up in a normal analytics dashboard. You cannot tell which pages they took, whether anyone arrived from an AI assistant afterwards, or whether your site is worth reading in the first place. 
+ CrawlWatch logs those visits and puts them somewhere you can see them. It recognises more than forty AI crawlers, and every visit is stored in one table on your own server. There is no API key, no account, and no external service. 
+ 
+### What it does
+
+ Shows which AI bots visited and exactly which URLs they read 
+ Tracks referrals — visitors arriving from ChatGPT, Perplexity, Gemini or Claude 
+ Generates llms.txt and ai.txt in one click, with a full-content version for deeper context 
+ Allows or blocks each AI bot in robots.txt from a preview screen, with no code 
+ Scores how ready your site is for AI readers, from 0 to 100, and ranks the quickest fixes 
+ Blocking an AI training bot does not touch Google search — regular Googlebot is never managed here 
+
+### What it does not do
+
+ Sends nothing off your server — every row lives in one local table 
+ Never stores a raw IP address; they are hashed, and truncated before hashing 
+ Adds no CSS or JavaScript to the front end, and a normal human visit costs zero extra queries 
+ Keeps logs for 30 days by default, and deletes older rows on a daily schedule 
+ 
+ One thing worth knowing before you install it: tracking runs in PHP, so a full-page cache that serves a page without running PHP will hide those visits. The plugin detects the common caching plugins and says so on its own screens rather than quietly showing you an empty chart. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/crawlwatch-ai-bot-insights/)
+ [Source on GitHub](https://github.com/devmonowar/crawlwatch-ai-bot-insights)
+ [Full guide](/blog/ai-bot-traffic-wordpress/)
+ [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/)
+
+## ScheduleLens – Cron Viewer & Manager
+
+ Every cron job in plain words. 
+ WordPress runs dozens of scheduled jobs in the background, and there is no screen that lists them. When one silently stops, the symptom shows up somewhere else — a post that never publishes, a check that never runs. 
+ ScheduleLens is that screen. Every event with its repeat interval, next run time, and which plugin added it — overdue jobs badged red, core jobs gray. Run a job now, pause it without deleting it, add a custom job without code, and check wp-cron health with fix steps on the same screen. 
+ 
+### What it does
+
+ Lists all cron events with repeat, next run, and source plugin 
+ Run now, Pause / Resume, Delete custom jobs — core jobs protected 
+ Adds custom jobs without code (existing hook only, no PHP execution) 
+ Health tab: enabled, reachable, late count, total — Green / Yellow / Red with fix steps 
+ Keeps a log of the last 100 runs with duration, auto-pruned after a few days 
+ Admin pages only — no CSS or JavaScript on the front end, no tracking 
+
+ [Download on WordPress.org](https://wordpress.org/plugins/schedulelens-cron-viewer/)
+ [Source on GitHub](https://github.com/devmonowar/schedulelens-cron-viewer)
+ [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/)
+
+ Also 
+ 
+## Other things I build
+
+### WordPress Plugin Demo Library
+
+ One shared, static demo library that every plugin's "Demo Library" screen fetches from — so new demos can ship in minutes without cutting a new plugin release. 
+ 
+ [Browse the demos](https://devmonowar.github.io/wp-plugin-demo-library/)
+ [Read the case study](/blog/shared-demo-library-for-wordpress-plugins/)
+
+## Need help with one of these?
+
+ For a bug or a question about a plugin, the support forum on WordPress.org is the fastest way to reach me, and the answer stays public so the next person with the same problem can find it. For anything else, [send me an email](/contact/).
+
+
+## General Slider
+
+(https://devmonowar.github.io/general-slider/)
+
+[Home](/) 
+ [Plugins](/plugins/) 
+ General Slider 
+
+# General Slider — a WordPress slider without jQuery
+
+ By Monowar Hossain 
+ Rated 5.0 out of 5 from [2 reviews](https://wordpress.org/support/plugin/general-slider/reviews/) on WordPress.org 
+ 12 September 2026 
+
+ Summary. General Slider is a free WordPress slider plugin with no jQuery on the front end. It is built on the lightweight Splide engine. It is keyboard and screen-reader accessible out of the box, and its files load only on pages that actually show a slider. No Pro version, no locked features. 
+
+## Why no jQuery matters
+
+ Most slider plugins pull in jQuery whether your theme needs it or not. That is a whole library downloaded, parsed and run on every page — including the ones with no slider on them. On a site that already dropped jQuery, a slider plugin quietly puts it back. 
+ General Slider never asks for it. The front end runs on [Splide](https://splidejs.com/), a slider engine with no dependencies of its own, so a page without a slider gets nothing at all: no script, no stylesheet. I measured where slider weight actually comes from in [why WordPress sliders are slow](/blog/why-wordpress-sliders-are-slow/) — the short version is that the images are rarely the problem. 
+
+ A hero slider on the front end — heading, text, button, arrows and dots, no page builder involved. 
+
+## What it does
+
+ Build a slider once, then place it with a block, a shortcode, or an Elementor widget 
+ Five design presets — hero, split, minimal, testimonial, fullscreen — mixed freely with navigation and frame skins 
+ Per-slide background video, text entrance animations and an accent colour, all without code 
+ Dynamic sliders that build themselves from your latest posts, pages or WooCommerce products 
+ Separate settings for tablet and phone, so a slider that looks right on desktop stays right on a phone 
+ Images lazy-load and a slider only starts once it is scrolled into view 
+ One-click demo import — each demo installs as a draft you can publish when it looks right 
+
+ Every preset and skin, side by side in the demo library — each one imports in a single click. 
+
+## Sliders that update themselves
+
+ If your slider just shows the latest posts, rebuilding it by hand every week gets old fast. Switch the slides source to dynamic and the slider reads your posts, pages or products itself — new content shows up on its own, and nothing is frozen into the slider when the source changes. 
+
+## Free means free here
+
+ There is no Pro version of this plugin and there never will be. Every preset, every skin and the demo library ship in the free download from WordPress.org, and the settings screen contains no upgrade prompt. If you have used a slider where the design you actually want sits behind a paywall, that frustration is exactly what this plugin does not do. 
+
+## FAQ
+
+ Is there a Pro version? 
+ No. Everything is in the free plugin, and there is no licence key or upgrade prompt anywhere in it. 
+
+ Does it work with block themes? 
+ Yes. The block works in the editor and in full-site-editing templates, and the shortcode works anywhere else, with any theme. 
+
+ Can a slide have a video background? 
+ Yes. Each slide can carry its own background video, set from the slider settings without code. 
+
+ Will it slow down pages that have no slider? 
+ No. The CSS and JavaScript are only added to pages that actually contain a slider. 
+
+ Can I try it before installing? 
+ Yes. The [demo library](https://devmonowar.github.io/wp-plugin-demo-library/general-slider/) shows every preset and skin, and each demo imports into your own site in one click. 
+
+## Download it or read the walkthrough
+
+ If you want the full walkthrough — install, first slider, presets, and the three mistakes almost everyone makes — that is the [step-by-step guide](/blog/general-slider-fast-accessible-wordpress-slider/). If you just want the plugin, it is one search away in your dashboard. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/general-slider/)
+ [Source on GitHub](https://github.com/devmonowar/general-slider)
+ [Browse the demos](https://devmonowar.github.io/wp-plugin-demo-library/general-slider/)
+
+## Keep reading
+
+ [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) — the full setup walkthrough for this plugin 
+ [Why WordPress sliders are slow](/blog/why-wordpress-sliders-are-slow/) — where the weight actually comes from 
+ [All free plugins](/plugins/) — everything else I maintain 
+ [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
+ [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
+ [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
+ [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 12 September 2026
+
+
+## Janitorix Media Audit
+
+(https://devmonowar.github.io/janitorix-media-audit/)
+
+[Home](/) 
+ [Plugins](/plugins/) 
+ Janitorix Media Audit 
+
+# Janitorix Media Audit — an unused image cleaner that proves it first
+
+ By Monowar Hossain 
+ Rated 5.0 out of 5 from [2 reviews](https://wordpress.org/support/plugin/janitorix-media-audit/reviews/) on WordPress.org 
+ 12 September 2026 
+
+ Summary. Janitorix Media Audit finds the images in your WordPress media library that nothing uses — then shows its evidence before it suggests deleting anything. Every file gets two separate scores, one for confidence and one for risk, and the plugin only ever moves files to Trash. Free, no Pro version. 
+
+## Deleting is cheap until it is wrong
+
+ Every media library fills up the same way: old banners, replaced logos, test uploads, the three spare photos from a post that used one. Leaving them costs a few kilobytes each. Deleting one that is still referenced — a Customizer background, an ACF field, a page-builder section — breaks a page you might not open for weeks. 
+ Most cleanup tools treat those two mistakes as equal. They scan, they flag, they hand you a delete button. This plugin starts from the opposite end: the cost of being wrong is the whole design. That is why "is this used?" is never one answer here. It is two. 
+
+## Two scores, not one guess
+
+ Each image is checked by scanners covering post content, Gutenberg blocks and synced patterns, full-site-editing templates, the Customizer, theme options, widgets, menus, Elementor, ACF, WooCommerce, and the theme's own PHP, CSS and JavaScript files. The result comes back as two judgements: 
+ 
+ Confidence — how sure the plugin is that the image is genuinely unused. 
+ Risk — how much damage deleting it would cause if the plugin is wrong . 
+ 
+ A stray test upload and an unreferenced site logo can score identically on confidence and need opposite treatment. That is why risk is scored on its own, and why anything at medium risk or above is never offered for Trash at all. 
+
+ What the scanners are up against: a reference can live in six different places, and they do not all store the same thing. 
+
+## What it refuses to do
+
+ Will not recommend deleting anything if scan coverage was too low — it asks for a rescan instead 
+ Will never touch a site logo, icon or header — refused outright, not just scored low 
+ Will not touch anything uploaded in the last 24 hours — it may not have been placed yet 
+ Never deletes in one step — Trash first, always, so anything can be restored 
+
+## For the terminal-inclined
+
+ The whole thing also runs from WP-CLI: scan the library, ask why one image got the verdict it did, preview exactly what would be deleted without deleting anything, and calibrate the engines against known answers. The read-only preview is the same evidence the admin screens show, in CSV form. 
+
+## FAQ
+
+ Does it delete images permanently? 
+ No. It only ever moves files to Trash, so anything can be restored. There is no one-click permanent delete. 
+
+ What if the plugin is wrong about an image? 
+ That is what the risk score is for. Anything at medium risk or above is never offered for Trash, however confident the scan is. 
+
+ Will it touch my logo or header image? 
+ No. The site logo, icon and header are refused outright, as is anything uploaded in the last 24 hours. 
+
+ Can I run a scan from WP-CLI? 
+ Yes. Scan, explain, preview deletions and calibrate — all from the command line. 
+
+ Is there a Pro version? 
+ No. Confidence and risk scoring, Trash-only cleanup and WP-CLI — everything is in the free plugin, reviewed by the WordPress.org team before release. 
+
+## Understand first, or install first
+
+ If you want to understand the problem first — where a reference can hide and how to check one image by hand — that is the [full guide](/blog/how-to-find-unused-images-in-wordpress/). If you want the tool, it is one search away in your dashboard. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/janitorix-media-audit/)
+ [Source on GitHub](https://github.com/devmonowar/janitorix-media-audit)
+
+## Keep reading
+
+ [How to find unused images in WordPress](/blog/how-to-find-unused-images-in-wordpress/) — the manual method behind what this plugin automates 
+ [What the WordPress.org plugin review flagged](/blog/wordpress-plugin-review-what-they-flagged/) — the two review rounds this plugin passed to get listed 
+ [All free plugins](/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](/general-slider/) 
+ [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
+ [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
+ [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 12 September 2026
+
+
+## Advanced Testimonial
+
+(https://devmonowar.github.io/advanced-testimonial/)
+
+[Home](/) 
+ [Plugins](/plugins/) 
+ Advanced Testimonial 
+
+# Advanced Testimonial — a testimonial plugin that collects its own reviews
+
+ By Monowar Hossain 
+ Rated 5.0 out of 5 from [1 review](https://wordpress.org/support/plugin/advanced-testimonial/reviews/) on WordPress.org 
+ 12 September 2026 
+
+ Summary. Advanced Testimonial is a free WordPress plugin built only for customer reviews. It stores them properly, shows them in seven layouts with mixable card styles, collects new ones through a front-end form, and adds the Schema.org markup Google needs for star ratings. No page-builder addon pack, no Pro version. 
+
+## The usual trade-off, skipped
+
+ The hard part of testimonials is rarely showing them. It is getting them — asking customers, collecting their words, approving each one — without pasting every quote in by hand or installing an addon pack of dozens of widgets for a single job. 
+ This plugin is one thing instead: testimonials, done completely. Reviews get their own post type with Groups, and each review carries its own fields — rating, company, verified badge, video — and visitors can submit their own through a form. Nothing else rides along. 
+
+ A review grid on the front end — photos, half-star ratings, companies, each card styled on its own. 
+
+## Reviews that arrive on their own
+
+ The part most testimonial plugins skip is collection. Here a [at_form] shortcode drops a submission form anywhere, with a honeypot and rate limiting built in so it does not become a spam magnet. Submissions arrive as pending and stay there until approved — nothing goes live by accident, and the export only ever covers published reviews. 
+
+## Shown anywhere, styled per spot
+
+ Seven layouts — grid, list, card, carousel, marquee, masonry and spotlight — through a block, a shortcode or an Elementor widget. Card styles mix freely, including a different style per block, and Groups mean the homepage and the pricing page never have to show the same set. Ratings support half stars, and video reviews from YouTube, Vimeo or a self-hosted file open in a lightbox. 
+
+ Three cards, three styles — picked per block, not per site. 
+
+## Stars Google can read
+
+ Every review carries Schema.org markup, so eligible pages can show star ratings right in the search results. That is the quiet half of social proof: the reviews persuade on your page, and the stars persuade before anyone clicks. 
+
+## FAQ
+
+ How do new reviews get collected? 
+ Through a front-end submission form with spam protection built in. Submissions arrive as pending, so nothing goes live before you approve it. 
+
+ Can review stars show in Google search results? 
+ Yes. The plugin ships Schema.org review markup, so Google can show star ratings next to your pages in search results. 
+
+ Can different pages show different reviews? 
+ Yes. Reviews are organised into Groups, so the homepage, the pricing page and the contact page can each show their own set. 
+
+ How are testimonials displayed? 
+ Seven layouts — grid, list, card, carousel, marquee, masonry and spotlight — through a block, a shortcode or an Elementor widget, with mixable card styles. 
+
+ Is there a Pro version? 
+ No. Layouts, card styles, the review form and the schema markup — everything is in the free plugin, reviewed by the WordPress.org team before release. 
+
+## Walkthrough or demos first
+
+ If you want the full walkthrough — setup, displaying, collecting, and the mistakes to avoid — that is the [step-by-step guide](/blog/advanced-testimonial-wordpress-testimonials-guide/). If you want to see the layouts first, the demos are one click away. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/advanced-testimonial/)
+ [Source on GitHub](https://github.com/devmonowar/advanced-testimonial)
+ [Browse the demos](https://devmonowar.github.io/wp-plugin-demo-library/advanced-testimonial/)
+
+## Keep reading
+
+ [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) — the full setup walkthrough for this plugin 
+ [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) — the same block-and-shortcode approach, for sliders 
+ [All free plugins](/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](/general-slider/) 
+ [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
+ [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
+ [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 12 September 2026
+
+
+## Free Widgets For Elementor
+
+(https://devmonowar.github.io/free-widgets-for-elementor/)
+
+[Home](/) 
+ [Plugins](/plugins/) 
+ Free Widgets For Elementor 
+
+# Free Widgets For Elementor — the missing widgets, nothing else
+
+ By Monowar Hossain 
+ Rated 5.0 out of 5 from [2 reviews](https://wordpress.org/support/plugin/free-widgets-for-elementor/reviews/) on WordPress.org 
+ 12 September 2026 
+
+ Summary. Free Widgets For Elementor adds the widgets the free core leaves out — pricing table, flip box, team, call to action, countdown timer, post grid, logo carousel and table of contents. Each one loads its files only where it is used, any of them can be switched off, and there is no Pro version. 
+
+## The wall free Elementor hits
+
+ Build enough sites with free Elementor and the moment comes: you need a pricing table, or a flip box, or a plain countdown timer, and the free core simply does not have them. The standard fix is a giant addon pack — dozens of widgets installed for the three you actually wanted, every one of them loading on pages you will never put them on. 
+ This plugin is the opposite bet: only what the free core is missing, nothing it already has, nothing you will not use. The free version of Elementor is enough. Pro is not required for a single thing in it. 
+
+ The widgets sit in their own Elementor panel category — no hunting through someone else's list. 
+
+## What is inside
+
+ Pricing Table — header, price, feature list, button, with an optional featured highlight 
+ Flip Box — a 3D flip to a back face with a call to action, on hover or click 
+ Team — photo, role, bio and social links for member cards 
+ Call To Action — title, text, button and background in one styled box 
+ Countdown Timer — counts down to a date and time, with a message for when it expires 
+ Post Grid — image, title, meta, excerpt and read-more in a responsive grid 
+ Logo Carousel — arrows, dots and autoplay, responsive out of the box 
+ Table of Contents — an auto-generated outline with smooth scroll and scrollspy 
+ 
+ One thing is missing on purpose: there is no testimonial widget here. Testimonials need a post type, groups and a submission form, which is a whole plugin — my [Advanced Testimonial](/advanced-testimonial/) — not a widget. 
+
+ A pricing table on the front end — the plan most free-Elementor sites hit the wall on first. 
+
+## Only where it is used
+
+ The reason a small list stays small in weight too: each widget's CSS and JavaScript load only on pages where that widget sits. And if you know you will never use one, its toggle removes it completely — a disabled widget is never even registered with Elementor, let alone loaded. 
+
+## FAQ
+
+ Why these widgets and not more? 
+ Each one fills a gap in Elementor's free core. Nothing here duplicates a widget Elementor already gives away, which is why the list stays short on purpose. 
+
+ Why is there no testimonial widget? 
+ Testimonials need a post type, groups and a submission form — that is a whole plugin, not a widget. It already exists separately as Advanced Testimonial. 
+
+ Do widgets I don't use still load their files? 
+ No. Each widget's CSS and JavaScript load only on pages where that widget is actually used, and any widget can be switched off entirely. 
+
+ Can I switch off widgets I don't need? 
+ Yes. Every widget has its own enable toggle, and a disabled widget is never even registered with Elementor. 
+
+ Is there a Pro version? 
+ No. The plugin is free with no upsells, reviewed by the WordPress.org team before release. 
+
+## Per-widget tour or straight to install
+
+ If you want the per-widget tour — what each one does and how the demo import works — that is the [step-by-step guide](/blog/free-widgets-for-elementor-guide/). If you just want the widgets, they are one search away in your dashboard. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/free-widgets-for-elementor/)
+ [Source on GitHub](https://github.com/devmonowar/free-widgets-for-elementor)
+
+## Keep reading
+
+ [How to install Free Widgets For Elementor](/blog/free-widgets-for-elementor-guide/) — the full per-widget walkthrough 
+ [Advanced Testimonial](/advanced-testimonial/) — where the testimonial widget lives instead, as a full plugin 
+ [All free plugins](/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](/general-slider/) 
+ [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
+ [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
+ [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 12 September 2026
+
+
+## CrawlWatch AI Bot Insights
+
+(https://devmonowar.github.io/crawlwatch-ai-bot-insights/)
+
+[Home](/) 
+ [Plugins](/plugins/) 
+ CrawlWatch – AI Bot Insights 
+
+# CrawlWatch — see which AI bots read your site
+
+ By Monowar Hossain 
+ Rated 5.0 out of 5 from [2 reviews](https://wordpress.org/support/plugin/crawlwatch-ai-bot-insights/reviews/) on WordPress.org 
+ 12 September 2026 
+
+ Summary. CrawlWatch is a free WordPress plugin that logs AI-crawler visits where you can see them: which bots came, which URLs they took, and whether anyone arrived from an AI assistant afterwards. It also scores how ready your site is for AI readers, generates llms.txt , and lets you allow or block each bot — all without anything leaving your server. 
+
+## The traffic your analytics never mentions
+
+ GPTBot, ClaudeBot, PerplexityBot and Google-Extended read sites every day, and none of it appears in a normal analytics dashboard. You cannot tell which pages they took, whether your content is worth reading to them in the first place, or whether a single visitor ever arrived from an AI assistant afterwards. 
+ CrawlWatch puts that traffic on a screen in your own dashboard. It recognises more than forty AI crawlers, stores every visit in one table on your server, and asks for nothing in return — no API key, no account, no external service. 
+
+ The overview: hits, bots, referrals and a readiness score — with the quickest fixes ranked underneath. 
+
+## A score with a to-do list attached
+
+ The readiness score runs from 0 to 100, but a number on its own never fixed anything. Underneath it sits a breakdown of what was measured — llms.txt catalogue, excerpts as AI descriptions, schema, image alt text, robots.txt, active tracking — and a short list of quick wins ordered by impact, each linking to the exact screen that resolves it. The score is the headline; the list is the point. 
+
+## Two files, no code
+
+ On the Files screen, llms.txt generates in one click — a catalogue version plus a full-content one — and each AI bot gets its own allow-or-block checkbox for robots.txt , with a preview before anything is saved. Blocked bots are told Disallow; the plugin only appends, so the WordPress core rules are never overwritten. And blocking a training bot touches search traffic not at all, because regular Googlebot is never managed here. 
+
+ llms.txt on the left, per-bot robots.txt rules on the right — previewed before anything is saved. 
+
+## One honest limitation
+
+ Tracking runs in PHP, so a full-page cache that serves a page without running PHP will hide those visits from the log. The plugin detects the common caching plugins and says so on its own screens instead of quietly showing an empty chart. I would rather read that warning than wonder why a busy site shows no bots at all. 
+
+## FAQ
+
+ Which AI bots does it recognise? 
+ More than forty, including GPTBot, ClaudeBot, PerplexityBot and Google-Extended. A crawler the list does not know is one the plugin cannot report, so the signature list is the first place to look when traffic goes missing. 
+
+ Will blocking a bot hurt my Google rankings? 
+ No. The screen only manages AI training and search bots. Regular Googlebot is never touched here, so search traffic is unaffected. 
+
+ Does any data leave my server? 
+ No. There is no API key and no external service. Every visit is stored in one table on your own server, IPs are hashed and truncated, and logs older than 30 days are deleted on a schedule. 
+
+ Will it slow down my site? 
+ No. It adds no CSS or JavaScript to the front end, and a normal human visit costs zero extra queries. 
+
+ Is there a Pro version? 
+ No. Bot logging, referrals, the readiness score, llms.txt and robots.txt — everything is in the free plugin, reviewed by the WordPress.org team before release. 
+
+## Install it and give it a few days
+
+ Install it from your dashboard like any other plugin, open the CrawlWatch menu, and give it a few days — bot traffic arrives on its own schedule, not yours. The readiness score tells you what to fix first. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/crawlwatch-ai-bot-insights/)
+ [Source on GitHub](https://github.com/devmonowar/crawlwatch-ai-bot-insights)
+
+## Keep reading
+
+ [AI bot traffic in WordPress](/blog/ai-bot-traffic-wordpress/) — see it, measure it, decide what to do 
+ [Janitorix Media Audit](/janitorix-media-audit/) — another plugin that shows what your site hides, for the media library 
+ [All free plugins](/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](/general-slider/) 
+ [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
+ [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
+ [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
+ [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 12 September 2026
+
+
+## ScheduleLens Cron Viewer
+
+(https://devmonowar.github.io/schedulelens-cron-viewer/)
+
+[Home](/) 
+ [Plugins](/plugins/) 
+ ScheduleLens – Cron Viewer & Manager 
+
+# ScheduleLens — every cron job in plain words
+
+ By Monowar Hossain 
+ Rated 5.0 out of 5 from [1 review](https://wordpress.org/support/plugin/schedulelens-cron-viewer/reviews/) on WordPress.org 
+ 18 September 2026 
+
+ Summary. ScheduleLens is a free WordPress plugin that shows every scheduled job on one screen — what runs, when it runs next, and which plugin put it there. You can run a job now, pause it without deleting it, add a custom job without code, and check whether wp-cron itself is healthy. Admin-only, no frontend load, no tracking. 
+
+## The jobs WordPress runs when nobody is watching
+
+ WordPress runs dozens of scheduled jobs in the background — publishing scheduled posts, checking for updates, and whatever each installed plugin queued up. When one of them silently stops, the symptom is always somewhere else: a post that never publishes, a check that never runs. And there is no screen in WordPress that lists them. 
+ ScheduleLens is that screen. Every event with its repeat interval, next run time, and source — which plugin added it — in plain words, with overdue jobs carrying a red badge and core jobs a gray one so the two are never confused. 
+
+ Every event — repeat, next run, source plugin — with overdue jobs badged red. 
+
+## Run, pause, delete — without code
+
+ Find the event and click Run now to fire it manually, with the run logged along with its duration. Pause keeps a job as a backup so it stops running without being deleted, and Delete removes custom jobs — core jobs are protected and the plugin blocks their deletion with a warning. A custom job can be added without writing PHP, but only by triggering a hook that already exists; executing arbitrary code was left out on purpose. Custom intervals start at a minimum of sixty seconds. 
+
+## A health check with fix steps
+
+ The Health tab answers the one question that matters when schedules misbehave: is wp-cron itself working? Enabled, reachable, late count and total, shown as Green, Yellow or Red — each with the fix steps next to it, such as pointing a real server cron at wp-cron.php . The last hundred runs sit in a log with durations and prune themselves after a few days, so the evidence is there when something goes wrong at three in the morning. 
+
+ Green, Yellow or Red — and what to do about it, on the same screen. 
+
+## One honest limitation
+
+ WordPress cron only fires when somebody visits the site, so on a very quiet site schedules will always run late no matter what screen you watch them on. The plugin says exactly that on its own Health tab instead of pretending the schedule is fine. If your site is that quiet, the fix is a real server cron — the screen tells you so. 
+
+## FAQ
+
+ Why do scheduled posts miss schedule? 
+ Low traffic, caching, or DISABLE_WP_CRON can stop schedules from firing. The Health tab shows whether wp-cron is enabled and reachable, with Green, Yellow or Red plus fix steps — for example setting up a real server cron that hits wp-cron.php. 
+
+ How do I run a cron job manually? 
+ Find the event under Tools, Cron Manager and click Run now. The run is logged in the Log tab with its duration. 
+
+ Can I pause a cron job without deleting it? 
+ Yes. Click Pause and the job is kept as a backup — it will not run until you resume it. Core jobs cannot be deleted; the plugin blocks that with a warning. 
+
+ Will it slow down my site? 
+ No. It runs on admin pages only and adds no CSS or JavaScript to the front end. 
+
+ Does it send data outside my server? 
+ No. Everything stays in wp_options with autoload off, and nothing personal is stored. The only request it ever makes is a loopback check to your own wp-cron.php for the Health tab. 
+
+## Install it and open Tools, Cron Manager
+
+ Install it from your dashboard like any other plugin, open the Cron Manager under Tools, and look at what your site has been doing behind your back. If a post ever misses schedule again, the Health tab is the first place to look. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/schedulelens-cron-viewer/)
+ [Source on GitHub](https://github.com/devmonowar/schedulelens-cron-viewer)
+
+## Keep reading
+
+ [All free plugins](/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](/general-slider/) 
+ [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
+ [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
+ [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
+ [Janitorix Media Audit](/janitorix-media-audit/) — another plugin for quiet site hygiene, for the media library 
+ [CrawlWatch — AI Bot Insights](/crawlwatch-ai-bot-insights/) — the traffic your analytics never mentions 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 18 September 2026
+
+
+## Blog
+
+(https://devmonowar.github.io/blog/)
+
+[Home](/) 
+ Blog 
+
+# Blog
+
+ Guides and case studies about the things I actually build. Every post follows the same shape: what the problem was, what I did about it, what went wrong along the way, and what I would tell someone else doing the same thing. 
+
+## [llms.txt for WordPress — write one by hand in an hour](/blog/llms-txt-wordpress/)
+
+ 16 September 2026 Guide 
+ A small Markdown file that tells AI assistants what your site means, so they quote you instead of improvising. Format, a full example, and where it goes on WordPress. 
+
+## [AI bot traffic in WordPress — see it, measure it, decide what to do](/blog/ai-bot-traffic-wordpress/)
+
+ 16 September 2026 Guide 
+ AI crawlers are reading your site right now and WordPress shows you nothing about it. How to see them in your logs, read a log line, use robots.txt honestly, and write an llms.txt. 
+
+## [How to find unused images in WordPress — and delete them safely](/blog/how-to-find-unused-images-in-wordpress/)
+
+ 21 August 2026 Guide 
+ WordPress never tells you where an image is used, and "unattached" is not the same as unused. Where a reference hides, how to search every one of those places, and how to delete without breaking a page. 
+
+## [What the WordPress.org plugin review actually flagged in my plugin](/blog/wordpress-plugin-review-what-they-flagged/)
+
+ 21 August 2026 Case study 
+ Two rounds, three and a half weeks: the name, one script tag, a three-letter prefix, then sanitizing, escaping and unsafe SQL. The code before and after each fix, and the mistake I made twice. 
+
+## [Why WordPress sliders are slow — and how to check yours](/blog/why-wordpress-sliders-are-slow/)
+
+ 20 August 2026 Guide 
+ Most of the weight is not the images. It is jQuery you never chose, assets loading on pages with no slider, and a layout that jumps. How to measure your own in five minutes. 
+
+## [How to build a fast, accessible slider in WordPress with General Slider](/blog/general-slider-fast-accessible-wordpress-slider/)
+
+ 11 August 2026 Guide 
+ Most slider plugins load jQuery and half a megabyte of unused CSS on every page, or lock the good presets behind a Pro upgrade. Here is how to set up one that does neither. 
+
+## [How to add customer testimonials in WordPress: a complete guide to Advanced Testimonial](/blog/advanced-testimonial-wordpress-testimonials-guide/)
+
+ 11 August 2026 Guide 
+ Layouts, card styles, a front-end submission form, and Schema.org markup so Google can show star ratings next to your result — without a page-builder addon pack. 
+
+## [How to install Free Widgets For Elementor: the widgets Elementor's free core does not include](/blog/free-widgets-for-elementor-guide/)
+
+ 11 August 2026 Guide 
+ Pricing table, flip box, countdown timer, team cards. What each widget does, how to install it, and why you do not need a giant addon pack to get them. 
+
+## [How I built a shared demo library for my WordPress plugins](/blog/shared-demo-library-for-wordpress-plugins/)
+
+ 11 August 2026 Case study 
+ Bundling demo content inside a plugin means a new release for every new demo. Here is the shared static library I built instead, and what I would do differently.
+
+
+## Contact
+
+(https://devmonowar.github.io/contact/)
+
+[Home](/) 
+ Contact 
+
+# Contact
+
+ Pick whichever of these fits what you need. I read all of them and I try to reply within a day or two. 
+
+## Email
+
+ For work, questions, or anything that does not fit the options below: 
+ [devmonowar@gmail.com](mailto:devmonowar@gmail.com) 
+ I am in Dhaka, Bangladesh (UTC+6). Email is the most reliable way to reach me — I read everything myself and usually reply within a day or two. 
+
+## Work with me
+
+ I take on custom WordPress work alongside my free plugins: 
+ 
+ Custom themes and plugins — built the way my free plugins are: lightweight, no jQuery unless it earns its place, accessible, and documented. 
+ Site maintenance — updates, routine care, and small fixes on a monthly basis for sites that need someone watching them. 
+ Performance and accessibility checkups — finding why a site is slow or hard to use, and fixing it. 
+ 
+ Write with a few sentences about your site and what you need. If it is not a fit, I will say so plainly — usually with a pointer to what would fit better. 
+
+## A problem with one of my plugins
+
+ Please use the support forum on WordPress.org rather than email. It is faster for you, and the answer stays public so the next person with the same problem can find it. 
+ 
+ General Slider [Support forum](https://wordpress.org/support/plugin/general-slider/) 
+ Advanced Testimonial [Support forum](https://wordpress.org/support/plugin/advanced-testimonial/) 
+ Free Widgets For Elementor [Support forum](https://wordpress.org/support/plugin/free-widgets-for-elementor/) 
+ Janitorix Media Audit [Support forum](https://wordpress.org/support/plugin/janitorix-media-audit/) 
+ CrawlWatch – AI Bot Insights [Support forum](https://wordpress.org/support/plugin/crawlwatch-ai-bot-insights/) 
+ ScheduleLens – Cron Viewer & Manager [Support forum](https://wordpress.org/support/plugin/schedulelens-cron-viewer/) 
+
+ It helps a lot if you include: your WordPress version, the plugin version, which theme you are using, and a screenshot of what you are seeing. That usually turns three messages back and forth into one. 
+
+## A bug in the code
+
+ If you have found a bug or want to suggest a change, open an issue on that plugin's GitHub repository. Pull requests are welcome too. 
+ 
+ All repositories [github.com/devmonowar](https://github.com/devmonowar) 
+ General Slider [Issues](https://github.com/devmonowar/general-slider) 
+ Advanced Testimonial [Issues](https://github.com/devmonowar/advanced-testimonial) 
+ Free Widgets For Elementor [Issues](https://github.com/devmonowar/free-widgets-for-elementor) 
+ Janitorix Media Audit [Issues](https://github.com/devmonowar/janitorix-media-audit) 
+ CrawlWatch – AI Bot Insights [Issues](https://github.com/devmonowar/crawlwatch-ai-bot-insights) 
+ ScheduleLens – Cron Viewer & Manager [Issues](https://github.com/devmonowar/schedulelens-cron-viewer) 
+
+## Elsewhere
+
+ GitHub [github.com/devmonowar](https://github.com/devmonowar) 
+ WordPress.org [profiles.wordpress.org/kstmonowar](https://profiles.wordpress.org/kstmonowar/) 
+ LinkedIn [linkedin.com/in/devmonowar](https://www.linkedin.com/in/devmonowar) 
+ Facebook [facebook.com/devmonowarwp](https://www.facebook.com/devmonowarwp) 
+ Threads [threads.com/@devmonowar](https://www.threads.com/@devmonowar) 
+ Stack Overflow [Monowar Hossain](https://stackoverflow.com/users/11740249/monowar-hossain) 
+ Medium [medium.com/@devmonowar](https://medium.com/@devmonowar) 
+ Mastodon [mastodon.social/@devmonowar](https://mastodon.social/@devmonowar)
+
+
+## Privacy Policy
+
+(https://devmonowar.github.io/privacy/)
+
+[Home](/) 
+ Privacy Policy 
+
+# Privacy Policy
+
+ Last updated 20 September 2026 
+
+## This website collects nothing
+
+ devmonowar.github.io is hand-written static HTML. There is no analytics, no JavaScript, no cookies, no contact form, and no account system — so there is nothing here that records your visit. The site is hosted on GitHub Pages; like any web host, GitHub may keep server logs. Their policy governs that, not this page. 
+
+## The WordPress plugins, on your own site
+
+ My plugins run on sites you control, and what they record stays there: 
+ 
+ [General Slider](/general-slider/), [Advanced Testimonial](/advanced-testimonial/), [Free Widgets For Elementor](/free-widgets-for-elementor/), [Janitorix Media Audit](/janitorix-media-audit/) — no visitor data leaves your site. Janitorix scans your own media library and stores its verdicts in your own database. 
+ [CrawlWatch - AI Bot Insights](/crawlwatch-ai-bot-insights/) — logs visits from AI crawlers (time, bot name, visited URL, referrer, truncated user-agent). IP addresses are anonymised before hashing (IPv4 last octet and IPv6 /64 removed) and never stored raw. Logs are kept 7–180 days at your choice (30 by default) and auto-deleted; everything is removed on uninstall if enabled in Settings. No visitor data leaves your site. 
+ [ScheduleLens - Cron Viewer & Manager](/schedulelens-cron-viewer/) — stores its paused-jobs list, the last 100 run-log rows, custom intervals and three settings in your database. The only network call is a loopback check to your own site for the health tab. All data is deleted on uninstall if enabled in Settings. 
+
+## Contact
+
+ Questions about any of this: [devmonowar@gmail.com](mailto:devmonowar@gmail.com) or the [contact page](/contact/).
+
+
+## https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/
+
+(https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/)
+
+[Home](/) 
+ [Blog](/blog/) 
+ Advanced Testimonial guide 
+
+# How to add customer testimonials in WordPress: a complete guide to Advanced Testimonial
+
+ By Monowar Hossain 
+ 11 August 2026 
+
+ Summary. Social proof sells, but most WordPress testimonial plugins are either too basic — one boring layout — or bloated page-builder addons you do not need. I built Advanced Testimonial to be the focused middle ground: a set of display layouts and card styles, a front-end submission form, and Schema.org markup for star ratings in Google, all in one lightweight plugin. 
+
+## On this page
+
+ [One layout or fifty widgets you never use](#problem) 
+ [A plugin built only for testimonials](#solution) 
+ [What you need to install it](#requirements) 
+ [Installing Advanced Testimonial](#install) 
+ [Displaying testimonials](#display) 
+ [Collecting testimonials from visitors](#collect) 
+ [Choosing a layout and card style](#styling) 
+ [Testimonial setup mistakes to avoid](#mistakes) 
+ [FAQ](#faq) 
+ [Conclusion](#conclusion) 
+
+## One layout or fifty widgets you never use
+
+ Testimonials are one of the highest-converting elements you can put on a page, but most WordPress solutions force a trade-off. 
+ Basic plugins give you one static layout with no way to collect new reviews. All-in-one page-builder addon packs give you a testimonial widget buried inside dozens of others you will never touch, adding weight to every page on your site. 
+
+## A plugin built only for testimonials
+
+ Advanced Testimonial is a plugin built only for testimonials. Reviews get a proper post type with Groups, and each review carries its own fields — rating, company, verified badge, video. 
+ Seven display layouts and nine card styles can be mixed freely, and the plugin ships with built-in Schema.org review markup , so Google can show star ratings as a rich snippet next to your search result. 
+
+## What you need to install it
+
+ WordPress 6.5 or later 
+ PHP 7.4 or later 
+ No page builder required. The shortcode and block editor work out of the box, and an Elementor widget is added automatically if Elementor is active. 
+
+## Installing Advanced Testimonial
+
+ In your WordPress dashboard, go to Plugins → Add New and search for Advanced Testimonial . 
+ Click Install Now , then Activate . 
+ A new Testimonials menu appears in your dashboard sidebar. 
+ Add your first testimonial, or open Testimonials → Settings → Tools and use the one-click starter demo to see it working immediately. 
+
+ Search for Advanced Testimonial under Plugins → Add New, then install and activate it. 
+
+ The one-click demo library, if you would rather start from a ready-made set than an empty screen. 
+
+## Displaying testimonials
+
+ Use the shortcode anywhere: 
+ [advanced_testimonial layout="grid" columns="3" group="clients" limit="9" order="desc"] 
+ Or add the Advanced Testimonial block in the editor — it has the same controls with a live preview. 
+ The seven available layouts are grid, list, card, carousel, marquee, masonry and spotlight. Nine card styles — classic, modern, minimal, bubble, bold, glass, gradient, outline and retro — are picked with the style attribute, and you can use a different style per block if you like. 
+
+ The grid layout, with star ratings and verified badges on each card. 
+
+ Every card style side by side. Mix a different one per block if you want. 
+
+## Collecting testimonials from visitors
+
+ Add this to any page and visitors can submit their own testimonial directly from your site: 
+ [at_form title="Leave a review" group="clients"] 
+ Submissions arrive as Pending , so you review them before they go live. Spam protection is built in — nonce, honeypot and rate limiting — and the defaults are safe. 
+
+ The front-end form visitors use to leave a review. 
+
+ Submissions land as Pending in the admin, so nothing goes live before you approve it. 
+
+## Choosing a layout and card style
+
+ Seven layouts and nine card styles sounds like a lot of choice, so here is how I think about it. Pick the layout for the page, and the style for the brand. 
+ 
+ Grid for a dedicated reviews page, carousel for a homepage strip, marquee for a logo-wall effect that never stops, masonry for reviews of very different lengths. 
+ Card styles (classic, modern, minimal, bubble, bold, glass, gradient, outline, retro) change the look without touching the layout — and each block or shortcode can use its own, so the homepage and the pricing page do not have to match. 
+ Verified badges and photos do more for trust than any layout. A real name, a company, a face — that is what visitors read first. The layout is just the frame around it. 
+
+## Testimonial setup mistakes to avoid
+
+ Forgetting to group testimonials. If you plan to show different sets on different pages — per service or per product — set up Groups under Testimonials → Groups before you start adding reviews. Reorganising later is more work than doing it first. 
+ Not checking the submission form settings. The defaults are safe, but if unexpected spam gets through, look at Settings → Submission Form . 
+ Assuming Elementor is required. It is not. The shortcode and the block work on any theme. 
+
+## FAQ
+
+ Do I need Elementor to use this plugin? 
+ No. The shortcode and Gutenberg block work with any theme. If Elementor is active, a widget appears automatically. 
+
+ Can testimonials include video? 
+ Yes. Paste a YouTube, Vimeo, or self-hosted MP4 URL on any testimonial and it opens in a lightbox on click. 
+
+ Will it slow down my site? 
+ No. CSS and JavaScript load only on pages that actually display testimonials, and there is no jQuery. 
+
+ Will my testimonials be deleted if I uninstall the plugin? 
+ No, not by default. You have to explicitly opt in under Settings → Advanced first. 
+
+## Conclusion
+
+ If you need real, manageable testimonials rather than a giant addon pack, Advanced Testimonial gives you the layouts, the styles, and a form to collect new reviews — without adding weight to pages that do not need it. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/advanced-testimonial/)
+ [Source on GitHub](https://github.com/devmonowar/advanced-testimonial)
+ [Browse the demos](https://devmonowar.github.io/wp-plugin-demo-library/advanced-testimonial/)
+
+## Related guides
+
+ [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) 
+ [How to install Free Widgets For Elementor](/blog/free-widgets-for-elementor-guide/) 
+
+## Keep reading
+
+ [How I built a shared demo library for my plugins](/blog/shared-demo-library-for-wordpress-plugins/) — how the ready-made testimonial demos are hosted 
+ [The Elementor widgets the free core is missing](/blog/free-widgets-for-elementor-guide/) — the Elementor side of the same idea 
+ [How to build a fast, accessible WordPress slider](/blog/general-slider-fast-accessible-wordpress-slider/) — build once, drop it anywhere: the same approach for sliders 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 11 August 2026 - Last updated 11 August 2026
+
+
+## https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/
+
+(https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/)
+
+[Home](/) 
+ [Blog](/blog/) 
+ AI bot traffic in WordPress 
+
+# AI bot traffic in WordPress — see it, measure it, decide what to do
+
+ By Monowar Hossain 
+ 16 September 2026 
+
+ Summary. I opened my server logs one morning expecting the usual Googlebot entries and found strangers instead — GPTBot, CCBot, names I had never invited. WordPress had shown me none of it. Not a counter, not a notice, nothing. This post is what I wish I had found that morning: how to see AI bot traffic on a WordPress site, what each kind of visit actually means, and how I learned to decide per bot instead of copying somebody's blocklist. 
+
+## On this page
+
+ [Two kinds of AI visitors, and why they matter differently](#two-kinds) 
+ [Seeing the crawlers in your logs](#see) 
+ [Reading one log line](#read-line) 
+ [Should you block them?](#block) 
+ [robots.txt, honestly](#robots) 
+ [What llms.txt is actually for](#llms) 
+ [The visitors the assistants send you](#referrals) 
+ [If you want a plugin to watch this](#plugin) 
+ [Common mistakes](#mistakes) 
+ [FAQ](#faq) 
+ [Conclusion](#conclusion) 
+
+## Two kinds of AI visitors, and why they matter differently
+
+ Here is the confusion I see everywhere, and I had it too: people say "AI bot traffic" like it is one thing. It is two, and they want opposite things from you. 
+ First come the crawlers . They fetch your pages to learn from them. GPTBot gathers training data for OpenAI. CCBot feeds Common Crawl, the nonprofit dataset half the industry trains on. Then there is ClaudeBot and anthropic-ai for Anthropic, Bytespider for ByteDance, PerplexityBot fetching pages so it can cite them in answers. None of them click anything. None of them buy anything. They take your words and leave. 
+ Then there are the referrals , and these walk in the other direction. Someone asks an AI assistant a question, the assistant links to your page, and a living human being lands on your site. In analytics they look like ordinary referrals from chatgpt.com or perplexity.ai . They read. They click. Some of them convert. This is the traffic you actually want — which is why the block-or-allow question is trickier than the angry threads make it sound. 
+
+## Seeing the crawlers in your logs
+
+ WordPress keeps no record of who reads your site. None. No visitor log, no bot list, nothing you can open in the admin. The record lives one floor below WordPress, in the server's access log . Every hosting panel has one — look under Statistics or Metrics — and the file is usually called access.log . 
+ I want to be honest about this part: the first time you open that file, it is ugly. Thousands of lines, IPs, timestamps, noise. Do not read it. Search it. Open find-in-page and type the names. The regulars: 
+ 
+ GPTBot / OAI-SearchBot / ChatGPT-User — OpenAI, but three different jobs: GPTBot gathers training data, OAI-SearchBot decides what ChatGPT Search can cite (blocking it hides you from answers without affecting training), and ChatGPT-User fetches pages when a user explicitly asks (it generally ignores robots.txt) 
+ CCBot — Common Crawl, the nonprofit dataset behind many models 
+ anthropic-ai / ClaudeBot / Claude-SearchBot — Anthropic: the first two feed training, Claude-SearchBot feeds Claude search answers 
+ PerplexityBot / Perplexity-User — Perplexity: the bot surfaces pages in search results (it does not train models), the user agent fetches on request 
+ Bytespider — ByteDance 
+ Google-Extended / Applebot-Extended — Google's and Apple's opt-out training crawlers, separate from their search crawlers 
+ Meta-ExternalAgent — Meta 
+ 
+ If your site has been up for a year, every one of these has visited. 
+
+ Crawler What it actually governs If you block it 
+
+ GPTBot OpenAI model training Content stays out of training data 
+ OAI-SearchBot ChatGPT Search citability — not training Site disappears from ChatGPT answers 
+ ChatGPT-User User-triggered fetches Usually nothing — it ignores robots.txt anyway 
+ ClaudeBot Anthropic model training Content stays out of training data 
+ Claude-SearchBot Claude search answers — not training Site disappears from Claude search 
+ PerplexityBot Perplexity search results — not training Site disappears from Perplexity answers 
+ Google-Extended Gemini and Vertex training only — never AI Overviews No effect on search or AI Overviews 
+ Googlebot Search, including AI Overviews Search traffic drops — almost never what you want 
+
+ That was the part that surprised me — not that they came, but how long they had been coming while I looked at nothing but the WordPress dashboard. The question was never whether. It was whether anyone was watching. Every name above documents itself — [OpenAI's crawler overview](https://platform.openai.com/docs/bots), [Anthropic's crawling article](https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web), [Perplexity's bot guide](https://docs.perplexity.ai/guides/perplexitybot), [Google's crawler list](https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers) — so when a new name appears in your logs, its own docs are the first place to check what it actually governs. 
+
+## Reading one log line
+
+ A log line looks scary exactly once. Then somebody shows you where to look, and you cannot unsee it. Here is a typical one: 
+ 203.0.113.40 - - [12/Sep/2026:10:14:02 +0000] "GET /pricing/ HTTP/1.1" 200 48210
+"-" "Mozilla/5.0 ... compatible; GPTBot/1.2; +https://openai.com/gptbot" 
+ Read it left to right. An IP address. The date. The page it asked for — /pricing/ , in this case, which already tells you something, because bots that only read your homepage behave differently from bots reading your pricing page. Then 200 , meaning your server handed the page over without complaint. The bytes it carried home. And at the very end, the user-agent introducing itself as GPTBot , with a link to [OpenAI's own page about it](https://openai.com/gptbot). 
+ One line is trivia. A thousand lines is a story: which bot keeps coming back, which pages it likes, whether it visits at 3am like a polite guest or hammers fifty pages a minute. And here is the catch I keep coming back to — the bots that never introduce themselves never appear in this story at all. Logs show you the honest visitors. They say nothing about the quiet ones. 
+
+ The same log data, readable: which bots came, what they took, and what to fix first — without opening access.log ever again. 
+
+## Should you block them?
+
+ Most guides go quiet right here and hand you a snippet to paste. I think that is backwards. The snippet takes ten seconds; the decision deserves ten minutes. So here is how I actually think about it, both sides, no cheerleading. 
+ 
+ The case for blocking. Your content becomes training data for products that compete with you for the same readers. Crawlers cost bandwidth — on a small VPS, an aggressive crawl is a bill and a slowdown. And there is a principle in it: your work, your permission. 
+ The case against. Blocking does not remove anything already trained on; that data is baked in. Assistants that cannot read your site cite your competitors instead, and the referral visitors in the previous section go to them. For most small sites, obscurity is a bigger threat than being quoted. 
+ 
+ My own answer, for what it is worth: I block the bandwidth hogs and the crawlers that give me nothing back, and I welcome the ones that cite pages and send actual humans. PerplexityBot can stay; it links to things. A nameless scraper pulling a thousand pages at midnight cannot. And I revisit the list about once a year, because the cast keeps changing and a decision from 2024 is not a decision, it is a habit. 
+
+## robots.txt, honestly
+
+ So much for the thinking. The mechanism is robots.txt — and before you trust it, you should know exactly what it is. A text file. A request. That is all. Here is what asking the major AI crawlers to stay out looks like: 
+ User-agent: GPTBot
+User-agent: CCBot
+User-agent: ClaudeBot
+User-agent: anthropic-ai
+User-agent: PerplexityBot
+User-agent: Bytespider
+Disallow: / 
+ The polite ones obey. GPTBot, CCBot, Google-Extended, most crawlers with real names on them — they check robots.txt before fetching, because ignoring it publicly would be embarrassing for a company that size. But understand what you just did: you put up a sign. There is no lock behind it and no one enforcing it. A crawler that hides its name never reads your sign, and a few named ones have been caught fetching pages they were told not to. Keep the sign up — it is correct and necessary — and then check the logs to see who listened. The log check is the part everyone forgets. 
+ One thing people always ask me at this point, usually worried: will this hurt my Google rankings? No. Googlebot crawls for search under its own name, and Google-Extended — the training opt-out — is a separate user-agent entirely. Refuse one, welcome the other. Your search traffic will not move. I have done exactly this and watched Search Console stay flat. 
+
+## What llms.txt is actually for
+
+ If robots.txt is the keep-out sign, llms.txt is the note you leave for the guests you invited in. It is a young convention, not a standard anyone enforces: a Markdown file at /llms.txt that describes your site the way language models digest best. What the site is. What each section covers. Which pages actually matter. 
+ People misunderstand the purpose, so let me say it plainly: this is not about feeding the models. They already have your pages — that battle is over. It is about accuracy . A model working from your own summary quotes you correctly. A model reconstructing you from scraped fragments invents things, confidently, in your name. I have seen my own plugin described wrong by an assistant, and it is a strange feeling. 
+ The file costs an hour to write well. Whether every assistant reads it is still unsettled — conventions take years, and some may never bother. But there is no downside to having one, and the upside is being cited correctly instead of creatively. 
+
+ Both files in one place: the generated llms.txt on the left, a per-bot allow-or-block checkbox for robots.txt on the right. 
+
+## The visitors the assistants send you
+
+ Now the second kind of visitor, because I suspect this number will surprise you the way it surprised me. Open your analytics, find referrals, and pull out chatgpt.com , perplexity.ai , copilot.microsoft.com and their friends. Whatever number comes out — that is your AI referral traffic . Real humans, arriving because a machine recommended you. There is something funny about that, and something worth money. 
+ Two things follow from knowing the number. First, it becomes the scoreboard for everything above: if it climbs after you publish an llms.txt and keep your content quotable, the welcoming strategy is paying off. Second, these visitors arrive strange — they land mid-question, half-answered, impatient. The pages they land on should answer fast and link onward. Watch the landing pages, not just the totals. Totals flatter; landing pages teach. 
+
+## If you want a plugin to watch this
+
+ I will say what I always say about this category: nobody opens access logs every morning. Not you, not me, nobody with a site to run. So eventually a tool watches them for you. When you go looking for one, ignore the screenshots and ask these instead: 
+ 
+ Does it show you which bot, which page, and how often — or just a total count? A total tells you nothing to act on. 
+ Does it separate crawlers from AI referrals? A tool that mixes the two will have you blocking the visitors you wanted. 
+ Does it manage robots.txt rules per bot , instead of one all-or-nothing switch? Your decision for PerplexityBot and your decision for Bytespider are not the same decision. 
+ Does it write the llms.txt for you? The file is small but fiddly; generating it from your actual content beats a blank template. 
+ Does everything happen on your own 
+
+
+## https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/
+
+(https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/)
+
+[Home](/) 
+ [Blog](/blog/) 
+ Free Widgets For Elementor guide 
+
+# How to install Free Widgets For Elementor: the widgets Elementor's free core does not include
+
+ By Monowar Hossain 
+ 11 August 2026 
+
+ Summary. Elementor's free version is good, but it is missing a few widgets almost every site ends up needing — a pricing table, a flip box, a countdown timer, a team section. I built Free Widgets For Elementor to fill exactly those gaps, with no bloat and no upsells. Here is how to install it and what each widget does. 
+
+## On this page
+
+ [Elementor free is missing the widgets you need](#problem) 
+ [Eight widgets, nothing you already have](#solution) 
+ [What you need to install it](#requirements) 
+ [Installing Free Widgets For Elementor](#install) 
+ [What is inside](#widgets) 
+ [Using the demo library](#demos) 
+ [Why it stays fast](#performance) 
+ [Widget mistakes that cost you speed](#mistakes) 
+ [FAQ](#faq) 
+ [Conclusion](#conclusion) 
+
+## Elementor free is missing the widgets you need
+
+ If you have built more than a couple of sites with the free version of Elementor, you have hit this wall. You need a pricing table, or a flip box, or a simple countdown timer, and the free core just does not have them. 
+ The usual fix is installing a giant all-in-one addon pack that ships dozens of widgets when you need three — slowing the site down with unused CSS and JavaScript on every page. 
+
+## Eight widgets, nothing you already have
+
+ I built Free Widgets For Elementor as a focused, lightweight plugin that adds only the widgets Elementor's free core is actually missing. Nothing you already have, nothing you will not use. 
+ It is fully free and GPL licensed, with no Pro version, no licence key, and no upgrade nags in the editor. Each widget's CSS and JavaScript load only on the pages where that widget is actually used, so it does not add weight to pages that do not need it. 
+
+## What you need to install it
+
+ WordPress 6.0 or later 
+ PHP 7.4 or later 
+ [Elementor](https://wordpress.org/plugins/elementor/) — the free version. Elementor Pro is not required. 
+
+## Installing Free Widgets For Elementor
+
+ Make sure the free Elementor plugin is installed and activated on your site. 
+ In your WordPress dashboard, go to Plugins → Add New and search for Free Widgets For Elementor . 
+ Click Install Now , then Activate . 
+ Open any page in the Elementor editor. A new Free Widgets category appears at the top of the widgets panel. 
+ Drag any widget onto your page and start customising it. 
+
+ Search for Free Widgets For Elementor under Plugins → Add New. 
+
+ After activating, a Free Widgets category appears at the top of the Elementor widgets panel. 
+
+## What is inside
+
+ Eight widgets, each filling one gap in the free Elementor core: 
+
+ Widget What it is for 
+
+ Pricing Table Header, price, feature list, button, and an optional "featured" highlight 
+ Flip Box A 3D hover or click flip to a back face with a call to action 
+ Team Photo, role, bio and social links for team member cards 
+ Call To Action Title, text, button and background in a styled box 
+ Countdown Timer Counts down to a date and time, with an optional expired message 
+ Post Grid A responsive grid of posts — image, title, meta, excerpt, read-more 
+ Logo Carousel A responsive logo or brand carousel with arrows, dots and autoplay 
+ Table of Contents An auto-generated, clickable page outline with smooth scroll and scrollspy 
+
+ Every setting sits in the normal Elementor sidebar, so there is nothing new to learn, and all the widgets are built to work inside Elementor's flexbox and grid containers. 
+
+ The Pricing Table widget, with one plan marked as featured. 
+
+ The Flip Box and Team widgets side by side. 
+
+## Using the demo library
+
+ Instead of building sections from scratch, the plugin includes an optional Demo Library — a one-click way to import ready-made Elementor sections, images included, built with these widgets. New demos are added over time without needing a plugin update. 
+ To use it, open the plugin's Demo Library screen from the WordPress admin, browse the available sections, and click Import on the one you want. If you are curious how that works under the hood, I wrote about it in [the demo library case study](/blog/shared-demo-library-for-wordpress-plugins/). 
+
+ Ready-made sections you can import in one click, images included. 
+
+## Why it stays fast
+
+ Eight widgets could easily mean eight widgets' worth of CSS and JavaScript on every page. It does not, for one reason: each widget's files load only on pages where that widget is actually used. A page with just a countdown timer never downloads the pricing table styles, the carousel engine, or anything else it does not render. 
+ There is no jQuery dependency and no shared heavy library underneath — plain CSS and vanilla JavaScript per widget. That is the whole performance story: not clever optimisation, just never shipping what the page does not need. 
+
+## Widget mistakes that cost you speed
+
+ Installing without Elementor active. This plugin extends Elementor, so the free Elementor plugin has to be installed and active first. 
+ Expecting a Pro upsell. There is not one. If a widget looks locked, that is not this plugin — double check which plugin you installed. 
+ Assuming it needs Elementor Pro. It does not. Everything works on the free version. 
+
+## FAQ
+
+ Does this plugin require Elementor Pro? 
+ No. It only requires the free version of Elementor. 
+
+ Will it slow down my site? 
+ No. Each widget's CSS and JavaScript load only on the specific pages where that widget is used. 
+
+ Is it really free forever? 
+ Yes. No Pro version, no licence key, no locked features. 
+
+ Does it work with Elementor's flexbox and grid containers? 
+ Yes, all the widgets are built to work inside Elementor containers. 
+
+ I activated the plugin but I do not see the "Free Widgets" category. What is wrong? 
+ This almost always means the free Elementor plugin is not active yet. Activate Elementor first, then reload the page editor — the category will appear at the top of the widgets panel. 
+
+## Conclusion
+
+ If you have ever reached for a bloated all-in-one addon pack just to get one pricing table or countdown widget, Free Widgets For Elementor is meant to be the lighter alternative — the widgets Elementor's free core is missing, and nothing else. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/free-widgets-for-elementor/)
+ [Source on GitHub](https://github.com/devmonowar/free-widgets-for-elementor)
+
+## Related guides
+
+ [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) 
+ [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) 
+
+## Keep reading
+
+ [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) — this plugin has no testimonial widget on purpose; that is the one to use 
+ [How I built a shared demo library for my plugins](/blog/shared-demo-library-for-wordpress-plugins/) — where the one-click demos come from 
+ [Why WordPress sliders are slow](/blog/why-wordpress-sliders-are-slow/) — why loading assets on every page is the thing to avoid 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 11 August 2026 - Last updated 11 August 2026
+
+
+## https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/
+
+(https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/)
+
+[Home](/) 
+ [Blog](/blog/) 
+ General Slider guide 
+
+# How to build a fast, accessible slider in WordPress with General Slider
+
+ By Monowar Hossain 
+ 11 August 2026 
+
+ Summary. Most WordPress slider plugins either load jQuery and a pile of unused CSS and JavaScript on every page, or lock the good design presets behind a Pro upgrade. General Slider is built on the lightweight Splide engine — no jQuery, accessible by default, and assets load only on pages that actually show a slider. 
+
+## On this page
+
+ [Why most sliders slow down every page](#problem) 
+ [A slider that loads only where it is used](#solution) 
+ [What you need to install it](#requirements) 
+ [Installing General Slider](#install) 
+ [Building your first slider](#first-slider) 
+ [Design presets and skins](#design) 
+ [What accessibility actually means here](#accessibility) 
+ [Mistakes that break a new slider](#mistakes) 
+ [FAQ](#faq) 
+ [Conclusion](#conclusion) 
+
+## Why most sliders slow down every page
+
+ A slider sounds like a simple feature, but it is one of the most common places a WordPress site picks up weight it does not need — jQuery dependencies, render-blocking CSS, and JavaScript that runs on every page even when there is no slider on it. 
+ Slower pages mean worse Core Web Vitals, and worse Core Web Vitals eventually means worse rankings. The frustrating part is that most of that cost is paid on pages that do not contain a slider at all. 
+
+## A slider that loads only where it is used
+
+ General Slider lets you build a reusable slider once, then drop it anywhere with a block, a shortcode, or an Elementor widget — no page builder and no code required. 
+ It is built on [Splide](https://splidejs.com/), a lightweight slider engine with no dependencies, so there is no jQuery on the front end. Assets are added only to pages that actually contain a slider. 
+
+## What you need to install it
+
+ WordPress 6.0 or later 
+ PHP 7.4 or later 
+ No page builder required. The block and the shortcode work with any theme, and an Elementor widget is included automatically if Elementor is active. 
+
+## Installing General Slider
+
+ In your WordPress dashboard, go to Plugins → Add New and search for General Slider . 
+ Click Install Now , then Activate . 
+ Go to General Slider → Add New to build your first slider, or open General Slider → Settings to import a ready-made demo instead. 
+ A starter demo is created automatically on first activation, so a fresh install already has something to look at. 
+
+ Search for General Slider under Plugins → Add New, then install and activate it. 
+
+ The edit screen: slide fields on the left, design preset and navigation skin on the right. 
+
+## Building your first slider
+
+ You can add slides by hand, or switch Slides source to Pull slides from posts (dynamic) and let the slider build itself from your latest posts, pages, or WooCommerce products. 
+ Once the slider is published, embed it in any of three ways: 
+ 
+ Block — add the General Slider block and pick your slider from the list. 
+ Shortcode — [general_slider id="123"] 
+ Elementor — drag in the General Slider widget. 
+ 
+ The exact shortcode for each slider is shown on its own edit screen, so you never have to guess the ID. 
+
+ A published hero slider on the front end, with arrows, dots and a pause control. 
+
+## Design presets and skins
+
+ Five design presets control the slide layout — hero, split, minimal, testimonial, fullscreen. Navigation and frame skins control the arrows, dots and frame, and you can mix any skin with any preset. 
+ On top of that, each slide can have a background video, text entrance animations, and its own accent colour, all set from the slider's settings box. None of it needs code. 
+ You can see every preset and skin side by side in the [demo library](https://devmonowar.github.io/wp-plugin-demo-library/general-slider/) before you build anything. 
+
+ The demo library — six ready-made sliders, each a different preset and skin combination you can import in one click. 
+
+## What accessibility actually means here
+
+ The title of this guide promises an accessible slider, so here is exactly what that covers — four concrete behaviours, not a badge: 
+ 
+ Keyboard navigation. Every control — arrows, dots, pause button — is reachable and operable by keyboard alone, in a logical order. If a visitor cannot use a mouse, the slider still fully works. 
+ Screen-reader labels. Slides, controls and state changes are announced with proper labels, so the slider makes sense when heard instead of seen. Decorative elements are hidden from assistive technology rather than read out as noise. 
+ A play and pause control for autoplay. A slider that moves on its own must be stoppable. Anyone who needs more time to read — or who finds motion distracting — gets a visible, obvious pause button. 
+ Reduced-motion support. When the visitor's system asks for reduced motion, entrance animations and autoplay behaviour step back instead of playing anyway. The content stays fully available; only the movement is toned down. 
+ 
+ None of this requires configuration. It ships in the plugin because most sliders treat accessibility as a premium feature, and I think a slider that locks out some visitors is simply unfinished. 
+
+## Mistakes that break a new slider
+
+ Forgetting to publish the slider. A slider has to be published, not saved as a draft, before it will appear on the front end. This is the single most common support question I get. 
+ Pointing the block or shortcode at the wrong slider. Check that the ID matches the slider you meant. The correct shortcode is printed on each slider's edit screen. 
+ Not clearing the cache. If you use a caching plugin and your changes do not show up, clear the site cache after editing a slider. 
+
+## FAQ
+
+ Does it load jQuery? 
+ No. The front end uses the lightweight, dependency-free Splide engine. 
+
+ Will it slow down my site? 
+ No. CSS and JavaScript load only on pages that contain a slider, images are lazy-loaded, and a slider only initialises once it is scrolled into view. 
+
+ Do I need Elementor? 
+ No. A dedicated Elementor widget is included if Elementor is active, but the block and the shortcode work with any theme. 
+
+ Can I build a slider automatically from my posts? 
+ Yes. Switch Slides source to dynamic and pick posts, pages, or WooCommerce products. 
+
+## Conclusion
+
+ If your current slider plugin is adding weight to pages that do not even use it, that is exactly the problem General Slider was built to fix — a fast, accessible slider that only loads where it is actually needed. 
+ 
+ [Download on WordPress.org](https://wordpress.org/plugins/general-slider/)
+ [Source on GitHub](https://github.com/devmonowar/general-slider)
+ [Browse the demos](https://devmonowar.github.io/wp-plugin-demo-library/general-slider/)
+
+## Related guides
+
+ [Why WordPress sliders are slow — and how to check yours](/blog/why-wordpress-sliders-are-slow/) 
+ [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) 
+ [How to install Free Widgets For Elementor](/blog/free-widgets-for-elementor-guide/) 
+
+## Keep reading
+
+ [Why WordPress sliders are slow](/blog/why-wordpress-sliders-are-slow/) — why it was worth building another slider at all 
+ [How I built a shared demo library for my plugins](/blog/shared-demo-library-for-wordpress-plugins/) — where the one-click demos in this plugin actually come from 
+ [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) — the same block-and-shortcode approach, for customer reviews 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 11 August 2026 - Last updated 20 August 2026
+
+
+## https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/
+
+(https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/)
+
+[Home](/) 
+ [Blog](/blog/) 
+ How to find unused images in WordPress 
+
+# How to find unused images in WordPress — and delete them safely
+
+ By Monowar Hossain 
+ 21 August 2026 
+
+ Summary. WordPress will not tell you where an image is used. The Media Library has a column that looks like it answers that question, and it does not, which is how a lot of sites end up with holes in them. Here is where a reference to an image can actually hide, how to search each of those places for one file, and what to check before you delete anything. 
+
+## On this page
+
+ [Why WordPress cannot answer this for you](#why-hard) 
+ ["Unattached" does not mean unused](#unattached) 
+ [Where a reference to an image hides](#places) 
+ [Checking one image by hand](#manual) 
+ [What to check before you delete](#before) 
+ [Make deletion a two-step operation](#two-step) 
+ [If you want a plugin to do this](#plugin) 
+ [Common mistakes](#mistakes) 
+ [FAQ](#faq) 
+ [Conclusion](#conclusion) 
+
+## Why WordPress cannot answer this for you
+
+ WordPress keeps no index of where a file is used. When you insert an image into a post, nothing writes that relationship down anywhere you can query later. The URL goes into the post content, or a block attribute, or a custom field, or a theme setting, and that is the only trace of it. 
+ So "is this image used?" is not a lookup. It is a search across every place a theme, a plugin or a page builder might have written a URL or an attachment ID. Which is why there is no Find unused media button in the admin, and why every plugin that offers one is making an estimate, whether it says so or not. 
+ What makes this worth doing carefully is that the two mistakes do not cost the same. Leave an unused image alone and it costs you a few kilobytes of disk. Delete one that is still referenced and you break a page. Usually a page you do not open every day, so you can be weeks away from finding out. 
+
+## "Unattached" does not mean unused
+
+ The Media Library has an Unattached filter, and I think it is the most misread thing in WordPress media management. 
+ "Attached" records the post you were editing when you uploaded the file. That is all it does. It is set once, at upload time. Nothing updates it when you use the image somewhere else, and nothing clears it when you take the image out of that post again. 
+ So both halves of the assumption are wrong: 
+ 
+ Unattached images are often in use. Your site logo, a Customizer background, a header image, anything you uploaded from the Media Library screen instead of from inside a post. None of those have a parent post. 
+ Attached images are often unused. Upload four photos to a post, use one of them, publish. The other three stay attached to that post forever, and no page anywhere shows them. 
+ 
+ The "Uploaded to" column is the same thing wearing a different hat. It answers a question nobody asked. 
+
+## Where a reference to an image hides
+
+ Before you can search anything you need to know what you are searching. In an ordinary WordPress install, a reference lives in one of these: 
+ 
+ Post content. The easy one. The URL sits in wp_posts.post_content . 
+ Block attributes. A Gutenberg image block writes the URL into the markup and the attachment ID into the block comment, like <!-- wp:image {"id":412} --> . Searching for the filename still finds it. A synced pattern is the awkward case, because the block lives in its own post rather than in the page you are looking at. 
+ Post meta. This is where most of the invisible references are. An ACF image field stores the attachment ID , not a URL. Page builders serialise an entire page into a single meta value. Even a featured image is just a meta row, _thumbnail_id . 
+ The options table. Site logo, site icon, Customizer settings ( theme_mods_<theme> ), classic widgets, and any plugin setting that lets you pick an image. 
+ Term and user meta. Category images, author photos, anything an image-field plugin bolts onto a taxonomy or a profile. 
+ Theme and plugin files. A stylesheet can hardcode url(/wp-content/uploads/2023/07/pattern.png) and nothing in the database will ever know about it. 
+ Somewhere no scan can see. A URL assembled from parts when the page renders, or held by some third-party service. Rare. Also the reason you keep a backup instead of trusting any tool completely. 
+
+ Six places, and they do not store the same thing. Post content holds the URL. Custom fields and blocks hold the attachment ID. A stylesheet holds a URL the database has never heard of. Searching for one and not the other is how a cleanup tool ends up deleting an image that is still in use. 
+
+## Checking one image by hand
+
+ Do this once, on a single image, even if you end up handing the job to a plugin. It shows you what a cleanup tool is actually up against. 
+
+### Step 1 — get the two things you are searching for
+
+ Open the image in the Media Library. Take the filename from the URL ( old-hero-banner.jpg ) and the attachment ID from the address bar ( post.php?post=412 ). You need both, because some places store one and some store the other. 
+
+### Step 2 — search the content
+
+ In phpMyAdmin or Adminer, run a read-only query. Change wp_ if your prefix is different, and search the filename without its size suffix so the -1024x576 variants match too: 
+
+ SELECT ID, post_title, post_type, post_status
+FROM wp_posts
+WHERE post_content LIKE '%old-hero-banner%'
+AND post_status != 'trash'; 
+
+### Step 3 — search the meta tables, by filename and by ID
+
+ This is the step people skip, and it is where ACF fields, featured images and page-builder layouts are hiding: 
+
+ SELECT post_id, meta_key
+FROM wp_postmeta
+WHERE meta_value LIKE '%old-hero-banner%'
+OR meta_value = '412'
+OR meta_value LIKE '%"id":412%'; 
+
+### Step 4 — search the options table
+
+ Logo, site icon, Customizer settings and widgets all end up here, usually buried inside serialised data: 
+
+ SELECT option_name
+FROM wp_options
+WHERE option_value LIKE '%old-hero-banner%'
+OR option_value LIKE '%"id":412%'; 
+
+### Step 5 — search your theme's own files
+
+ No database query will catch a hardcoded URL in a stylesheet. From the site root: 
+
+ grep -r "old-hero-banner" wp-content/themes/ 
+
+ If all five come back empty, the image is very probably unused. Probably, not certainly: what you have proved is that there is no evidence in the places you thought to look. That gap is the entire subject. 
+
+## What to check before you delete
+
+ Five things, in this order. The first one is not optional. 
+ 
+ Take a backup you have actually restored before. Files and database. A backup nobody has ever restored is a wish, not a plan. 
+ Check drafts and scheduled posts. A post that has not gone live yet still references images, and a scan that only reads published content will call them unused. It is also why anything uploaded this morning looks unused: the post that needs it is still being written. 
+ Leave logos, icons and header images alone. They are usually unattached, they frequently score as unused, and they are the worst things on the site to get wrong. 
+ Delete in small batches. Twenty at a time, then go and load the site. If something breaks, you know which twenty did it. Delete a thousand and all you learn is that something, somewhere, is now wrong. 
+ Actually look at the pages afterwards. Home, one post, one landing page, and the page you open least. That last one is where the damage hides. 
+
+## Make deletion a two-step operation
+
+ Here is the thing most people find out on the day they need it: WordPress does not put media in the Trash. Posts get a Trash. Media does not. "Delete permanently" means exactly that, and there is no undo behind it. 
+ You can change that. Add one line to wp-config.php , above the line that says "That's all, stop editing": 
+
+ define( 'MEDIA_TRASH', true ); 
+
+ The Media Library gets a Trash of its own, and deleting becomes two steps: move to Trash, check the site, empty it later. If some page turns out to need one of those files, getting it back is one click instead of a restore from backup. 
+ Turn it on before the cleanup, not after it. 
+
+## If you want a plugin to do this
+
+ Nobody is running five searches by hand across two thousand images, so at some point a tool has to do it. Judge one by these questions rather than by its screenshots: 
+ 
+ Does it search post meta and the options table , or only post content? Content-only scanning is where most "this plugin deleted my logo" reviews come from. 
+ Does it match attachment IDs as well as URLs? Custom fields and blocks store IDs, and a URL-only scan is blind to every one of them. 
+ Does it show you why? A verdict you cannot open up is a verdict you have no particular reason to trust. 
+ Does it separate "probably unused" from "safe to delete"? A stray test upload and your logo can look identical to a scanner. What tells them apart is the cost of being wrong, which is a different question from how confident the scan is. 
+ Does it admit when it could not finish? A scan that cannot read a page builder's format should say so and refuse, not quietly file the image under unused. 
+ Does it delete in one step? If it does, you have your answer. 
+
+ Disclosure. I build one of these, [Janitorix Media Audit](https://wordpress.org/plugins/janitorix-media-audit/). It exists because I asked those six questions about the tools I had been using and did not like my own answers. It is free and open source, and the WordPress.org review it went through is written up in [what the review actually flagged](/blog/wordpress-plugin-review-what-they-flagged/). Use it or do not. The checks above work either way, and I would rather you understood them than trusted anybody's scanner, mine included. 
+
+## Common mistakes
+
+ Reading "Unattached" as "unused". The two have almost nothing to do with each other. 
+ Searching for the URL only. On a modern site, half the references are attachment IDs sitting in meta. 
+ Searching the sized filename. hero-1024x576.jpg misses the original and every other size. Search the stem instead. 
+ Cleaning up a site you did not build, on the day you meet it. You do not know yet what its theme does with images. Look first. 
+ Doing it for speed. Nobody ever downloads an unused image, so it costs nothing in page speed. Do it for disk, for backups, for your own sanity, but do not sit there waiting for a PageSpeed number to move. 
+ Deleting the whole list in one go. Batches, then look at the site. 
+
+## FAQ
+
+ Does WordPress tell you where an image is used? 
+ No. The "Uploaded to" column records which post the file was uploaded from, nothing updates it afterwards, and there is no built-in feature anywhere in WordPress that finds unused media. 
+
+ Is an unattached image the same as an unused image? 
+ No. Logos, Customizer backgrounds and anything uploaded from the Media Library screen are all unattached and all in use. Treating that filter as a delete list is how sites break. 
+
+ Do unused images slow down my site? 
+ Not the speed a visitor sees. An image nobody links to is never downloaded. What it costs you is disk space, backup size, migration time, and a Media Library that is unpleasant to work in. Good enough reasons, but this is housekeeping, not performance work. 
+
+ Can I get a deleted image back? 
+ Not from WordPress. Media is deleted permanently by default. Add define( 'MEDIA_TRASH', true ); to wp-config.php and media gets a Trash, so deleting takes two steps. Without it, your only way back is a backup. 
+
+ What happens to the thumbnail sizes? 
+ Deleting an attachment through WordPress removes the original and every registered size generated from it. Files orphaned by a theme you removed years ago are a separate problem, because WordPress has no record of them at all. 
+
+ Is there a safe way to test before deleting? 
+ Yes. Turn on MEDIA_TRASH , trash a small batch, then load the site, including the pages you rarely open. Anything th
+
+
+## https://devmonowar.github.io/blog/llms-txt-wordpress/
+
+(https://devmonowar.github.io/blog/llms-txt-wordpress/)
+
+[Home](/) 
+ [Blog](/blog/) 
+ llms.txt for WordPress 
+
+# llms.txt for WordPress — write one by hand in an hour
+
+ By Monowar Hossain 
+ 16 September 2026 
+
+ Summary. Last month an AI assistant described one of my plugins wrong — wrong features, confident tone, my name attached. The models already had my pages; what they lacked was a short summary written by me. That is what llms.txt is: a Markdown file at your domain root that says what your site means, so assistants quote you instead of improvising. Here is the format, a full example, and the mistakes that make one useless. 
+
+## On this page
+
+ [What llms.txt actually is (and is not)](#what) 
+ [The format that works](#format) 
+ [A complete example you can steal](#example) 
+ [Where the file goes on WordPress](#where) 
+ [Writing it by hand vs generating it](#generate) 
+ [Mistakes that make one useless](#mistakes) 
+ [FAQ](#faq) 
+ [Conclusion](#conclusion) 
+
+## What llms.txt actually is (and is not)
+
+ The idea is borrowed from robots.txt, but do not let the name confuse you — they do opposite jobs. robots.txt stands at the door saying what not to fetch. llms.txt sits inside, a plain Markdown file, saying: here is what this site is, here is what each section covers, here are the pages that matter. It is written for language models the way a sitemap is written for crawlers. 
+ What it is not: a standard nobody enforces yet, an opt-out mechanism (it has none), or a ranking trick. Nobody's position in anything improves because they have one. The entire payoff is accuracy — being described correctly by machines that will describe you either way. 
+ I resisted writing one for months, on the grounds that conventions this young might die. Then came the wrong plugin description with my name on it, and I wrote the file that same evening. An hour of work against being misquoted forever is not a difficult trade once you have felt the wrong end of it. 
+
+## The format that works
+
+ There is a [proposed spec](https://llmstxt.org/) — now at v2, revised August 2026 — and the parts everyone agrees on are few. Keep to these and your file will be readable by every consumer that bothers to look: 
+ 
+ An H1 with the site name. One line, no cleverness. This is the title the model will use for you. 
+ A blockquote summary. Two or three sentences saying what the site is and who it is for. Write it like you are explaining the site to a smart friend, because that is roughly what happens next. 
+ H2 sections with Markdown links. One section per area of the site — products, docs, blog, about — each link with a short description after it. The description is the important part; a bare list of URLs teaches nothing. 
+ Plain Markdown, nothing else. No HTML, no shortcodes, no front matter. If your WordPress editor wants to "help", write the file in a text editor instead. 
+ 
+ That is the whole format. Anything beyond this — extended sections, detailed docs — is optional furniture. Get the four load-bearing parts right and stop. Mine is 6 KB covering 22 pages, and most of the value sits in the first screen. 
+
+## A complete example you can steal
+
+ Here is a small business site, start to finish. Copy the shape, replace the words: 
+ # BlueHeron Bakery
+
+> Family-run sourdough bakery in Portland, Oregon.
+> Wholesale and retail. This file summarises the site
+> for AI assistants so customers get accurate answers.
+
+## Products
+
+- [Sourdough loaves](https://blueheron.example/shop/sourdough/): Daily bake, order by 2pm for next-day pickup.
+- [Wholesale programme](https://blueheron.example/wholesale/): For cafés and restaurants, minimum 20 loaves weekly.
+- [Baking classes](https://blueheron.example/classes/): Monthly Saturday workshops, beginners welcome.
+
+## Practical information
+
+- [Opening hours and location](https://blueheron.example/visit/): Tue–Sun, 7am–3pm. Closed Mondays.
+- [Allergen information](https://blueheron.example/allergens/): Full flour and allergen list, updated quarterly.
+
+## About
+
+- [Our story](https://blueheron.example/about/): Baking since 2011, second-generation family business. 
+ Notice what is missing: adjectives, history lessons, the founder's philosophy of fermentation. Every line answers something a customer might ask an assistant. If a line would never appear in an answer, it does not belong in the file. 
+
+## Where the file goes on WordPress
+
+ At the domain root: https://yoursite.com/llms.txt , sitting next to robots.txt. That location is the entire convention — consumers look at the root, and anything deeper might as well not exist. 
+ WordPress has no screen for this, which catches people out. There is no Settings page, no uploader, no media library slot for a .txt file at the root. You have three honest options: upload it by SFTP into the site root (next to wp-config.php ), add a rewrite rule if you are comfortable, or let a plugin generate and serve it. What does not work is uploading it as media — that puts it in /wp-content/uploads/ with a dated URL, which is exactly the wrong address. 
+
+## Writing it by hand vs generating it
+
+ Write the first version by hand. I mean that. An hour with a text editor forces you to decide what the site actually is, and that decision is the valuable part — no tool can make it for you. The example above is about eighty percent of a real file. 
+ Then let a tool keep it fresh, because the failure mode of llms.txt is staleness. You will add a product, change the hours, kill a service — and forget the little text file at the root every single time. A generator that rebuilds the file from your actual pages turns "remember to update it" into something that happens on its own. Hand-write the judgment, automate the maintenance. That division of labour is the whole trick. 
+
+ The maintenance end of the deal: the generated llms.txt on the left, rebuilt from your actual pages whenever the site changes. 
+
+ Disclosure. My plugin [CrawlWatch — AI Bot Insights](https://wordpress.org/plugins/crawlwatch-ai-bot-insights/) generates this file in one click — a catalogue version plus a full-content one — because I got tired of maintaining mine by hand about three updates after writing it. It is free and open source. The hand-written method above works either way, and the file it produces is yours no matter which tool made it. 
+
+## Mistakes that make one useless
+
+ Dumping the sitemap into it. A hundred bare URLs with no descriptions is a sitemap wearing a costume. The descriptions are the file. 
+ Writing marketing copy. "Leading provider of innovative solutions" tells a model nothing it can use in an answer. Say what you sell, where, and how to buy it. 
+ Putting it anywhere but the root. Uploads folder, a blog post about it, a page slug — consumers check /llms.txt and move on. 
+ Writing it once and forgetting it. Changed prices, dead services, a product you killed last spring — all quoted back to your customers with total confidence. Regenerate when the site changes. 
+ Expecting it to block training. It cannot. It has no opt-out power and was never meant to. Keeping crawlers out is robots.txt's job, per bot. 
+ Stuffing keywords into it. It is read by machines that understand prose. Write prose. 
+
+## FAQ
+
+ Where does llms.txt go on a WordPress site? 
+ At the domain root, https://yoursite.com/llms.txt, next to robots.txt. WordPress has no screen for it, so you upload it by SFTP or let a plugin generate it. Anything deeper than the root and most consumers will never look for it. 
+
+ Do AI assistants actually read llms.txt? 
+ Some do, some do not — it is a young convention, not an enforced standard. The file costs an hour to write and has no downside, so the question that matters is not whether everyone reads it today but whether you want to be ready for the ones that do. 
+
+ Is llms.txt the same as robots.txt? 
+ No, they are opposites. robots.txt tells crawlers what not to fetch. llms.txt tells language models what your site means. One is a keep-out sign, the other is the summary you hand to welcome guests. 
+
+ How often should I update llms.txt? 
+ Whenever the site changes in a way that would embarrass you if quoted: new products, removed services, changed pricing. A stale llms.txt misquotes you with confidence, which is worse than having none. 
+
+ Can llms.txt stop AI training on my content? 
+ No. It has no opt-out mechanism and no enforcement. If you want crawlers kept out, that is robots.txt per bot. llms.txt assumes the models already have your pages and tries to make what they say about you accurate. 
+
+## Conclusion
+
+ An hour, a text editor, and an honest description of your own site. That is the entire project. The models are going to describe you whether you participate or not — llms.txt is simply you choosing to be in the room when it happens. 
+ Write it by hand once, so the decisions are yours. Then automate keeping it fresh, because nobody remembers the little file at the root. And when some assistant quotes you correctly six months from now, you will never know — which is exactly how infrastructure is supposed to feel. 
+
+## Related guides
+
+ [AI bot traffic in WordPress — see it, measure it, decide what to do](/blog/ai-bot-traffic-wordpress/) 
+ [What the WordPress.org plugin review actually flagged in my plugin](/blog/wordpress-plugin-review-what-they-flagged/) 
+ [The plugins I build](/plugins/) 
+
+## Keep reading
+
+ [AI bot traffic in WordPress](/blog/ai-bot-traffic-wordpress/) — the companion piece: which bots visit, robots.txt per bot, and the referrals assistants send you 
+ [CrawlWatch — AI Bot Insights](/crawlwatch-ai-bot-insights/) — generates this file in one click and keeps it fresh 
+ [What the WordPress.org plugin review actually flagged](/blog/wordpress-plugin-review-what-they-flagged/) — the review process behind the plugin above 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 16 September 2026 - Last updated 16 September 2026
+
+
+## https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/
+
+(https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/)
+
+[Home](/) 
+ [Blog](/blog/) 
+ Shared demo library case study 
+
+# How I built a shared demo library for my WordPress plugins
+
+ By Monowar Hossain 
+ 11 August 2026 
+ Case study 
+
+ Summary. Every plugin I maintain has a "Demo Library" feature that lets users import ready-made content in one click. Instead of bundling those demos inside each plugin, I built one shared, free, static library — JSON plus images — hosted on GitHub Pages, which every plugin fetches from. Here is the problem it solves, how it is structured, and what I would do differently. 
+
+## On this page
+
+ [Every new demo should not need a release](#problem) 
+ [One static library every plugin reads](#solution) 
+ [How it is structured](#structure) 
+ [How a plugin consumes it](#consume) 
+ [Who reads from it today](#scale) 
+ [What I would do differently](#differently) 
+ [FAQ](#faq) 
+ [Conclusion](#conclusion) 
+
+## Every new demo should not need a release
+
+ When a WordPress plugin ships pre-built demo content, the usual approach is to bundle it inside the plugin's own ZIP — images, JSON, everything. 
+ That means every time you want to add one new demo, you have to cut a whole new plugin release, bump the version, and wait for WordPress.org to process it. It also bloats the plugin package with images most users will never import. 
+
+## One static library every plugin reads
+
+ I built [wp-plugin-demo-library](https://github.com/devmonowar/wp-plugin-demo-library) — a repository that contains only demo resources, JSON manifests and images, served for free over GitHub Pages and consumed by each plugin's built-in Demo Library screen. 
+ New demos can be added or updated at any time, with no plugin release at all. 
+ It deliberately contains zero plugin code . Nothing in this repository is ever bundled into a WordPress.org package. It is pure content infrastructure. 
+
+## How it is structured
+
+ wp-plugin-demo-library/
+├── general-slider/
+│ ├── demo-library.json # manifest: list of demos + metadata
+│ ├── demos/ # one JSON per demo
+│ ├── previews/ # card thumbnails
+│ └── assets/ # images, fonts, svg, video
+└── advanced-testimonial/
+ ├── demo-library.json
+ ├── demos/
+ ├── previews/
+ └── assets/ 
+ Each plugin gets its own top-level folder, so adding support for a new plugin is just adding a new folder. There is no shared code to touch. 
+
+## How a plugin consumes it
+
+ Each plugin fetches its own demo-library.json server-side, caches it for about six hours, and renders one card per demo. Demos are version-gated by a requires field, so an older plugin install is never offered a demo that needs a newer feature. 
+ On import, the plugin downloads that demo's JSON, sideloads every image straight into the site's media library, and creates the actual content — sliders, testimonials, and so on. 
+ The connection only ever happens when a user opens the Demo Library screen or clicks Import. It is a plain, read-only file request, and it is disclosed to users as an external service in each plugin's readme.txt . 
+
+ This is what the user actually sees. Two different plugins, two different sets of demos — but both screens are reading from the same repository, and neither plugin ships a single demo image in its own ZIP. 
+
+ Advanced Testimonial's Demo Library — the category filters and cards are built from demo-library.json . 
+
+ The same screen in Free Widgets For Elementor. Different demos, same repository, no shared code between the two plugins. 
+
+## Who reads from it today
+
+ Three plugins read from the one repository — General Slider, Advanced Testimonial and Free Widgets For Elementor — thirty demos between them. Each plugin caches its manifest for about six hours, so a new demo appears in wp-admin the same day it is committed, with no release, no version bump, and no user action. 
+ The number that matters most to me is zero: zero demo images ship inside any plugin ZIP. Every byte of demo content lives in this repository and arrives only when a user clicks Import. 
+
+## What I would do differently
+
+ If I were starting this over, I would standardise the demo JSON shape across plugins from day one. Right now each plugin defines its own shape — a slider's slides array looks nothing like a testimonial's testimonials array. 
+ That is fine at two plugins. It will need a shared convention as more plugins join, and retrofitting one is more work than agreeing on it up front. 
+
+## FAQ
+
+ Does this slow down the plugins that use it? 
+ No. It is only contacted when a user actively opens the Demo Library screen or imports a demo, and it is a plain static file request to GitHub Pages, not an API with any processing. 
+
+ Is any of my site data sent to this service? 
+ No. It is a one-way, read-only download of public demo files — JSON and images. Nothing about your site is ever sent to it. 
+
+ Can I add a demo without releasing a new plugin version? 
+ Yes, that is the entire point. Commit new JSON and images to the repository and they appear in the plugin's Demo Library once the manifest cache expires, or after a manual refresh. 
+
+## Conclusion
+
+ Splitting demo content out of the plugin release cycle turned out to be a small architectural decision with an outsized payoff. Three plugins read from the one repository today — thirty demos between them — new demos ship in minutes instead of days, and none of my plugins carry image weight they do not need in their WordPress.org package. 
+ 
+ [Browse the demo gallery](https://devmonowar.github.io/wp-plugin-demo-library/)
+ [Source on GitHub](https://github.com/devmonowar/wp-plugin-demo-library)
+
+## Related guides
+
+ [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) 
+ [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) 
+
+## Keep reading
+
+ [How to build a fast, accessible WordPress slider](/blog/general-slider-fast-accessible-wordpress-slider/) — the first plugin to use it 
+ [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) — the second 
+ [The Elementor widgets the free core is missing](/blog/free-widgets-for-elementor-guide/) — and the third 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 11 August 2026 - Last updated 11 August 2026
+
+
+## https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/
+
+(https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/)
+
+[Home](/) 
+ [Blog](/blog/) 
+ Why WordPress sliders are slow 
+
+# Why WordPress sliders are slow — and how to check yours
+
+ By Monowar Hossain 
+ 20 August 2026 
+
+ Summary. A slider is one of the easiest ways to make a WordPress page heavy, and the images are only part of it. The rest is a JavaScript dependency you never chose, assets loading on pages that have no slider on them, and a layout that jumps while the page is still loading. Four causes, and a five-minute way to check which of them apply to your site. 
+
+## On this page
+
+ [Cause 1: jQuery, the dependency you did not choose](#jquery) 
+ [Cause 2: assets loading on pages with no slider](#everywhere) 
+ [Cause 3: the layout jump](#shift) 
+ [Cause 4: images, the big one](#images) 
+ [How to measure your slider in five minutes](#measure) 
+ [What good looks like](#good) 
+ [What to actually do about it](#fix) 
+ [Common mistakes](#mistakes) 
+ [FAQ](#faq) 
+ [Conclusion](#conclusion) 
+
+## Cause 1: jQuery, the dependency you did not choose
+
+ A lot of WordPress slider plugins are built on Slick . Slick is a jQuery plugin, and its own JavaScript is genuinely small — around 15 KB gzipped. jQuery is not. Roughly 30 KB gzipped , about 85 KB before compression. 
+ So the "15 KB slider" is a 45 KB slider. Two thirds of it is a library the slider needs and your page almost certainly does not. 
+ File size is not even the worst part of it. jQuery has to be downloaded, parsed and executed before your slider script is allowed to start. On a mid-range Android phone that parse-and-execute step costs more than the download did, and nobody puts that number in a plugin description. 
+
+ Library Gzipped Needs jQuery? 
+
+ Splide ~12 KB No 
+ Swiper ~25–40 KB depending on modules No 
+ Slick ~15 KB + ~30 KB jQuery Yes 
+
+ Those figures were right when I wrote this, but library versions move. Check them yourself on [Bundlephobia](https://bundlephobia.com) rather than trusting a number in a blog post, including this one. 
+ If your theme already loads jQuery for something else, the extra cost is smaller. But "something else already made this mistake" is a poor reason to make it twice. 
+
+## Cause 2: assets loading on pages with no slider
+
+ This is the one I run into most, and it takes ten seconds to check. 
+ Plenty of slider plugins enqueue their CSS and JavaScript on wp_enqueue_scripts with no condition at all. Every page on the site then downloads the slider library — your contact page, your blog posts, your privacy policy. None of which contain a slider. 
+ Go and open your own contact page and search the source for your slider plugin's name. If it is in there, you are paying for a slider on a page that has none, on every single visit. 
+ A well-built plugin registers its assets and enqueues them only when the block, shortcode or widget is actually on the page. This is not difficult to do. It is just easy to skip. 
+
+## Cause 3: the layout jump
+
+ Load a page with a slider on a slow connection and watch it. The text appears, the slider initialises a second later, and everything below it jumps down the page. 
+ That jump is Cumulative Layout Shift , and Google measures it. The threshold is 0.1 . One unsized slider can go past that on its own. 
+ The cause is simple enough: the slider container has no height until JavaScript runs and drops the slides into it. So the browser reserves nothing, then has to make room all at once. 
+ The fix is simple too. The container needs a height reserved before the script runs — an aspect-ratio , a min-height , or explicit width and height on the slide images. Whether your plugin bothers to do that is not something any description will tell you. You have to look. 
+
+ Illustration, not a screenshot: without a reserved height the slider shoves the page down when it initialises; with one, the space is already waiting. 
+
+## Cause 4: images, the big one
+
+ Everything above is measured in tens of kilobytes. Slider images are measured in megabytes . This is where the real weight is, and it is the part people skip past because it is less interesting than arguing about JavaScript. 
+ Three things go wrong, and I see the first one constantly: 
+ 
+ Uploading the full-size photo as a slide. A 3000px JPEG straight off a phone, displayed in a slider that renders at 1200px. The browser downloads every pixel of it and throws most of them away. 
+ Lazy-loading the first slide. WordPress adds loading="lazy" to images automatically, which is the right default nearly everywhere — and the wrong one here. The first slide is usually your Largest Contentful Paint element, so lazy-loading it delays the exact thing Google is timing. First slide eager, everything after it lazy. 
+ Loading all ten slides up front. Nine of those downloads happen for a visitor who never clicks the arrow. 
+
+ Illustration with rough proportions: the images outweigh everything else combined. Argue about JavaScript all you like — the megabytes are in the photos. 
+
+## How to measure your slider in five minutes
+
+ No paid tool, no plugin. All of this is already in Chrome. 
+
+ Step 1 — find out what is actually loading. 
+ Open a page with your slider. Press F12 , go to the Network tab, tick Disable cache , and reload. Sort by Size . You are looking for jquery.min.js , your slider plugin's JS and CSS, and your slide images. 
+
+ Step 2 — find out how much of it is used. 
+ In DevTools press Ctrl+Shift+P , type Coverage , hit record, then reload. It shows what percentage of each CSS and JS file the page actually ran. Seeing slider CSS come back 70–90% unused is completely normal, and that red bar is more persuasive than any argument you could write. 
+
+ Step 3 — check a page with no slider. 
+ Load your contact page. In the Network tab, search for your slider plugin's name. Anything that shows up is pure waste. 
+
+ Step 4 — get the scores. 
+ Run the page through [PageSpeed Insights](https://pagespeed.web.dev). Look at LCP and CLS , and use the mobile numbers — that is what Google uses for ranking. 
+
+ Step 5 — watch the jump. 
+ In the Network tab set throttling to Slow 4G , reload, and watch. If the page visibly jumps when the slider appears, you have a CLS problem, whatever the score says. 
+
+## What good looks like
+
+ Google's Core Web Vitals thresholds, on mobile: 
+
+ Metric Good Needs work 
+
+ LCP — largest element painted ≤ 2.5s > 4.0s 
+ CLS — layout shift ≤ 0.1 > 0.25 
+ INP — interaction response ≤ 200ms > 500ms 
+
+ For the slider itself, a reasonable target: 
+ 
+ No jQuery on the front end unless something else genuinely needs it 
+ Under about 50 KB of slider CSS and JS combined, gzipped 
+ Zero slider assets on pages without a slider 
+ No visible jump when the slider initialises 
+ First slide eager , the rest lazy 
+
+## What to actually do about it
+
+ In rough order of how much you get back for the effort: 
+ 
+ Resize your slide images before uploading. Nothing else on this list comes close. A slide image should be about the width the slider renders at, served as WebP. 
+ Set the first slide to load eagerly , the rest lazily. 
+ Check whether assets load site-wide. If they do, and your plugin has no setting for it, that is a plugin problem, not a settings problem. 
+ Reserve the slider's height in CSS so nothing jumps. 
+ Then, if it is still heavy , look at whether your slider needs jQuery at all. 
+ 
+ Point 5 is last for a reason. Swapping plugins is the most disruptive thing on this list and usually the smallest win. Do the first four, measure again, and there is a fair chance you never get to it. 
+ If you do end up switching, judge the dependency rather than the marketing. Open the plugin in the directory, look at what it actually loads, and run the five-minute test on its demo page. 
+
+ Disclosure. I build a slider plugin myself — [General Slider](/blog/general-slider-fast-accessible-wordpress-slider/). I built it on Splide rather than jQuery, and made it load nothing on pages without a slider, because these are the four things that annoyed me about every slider I had used before. I have deliberately kept it out of the comparisons above. Measure your own site and make your own decision. 
+
+## Common mistakes
+
+ Judging a slider by its own file size and ignoring what it depends on. 
+ Testing on desktop. Google ranks on mobile. Test on mobile. 
+ Testing with your cache plugin on. You will measure the cache, not the slider. Test in an incognito window with caching disabled, then again with it on. 
+ Optimising the library and ignoring the images. 30 KB of JavaScript is not your problem when a slide is 2 MB. 
+ Lazy-loading the first slide. It is the one image that must not be lazy. 
+ Assuming a plugin only loads where it is used. Check the contact page. It takes ten seconds. 
+
+## FAQ
+
+ Do sliders hurt SEO? 
+ Not directly — Google has no rule against sliders. But they affect Core Web Vitals, and those are a ranking signal. A fast slider is fine; a slow one costs you the same as any other slow element. 
+
+ Is jQuery really that bad? 
+ It is not bad, it is usually unnecessary. Around 30 KB gzipped plus parse time, for something a modern slider library does without it. If your theme already loads jQuery, one more consumer of it costs little extra — the problem is loading it only for the slider. 
+
+ How do I know if my slider causes layout shift? 
+ Throttle to Slow 4G in DevTools and reload while watching the page. If content below the slider jumps down when it appears, that is the shift. PageSpeed Insights will also report it under CLS. 
+
+ Should I lazy-load slider images? 
+ Yes, except the first one. The first slide is usually your LCP element, and lazy-loading it directly delays the metric Google measures. 
+
+ What is a reasonable size for a slide image? 
+ Roughly the width the slider renders at — for a full-width slider, around 1600–1920px is plenty — saved as WebP. A 3000px original downloads two or three times the data for no visible gain. 
+
+ My PageSpeed score is fine. Do I still need to care? 
+ Check the mobile score, not desktop, and check a real page rather than the homepage you optimised. If mobile LCP is under 2.5s and CLS is under 0.1 on your actual slider page, you are fine — go do something more useful. 
+
+## Conclusion
+
+ Sliders get blamed for slow sites, and the slider is rarely the whole story. It is a 30 KB dependency nobody asked for, assets on pages that do not need them, a container with no reserved height, and a 2 MB photo — four separate problems that happen to arrive together. 
+ All four are measurable, and measuring them takes five minutes with tools already sitting on your machine. Do that before you change anything. Otherwise you are guessing, and guessing usually means rebuilding the wrong thing. 
+
+## Related guides
+
+ [How to build a fast, accessible slider in WordPress with General Slider](/blog/general-slider-fast-accessible-wordpress-slider/) 
+ [How to install Free Widgets For Elementor](/blog/free-widgets-for-elementor-guide/) 
+
+## Keep reading
+
+ [How to build a fast, accessible WordPress slider](/blog/general-slider-fast-accessible-wordpress-slider/) — the slider I built after running into every one of these 
+ [How to find unused images in WordPress](/blog/how-to-find-unused-images-in-wordpress/) — images are cause four here; this is how to find the ones no page uses 
+ [The Elementor widgets the free core is missing](/blog/free-widgets-for-elementor-guide/) — the same load-only-what-the-page-needs rule, applied to Elementor widgets 
+
+ Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
+ 
+ [Monowar Hossain](/about/)
+ [GitHub](https://github.com/devmonowar)
+ [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
+ [LinkedIn](https://www.linkedin.com/in/devmonowar)
+ 
+ Published 20 August 2026 - Last updated 20 August 20
+
+
+## https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/
+
+(https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/)
+
+[Home](/) 
+ [Blog](/blog/) 
+ What the WordPress.org plugin review flagged 
+
+# What the WordPress.org plugin review actually flagged in my plugin
+
+ By Monowar Hossain 
+ 21 August 2026 
+
+ Summary. I submitted a plugin to WordPress.org in late July 2026. It came back twice: once over the name, once over the code. Approval came on 20 August, about three and a half weeks after I first hit submit. Neither round was unfair. Both times the problem had been sitting in my repository for months, and both times I had configured my own linter to keep quiet about it. So: what they flagged, the code before and after, the mistake I managed to make twice, and what actually happens once the approval email lands. 
+
+## On this page
+
+ [The first email may not be from a human](#automated) 
+ [Round 1: the name](#name) 
+ [Round 1: one script tag, seven problems](#inline-js) 
+ [Round 1: a three-letter prefix](#prefix) 
+ [Round 2: sanitizing input](#sanitize) 
+ [Round 2: escaping output](#escape) 
+ [Round 2: unsafe SQL](#sql) 
+ [The mistake I made twice](#twice) 
+ [What lint will never catch](#lint) 
+ [Replying to the review](#reply) 
+ [Approved — and still not live](#approved) 
+ [FAQ](#faq) 
+ [Where this stands](#conclusion) 
+
+## The first email may not be from a human
+
+ This is the part I wish I had known before I opened it. 
+ Two days after submitting, an email arrived. Buried in the header was this: 
+ 
+ 🤖 Please note that this message was generated using a combination of humans, algorithms, and AI in varying proportions. It may not have been reviewed by a human. All AI outputs are marked with the ✨ emoji. 
+ 
+ It called itself an automated pre-review. Three weeks later a second email came, and that one opened differently: "the volunteers have manually checked it." 
+ So there are really two gates. A machine screens for the obvious mechanical problems first. Only once you are through that does a person open your code. 
+ That changes how you should read the first email. It is a checklist, not a verdict. Clear it fast, do not argue with it, get to the human. 
+
+## Round 1: the name
+
+ I had called it Unused Image Cleaner . The ✨-marked verdict: 
+ 
+ The display name is too generic and closely matches existing plugin names built around the exact phrase "Unused Image Cleaner," which makes it confusing in the directory. 
+ 
+ Fair enough, and I should have checked first. Search the directory for that phrase and you get a wall of plugins doing roughly the same job. 
+ Finding a replacement was harder than I expected, because of how they define "similar": 
+ 
+ We also look into similar naming patterns, lookalike names or meanings . 
+ 
+ Meanings, not spellings. My first idea was ImageJanitor Guard . Dead on arrival: the directory already has Upload Janitor , described as "Clean up unused images and other files from your uploads folder." Different words, same idea. Two more candidates went the same way. Both already existed. 
+ The rule that finally helped was this one: 
+ 
+ ❌ Changing the plugin name by adding an additional letter or a generic word (Advanced, Simple, etc) will probably not solve this problem at all. 
+ ✅ You could try adding a coined term, your personal brand or a unique identifier at the beginning of the name. 
+ 
+ At the beginning, not the end. So I made up a word and put it first. 
+ Two more things about names that are easy to miss. They check your username, your plugin URLs, your icon and banner, not only the title. And the slug is a separate request. Changing it in your code does nothing; you have to state the permalink you want in your reply, and after approval it can never be changed again. 
+ The real lesson: search the directory before you write a line of code. Rename afterwards and your slug, prefix, constants, hooks, database tables and repository URL all move at once. 
+
+## Round 1: one script tag, seven problems
+
+ They quoted exactly one line, a <script> tag in an admin page. 
+ One line. But the email also says this, and it is the sentence everybody skims: 
+ 
+ Then search your codebase for other occurrences of the same issues , even if they are not explicitly mentioned in this review. 
+ 
+ So I searched. That block had six relatives I had forgotten about: inline onsubmit= handlers spread across two admin pages. 
+
+ // Before — inline handler in the middle of a template
+<form onsubmit="return confirm('Delete permanently?');">
+
+// After — a data attribute, bound by the enqueued script
+<form data-janitorix-confirm="Delete permanently?"> 
+
+ The plugin emits no inline JavaScript at all now. Fixing only the quoted line would probably have cost me another round, and their warning about that is not gentle: updates that resolve only a small portion of the reported issues may be rejected, and plugins rejected that way "will not be reviewed again." 
+
+## Round 1: a three-letter prefix
+
+ Mine was uic . Their rule is four characters minimum, and the handbook recommends five. It is not only function names either: classes, define() , every option and transient key, shortcodes, post types, registered scripts, AJAX actions, namespaces. 
+ Replacing it was the biggest mechanical job of the whole review. A nine-character prefix had to reach constants, options, the cron event, seven admin_post_* actions, three public hooks, five database tables, the WP-CLI command, the CSS classes. 
+ Here is the part that stings. My phpcs.xml.dist excluded the short-prefix sniff, under a comment I had written myself arguing that uic was fine because it had "already shipped". PHPCS had been telling me the truth the whole time. I had told it to be quiet. 
+
+## Round 2: sanitizing input
+
+ The name and slug were accepted, and this time a person had read the code. Three issues, all security. 
+ The first: 
+
+ // Before
+'from' => $this->date( isset( $_GET['from'] ) ? wp_unslash( $_GET['from'] ) : '' ),
+// phpcs:ignore ...InputNotSanitized -- date() validates against a strict Y-m-d whitelist 
+
+ My defence was true. date() validates against ^\d{4}-\d{2}-\d{2}$ and throws away anything else, so nothing unvalidated ever reached a query. 
+ It still deserved the flag. There is no sanitize_*() call in that line, and a phpcs:ignore sitting on top of it is a sign saying look here to anyone reading the file. 
+
+ // After
+'from' => $this->date( isset( $_GET['from'] ) ? sanitize_text_field( wp_unslash( $_GET['from'] ) ) : '' ), 
+
+ Sanitize first, validate after, ignore comment gone. Their mantra is sanitize early, escape late, always validate. Doing two out of three is not doing it. 
+
+## Round 2: escaping output
+
+ They flagged a variable going into wp_add_inline_script() . The real problem sat one level below the quoted line, and I would not have found it from the line alone: my plugin shipped no asset files at all. The CSS and JavaScript lived inside PHP as heredoc strings, registered against a handle with no source file, then pushed out inline. 
+ I had told myself this was clever. One fewer HTTP request. It is not clever: the browser cannot cache any of it, and anyone reading that file has to take a giant PHP string on trust. 
+ They are real files now, enqueued by URL. The only thing still inlined is a small wp_json_encode() object with two translated strings and one setting. 
+ The other half was a one-flag fix: 
+
+ // Before
+echo wp_json_encode( $data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES );
+
+// After
+echo wp_json_encode( $data, JSON_PRETTY_PRINT ); 
+
+ JSON_UNESCAPED_SLASHES switches off escaping that wp_json_encode() does deliberately. 
+
+## Round 2: unsafe SQL
+
+ This was the big one. Every query built its table name by concatenation: 
+
+ // Before
+$wpdb->get_results(
+ // phpcs:ignore -- Tables::logs() returns a hardcoded prefix + literal, never user input
+ $wpdb->prepare( 'SELECT * FROM ' . Tables::logs() . ' WHERE attachment_id = %d', $id )
+); 
+
+ Their tooling even noted that prepare() was being called correctly, then flagged it anyway. When I swept the codebase myself it came to 112 query sites across 22 files. 
+ My comment was, again, factually correct. Tables::logs() returns $wpdb->prefix plus a hardcoded literal, and no user input can reach it. But "my helper is safe" is not something a reviewer can verify at a glance, and it is not something a static analyser can verify at all. 
+ WordPress 6.2 added %i , an identifier placeholder, for exactly this: 
+
+ // After
+$wpdb->get_results(
+ $wpdb->prepare( 'SELECT * FROM %i WHERE attachment_id = %d', Tables::logs(), $id )
+); 
+
+ Every table identifier goes through %i now, mine as well as core's $wpdb->posts , postmeta and the rest. For IN ( … ) lists they handed me the pattern outright: 
+
+ // Before
+$in = implode( ',', array_map( 'intval', $ids ) );
+
+// After
+$placeholders = implode( ',', array_fill( 0, count( $ids ), '%d' ) );
+$wpdb->prepare( "SELECT … WHERE id IN ( $placeholders )", $ids ); 
+
+ Yes, intval() on every element was already safe. That is not the point. The next person to edit that line is me in six months, and I have to spot the intval to keep it safe. With %d I have to spot nothing at all. 
+ One knock-on effect: %i needs WordPress 6.2, so Requires at least moved up from 6.0. That version is from April 2023, and the plugin had never been published, so there was nobody to break. 
+
+## The mistake I made twice
+
+ When round 2 arrived, Plugin Check reported 35 SQL warnings. 
+ My own composer lint reported 0 errors, 0 warnings. 
+ Because phpcs.xml.dist had this in it: 
+
+ <exclude name="WordPress.DB.PreparedSQL.InterpolatedNotPrepared"/>
+<exclude name="WordPress.DB.PreparedSQL.NotPrepared"/> 
+
+ The two lines that hid the problem, with the justification I wrote myself sitting above them. Run with the project's own ruleset the linter has nothing to say. Switch those two sniffs back on and the same files report 17 errors. Plugin Check, running a wider set of SQL checks, counted 35. 
+
+ The exact two sniffs the reviewer flagged. Same shape as the prefix in round 1. Twice in one review, I had switched off the check that would have caught the thing that pended me. 
+ Both exclusions are gone, and the code passes with the sniffs enabled, which is the only version of that report worth anything. A green run from a config you wrote yourself proves nothing. 
+ Never silence a sniff to make a report look green. If a rule genuinely does not apply, silence that one line with a comment explaining why. Not the whole rule, project-wide, in a file you will forget you edited. 
+ Four warnings are still there on purpose, in a dynamic WHERE builder and a bulk INSERT. Both assemble a query string from literal SQL fragments and placeholders, never from a value. If a reviewer asks, that is my answer, and it is a far better position than having silenced them. 
+
+## What lint will never catch
+
+ %i cannot take a qualified column name. I had written %i for things like r.status . WordPress quotes that as one identifier — `r.status` — which is not a real column, and it would have broken my filters silently. PHPCS was happy. PHPStan was happy. It turned up when I clicked the filter on a live site and nothing came back. 
+ Plugin Check scans your whole folder — vendor/ , tests/ , tools/ , none of which ship. Checking my working directory produced an alarming number. The one that counts comes from the built ZIP, installed under the right folder name. Get the folder name wrong and it invents hundreds of bogus text-domain errors on its own. 
+
+ The check that counts: the shipped ZIP, extracted under its real slug, rather than the working folder. Plenty of warnings, every one of them a deliberate direct database call. No errors, which is the part that matters, because only the Plugin repo category has to pass. 
+ 
+ There was also an afternoon when I was certain I had introduced a bug: a freshly uploaded image would not trash. It was my own 24-hour safety rule doing its job. On a brand-new tes

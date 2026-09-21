@@ -47,5 +47,6 @@ source on GitHub and support handled in the WordPress.org forums.
 ## Optional
 
 - [RSS feed](https://devmonowar.github.io/feed.xml): every blog post, newest first.
+- [Full content](https://devmonowar.github.io/llms-full.txt): everything on this site in one file, for assistants that need more than these summaries.
 - [Sitemap](https://devmonowar.github.io/sitemap.xml): all indexable pages.
 - [GitHub](https://github.com/devmonowar): source for every plugin listed above.
