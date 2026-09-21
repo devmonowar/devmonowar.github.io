@@ -68,26 +68,31 @@
         {
           "@type": "Question",
           "name": "Where does llms.txt go on a WordPress site?",
+"url": "https://devmonowar.github.io/blog/llms-txt-wordpress/#where-does-llmstxt-go-on-a-wordpress-site",
           "acceptedAnswer": { "@type": "Answer", "text": "At the domain root, https://yoursite.com/llms.txt, next to robots.txt. WordPress has no screen for it, so you upload it by SFTP or let a plugin generate it. Anything deeper than the root and most consumers will never look for it." }
         },
         {
           "@type": "Question",
           "name": "Do AI assistants actually read llms.txt?",
+"url": "https://devmonowar.github.io/blog/llms-txt-wordpress/#do-ai-assistants-actually-read-llmstxt",
           "acceptedAnswer": { "@type": "Answer", "text": "Some do, some do not — it is a young convention, not an enforced standard. The file costs an hour to write and has no downside, so the question that matters is not whether everyone reads it today but whether you want to be ready for the ones that do." }
         },
         {
           "@type": "Question",
           "name": "Is llms.txt the same as robots.txt?",
+"url": "https://devmonowar.github.io/blog/llms-txt-wordpress/#is-llmstxt-the-same-as-robotstxt",
           "acceptedAnswer": { "@type": "Answer", "text": "No, they are opposites. robots.txt tells crawlers what not to fetch. llms.txt tells language models what your site means. One is a keep-out sign, the other is the summary you hand to welcome guests." }
         },
         {
           "@type": "Question",
           "name": "How often should I update llms.txt?",
+"url": "https://devmonowar.github.io/blog/llms-txt-wordpress/#how-often-should-i-update-llmstxt",
           "acceptedAnswer": { "@type": "Answer", "text": "Whenever the site changes in a way that would embarrass you if quoted: new products, removed services, changed pricing. A stale llms.txt misquotes you with confidence, which is worse than having none." }
         },
         {
           "@type": "Question",
           "name": "Can llms.txt stop AI training on my content?",
+"url": "https://devmonowar.github.io/blog/llms-txt-wordpress/#can-llmstxt-stop-ai-training-on-my-content",
           "acceptedAnswer": { "@type": "Answer", "text": "No. It has no opt-out mechanism and no enforcement. If you want crawlers kept out, that is robots.txt per bot. llms.txt assumes the models already have your pages and tries to make what they say about you accurate." }
         }
       ]
@@ -230,19 +235,19 @@
 
     <h2 id="faq">FAQ</h2>
     <dl class="faq">
-      <dt>Where does llms.txt go on a WordPress site?</dt>
+      <dt id="where-does-llmstxt-go-on-a-wordpress-site">Where does llms.txt go on a WordPress site?</dt>
       <dd>At the domain root, https://yoursite.com/llms.txt, next to robots.txt. WordPress has no screen for it, so you upload it by SFTP or let a plugin generate it. Anything deeper than the root and most consumers will never look for it.</dd>
 
-      <dt>Do AI assistants actually read llms.txt?</dt>
+      <dt id="do-ai-assistants-actually-read-llmstxt">Do AI assistants actually read llms.txt?</dt>
       <dd>Some do, some do not — it is a young convention, not an enforced standard. The file costs an hour to write and has no downside, so the question that matters is not whether everyone reads it today but whether you want to be ready for the ones that do.</dd>
 
-      <dt>Is llms.txt the same as robots.txt?</dt>
+      <dt id="is-llmstxt-the-same-as-robotstxt">Is llms.txt the same as robots.txt?</dt>
       <dd>No, they are opposites. robots.txt tells crawlers what not to fetch. llms.txt tells language models what your site means. One is a keep-out sign, the other is the summary you hand to welcome guests.</dd>
 
-      <dt>How often should I update llms.txt?</dt>
+      <dt id="how-often-should-i-update-llmstxt">How often should I update llms.txt?</dt>
       <dd>Whenever the site changes in a way that would embarrass you if quoted: new products, removed services, changed pricing. A stale llms.txt misquotes you with confidence, which is worse than having none.</dd>
 
-      <dt>Can llms.txt stop AI training on my content?</dt>
+      <dt id="can-llmstxt-stop-ai-training-on-my-content">Can llms.txt stop AI training on my content?</dt>
       <dd>No. It has no opt-out mechanism and no enforcement. If you want crawlers kept out, that is robots.txt per bot. llms.txt assumes the models already have your pages and tries to make what they say about you accurate.</dd>
     </dl>
 

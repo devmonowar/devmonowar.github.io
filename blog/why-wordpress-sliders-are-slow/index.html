@@ -68,26 +68,31 @@
         {
           "@type": "Question",
           "name": "Do sliders hurt SEO?",
+"url": "https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/#do-sliders-hurt-seo",
           "acceptedAnswer": { "@type": "Answer", "text": "Not directly. Google has no rule against sliders. But they affect Core Web Vitals, and those are a ranking signal. A fast slider is fine; a slow one costs you the same as any other slow element on the page." }
         },
         {
           "@type": "Question",
           "name": "Is jQuery really that bad for a WordPress slider?",
+"url": "https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/#is-jquery-really-that-bad",
           "acceptedAnswer": { "@type": "Answer", "text": "It is not bad, it is usually unnecessary. Around 30 KB gzipped plus parse and execute time, for something a modern slider library does without it. If your theme already loads jQuery, one more consumer costs little extra. The problem is loading it only for the slider." }
         },
         {
           "@type": "Question",
           "name": "How do I know if my slider causes layout shift?",
+"url": "https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/#how-do-i-know-if-my-slider-causes-layout-shift",
           "acceptedAnswer": { "@type": "Answer", "text": "Throttle the connection to Slow 4G in Chrome DevTools and reload while watching the page. If content below the slider jumps down when it appears, that is the shift. PageSpeed Insights also reports it under CLS." }
         },
         {
           "@type": "Question",
           "name": "Should I lazy-load slider images?",
+"url": "https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/#should-i-lazyload-slider-images",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes, except the first one. The first slide is usually the Largest Contentful Paint element, and lazy-loading it delays the exact metric Google measures." }
         },
         {
           "@type": "Question",
           "name": "What is a reasonable size for a slide image?",
+"url": "https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/#what-is-a-reasonable-size-for-a-slide-image",
           "acceptedAnswer": { "@type": "Answer", "text": "Roughly the width the slider renders at. For a full-width slider, 1600 to 1920 pixels is plenty, saved as WebP. A 3000 pixel original downloads two or three times the data for no visible gain." }
         }
       ]
@@ -289,22 +294,22 @@
 
     <h2 id="faq">FAQ</h2>
     <dl class="faq">
-      <dt>Do sliders hurt SEO?</dt>
+      <dt id="do-sliders-hurt-seo">Do sliders hurt SEO?</dt>
       <dd>Not directly — Google has no rule against sliders. But they affect Core Web Vitals, and those are a ranking signal. A fast slider is fine; a slow one costs you the same as any other slow element.</dd>
 
-      <dt>Is jQuery really that bad?</dt>
+      <dt id="is-jquery-really-that-bad">Is jQuery really that bad?</dt>
       <dd>It is not bad, it is usually unnecessary. Around 30 KB gzipped plus parse time, for something a modern slider library does without it. If your theme already loads jQuery, one more consumer of it costs little extra — the problem is loading it <em>only</em> for the slider.</dd>
 
-      <dt>How do I know if my slider causes layout shift?</dt>
+      <dt id="how-do-i-know-if-my-slider-causes-layout-shift">How do I know if my slider causes layout shift?</dt>
       <dd>Throttle to Slow 4G in DevTools and reload while watching the page. If content below the slider jumps down when it appears, that is the shift. PageSpeed Insights will also report it under CLS.</dd>
 
-      <dt>Should I lazy-load slider images?</dt>
+      <dt id="should-i-lazyload-slider-images">Should I lazy-load slider images?</dt>
       <dd>Yes, except the first one. The first slide is usually your LCP element, and lazy-loading it directly delays the metric Google measures.</dd>
 
-      <dt>What is a reasonable size for a slide image?</dt>
+      <dt id="what-is-a-reasonable-size-for-a-slide-image">What is a reasonable size for a slide image?</dt>
       <dd>Roughly the width the slider renders at — for a full-width slider, around 1600–1920px is plenty — saved as WebP. A 3000px original downloads two or three times the data for no visible gain.</dd>
 
-      <dt>My PageSpeed score is fine. Do I still need to care?</dt>
+      <dt id="my-pagespeed-score-is-fine-do-i-still-need-to-care">My PageSpeed score is fine. Do I still need to care?</dt>
       <dd>Check the mobile score, not desktop, and check a real page rather than the homepage you optimised. If mobile LCP is under 2.5s and CLS is under 0.1 on your actual slider page, you are fine — go do something more useful.</dd>
     </dl>
 

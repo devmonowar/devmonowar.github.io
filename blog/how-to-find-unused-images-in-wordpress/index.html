@@ -68,31 +68,37 @@
         {
           "@type": "Question",
           "name": "Does WordPress tell you where an image is used?",
+"url": "https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/#does-wordpress-tell-you-where-an-image-is-used",
           "acceptedAnswer": { "@type": "Answer", "text": "No. The \"Uploaded to\" column records which post the file was uploaded from, nothing updates it afterwards, and there is no built-in feature anywhere in WordPress that finds unused media." }
         },
         {
           "@type": "Question",
           "name": "Is an unattached image the same as an unused image?",
+"url": "https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/#is-an-unattached-image-the-same-as-an-unused-image",
           "acceptedAnswer": { "@type": "Answer", "text": "No. Logos, Customizer backgrounds and anything uploaded from the Media Library screen are all unattached and all in use. Treating that filter as a delete list is how sites break." }
         },
         {
           "@type": "Question",
           "name": "Do unused images slow down my site?",
+"url": "https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/#do-unused-images-slow-down-my-site",
           "acceptedAnswer": { "@type": "Answer", "text": "Not the speed a visitor sees. An image nobody links to is never downloaded. What it costs you is disk space, backup size, migration time, and a Media Library that is unpleasant to work in. Good enough reasons, but this is housekeeping, not performance work." }
         },
         {
           "@type": "Question",
           "name": "Can I get a deleted image back?",
+"url": "https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/#can-i-get-a-deleted-image-back",
           "acceptedAnswer": { "@type": "Answer", "text": "Not from WordPress. Media is deleted permanently by default. Add define( 'MEDIA_TRASH', true ); to wp-config.php and media gets a Trash, so deleting takes two steps. Without it, your only way back is a backup." }
         },
         {
           "@type": "Question",
           "name": "What happens to the thumbnail sizes?",
+"url": "https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/#what-happens-to-the-thumbnail-sizes",
           "acceptedAnswer": { "@type": "Answer", "text": "Deleting an attachment through WordPress removes the original and every registered size generated from it. Files orphaned by a theme you removed years ago are a separate problem, because WordPress has no record of them at all." }
         },
         {
           "@type": "Question",
           "name": "Is there a safe way to test before deleting?",
+"url": "https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/#is-there-a-safe-way-to-test-before-deleting",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes. Turn on MEDIA_TRASH, trash a small batch, then load the site, including the pages you rarely open. Anything that broke is one click from being back." }
         }
       ]
@@ -285,22 +291,22 @@ OR     option_value LIKE '%"id":412%';</code></pre>
 
     <h2 id="faq">FAQ</h2>
     <dl class="faq">
-      <dt>Does WordPress tell you where an image is used?</dt>
+      <dt id="does-wordpress-tell-you-where-an-image-is-used">Does WordPress tell you where an image is used?</dt>
       <dd>No. The "Uploaded to" column records which post the file was uploaded from, nothing updates it afterwards, and there is no built-in feature anywhere in WordPress that finds unused media.</dd>
 
-      <dt>Is an unattached image the same as an unused image?</dt>
+      <dt id="is-an-unattached-image-the-same-as-an-unused-image">Is an unattached image the same as an unused image?</dt>
       <dd>No. Logos, Customizer backgrounds and anything uploaded from the Media Library screen are all unattached and all in use. Treating that filter as a delete list is how sites break.</dd>
 
-      <dt>Do unused images slow down my site?</dt>
+      <dt id="do-unused-images-slow-down-my-site">Do unused images slow down my site?</dt>
       <dd>Not the speed a visitor sees. An image nobody links to is never downloaded. What it costs you is disk space, backup size, migration time, and a Media Library that is unpleasant to work in. Good enough reasons, but this is housekeeping, not performance work.</dd>
 
-      <dt>Can I get a deleted image back?</dt>
+      <dt id="can-i-get-a-deleted-image-back">Can I get a deleted image back?</dt>
       <dd>Not from WordPress. Media is deleted permanently by default. Add <code>define( 'MEDIA_TRASH', true );</code> to <code>wp-config.php</code> and media gets a Trash, so deleting takes two steps. Without it, your only way back is a backup.</dd>
 
-      <dt>What happens to the thumbnail sizes?</dt>
+      <dt id="what-happens-to-the-thumbnail-sizes">What happens to the thumbnail sizes?</dt>
       <dd>Deleting an attachment through WordPress removes the original and every registered size generated from it. Files orphaned by a theme you removed years ago are a separate problem, because WordPress has no record of them at all.</dd>
 
-      <dt>Is there a safe way to test before deleting?</dt>
+      <dt id="is-there-a-safe-way-to-test-before-deleting">Is there a safe way to test before deleting?</dt>
       <dd>Yes. Turn on <code>MEDIA_TRASH</code>, trash a small batch, then load the site, including the pages you rarely open. Anything that broke is one click from being back.</dd>
     </dl>
 

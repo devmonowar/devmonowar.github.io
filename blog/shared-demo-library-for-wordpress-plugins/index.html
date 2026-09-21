@@ -68,16 +68,19 @@
         {
           "@type": "Question",
           "name": "Does the shared demo library slow down the plugins that use it?",
+"url": "https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/#does-this-slow-down-the-plugins-that-use-it",
           "acceptedAnswer": { "@type": "Answer", "text": "No. It is only contacted when a user actively opens the Demo Library screen or imports a demo, and it is a plain static file request to GitHub Pages, not an API with any processing." }
         },
         {
           "@type": "Question",
           "name": "Is any of my site data sent to this service?",
+"url": "https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/#is-any-of-my-site-data-sent-to-this-service",
           "acceptedAnswer": { "@type": "Answer", "text": "No. It is a one-way, read-only download of public demo files — JSON and images. Nothing about your site is ever sent to it." }
         },
         {
           "@type": "Question",
           "name": "Can a demo be added without releasing a new plugin version?",
+"url": "https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/#can-i-add-a-demo-without-releasing-a-new-plugin-version",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes, that is the entire point. New JSON and images are committed to the repository and appear in the plugin's Demo Library once the manifest cache expires, or after a manual refresh." }
         }
       ]
@@ -200,13 +203,13 @@
 
     <h2 id="faq">FAQ</h2>
     <dl class="faq">
-      <dt>Does this slow down the plugins that use it?</dt>
+      <dt id="does-this-slow-down-the-plugins-that-use-it">Does this slow down the plugins that use it?</dt>
       <dd>No. It is only contacted when a user actively opens the Demo Library screen or imports a demo, and it is a plain static file request to GitHub Pages, not an API with any processing.</dd>
 
-      <dt>Is any of my site data sent to this service?</dt>
+      <dt id="is-any-of-my-site-data-sent-to-this-service">Is any of my site data sent to this service?</dt>
       <dd>No. It is a one-way, read-only download of public demo files — JSON and images. Nothing about your site is ever sent to it.</dd>
 
-      <dt>Can I add a demo without releasing a new plugin version?</dt>
+      <dt id="can-i-add-a-demo-without-releasing-a-new-plugin-version">Can I add a demo without releasing a new plugin version?</dt>
       <dd>Yes, that is the entire point. Commit new JSON and images to the repository and they appear in the plugin's Demo Library once the manifest cache expires, or after a manual refresh.</dd>
     </dl>
 

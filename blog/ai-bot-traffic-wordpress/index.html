@@ -68,31 +68,37 @@
         {
           "@type": "Question",
           "name": "How do I know if AI bots are visiting my WordPress site?",
+"url": "https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/#how-do-i-know-if-ai-bots-are-visiting-my-wordpress-site",
           "acceptedAnswer": { "@type": "Answer", "text": "Check your server access logs for crawler user-agents like GPTBot, CCBot, ClaudeBot or PerplexityBot. WordPress itself records nothing about them, so if you never look at the logs, the visits are invisible. A plugin that watches the logs can show you the same thing inside the admin." }
         },
         {
           "@type": "Question",
           "name": "Should I block GPTBot and other AI crawlers?",
+"url": "https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/#should-i-block-gptbot-and-other-ai-crawlers",
           "acceptedAnswer": { "@type": "Answer", "text": "It depends what you want. Blocking keeps your content out of future training data, but it does not remove what is already trained on, and it can cost you citations and visitors from AI answers. Block when bandwidth or principle demands it, not by default." }
         },
         {
           "@type": "Question",
           "name": "Does robots.txt stop AI crawlers?",
+"url": "https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/#does-robotstxt-stop-ai-crawlers",
           "acceptedAnswer": { "@type": "Answer", "text": "The well-behaved ones obey it: GPTBot, CCBot, Google-Extended and most named crawlers check robots.txt before fetching. But robots.txt is a request, not a lock. Crawlers that do not identify themselves never read it, and a few named ones have been accused of fetching anyway." }
         },
         {
           "@type": "Question",
           "name": "What is llms.txt and do I need one?",
+"url": "https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/#what-is-llmstxt-and-do-i-need-one",
           "acceptedAnswer": { "@type": "Answer", "text": "llms.txt is a proposed convention: a Markdown file at /llms.txt that summarises your site for large language models, so they quote you accurately instead of guessing from scraped pages. It costs one small file. Whether assistants will universally read it is still unsettled, but there is no downside to having one." }
         },
         {
           "@type": "Question",
           "name": "Do visitors arriving from ChatGPT show up in my analytics?",
+"url": "https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/#do-visitors-arriving-from-chatgpt-show-up-in-my-analytics",
           "acceptedAnswer": { "@type": "Answer", "text": "Usually yes, as referral traffic from chatgpt.com, perplexity.ai and similar domains. They look like ordinary referrals, so unless you segment them you will never know how many of your visitors an AI assistant sent you." }
         },
         {
           "@type": "Question",
           "name": "Will blocking AI bots hurt my Google rankings?",
+"url": "https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/#will-blocking-ai-bots-hurt-my-google-rankings",
           "acceptedAnswer": { "@type": "Answer", "text": "No. Googlebot and Google-Extended are separate crawlers with separate user-agents. Blocking GPTBot, CCBot or ClaudeBot in robots.txt touches none of Google's search crawling, and your rankings do not move." }
         }
       ]
@@ -264,22 +270,22 @@ Disallow: /</code></pre>
 
     <h2 id="faq">FAQ</h2>
     <dl class="faq">
-      <dt>How do I know if AI bots are visiting my WordPress site?</dt>
+      <dt id="how-do-i-know-if-ai-bots-are-visiting-my-wordpress-site">How do I know if AI bots are visiting my WordPress site?</dt>
       <dd>Check your server access logs for crawler user-agents like GPTBot, CCBot, ClaudeBot or PerplexityBot. WordPress itself records nothing about them, so if you never look at the logs, the visits are invisible. A plugin that watches the logs can show you the same thing inside the admin.</dd>
 
-      <dt>Should I block GPTBot and other AI crawlers?</dt>
+      <dt id="should-i-block-gptbot-and-other-ai-crawlers">Should I block GPTBot and other AI crawlers?</dt>
       <dd>It depends what you want. Blocking keeps your content out of future training data, but it does not remove what is already trained on, and it can cost you citations and visitors from AI answers. Block when bandwidth or principle demands it, not by default.</dd>
 
-      <dt>Does robots.txt stop AI crawlers?</dt>
+      <dt id="does-robotstxt-stop-ai-crawlers">Does robots.txt stop AI crawlers?</dt>
       <dd>The well-behaved ones obey it: GPTBot, CCBot, Google-Extended and most named crawlers check robots.txt before fetching. But robots.txt is a request, not a lock. Crawlers that do not identify themselves never read it, and a few named ones have been accused of fetching anyway.</dd>
 
-      <dt>What is llms.txt and do I need one?</dt>
+      <dt id="what-is-llmstxt-and-do-i-need-one">What is llms.txt and do I need one?</dt>
       <dd>llms.txt is a proposed convention: a Markdown file at /llms.txt that summarises your site for large language models, so they quote you accurately instead of guessing from scraped pages. It costs one small file. Whether assistants will universally read it is still unsettled, but there is no downside to having one.</dd>
 
-      <dt>Do visitors arriving from ChatGPT show up in my analytics?</dt>
+      <dt id="do-visitors-arriving-from-chatgpt-show-up-in-my-analytics">Do visitors arriving from ChatGPT show up in my analytics?</dt>
       <dd>Usually yes, as referral traffic from chatgpt.com, perplexity.ai and similar domains. They look like ordinary referrals, so unless you segment them you will never know how many of your visitors an AI assistant sent you.</dd>
 
-      <dt>Will blocking AI bots hurt my Google rankings?</dt>
+      <dt id="will-blocking-ai-bots-hurt-my-google-rankings">Will blocking AI bots hurt my Google rankings?</dt>
       <dd>No. Googlebot and Google-Extended are separate crawlers with separate user-agents. Blocking GPTBot, CCBot or ClaudeBot in robots.txt touches none of Google's search crawling, and your rankings do not move.</dd>
     </dl>
 

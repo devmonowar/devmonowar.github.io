@@ -76,26 +76,31 @@
         {
           "@type": "Question",
           "name": "Why do scheduled posts miss schedule?",
+"url": "https://devmonowar.github.io/schedulelens-cron-viewer/#why-do-scheduled-posts-miss-schedule",
           "acceptedAnswer": { "@type": "Answer", "text": "Low traffic, caching, or DISABLE_WP_CRON can stop schedules from firing. The Health tab shows whether wp-cron is enabled and reachable, with Green, Yellow or Red plus fix steps — for example setting up a real server cron that hits wp-cron.php." }
         },
         {
           "@type": "Question",
           "name": "How do I run a cron job manually?",
+"url": "https://devmonowar.github.io/schedulelens-cron-viewer/#how-do-i-run-a-cron-job-manually",
           "acceptedAnswer": { "@type": "Answer", "text": "Find the event under Tools, Cron Manager and click Run now. The run is logged in the Log tab with its duration." }
         },
         {
           "@type": "Question",
           "name": "Can I pause a cron job without deleting it?",
+"url": "https://devmonowar.github.io/schedulelens-cron-viewer/#can-i-pause-a-cron-job-without-deleting-it",
           "acceptedAnswer": { "@type": "Answer", "text": "Yes. Click Pause and the job is kept as a backup — it will not run until you resume it. Core jobs cannot be deleted; the plugin blocks that with a warning." }
         },
         {
           "@type": "Question",
           "name": "Will it slow down my site?",
+"url": "https://devmonowar.github.io/schedulelens-cron-viewer/#will-it-slow-down-my-site",
           "acceptedAnswer": { "@type": "Answer", "text": "No. It runs on admin pages only and adds no CSS or JavaScript to the front end." }
         },
         {
           "@type": "Question",
           "name": "Does it send data outside my server?",
+"url": "https://devmonowar.github.io/schedulelens-cron-viewer/#does-it-send-data-outside-my-server",
           "acceptedAnswer": { "@type": "Answer", "text": "No. Everything stays in wp_options with autoload off, and nothing personal is stored. The only request it ever makes is a loopback check to your own wp-cron.php for the Health tab." }
         }
       ]
@@ -183,19 +188,19 @@
 
     <h2 id="faq">FAQ</h2>
     <dl class="faq">
-      <dt>Why do scheduled posts miss schedule?</dt>
+      <dt id="why-do-scheduled-posts-miss-schedule">Why do scheduled posts miss schedule?</dt>
       <dd>Low traffic, caching, or DISABLE_WP_CRON can stop schedules from firing. The Health tab shows whether wp-cron is enabled and reachable, with Green, Yellow or Red plus fix steps — for example setting up a real server cron that hits wp-cron.php.</dd>
 
-      <dt>How do I run a cron job manually?</dt>
+      <dt id="how-do-i-run-a-cron-job-manually">How do I run a cron job manually?</dt>
       <dd>Find the event under Tools, Cron Manager and click Run now. The run is logged in the Log tab with its duration.</dd>
 
-      <dt>Can I pause a cron job without deleting it?</dt>
+      <dt id="can-i-pause-a-cron-job-without-deleting-it">Can I pause a cron job without deleting it?</dt>
       <dd>Yes. Click Pause and the job is kept as a backup — it will not run until you resume it. Core jobs cannot be deleted; the plugin blocks that with a warning.</dd>
 
-      <dt>Will it slow down my site?</dt>
+      <dt id="will-it-slow-down-my-site">Will it slow down my site?</dt>
       <dd>No. It runs on admin pages only and adds no CSS or JavaScript to the front end.</dd>
 
-      <dt>Does it send data outside my server?</dt>
+      <dt id="does-it-send-data-outside-my-server">Does it send data outside my server?</dt>
       <dd>No. Everything stays in wp_options with autoload off, and nothing personal is stored. The only request it ever makes is a loopback check to your own wp-cron.php for the Health tab.</dd>
     </dl>
 
