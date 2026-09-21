@@ -191,7 +191,26 @@
       <li><strong>Google-Extended / Applebot-Extended</strong> — Google's and Apple's opt-out training crawlers, separate from their search crawlers</li>
       <li><strong>Meta-ExternalAgent</strong> — Meta</li>
     </ul>
-    <p>If your site has been up for a year, every one of these has visited. That was the part that surprised me — not that they came, but how long they had been coming while I looked at nothing but the WordPress dashboard. The question was never whether. It was whether anyone was watching. Every name above documents itself — <a href="https://platform.openai.com/docs/bots" rel="noopener">OpenAI's crawler overview</a>, <a href="https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web" rel="noopener">Anthropic's crawling article</a>, <a href="https://docs.perplexity.ai/guides/perplexitybot" rel="noopener">Perplexity's bot guide</a>, <a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers" rel="noopener">Google's crawler list</a> — so when a new name appears in your logs, its own docs are the first place to check what it actually governs.</p>
+    <p>If your site has been up for a year, every one of these has visited.</p>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Crawler</th><th>What it actually governs</th><th>If you block it</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>GPTBot</strong></td><td>OpenAI model training</td><td>Content stays out of training data</td></tr>
+          <tr><td><strong>OAI-SearchBot</strong></td><td>ChatGPT Search citability — not training</td><td>Site disappears from ChatGPT answers</td></tr>
+          <tr><td><strong>ChatGPT-User</strong></td><td>User-triggered fetches</td><td>Usually nothing — it ignores robots.txt anyway</td></tr>
+          <tr><td><strong>ClaudeBot</strong></td><td>Anthropic model training</td><td>Content stays out of training data</td></tr>
+          <tr><td><strong>Claude-SearchBot</strong></td><td>Claude search answers — not training</td><td>Site disappears from Claude search</td></tr>
+          <tr><td><strong>PerplexityBot</strong></td><td>Perplexity search results — not training</td><td>Site disappears from Perplexity answers</td></tr>
+          <tr><td><strong>Google-Extended</strong></td><td>Gemini and Vertex training only — never AI Overviews</td><td>No effect on search or AI Overviews</td></tr>
+          <tr><td><strong>Googlebot</strong></td><td>Search, including AI Overviews</td><td>Search traffic drops — almost never what you want</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>That was the part that surprised me</p> — not that they came, but how long they had been coming while I looked at nothing but the WordPress dashboard. The question was never whether. It was whether anyone was watching. Every name above documents itself — <a href="https://platform.openai.com/docs/bots" rel="noopener">OpenAI's crawler overview</a>, <a href="https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web" rel="noopener">Anthropic's crawling article</a>, <a href="https://docs.perplexity.ai/guides/perplexitybot" rel="noopener">Perplexity's bot guide</a>, <a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers" rel="noopener">Google's crawler list</a> — so when a new name appears in your logs, its own docs are the first place to check what it actually governs.</p>
 
     <h2 id="read-line">Reading one log line</h2>
     <p>A log line looks scary exactly once. Then somebody shows you where to look, and you cannot unsee it. Here is a typical one:</p>

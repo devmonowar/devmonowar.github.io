@@ -7,13 +7,13 @@
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 
-<title>Free Widgets for Elementor: Install Guide</title>
-<meta name="description" content="Pricing table, flip box, countdown timer and more. How to install Free Widgets For Elementor and what each widget does. No Elementor Pro needed.">
+<title>Widgets Elementor Free Is Missing, and How to Add Them</title>
+<meta name="description" content="Elementor's free core skips the pricing table, flip box, countdown timer and more. The missing widgets and how to add them without Elementor Pro.">
 <link rel="canonical" href="https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Monowar Hossain">
-<meta property="og:title" content="Free Widgets for Elementor: Install Guide">
+<meta property="og:title" content="Widgets Elementor Free Is Missing, and How to Add Them">
 <meta property="og:description" content="The widgets Elementor's free core does not include, without a giant addon pack or an upgrade prompt.">
 <meta property="og:url" content="https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/">
 <meta property="og:locale" content="en_US">
@@ -24,7 +24,7 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Monowar Hossain — WordPress Developer and Plugin Developer">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Free Widgets for Elementor: Install Guide">
+<meta name="twitter:title" content="Widgets Elementor Free Is Missing, and How to Add Them">
 <meta name="twitter:description" content="The widgets Elementor's free core does not include, without a giant addon pack or an upgrade prompt.">
 <meta name="twitter:image" content="https://devmonowar.github.io/assets/img/og-image.jpg">
 
@@ -41,7 +41,7 @@
     {
       "@type": "BlogPosting",
       "@id": "https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/#post",
-      "headline": "Free Widgets for Elementor: Install Guide",
+      "headline": "Widgets Elementor Free Is Missing, and How to Add Them",
       "description": "How to install Free Widgets For Elementor and what each widget does — no Elementor Pro required.",
       "datePublished": "2026-08-11",
       "dateModified": "2026-08-11",
@@ -155,6 +155,7 @@
         <li><a href="#install">Step-by-step installation</a></li>
         <li><a href="#widgets">What is inside</a></li>
         <li><a href="#demos">Using the demo library</a></li>
+        <li><a href="#performance">Why it stays fast</a></li>
         <li><a href="#mistakes">Common mistakes to avoid</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#conclusion">Conclusion</a></li>
@@ -244,6 +245,10 @@
            alt="The Free Widgets For Elementor demo library screen with ready-made sections and a one-click Import button">
       <figcaption>Ready-made sections you can import in one click, images included.</figcaption>
     </figure>
+
+    <h2 id="performance">Why it stays fast</h2>
+    <p>Eight widgets could easily mean eight widgets' worth of CSS and JavaScript on every page. It does not, for one reason: each widget's files load only on pages where that widget is actually used. A page with just a countdown timer never downloads the pricing table styles, the carousel engine, or anything else it does not render.</p>
+    <p>There is no jQuery dependency and no shared heavy library underneath — plain CSS and vanilla JavaScript per widget. That is the whole performance story: not clever optimisation, just never shipping what the page does not need.</p>
 
     <h2 id="mistakes">Common mistakes to avoid</h2>
     <ul>

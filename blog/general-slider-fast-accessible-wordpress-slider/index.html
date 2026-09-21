@@ -155,6 +155,7 @@
         <li><a href="#install">Step-by-step installation</a></li>
         <li><a href="#first-slider">Building your first slider</a></li>
         <li><a href="#design">Design presets and skins</a></li>
+        <li><a href="#accessibility">What accessibility actually means here</a></li>
         <li><a href="#mistakes">Common mistakes to avoid</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#conclusion">Conclusion</a></li>
@@ -226,6 +227,16 @@
            alt="The General Slider demo library showing six ready-made sliders, each using a different design preset and navigation skin">
        <figcaption>The demo library — six ready-made sliders, each a different preset and skin combination you can import in one click.</figcaption>
     </figure>
+
+    <h2 id="accessibility">What accessibility actually means here</h2>
+    <p>The title of this guide promises an accessible slider, so here is exactly what that covers — four concrete behaviours, not a badge:</p>
+    <ul>
+      <li><strong>Keyboard navigation.</strong> Every control — arrows, dots, pause button — is reachable and operable by keyboard alone, in a logical order. If a visitor cannot use a mouse, the slider still fully works.</li>
+      <li><strong>Screen-reader labels.</strong> Slides, controls and state changes are announced with proper labels, so the slider makes sense when heard instead of seen. Decorative elements are hidden from assistive technology rather than read out as noise.</li>
+      <li><strong>A play and pause control for autoplay.</strong> A slider that moves on its own must be stoppable. Anyone who needs more time to read — or who finds motion distracting — gets a visible, obvious pause button.</li>
+      <li><strong>Reduced-motion support.</strong> When the visitor's system asks for reduced motion, entrance animations and autoplay behaviour step back instead of playing anyway. The content stays fully available; only the movement is toned down.</li>
+    </ul>
+    <p>None of this requires configuration. It ships in the plugin because most sliders treat accessibility as a premium feature, and I think a slider that locks out some visitors is simply unfinished.</p>
 
     <h2 id="mistakes">Common mistakes to avoid</h2>
     <ul>

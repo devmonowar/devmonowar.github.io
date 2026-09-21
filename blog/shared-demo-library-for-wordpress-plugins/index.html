@@ -147,6 +147,7 @@
         <li><a href="#solution">The solution</a></li>
         <li><a href="#structure">How it is structured</a></li>
         <li><a href="#consume">How a plugin consumes it</a></li>
+        <li><a href="#scale">Who reads from it today</a></li>
         <li><a href="#differently">What I would do differently</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#conclusion">Conclusion</a></li>
@@ -196,6 +197,10 @@
            alt="The Demo Library screen inside Free Widgets For Elementor, listing ready-made Elementor sections with a one-click Import button">
       <figcaption>The same screen in Free Widgets For Elementor. Different demos, same repository, no shared code between the two plugins.</figcaption>
     </figure>
+
+    <h2 id="scale">Who reads from it today</h2>
+    <p>Three plugins read from the one repository — General Slider, Advanced Testimonial and Free Widgets For Elementor — thirty demos between them. Each plugin caches its manifest for about six hours, so a new demo appears in wp-admin the same day it is committed, with no release, no version bump, and no user action.</p>
+    <p>The number that matters most to me is zero: zero demo images ship inside any plugin ZIP. Every byte of demo content lives in this repository and arrives only when a user clicks Import.</p>
 
     <h2 id="differently">What I would do differently</h2>
     <p>If I were starting this over, I would standardise the demo JSON shape across plugins from day one. Right now each plugin defines its own shape — a slider's <code>slides</code> array looks nothing like a testimonial's <code>testimonials</code> array.</p>
