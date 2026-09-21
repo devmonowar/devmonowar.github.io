@@ -149,35 +149,35 @@
     <nav class="toc" aria-label="Table of contents">
       <h2>On this page</h2>
       <ol>
-        <li><a href="#problem">The problem</a></li>
-        <li><a href="#solution">The solution</a></li>
-        <li><a href="#requirements">Requirements</a></li>
-        <li><a href="#install">Step-by-step installation</a></li>
+        <li><a href="#problem">Why most sliders slow down every page</a></li>
+        <li><a href="#solution">A slider that loads only where it is used</a></li>
+        <li><a href="#requirements">What you need to install it</a></li>
+        <li><a href="#install">Installing General Slider</a></li>
         <li><a href="#first-slider">Building your first slider</a></li>
         <li><a href="#design">Design presets and skins</a></li>
         <li><a href="#accessibility">What accessibility actually means here</a></li>
-        <li><a href="#mistakes">Common mistakes to avoid</a></li>
+        <li><a href="#mistakes">Mistakes that break a new slider</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#conclusion">Conclusion</a></li>
       </ol>
     </nav>
 
-    <h2 id="problem">The problem</h2>
+    <h2 id="problem">Why most sliders slow down every page</h2>
     <p>A slider sounds like a simple feature, but it is one of the most common places a WordPress site picks up weight it does not need — jQuery dependencies, render-blocking CSS, and JavaScript that runs on every page even when there is no slider on it.</p>
     <p>Slower pages mean worse Core Web Vitals, and worse Core Web Vitals eventually means worse rankings. The frustrating part is that most of that cost is paid on pages that do not contain a slider at all.</p>
 
-    <h2 id="solution">The solution</h2>
+    <h2 id="solution">A slider that loads only where it is used</h2>
     <p>General Slider lets you build a reusable slider once, then drop it anywhere with a block, a shortcode, or an Elementor widget — no page builder and no code required.</p>
     <p>It is built on <a href="https://splidejs.com/">Splide</a>, a lightweight slider engine with no dependencies, so there is no jQuery on the front end. Assets are added only to pages that actually contain a slider.</p>
 
-    <h2 id="requirements">Requirements</h2>
+    <h2 id="requirements">What you need to install it</h2>
     <ul>
       <li>WordPress 6.0 or later</li>
       <li>PHP 7.4 or later</li>
       <li>No page builder required. The block and the shortcode work with any theme, and an Elementor widget is included automatically if Elementor is active.</li>
     </ul>
 
-    <h2 id="install">Step-by-step installation</h2>
+    <h2 id="install">Installing General Slider</h2>
     <ol>
       <li>In your WordPress dashboard, go to <strong>Plugins → Add New</strong> and search for <strong>General Slider</strong>.</li>
       <li>Click <strong>Install Now</strong>, then <strong>Activate</strong>.</li>
@@ -238,7 +238,7 @@
     </ul>
     <p>None of this requires configuration. It ships in the plugin because most sliders treat accessibility as a premium feature, and I think a slider that locks out some visitors is simply unfinished.</p>
 
-    <h2 id="mistakes">Common mistakes to avoid</h2>
+    <h2 id="mistakes">Mistakes that break a new slider</h2>
     <ul>
       <li><strong>Forgetting to publish the slider.</strong> A slider has to be published, not saved as a draft, before it will appear on the front end. This is the single most common support question I get.</li>
       <li><strong>Pointing the block or shortcode at the wrong slider.</strong> Check that the ID matches the slider you meant. The correct shortcode is printed on each slider's edit screen.</li>

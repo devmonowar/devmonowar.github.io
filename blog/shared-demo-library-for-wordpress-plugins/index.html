@@ -143,8 +143,8 @@
     <nav class="toc" aria-label="Table of contents">
       <h2>On this page</h2>
       <ol>
-        <li><a href="#problem">The problem</a></li>
-        <li><a href="#solution">The solution</a></li>
+        <li><a href="#problem">Every new demo should not need a release</a></li>
+        <li><a href="#solution">One static library every plugin reads</a></li>
         <li><a href="#structure">How it is structured</a></li>
         <li><a href="#consume">How a plugin consumes it</a></li>
         <li><a href="#scale">Who reads from it today</a></li>
@@ -154,11 +154,11 @@
       </ol>
     </nav>
 
-    <h2 id="problem">The problem</h2>
+    <h2 id="problem">Every new demo should not need a release</h2>
     <p>When a WordPress plugin ships pre-built demo content, the usual approach is to bundle it inside the plugin's own ZIP — images, JSON, everything.</p>
     <p>That means every time you want to add one new demo, you have to cut a whole new plugin release, bump the version, and wait for WordPress.org to process it. It also bloats the plugin package with images most users will never import.</p>
 
-    <h2 id="solution">The solution</h2>
+    <h2 id="solution">One static library every plugin reads</h2>
     <p>I built <a href="https://github.com/devmonowar/wp-plugin-demo-library">wp-plugin-demo-library</a> — a repository that contains <strong>only</strong> demo resources, JSON manifests and images, served for free over GitHub Pages and consumed by each plugin's built-in Demo Library screen.</p>
     <p>New demos can be added or updated at any time, with no plugin release at all.</p>
     <p>It deliberately contains <strong>zero plugin code</strong>. Nothing in this repository is ever bundled into a WordPress.org package. It is pure content infrastructure.</p>
