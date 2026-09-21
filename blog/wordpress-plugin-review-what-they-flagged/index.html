@@ -302,9 +302,12 @@ $wpdb-&gt;prepare( "SELECT … WHERE id IN ( $placeholders )", $ids );</code></p
 &lt;exclude name="WordPress.DB.PreparedSQL.NotPrepared"/&gt;</code></pre>
 
     <figure>
+<picture>
+      <source srcset="/assets/img/blog/wordpress-plugin-review/wordpress-plugin-review-phpcs-exclude.webp" type="image/webp">
       <img src="/assets/img/blog/wordpress-plugin-review/wordpress-plugin-review-phpcs-exclude.jpg"
            width="1200" height="1451" loading="lazy" decoding="async"
            alt="phpcs.xml.dist excluding two PreparedSQL sniffs, and a terminal where the same ruleset reports no violations while those two sniffs, switched back on, report 17 errors">
+      </picture>
       <figcaption>The two lines that hid the problem, with the justification I wrote myself sitting above them. Run with the project's own ruleset the linter has nothing to say. Switch those two sniffs back on and the same files report 17 errors. Plugin Check, running a wider set of SQL checks, counted 35.</figcaption>
     </figure>
 
@@ -318,9 +321,12 @@ $wpdb-&gt;prepare( "SELECT … WHERE id IN ( $placeholders )", $ids );</code></p
     <p><strong>Plugin Check scans your whole folder</strong> — <code>vendor/</code>, <code>tests/</code>, <code>tools/</code>, none of which ship. Checking my working directory produced an alarming number. The one that counts comes from the built ZIP, installed under the right folder name. Get the folder name wrong and it invents hundreds of bogus text-domain errors on its own.</p>
 
     <figure>
+<picture>
+      <source srcset="/assets/img/blog/wordpress-plugin-review/wordpress-plugin-review-plugin-check-clean.webp" type="image/webp">
       <img src="/assets/img/blog/wordpress-plugin-review/wordpress-plugin-review-plugin-check-clean.jpg"
            width="1200" height="863" loading="lazy" decoding="async"
            alt="A terminal showing Plugin Check run against the built plugin ZIP, reporting 158 warnings by check and no errors">
+      </picture>
       <figcaption>The check that counts: the shipped ZIP, extracted under its real slug, rather than the working folder. Plenty of warnings, every one of them a deliberate direct database call. No errors, which is the part that matters, because only the Plugin repo category has to pass.</figcaption>
     </figure>
     <p>There was also an afternoon when I was certain I had introduced a bug: a freshly uploaded image would not trash. It was my own 24-hour safety rule doing its job. On a brand-new test site <em>every</em> image is under 24 hours old. Which made me realise a real user would hit the same thing on day one and decide the plugin was broken, so I added a notice explaining why a row is protected. Nobody asked for that. It was the most useful change I made all month.</p>
@@ -398,7 +404,10 @@ $wpdb-&gt;prepare( "SELECT … WHERE id IN ( $placeholders )", $ids );</code></p
     </nav>
 
     <div class="author-box">
+<picture>
+      <source srcset="/assets/img/monowar-hossain-400.webp" type="image/webp">
       <img class="author-photo" src="/assets/img/monowar-hossain-400.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Monowar Hossain">
+      </picture>
       <div class="author-bio">
       <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
       <p class="card-links">
