@@ -336,10 +336,14 @@ $wpdb-&gt;prepare( "SELECT … WHERE id IN ( $placeholders )", $ids );</code></p
     <h2 id="approved">Approved — and still not live</h2>
     <p>Five days after that reply, two emails arrived one minute apart. Both said approved.</p>
     <p>I assumed that was the finish line. It is not. It is a handover, and there are four things in it worth knowing before you get there.</p>
-    <p><strong>Nothing is public until you upload it yourself.</strong> Approval grants your account commit access to a Subversion repository, usually within an hour. Your public plugin page exists as a URL, but it stays invisible until you push your files. Their wording is blunt: <em>"we are unable to do that for you."</em> No SVN push, no plugin.</p>
-    <p><strong>SVN here is a release system, not Git.</strong> That sentence is in their email, and it is the switch that matters. You do not push work in progress and tidy up later. You push versions that are ready to install.</p>
-    <p><strong>Your SVN password is not your WordPress.org password.</strong> You generate it separately, in the Account &amp; Security section of your profile. Your username is your WordPress.org username, case sensitive, never your email address. Two of the most common first-day failures are sitting right there.</p>
-    <p><strong>Then you wait again.</strong> The directory is big enough that search results and your profile page can take up to 72 hours to catch up. Live and findable are not the same day.</p>
+    <h3 id="upload-it-yourself">Nothing is public until you upload it yourself</h3>
+    <p>Approval grants your account commit access to a Subversion repository, usually within an hour. Your public plugin page exists as a URL, but it stays invisible until you push your files. Their wording is blunt: <em>"we are unable to do that for you."</em> No SVN push, no plugin.</p>
+    <h3 id="svn-is-release-system">SVN here is a release system, not Git</h3>
+    <p>That sentence is in their email, and it is the switch that matters. You do not push work in progress and tidy up later. You push versions that are ready to install.</p>
+    <h3 id="svn-password-separate">Your SVN password is not your WordPress.org password</h3>
+    <p>You generate it separately, in the Account &amp; Security section of your profile. Your username is your WordPress.org username, case sensitive, never your email address. Two of the most common first-day failures are sitting right there.</p>
+    <h3 id="wait-again">Then you wait again</h3>
+    <p>The directory is big enough that search results and your profile page can take up to 72 hours to catch up. Live and findable are not the same day.</p>
     <p>One more line from that email is worth reading twice:</p>
     <blockquote>
       <p>A successful review does not guarantee that your plugin is entirely free from security issues or guideline violations — we are all human and mistakes happen.</p>

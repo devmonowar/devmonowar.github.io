@@ -210,19 +210,19 @@
     <h2 id="manual">Checking one image by hand</h2>
     <p>Do this once, on a single image, even if you end up handing the job to a plugin. It shows you what a cleanup tool is actually up against.</p>
 
-    <p><strong>Step 1 — get the two things you are searching for.</strong><br>
-    Open the image in the Media Library. Take the <strong>filename</strong> from the URL (<code>old-hero-banner.jpg</code>) and the <strong>attachment ID</strong> from the address bar (<code>post.php?post=412</code>). You need both, because some places store one and some store the other.</p>
+    <h3 id="step-1-two-things">Step 1 — get the two things you are searching for</h3>
+    <p>Open the image in the Media Library. Take the <strong>filename</strong> from the URL (<code>old-hero-banner.jpg</code>) and the <strong>attachment ID</strong> from the address bar (<code>post.php?post=412</code>). You need both, because some places store one and some store the other.</p>
 
-    <p><strong>Step 2 — search the content.</strong><br>
-    In phpMyAdmin or Adminer, run a read-only query. Change <code>wp_</code> if your prefix is different, and search the filename <em>without</em> its size suffix so the <code>-1024x576</code> variants match too:</p>
+    <h3 id="step-2-content">Step 2 — search the content</h3>
+    <p>In phpMyAdmin or Adminer, run a read-only query. Change <code>wp_</code> if your prefix is different, and search the filename <em>without</em> its size suffix so the <code>-1024x576</code> variants match too:</p>
 
 <pre><code>SELECT ID, post_title, post_type, post_status
 FROM   wp_posts
 WHERE  post_content LIKE '%old-hero-banner%'
 AND    post_status != 'trash';</code></pre>
 
-    <p><strong>Step 3 — search the meta tables, by filename and by ID.</strong><br>
-    This is the step people skip, and it is where ACF fields, featured images and page-builder layouts are hiding:</p>
+    <h3 id="step-3-meta">Step 3 — search the meta tables, by filename and by ID</h3>
+    <p>This is the step people skip, and it is where ACF fields, featured images and page-builder layouts are hiding:</p>
 
 <pre><code>SELECT post_id, meta_key
 FROM   wp_postmeta
@@ -230,16 +230,16 @@ WHERE  meta_value LIKE '%old-hero-banner%'
 OR     meta_value = '412'
 OR     meta_value LIKE '%"id":412%';</code></pre>
 
-    <p><strong>Step 4 — search the options table.</strong><br>
-    Logo, site icon, Customizer settings and widgets all end up here, usually buried inside serialised data:</p>
+    <h3 id="step-4-options">Step 4 — search the options table</h3>
+    <p>Logo, site icon, Customizer settings and widgets all end up here, usually buried inside serialised data:</p>
 
 <pre><code>SELECT option_name
 FROM   wp_options
 WHERE  option_value LIKE '%old-hero-banner%'
 OR     option_value LIKE '%"id":412%';</code></pre>
 
-    <p><strong>Step 5 — search your theme's own files.</strong><br>
-    No database query will catch a hardcoded URL in a stylesheet. From the site root:</p>
+    <h3 id="step-5-theme-files">Step 5 — search your theme's own files</h3>
+    <p>No database query will catch a hardcoded URL in a stylesheet. From the site root:</p>
 
 <pre><code>grep -r "old-hero-banner" wp-content/themes/</code></pre>
 
