@@ -60,6 +60,8 @@
       "operatingSystem": "WordPress",
       "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "bestRating": "5", "ratingCount": "1" },
       "softwareRequirements": "WordPress 6.0 or later, PHP 7.4 or later",
+      "softwareVersion": "1.0.1",
+      "dateModified": "2026-09-23",
       "description": "Shows every scheduled job on a WordPress site in plain words — run, pause, resume or delete jobs, add custom jobs without code, and check wp-cron health with fix steps. Admin-only, no frontend load, no tracking.",
       "license": "https://www.gnu.org/licenses/gpl-2.0.html",
       "isAccessibleForFree": true,
@@ -161,7 +163,21 @@
       <p><strong>Summary.</strong> ScheduleLens is a free WordPress plugin that shows every scheduled job on one screen — what runs, when it runs next, and which plugin put it there. You can run a job now, pause it without deleting it, add a custom job without code, and check whether wp-cron itself is healthy. Admin-only, no frontend load, no tracking.</p>
     </div>
 
-    <h2 id="invisible">The jobs WordPress runs when nobody is watching</h2>
+    <div class="table-scroll">
+    <table>
+      <caption>ScheduleLens at a glance</caption>
+      <tbody>
+        <tr><th scope="row">Version</th><td>1.0.1</td></tr>
+        <tr><th scope="row">Last updated</th><td><time datetime="2026-09-23">23 September 2026</time></td></tr>
+        <tr><th scope="row">Requires</th><td>WordPress 6.0 or later, PHP 7.4 or later</td></tr>
+        <tr><th scope="row">License</th><td>GPLv2 or later</td></tr>
+        <tr><th scope="row">Price</th><td>Free, no Pro version</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Full version history: <a href="https://wordpress.org/plugins/schedulelens-cron-viewer/#developers">ScheduleLens changelog on WordPress.org</a>.</p>
+
+    <h2 id="invisible">See every WordPress cron job</h2>
     <p>WordPress runs dozens of scheduled jobs in the background — publishing scheduled posts, checking for updates, and whatever each installed plugin queued up. When one of them silently stops, the symptom is always somewhere else: a post that never publishes, a check that never runs. And there is no screen in WordPress that lists them.</p>
     <p>ScheduleLens is that screen. Every event with its repeat interval, next run time, and source — which plugin added it — in plain words, with overdue jobs carrying a red badge and core jobs a gray one so the two are never confused.</p>
 
@@ -175,10 +191,10 @@
       <figcaption>Every event — repeat, next run, source plugin — with overdue jobs badged red.</figcaption>
     </figure>
 
-    <h2 id="actions">Run, pause, delete — without code</h2>
+    <h2 id="actions">Run, pause, and delete jobs without code</h2>
     <p>Find the event and click Run now to fire it manually, with the run logged along with its duration. Pause keeps a job as a backup so it stops running without being deleted, and Delete removes custom jobs — core jobs are protected and the plugin blocks their deletion with a warning. A custom job can be added without writing PHP, but only by triggering a hook that already exists; executing arbitrary code was left out on purpose. Custom intervals start at a minimum of sixty seconds.</p>
 
-    <h2 id="health">A health check with fix steps</h2>
+    <h2 id="health">Cron health check with fix steps</h2>
     <p>The Health tab answers the one question that matters when schedules misbehave: is wp-cron itself working? Enabled, reachable, late count and total, shown as Green, Yellow or Red — each with the fix steps next to it, such as pointing a real server cron at <code>wp-cron.php</code>. The last hundred runs sit in a log with durations and prune themselves after a few days, so the evidence is there when something goes wrong at three in the morning.</p>
 
     <figure>
@@ -191,7 +207,7 @@
       <figcaption>Green, Yellow or Red — and what to do about it, on the same screen.</figcaption>
     </figure>
 
-    <h2 id="honest">One honest limitation</h2>
+    <h2 id="honest">Limitations of WP-Cron visibility</h2>
     <p>WordPress cron only fires when somebody visits the site, so on a very quiet site schedules will always run late no matter what screen you watch them on. The plugin says exactly that on its own Health tab instead of pretending the schedule is fine. If your site is that quiet, the fix is a real server cron — the screen tells you so.</p>
 
     <h2 id="faq">FAQ</h2>
@@ -212,7 +228,7 @@
       <dd>No. Everything stays in wp_options with autoload off, and nothing personal is stored. The only request it ever makes is a loopback check to your own wp-cron.php for the Health tab.</dd>
     </dl>
 
-    <h2 id="start">Install it and open Tools, Cron Manager</h2>
+    <h2 id="start">Get started with ScheduleLens</h2>
     <p>Install it from your dashboard like any other plugin, open the Cron Manager under Tools, and look at what your site has been doing behind your back. If a post ever misses schedule again, the Health tab is the first place to look.</p>
     <p class="card-links">
       <a href="https://wordpress.org/plugins/schedulelens-cron-viewer/">Download on WordPress.org</a>

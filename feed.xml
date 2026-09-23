@@ -7,7 +7,7 @@
   <description>Guides and case studies on WordPress plugin development by Monowar Hossain — sliders, testimonials, Elementor widgets and media cleanup.</description>
   <language>en</language>
   <copyright>Copyright 2026 Monowar Hossain</copyright>
-  <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://devmonowar.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 
   <image>
@@ -15,6 +15,15 @@
     <title>Monowar Hossain — WordPress Guides</title>
     <link>https://devmonowar.github.io/blog/</link>
   </image>
+
+  <item>
+    <title>How to fix missed schedule in WordPress</title>
+    <link>https://devmonowar.github.io/blog/fix-missed-schedule-wordpress/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/fix-missed-schedule-wordpress/</guid>
+    <pubDate>Tue, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <category>Guide</category>
+    <description>A post stuck on Missed schedule is a cron problem, not a post problem. The four usual causes in order, and the two-minute check that decides the fix.</description>
+  </item>
 
   <item>
     <title>llms.txt for WordPress — write one by hand in an hour</title>

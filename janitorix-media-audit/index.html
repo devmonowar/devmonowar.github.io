@@ -60,6 +60,8 @@
       "operatingSystem": "WordPress",
       "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "bestRating": "5", "ratingCount": "2" },
       "softwareRequirements": "WordPress 6.2 or later, PHP 7.4 or later",
+      "softwareVersion": "1.0.5",
+      "dateModified": "2026-09-23",
       "description": "Audits a WordPress media library and proves an image is unused before recommending deletion, scoring confidence and risk separately.",
       "license": "https://www.gnu.org/licenses/gpl-2.0.html",
       "isAccessibleForFree": true,
@@ -161,11 +163,25 @@
       <p><strong>Summary.</strong> Janitorix Media Audit finds the images in your WordPress media library that nothing uses — then shows its evidence before it suggests deleting anything. Every file gets two separate scores, one for confidence and one for risk, and the plugin only ever moves files to Trash. Free, no Pro version.</p>
     </div>
 
-    <h2 id="asymmetry">Deleting is cheap until it is wrong</h2>
+    <div class="table-scroll">
+    <table>
+      <caption>Janitorix Media Audit at a glance</caption>
+      <tbody>
+        <tr><th scope="row">Version</th><td>1.0.5</td></tr>
+        <tr><th scope="row">Last updated</th><td><time datetime="2026-09-23">23 September 2026</time></td></tr>
+        <tr><th scope="row">Requires</th><td>WordPress 6.2 or later, PHP 7.4 or later</td></tr>
+        <tr><th scope="row">License</th><td>GPLv2 or later</td></tr>
+        <tr><th scope="row">Price</th><td>Free, no Pro version</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Full version history: <a href="https://wordpress.org/plugins/janitorix-media-audit/#developers">Janitorix Media Audit changelog on WordPress.org</a>.</p>
+
+    <h2 id="asymmetry">Why deleting unused images is risky</h2>
     <p>Every media library fills up the same way: old banners, replaced logos, test uploads, the three spare photos from a post that used one. Leaving them costs a few kilobytes each. Deleting one that is still referenced — a Customizer background, an ACF field, a page-builder section — breaks a page you might not open for weeks.</p>
     <p>Most cleanup tools treat those two mistakes as equal. They scan, they flag, they hand you a delete button. This plugin starts from the opposite end: the cost of being wrong is the whole design. That is why "is this used?" is never one answer here. It is two.</p>
 
-    <h2 id="two-scores">Two scores, not one guess</h2>
+    <h2 id="two-scores">How the two-score verdict works</h2>
     <p>Each image is checked by scanners covering post content, Gutenberg blocks and synced patterns, full-site-editing templates, the Customizer, theme options, widgets, menus, Elementor, ACF, WooCommerce, and the theme's own PHP, CSS and JavaScript files. The result comes back as two judgements:</p>
     <ul>
       <li><strong>Confidence</strong> — how sure the plugin is that the image is genuinely unused.</li>
@@ -183,7 +199,7 @@
       <figcaption>What the scanners are up against: a reference can live in six different places, and they do not all store the same thing.</figcaption>
     </figure>
 
-    <h2 id="refusals">What it refuses to do</h2>
+    <h2 id="refusals">What Janitorix refuses to delete</h2>
     <ul>
       <li>Will not recommend deleting anything if scan coverage was too low — it asks for a rescan instead</li>
       <li>Will never touch a site logo, icon or header — refused outright, not just scored low</li>
@@ -191,7 +207,7 @@
       <li>Never deletes in one step — Trash first, always, so anything can be restored</li>
     </ul>
 
-    <h2 id="cli">For the terminal-inclined</h2>
+    <h2 id="cli">WP-CLI support for scans</h2>
     <p>The whole thing also runs from WP-CLI: scan the library, ask why one image got the verdict it did, preview exactly what would be deleted without deleting anything, and calibrate the engines against known answers. The read-only preview is the same evidence the admin screens show, in CSV form.</p>
 
     <h2 id="faq">FAQ</h2>
@@ -212,7 +228,7 @@
       <dd>No. Confidence and risk scoring, Trash-only cleanup and WP-CLI — everything is in the free plugin, reviewed by the WordPress.org team before release.</dd>
     </dl>
 
-    <h2 id="start">Understand first, or install first</h2>
+    <h2 id="start">Get started with Janitorix</h2>
     <p>If you want to understand the problem first — where a reference can hide and how to check one image by hand — that is the <a href="/blog/how-to-find-unused-images-in-wordpress/">full guide</a>. If you want the tool, it is one search away in your dashboard.</p>
     <p class="card-links">
       <a href="https://wordpress.org/plugins/janitorix-media-audit/">Download on WordPress.org</a>

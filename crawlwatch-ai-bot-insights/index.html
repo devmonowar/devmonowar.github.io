@@ -60,6 +60,8 @@
       "operatingSystem": "WordPress",
       "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "bestRating": "5", "ratingCount": "2" },
       "softwareRequirements": "WordPress 6.2 or later, PHP 7.4 or later",
+      "softwareVersion": "1.1.2",
+      "dateModified": "2026-09-22",
       "description": "Shows which AI crawlers read a WordPress site and which URLs they take, tracks referrals from AI assistants, and generates llms.txt and per-bot robots.txt rules.",
       "license": "https://www.gnu.org/licenses/gpl-2.0.html",
       "isAccessibleForFree": true,
@@ -161,7 +163,21 @@
       <p><strong>Summary.</strong> CrawlWatch is a free WordPress plugin that logs AI-crawler visits where you can see them: which bots came, which URLs they took, and whether anyone arrived from an AI assistant afterwards. It also scores how ready your site is for AI readers, generates <code>llms.txt</code>, and lets you allow or block each bot — all without anything leaving your server.</p>
     </div>
 
-    <h2 id="invisible">The traffic your analytics never mentions</h2>
+    <div class="table-scroll">
+    <table>
+      <caption>CrawlWatch at a glance</caption>
+      <tbody>
+        <tr><th scope="row">Version</th><td>1.1.2</td></tr>
+        <tr><th scope="row">Last updated</th><td><time datetime="2026-09-22">22 September 2026</time></td></tr>
+        <tr><th scope="row">Requires</th><td>WordPress 6.2 or later, PHP 7.4 or later</td></tr>
+        <tr><th scope="row">License</th><td>GPLv2 or later</td></tr>
+        <tr><th scope="row">Price</th><td>Free, no Pro version</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Full version history: <a href="https://wordpress.org/plugins/crawlwatch-ai-bot-insights/#developers">CrawlWatch changelog on WordPress.org</a>.</p>
+
+    <h2 id="invisible">AI bot traffic your analytics misses</h2>
     <p>GPTBot, ClaudeBot, PerplexityBot and Google-Extended read sites every day, and none of it appears in a normal analytics dashboard. You cannot tell which pages they took, whether your content is worth reading to them in the first place, or whether a single visitor ever arrived from an AI assistant afterwards.</p>
     <p>CrawlWatch puts that traffic on a screen in your own dashboard. It recognises more than forty AI crawlers, stores every visit in one table on your server, and asks for nothing in return — no API key, no account, no external service.</p>
 
@@ -175,10 +191,10 @@
       <figcaption>The overview: hits, bots, referrals and a readiness score — with the quickest fixes ranked underneath.</figcaption>
     </figure>
 
-    <h2 id="score">A score with a to-do list attached</h2>
+    <h2 id="score">AI readiness score with quick wins</h2>
     <p>The readiness score runs from 0 to 100, but a number on its own never fixed anything. Underneath it sits a breakdown of what was measured — llms.txt catalogue, excerpts as AI descriptions, schema, image alt text, robots.txt, active tracking — and a short list of quick wins ordered by impact, each linking to the exact screen that resolves it. The score is the headline; the list is the point.</p>
 
-    <h2 id="files">Two files, no code</h2>
+    <h2 id="files">llms.txt and robots.txt without code</h2>
     <p>On the Files screen, <code>llms.txt</code> generates in one click — a catalogue version plus a full-content one — and each AI bot gets its own allow-or-block checkbox for <code>robots.txt</code>, with a preview before anything is saved. Blocked bots are told Disallow; the plugin only appends, so the WordPress core rules are never overwritten. And blocking a training bot touches search traffic not at all, because regular Googlebot is never managed here.</p>
 
     <figure>
@@ -191,7 +207,7 @@
       <figcaption>llms.txt on the left, per-bot robots.txt rules on the right — previewed before anything is saved.</figcaption>
     </figure>
 
-    <h2 id="honest">One honest limitation</h2>
+    <h2 id="honest">Limitations of AI bot tracking</h2>
     <p>Tracking runs in PHP, so a full-page cache that serves a page without running PHP will hide those visits from the log. The plugin detects the common caching plugins and says so on its own screens instead of quietly showing an empty chart. I would rather read that warning than wonder why a busy site shows no bots at all.</p>
 
     <h2 id="faq">FAQ</h2>
@@ -212,7 +228,7 @@
       <dd>No. Bot logging, referrals, the readiness score, llms.txt and robots.txt — everything is in the free plugin, reviewed by the WordPress.org team before release.</dd>
     </dl>
 
-    <h2 id="start">Install it and give it a few days</h2>
+    <h2 id="start">Get started with CrawlWatch</h2>
     <p>Install it from your dashboard like any other plugin, open the CrawlWatch menu, and give it a few days — bot traffic arrives on its own schedule, not yours. The readiness score tells you what to fix first.</p>
     <p class="card-links">
       <a href="https://wordpress.org/plugins/crawlwatch-ai-bot-insights/">Download on WordPress.org</a>

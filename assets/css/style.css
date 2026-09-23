@@ -291,7 +291,7 @@ th { font-weight: 600; color: var(--heading); background: var(--surface-2); }
 @media (prefers-color-scheme: dark) { .brand-mark { color: #10141c; } }
 
 .site-nav { display: flex; flex-wrap: wrap; gap: 4px 26px; }
-.site-nav a { color: var(--muted); font-size: .97rem; padding: 3px 0; }
+.site-nav a { color: var(--muted); font-size: .97rem; padding: 3px 0; min-height: 44px; display: inline-flex; align-items: center; }
 .site-nav a:hover, .site-nav a:focus-visible { color: var(--accent); text-decoration: none; }
 .site-nav a[aria-current="page"] {
   color: var(--heading);
@@ -690,6 +690,7 @@ figcaption {
 }
 .site-footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: center; }
 .site-footer nav { display: flex; flex-wrap: wrap; gap: 12px 22px; margin-left: auto; }
+.site-footer nav a { min-height: 44px; display: inline-flex; align-items: center; }
 .site-footer a { color: var(--muted); }
 .site-footer a:hover, .site-footer a:focus-visible { color: var(--accent); }
 

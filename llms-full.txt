@@ -13,8 +13,8 @@
  
  I build free, open-source WordPress plugins from Dhaka, Bangladesh. My plugins are published on WordPress.org and run on real sites every day. Online, people know me as devmonowar . 
  
- [See my plugins](/plugins/)
- [About Monowar Hossain](/about/)
+ [See my plugins](https://devmonowar.github.io/plugins/)
+ [About Monowar Hossain](https://devmonowar.github.io/about/)
 
  What I build 
  
@@ -28,8 +28,8 @@
  
  [WordPress.org](https://wordpress.org/plugins/general-slider/)
  [GitHub](https://github.com/devmonowar/general-slider)
- [Guide](/blog/general-slider-fast-accessible-wordpress-slider/)
- [About this plugin](/general-slider/)
+ [Guide](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/)
+ [About this plugin](https://devmonowar.github.io/general-slider/)
 
 ### Advanced Testimonial
 
@@ -37,8 +37,8 @@
  
  [WordPress.org](https://wordpress.org/plugins/advanced-testimonial/)
  [GitHub](https://github.com/devmonowar/advanced-testimonial)
- [Guide](/blog/advanced-testimonial-wordpress-testimonials-guide/)
- [About this plugin](/advanced-testimonial/)
+ [Guide](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/)
+ [About this plugin](https://devmonowar.github.io/advanced-testimonial/)
 
 ### Free Widgets For Elementor
 
@@ -46,8 +46,8 @@
  
  [WordPress.org](https://wordpress.org/plugins/free-widgets-for-elementor/)
  [GitHub](https://github.com/devmonowar/free-widgets-for-elementor)
- [Guide](/blog/free-widgets-for-elementor-guide/)
- [About this plugin](/free-widgets-for-elementor/)
+ [Guide](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/)
+ [About this plugin](https://devmonowar.github.io/free-widgets-for-elementor/)
 
 ### Janitorix Media Audit
 
@@ -55,8 +55,8 @@
  
  [WordPress.org](https://wordpress.org/plugins/janitorix-media-audit/)
  [GitHub](https://github.com/devmonowar/janitorix-media-audit)
- [Guide](/blog/how-to-find-unused-images-in-wordpress/)
- [About this plugin](/janitorix-media-audit/)
+ [Guide](https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/)
+ [About this plugin](https://devmonowar.github.io/janitorix-media-audit/)
 
 ### CrawlWatch – AI Bot Insights
 
@@ -64,8 +64,8 @@
  
  [WordPress.org](https://wordpress.org/plugins/crawlwatch-ai-bot-insights/)
  [GitHub](https://github.com/devmonowar/crawlwatch-ai-bot-insights)
- [Guide](/blog/ai-bot-traffic-wordpress/)
- [About this plugin](/crawlwatch-ai-bot-insights/)
+ [Guide](https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/)
+ [About this plugin](https://devmonowar.github.io/crawlwatch-ai-bot-insights/)
 
 ### ScheduleLens – Cron Viewer & Manager
 
@@ -73,9 +73,9 @@
  
  [WordPress.org](https://wordpress.org/plugins/schedulelens-cron-viewer/)
  [GitHub](https://github.com/devmonowar/schedulelens-cron-viewer)
- [About this plugin](/schedulelens-cron-viewer/)
+ [About this plugin](https://devmonowar.github.io/schedulelens-cron-viewer/)
 
- [Read more about each plugin →](/plugins/) 
+ [Read more about each plugin →](https://devmonowar.github.io/plugins/) 
 
  Skills 
  
@@ -96,19 +96,19 @@
 
  What the problem was, what I did about it, and what I would tell someone doing the same thing. 
 
-## [llms.txt for WordPress — write one by hand in an hour](/blog/llms-txt-wordpress/)
+## [llms.txt for WordPress — write one by hand in an hour](https://devmonowar.github.io/blog/llms-txt-wordpress/)
 
  A small file that tells AI assistants what your site means, so they quote you instead of improvising. Format plus a full example. 
 
-## [AI bot traffic in WordPress — see it, measure it, decide what to do](/blog/ai-bot-traffic-wordpress/)
+## [AI bot traffic in WordPress — see it, measure it, decide what to do](https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/)
 
  AI crawlers are reading your site right now and WordPress shows you nothing about it. How to see them in your logs and decide per bot. 
 
-## [How to build a fast, accessible slider in WordPress with General Slider](/blog/general-slider-fast-accessible-wordpress-slider/)
+## [How to build a fast, accessible slider in WordPress with General Slider](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/)
 
  Why most slider plugins add weight to pages that do not even use them, and how to set up one that does not. 
 
- [Read all guides →](/blog/) 
+ [Read all guides →](https://devmonowar.github.io/blog/) 
 
  Demos 
  
@@ -124,7 +124,7 @@
  GitHub [github.com/devmonowar](https://github.com/devmonowar) 
  WordPress.org [profiles.wordpress.org/kstmonowar](https://profiles.wordpress.org/kstmonowar/) 
  LinkedIn [linkedin.com/in/devmonowar](https://www.linkedin.com/in/devmonowar) 
- Facebook [facebook.com/kstmonowar](https://www.facebook.com/kstmonowar) 
+ Facebook [facebook.com/devmonowarwp](https://www.facebook.com/devmonowarwp) 
  Threads [threads.com/@devmonowar](https://www.threads.com/@devmonowar) 
  Email [devmonowar@gmail.com](mailto:devmonowar@gmail.com)
 
@@ -133,7 +133,7 @@
 
 (https://devmonowar.github.io/about/)
 
-[Home](/) 
+[Home](https://devmonowar.github.io/) 
  About 
 
 # About Monowar Hossain
@@ -164,19 +164,19 @@
  
  General Slider — I needed a slider that loads fast and still works for someone using a keyboard or a screen reader. Most sliders are heavy and skip the accessibility part entirely. 
  Advanced Testimonial — a client wanted the same customer reviews in several places on their site, each in a different layout. Copying the text meant several places to update every time a review changed. 
- Free Widgets For Elementor — Elementor's free version is missing a few widgets nearly every site needs. The usual fix is a giant addon pack. I built [a focused alternative](/blog/free-widgets-for-elementor-guide/) instead. 
- Janitorix Media Audit — media libraries fill up with images no page uses any more, and the existing cleanup tools mostly guess. Leaving an unused image costs a few kilobytes; deleting one that is still referenced breaks the site. Those two mistakes are not equal, so the plugin does not treat them as equal. The method it uses is written out in full: [how to find unused images in WordPress](/blog/how-to-find-unused-images-in-wordpress/). 
+ Free Widgets For Elementor — Elementor's free version is missing a few widgets nearly every site needs. The usual fix is a giant addon pack. I built [a focused alternative](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/) instead. 
+ Janitorix Media Audit — media libraries fill up with images no page uses any more, and the existing cleanup tools mostly guess. Leaving an unused image costs a few kilobytes; deleting one that is still referenced breaks the site. Those two mistakes are not equal, so the plugin does not treat them as equal. The method it uses is written out in full: [how to find unused images in WordPress](https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/). 
  CrawlWatch – AI Bot Insights — AI assistants had been reading my site for months and I had no way of knowing it. Analytics does not count a crawler, and the server log is not something most site owners will ever open. So the plugin logs those visits, shows which pages were taken, and lets you allow or block each bot without writing a line of robots.txt by hand. 
  ScheduleLens – Cron Viewer & Manager — WordPress runs its scheduled jobs invisibly, so a missed schedule always looks like some other bug. I wanted one screen that lists every job in plain words and lets me run or pause it there — and a health check that admits when the quiet site itself is the problem. 
 
 ## Open source
 
  I keep my work free because that is how I learned. When I was starting out I read other people's plugin code to figure out how WordPress really worked. That code was free for me, so mine is free too. 
- Free does not mean unfinished. Every plugin goes through [the WordPress.org review](/blog/wordpress-plugin-review-what-they-flagged/) before release, ships with documentation and a changelog, and I answer the support topics on the forum myself. If something is broken, I would much rather hear about it and fix it. 
+ Free does not mean unfinished. Every plugin goes through [the WordPress.org review](https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/) before release, ships with documentation and a changelog, and I answer the support topics on the forum myself. If something is broken, I would much rather hear about it and fix it. 
 
 ## What I am learning now
 
- Two things have most of my attention. The first is performance — how to keep a plugin small enough that adding it to a site is not a trade-off. I wrote up [what actually makes a WordPress slider slow](/blog/why-wordpress-sliders-are-slow/) and how to measure it yourself. The second is accessibility, which I did not take seriously enough early on: making sure what I build works with a keyboard and a screen reader, not only with a mouse. 
+ Two things have most of my attention. The first is performance — how to keep a plugin small enough that adding it to a site is not a trade-off. I wrote up [what actually makes a WordPress slider slow](https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/) and how to measure it yourself. The second is accessibility, which I did not take seriously enough early on: making sure what I build works with a keyboard and a screen reader, not only with a mouse. 
  Writing the guides on this site is part of how I work on both. Explaining something to another developer is the fastest way to find out whether I actually understand it — and it is usually while writing the steps down that I notice the one I had been getting away with. 
 
 ## Quick facts
@@ -205,14 +205,14 @@
  Packagist [packagist.org/packages/devmonowar](https://packagist.org/packages/devmonowar/) 
  Demo library [WordPress Plugin Demo Library](https://devmonowar.github.io/wp-plugin-demo-library/) 
 
- [Get in touch](/contact/)
+ [Get in touch](https://devmonowar.github.io/contact/)
 
 
 ## Plugins
 
 (https://devmonowar.github.io/plugins/)
 
-[Home](/) 
+[Home](https://devmonowar.github.io/) 
  Plugins 
 
 # Plugins
@@ -237,8 +237,8 @@
  [Download on WordPress.org](https://wordpress.org/plugins/general-slider/)
  [Source on GitHub](https://github.com/devmonowar/general-slider)
  [See the demos](https://devmonowar.github.io/wp-plugin-demo-library/general-slider/)
- [Full guide](/blog/general-slider-fast-accessible-wordpress-slider/)
- [General Slider - fast WordPress slider without jQuery](/general-slider/)
+ [Full guide](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/)
+ [General Slider - fast WordPress slider without jQuery](https://devmonowar.github.io/general-slider/)
 
 ## Advanced Testimonial
 
@@ -259,8 +259,8 @@
  [Download on WordPress.org](https://wordpress.org/plugins/advanced-testimonial/)
  [Source on GitHub](https://github.com/devmonowar/advanced-testimonial)
  [See the demos](https://devmonowar.github.io/wp-plugin-demo-library/advanced-testimonial/)
- [Full guide](/blog/advanced-testimonial-wordpress-testimonials-guide/)
- [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/)
+ [Full guide](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/)
+ [Advanced Testimonial - WordPress testimonials plugin](https://devmonowar.github.io/advanced-testimonial/)
 
 ## Free Widgets For Elementor
 
@@ -283,8 +283,8 @@
  
  [Download on WordPress.org](https://wordpress.org/plugins/free-widgets-for-elementor/)
  [Source on GitHub](https://github.com/devmonowar/free-widgets-for-elementor)
- [Full guide](/blog/free-widgets-for-elementor-guide/)
- [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/)
+ [Full guide](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/)
+ [Free Widgets For Elementor - extra Elementor widgets](https://devmonowar.github.io/free-widgets-for-elementor/)
 
 ## Janitorix Media Audit
 
@@ -309,12 +309,12 @@
  Will not touch an image uploaded in the last 24 hours 
  Never deletes in one step — Trash first, always 
  
- It is free and open source, and the whole review that got it into the directory is written up in [what the WordPress.org plugin review flagged](/blog/wordpress-plugin-review-what-they-flagged/). 
+ It is free and open source, and the whole review that got it into the directory is written up in [what the WordPress.org plugin review flagged](https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/). 
  
  [Download on WordPress.org](https://wordpress.org/plugins/janitorix-media-audit/)
  [Source on GitHub](https://github.com/devmonowar/janitorix-media-audit)
- [How to find unused images](/blog/how-to-find-unused-images-in-wordpress/)
- [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/)
+ [How to find unused images](https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/)
+ [Janitorix Media Audit - find unused images in WordPress](https://devmonowar.github.io/janitorix-media-audit/)
 
 ## CrawlWatch – AI Bot Insights
 
@@ -342,8 +342,8 @@
  
  [Download on WordPress.org](https://wordpress.org/plugins/crawlwatch-ai-bot-insights/)
  [Source on GitHub](https://github.com/devmonowar/crawlwatch-ai-bot-insights)
- [Full guide](/blog/ai-bot-traffic-wordpress/)
- [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/)
+ [Full guide](https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/)
+ [CrawlWatch - AI bot traffic insights for WordPress](https://devmonowar.github.io/crawlwatch-ai-bot-insights/)
 
 ## ScheduleLens – Cron Viewer & Manager
 
@@ -362,7 +362,7 @@
 
  [Download on WordPress.org](https://wordpress.org/plugins/schedulelens-cron-viewer/)
  [Source on GitHub](https://github.com/devmonowar/schedulelens-cron-viewer)
- [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/)
+ [ScheduleLens - WordPress cron job viewer](https://devmonowar.github.io/schedulelens-cron-viewer/)
 
  Also 
  
@@ -373,19 +373,19 @@
  One shared, static demo library that every plugin's "Demo Library" screen fetches from — so new demos can ship in minutes without cutting a new plugin release. 
  
  [Browse the demos](https://devmonowar.github.io/wp-plugin-demo-library/)
- [Read the case study](/blog/shared-demo-library-for-wordpress-plugins/)
+ [Read the case study](https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/)
 
 ## Need help with one of these?
 
- For a bug or a question about a plugin, the support forum on WordPress.org is the fastest way to reach me, and the answer stays public so the next person with the same problem can find it. For anything else, [send me an email](/contact/).
+ For a bug or a question about a plugin, the support forum on WordPress.org is the fastest way to reach me, and the answer stays public so the next person with the same problem can find it. For anything else, [send me an email](https://devmonowar.github.io/contact/).
 
 
 ## General Slider
 
 (https://devmonowar.github.io/general-slider/)
 
-[Home](/) 
- [Plugins](/plugins/) 
+[Home](https://devmonowar.github.io/) 
+ [Plugins](https://devmonowar.github.io/plugins/) 
  General Slider 
 
 # General Slider — a WordPress slider without jQuery
@@ -399,7 +399,7 @@
 ## Why no jQuery matters
 
  Most slider plugins pull in jQuery whether your theme needs it or not. That is a whole library downloaded, parsed and run on every page — including the ones with no slider on them. On a site that already dropped jQuery, a slider plugin quietly puts it back. 
- General Slider never asks for it. The front end runs on [Splide](https://splidejs.com/), a slider engine with no dependencies of its own, so a page without a slider gets nothing at all: no script, no stylesheet. I measured where slider weight actually comes from in [why WordPress sliders are slow](/blog/why-wordpress-sliders-are-slow/) — the short version is that the images are rarely the problem. 
+ General Slider never asks for it. The front end runs on [Splide](https://splidejs.com/), a slider engine with no dependencies of its own, so a page without a slider gets nothing at all: no script, no stylesheet. I measured where slider weight actually comes from in [why WordPress sliders are slow](https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/) — the short version is that the images are rarely the problem. 
 
  A hero slider on the front end — heading, text, button, arrows and dots, no page builder involved. 
 
@@ -442,7 +442,7 @@
 
 ## Download it or read the walkthrough
 
- If you want the full walkthrough — install, first slider, presets, and the three mistakes almost everyone makes — that is the [step-by-step guide](/blog/general-slider-fast-accessible-wordpress-slider/). If you just want the plugin, it is one search away in your dashboard. 
+ If you want the full walkthrough — install, first slider, presets, and the three mistakes almost everyone makes — that is the [step-by-step guide](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/). If you just want the plugin, it is one search away in your dashboard. 
  
  [Download on WordPress.org](https://wordpress.org/plugins/general-slider/)
  [Source on GitHub](https://github.com/devmonowar/general-slider)
@@ -450,18 +450,18 @@
 
 ## Keep reading
 
- [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) — the full setup walkthrough for this plugin 
- [Why WordPress sliders are slow](/blog/why-wordpress-sliders-are-slow/) — where the weight actually comes from 
- [All free plugins](/plugins/) — everything else I maintain 
- [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
- [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
- [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
- [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
- [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+ [How to build a fast, accessible slider in WordPress](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/) — the full setup walkthrough for this plugin 
+ [Why WordPress sliders are slow](https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/) — where the weight actually comes from 
+ [All free plugins](https://devmonowar.github.io/plugins/) — everything else I maintain 
+ [Advanced Testimonial - WordPress testimonials plugin](https://devmonowar.github.io/advanced-testimonial/) 
+ [Free Widgets For Elementor - extra Elementor widgets](https://devmonowar.github.io/free-widgets-for-elementor/) 
+ [Janitorix Media Audit - find unused images in WordPress](https://devmonowar.github.io/janitorix-media-audit/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](https://devmonowar.github.io/crawlwatch-ai-bot-insights/) 
+ [ScheduleLens - WordPress cron job viewer](https://devmonowar.github.io/schedulelens-cron-viewer/) 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -473,8 +473,8 @@
 
 (https://devmonowar.github.io/janitorix-media-audit/)
 
-[Home](/) 
- [Plugins](/plugins/) 
+[Home](https://devmonowar.github.io/) 
+ [Plugins](https://devmonowar.github.io/plugins/) 
  Janitorix Media Audit 
 
 # Janitorix Media Audit — an unused image cleaner that proves it first
@@ -531,25 +531,25 @@
 
 ## Understand first, or install first
 
- If you want to understand the problem first — where a reference can hide and how to check one image by hand — that is the [full guide](/blog/how-to-find-unused-images-in-wordpress/). If you want the tool, it is one search away in your dashboard. 
+ If you want to understand the problem first — where a reference can hide and how to check one image by hand — that is the [full guide](https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/). If you want the tool, it is one search away in your dashboard. 
  
  [Download on WordPress.org](https://wordpress.org/plugins/janitorix-media-audit/)
  [Source on GitHub](https://github.com/devmonowar/janitorix-media-audit)
 
 ## Keep reading
 
- [How to find unused images in WordPress](/blog/how-to-find-unused-images-in-wordpress/) — the manual method behind what this plugin automates 
- [What the WordPress.org plugin review flagged](/blog/wordpress-plugin-review-what-they-flagged/) — the two review rounds this plugin passed to get listed 
- [All free plugins](/plugins/) — everything else I maintain 
- [General Slider - fast WordPress slider without jQuery](/general-slider/) 
- [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
- [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
- [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
- [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+ [How to find unused images in WordPress](https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/) — the manual method behind what this plugin automates 
+ [What the WordPress.org plugin review flagged](https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/) — the two review rounds this plugin passed to get listed 
+ [All free plugins](https://devmonowar.github.io/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](https://devmonowar.github.io/general-slider/) 
+ [Advanced Testimonial - WordPress testimonials plugin](https://devmonowar.github.io/advanced-testimonial/) 
+ [Free Widgets For Elementor - extra Elementor widgets](https://devmonowar.github.io/free-widgets-for-elementor/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](https://devmonowar.github.io/crawlwatch-ai-bot-insights/) 
+ [ScheduleLens - WordPress cron job viewer](https://devmonowar.github.io/schedulelens-cron-viewer/) 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -561,8 +561,8 @@
 
 (https://devmonowar.github.io/advanced-testimonial/)
 
-[Home](/) 
- [Plugins](/plugins/) 
+[Home](https://devmonowar.github.io/) 
+ [Plugins](https://devmonowar.github.io/plugins/) 
  Advanced Testimonial 
 
 # Advanced Testimonial — a testimonial plugin that collects its own reviews
@@ -613,7 +613,7 @@
 
 ## Walkthrough or demos first
 
- If you want the full walkthrough — setup, displaying, collecting, and the mistakes to avoid — that is the [step-by-step guide](/blog/advanced-testimonial-wordpress-testimonials-guide/). If you want to see the layouts first, the demos are one click away. 
+ If you want the full walkthrough — setup, displaying, collecting, and the mistakes to avoid — that is the [step-by-step guide](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/). If you want to see the layouts first, the demos are one click away. 
  
  [Download on WordPress.org](https://wordpress.org/plugins/advanced-testimonial/)
  [Source on GitHub](https://github.com/devmonowar/advanced-testimonial)
@@ -621,18 +621,18 @@
 
 ## Keep reading
 
- [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) — the full setup walkthrough for this plugin 
- [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) — the same block-and-shortcode approach, for sliders 
- [All free plugins](/plugins/) — everything else I maintain 
- [General Slider - fast WordPress slider without jQuery](/general-slider/) 
- [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
- [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
- [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
- [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+ [How to add customer testimonials in WordPress](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/) — the full setup walkthrough for this plugin 
+ [How to build a fast, accessible slider in WordPress](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/) — the same block-and-shortcode approach, for sliders 
+ [All free plugins](https://devmonowar.github.io/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](https://devmonowar.github.io/general-slider/) 
+ [Free Widgets For Elementor - extra Elementor widgets](https://devmonowar.github.io/free-widgets-for-elementor/) 
+ [Janitorix Media Audit - find unused images in WordPress](https://devmonowar.github.io/janitorix-media-audit/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](https://devmonowar.github.io/crawlwatch-ai-bot-insights/) 
+ [ScheduleLens - WordPress cron job viewer](https://devmonowar.github.io/schedulelens-cron-viewer/) 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -644,8 +644,8 @@
 
 (https://devmonowar.github.io/free-widgets-for-elementor/)
 
-[Home](/) 
- [Plugins](/plugins/) 
+[Home](https://devmonowar.github.io/) 
+ [Plugins](https://devmonowar.github.io/plugins/) 
  Free Widgets For Elementor 
 
 # Free Widgets For Elementor — the missing widgets, nothing else
@@ -674,7 +674,7 @@
  Logo Carousel — arrows, dots and autoplay, responsive out of the box 
  Table of Contents — an auto-generated outline with smooth scroll and scrollspy 
  
- One thing is missing on purpose: there is no testimonial widget here. Testimonials need a post type, groups and a submission form, which is a whole plugin — my [Advanced Testimonial](/advanced-testimonial/) — not a widget. 
+ One thing is missing on purpose: there is no testimonial widget here. Testimonials need a post type, groups and a submission form, which is a whole plugin — my [Advanced Testimonial](https://devmonowar.github.io/advanced-testimonial/) — not a widget. 
 
  A pricing table on the front end — the plan most free-Elementor sites hit the wall on first. 
 
@@ -701,25 +701,25 @@
 
 ## Per-widget tour or straight to install
 
- If you want the per-widget tour — what each one does and how the demo import works — that is the [step-by-step guide](/blog/free-widgets-for-elementor-guide/). If you just want the widgets, they are one search away in your dashboard. 
+ If you want the per-widget tour — what each one does and how the demo import works — that is the [step-by-step guide](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/). If you just want the widgets, they are one search away in your dashboard. 
  
  [Download on WordPress.org](https://wordpress.org/plugins/free-widgets-for-elementor/)
  [Source on GitHub](https://github.com/devmonowar/free-widgets-for-elementor)
 
 ## Keep reading
 
- [How to install Free Widgets For Elementor](/blog/free-widgets-for-elementor-guide/) — the full per-widget walkthrough 
- [Advanced Testimonial](/advanced-testimonial/) — where the testimonial widget lives instead, as a full plugin 
- [All free plugins](/plugins/) — everything else I maintain 
- [General Slider - fast WordPress slider without jQuery](/general-slider/) 
- [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
- [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
- [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
- [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+ [How to install Free Widgets For Elementor](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/) — the full per-widget walkthrough 
+ [Advanced Testimonial](https://devmonowar.github.io/advanced-testimonial/) — where the testimonial widget lives instead, as a full plugin 
+ [All free plugins](https://devmonowar.github.io/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](https://devmonowar.github.io/general-slider/) 
+ [Advanced Testimonial - WordPress testimonials plugin](https://devmonowar.github.io/advanced-testimonial/) 
+ [Janitorix Media Audit - find unused images in WordPress](https://devmonowar.github.io/janitorix-media-audit/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](https://devmonowar.github.io/crawlwatch-ai-bot-insights/) 
+ [ScheduleLens - WordPress cron job viewer](https://devmonowar.github.io/schedulelens-cron-viewer/) 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -731,8 +731,8 @@
 
 (https://devmonowar.github.io/crawlwatch-ai-bot-insights/)
 
-[Home](/) 
- [Plugins](/plugins/) 
+[Home](https://devmonowar.github.io/) 
+ [Plugins](https://devmonowar.github.io/plugins/) 
  CrawlWatch – AI Bot Insights 
 
 # CrawlWatch — see which AI bots read your site
@@ -790,18 +790,18 @@
 
 ## Keep reading
 
- [AI bot traffic in WordPress](/blog/ai-bot-traffic-wordpress/) — see it, measure it, decide what to do 
- [Janitorix Media Audit](/janitorix-media-audit/) — another plugin that shows what your site hides, for the media library 
- [All free plugins](/plugins/) — everything else I maintain 
- [General Slider - fast WordPress slider without jQuery](/general-slider/) 
- [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
- [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
- [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
- [ScheduleLens - WordPress cron job viewer](/schedulelens-cron-viewer/) 
+ [AI bot traffic in WordPress](https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/) — see it, measure it, decide what to do 
+ [Janitorix Media Audit](https://devmonowar.github.io/janitorix-media-audit/) — another plugin that shows what your site hides, for the media library 
+ [All free plugins](https://devmonowar.github.io/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](https://devmonowar.github.io/general-slider/) 
+ [Advanced Testimonial - WordPress testimonials plugin](https://devmonowar.github.io/advanced-testimonial/) 
+ [Free Widgets For Elementor - extra Elementor widgets](https://devmonowar.github.io/free-widgets-for-elementor/) 
+ [Janitorix Media Audit - find unused images in WordPress](https://devmonowar.github.io/janitorix-media-audit/) 
+ [ScheduleLens - WordPress cron job viewer](https://devmonowar.github.io/schedulelens-cron-viewer/) 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -813,8 +813,8 @@
 
 (https://devmonowar.github.io/schedulelens-cron-viewer/)
 
-[Home](/) 
- [Plugins](/plugins/) 
+[Home](https://devmonowar.github.io/) 
+ [Plugins](https://devmonowar.github.io/plugins/) 
  ScheduleLens – Cron Viewer & Manager 
 
 # ScheduleLens — every cron job in plain words
@@ -872,18 +872,18 @@
 
 ## Keep reading
 
- [All free plugins](/plugins/) — everything else I maintain 
- [General Slider - fast WordPress slider without jQuery](/general-slider/) 
- [Advanced Testimonial - WordPress testimonials plugin](/advanced-testimonial/) 
- [Free Widgets For Elementor - extra Elementor widgets](/free-widgets-for-elementor/) 
- [Janitorix Media Audit - find unused images in WordPress](/janitorix-media-audit/) 
- [CrawlWatch - AI bot traffic insights for WordPress](/crawlwatch-ai-bot-insights/) 
- [Janitorix Media Audit](/janitorix-media-audit/) — another plugin for quiet site hygiene, for the media library 
- [CrawlWatch — AI Bot Insights](/crawlwatch-ai-bot-insights/) — the traffic your analytics never mentions 
+ [All free plugins](https://devmonowar.github.io/plugins/) — everything else I maintain 
+ [General Slider - fast WordPress slider without jQuery](https://devmonowar.github.io/general-slider/) 
+ [Advanced Testimonial - WordPress testimonials plugin](https://devmonowar.github.io/advanced-testimonial/) 
+ [Free Widgets For Elementor - extra Elementor widgets](https://devmonowar.github.io/free-widgets-for-elementor/) 
+ [Janitorix Media Audit - find unused images in WordPress](https://devmonowar.github.io/janitorix-media-audit/) 
+ [CrawlWatch - AI bot traffic insights for WordPress](https://devmonowar.github.io/crawlwatch-ai-bot-insights/) 
+ [Janitorix Media Audit](https://devmonowar.github.io/janitorix-media-audit/) — another plugin for quiet site hygiene, for the media library 
+ [CrawlWatch — AI Bot Insights](https://devmonowar.github.io/crawlwatch-ai-bot-insights/) — the traffic your analytics never mentions 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -895,54 +895,54 @@
 
 (https://devmonowar.github.io/blog/)
 
-[Home](/) 
+[Home](https://devmonowar.github.io/) 
  Blog 
 
 # Blog
 
  Guides and case studies about the things I actually build. Every post follows the same shape: what the problem was, what I did about it, what went wrong along the way, and what I would tell someone else doing the same thing. 
 
-## [llms.txt for WordPress — write one by hand in an hour](/blog/llms-txt-wordpress/)
+## [llms.txt for WordPress — write one by hand in an hour](https://devmonowar.github.io/blog/llms-txt-wordpress/)
 
  16 September 2026 Guide 
  A small Markdown file that tells AI assistants what your site means, so they quote you instead of improvising. Format, a full example, and where it goes on WordPress. 
 
-## [AI bot traffic in WordPress — see it, measure it, decide what to do](/blog/ai-bot-traffic-wordpress/)
+## [AI bot traffic in WordPress — see it, measure it, decide what to do](https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/)
 
  16 September 2026 Guide 
  AI crawlers are reading your site right now and WordPress shows you nothing about it. How to see them in your logs, read a log line, use robots.txt honestly, and write an llms.txt. 
 
-## [How to find unused images in WordPress — and delete them safely](/blog/how-to-find-unused-images-in-wordpress/)
+## [How to find unused images in WordPress — and delete them safely](https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/)
 
  21 August 2026 Guide 
  WordPress never tells you where an image is used, and "unattached" is not the same as unused. Where a reference hides, how to search every one of those places, and how to delete without breaking a page. 
 
-## [What the WordPress.org plugin review actually flagged in my plugin](/blog/wordpress-plugin-review-what-they-flagged/)
+## [What the WordPress.org plugin review actually flagged in my plugin](https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/)
 
  21 August 2026 Case study 
  Two rounds, three and a half weeks: the name, one script tag, a three-letter prefix, then sanitizing, escaping and unsafe SQL. The code before and after each fix, and the mistake I made twice. 
 
-## [Why WordPress sliders are slow — and how to check yours](/blog/why-wordpress-sliders-are-slow/)
+## [Why WordPress sliders are slow — and how to check yours](https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/)
 
  20 August 2026 Guide 
  Most of the weight is not the images. It is jQuery you never chose, assets loading on pages with no slider, and a layout that jumps. How to measure your own in five minutes. 
 
-## [How to build a fast, accessible slider in WordPress with General Slider](/blog/general-slider-fast-accessible-wordpress-slider/)
+## [How to build a fast, accessible slider in WordPress with General Slider](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/)
 
  11 August 2026 Guide 
  Most slider plugins load jQuery and half a megabyte of unused CSS on every page, or lock the good presets behind a Pro upgrade. Here is how to set up one that does neither. 
 
-## [How to add customer testimonials in WordPress: a complete guide to Advanced Testimonial](/blog/advanced-testimonial-wordpress-testimonials-guide/)
+## [How to add customer testimonials in WordPress: a complete guide to Advanced Testimonial](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/)
 
  11 August 2026 Guide 
  Layouts, card styles, a front-end submission form, and Schema.org markup so Google can show star ratings next to your result — without a page-builder addon pack. 
 
-## [How to install Free Widgets For Elementor: the widgets Elementor's free core does not include](/blog/free-widgets-for-elementor-guide/)
+## [How to install Free Widgets For Elementor: the widgets Elementor's free core does not include](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/)
 
  11 August 2026 Guide 
  Pricing table, flip box, countdown timer, team cards. What each widget does, how to install it, and why you do not need a giant addon pack to get them. 
 
-## [How I built a shared demo library for my WordPress plugins](/blog/shared-demo-library-for-wordpress-plugins/)
+## [How I built a shared demo library for my WordPress plugins](https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/)
 
  11 August 2026 Case study 
  Bundling demo content inside a plugin means a new release for every new demo. Here is the shared static library I built instead, and what I would do differently.
@@ -952,7 +952,7 @@
 
 (https://devmonowar.github.io/contact/)
 
-[Home](/) 
+[Home](https://devmonowar.github.io/) 
  Contact 
 
 # Contact
@@ -1016,7 +1016,7 @@
 
 (https://devmonowar.github.io/privacy/)
 
-[Home](/) 
+[Home](https://devmonowar.github.io/) 
  Privacy Policy 
 
 # Privacy Policy
@@ -1031,21 +1031,21 @@
 
  My plugins run on sites you control, and what they record stays there: 
  
- [General Slider](/general-slider/), [Advanced Testimonial](/advanced-testimonial/), [Free Widgets For Elementor](/free-widgets-for-elementor/), [Janitorix Media Audit](/janitorix-media-audit/) — no visitor data leaves your site. Janitorix scans your own media library and stores its verdicts in your own database. 
- [CrawlWatch - AI Bot Insights](/crawlwatch-ai-bot-insights/) — logs visits from AI crawlers (time, bot name, visited URL, referrer, truncated user-agent). IP addresses are anonymised before hashing (IPv4 last octet and IPv6 /64 removed) and never stored raw. Logs are kept 7–180 days at your choice (30 by default) and auto-deleted; everything is removed on uninstall if enabled in Settings. No visitor data leaves your site. 
- [ScheduleLens - Cron Viewer & Manager](/schedulelens-cron-viewer/) — stores its paused-jobs list, the last 100 run-log rows, custom intervals and three settings in your database. The only network call is a loopback check to your own site for the health tab. All data is deleted on uninstall if enabled in Settings. 
+ [General Slider](https://devmonowar.github.io/general-slider/), [Advanced Testimonial](https://devmonowar.github.io/advanced-testimonial/), [Free Widgets For Elementor](https://devmonowar.github.io/free-widgets-for-elementor/), [Janitorix Media Audit](https://devmonowar.github.io/janitorix-media-audit/) — no visitor data leaves your site. Janitorix scans your own media library and stores its verdicts in your own database. 
+ [CrawlWatch - AI Bot Insights](https://devmonowar.github.io/crawlwatch-ai-bot-insights/) — logs visits from AI crawlers (time, bot name, visited URL, referrer, truncated user-agent). IP addresses are anonymised before hashing (IPv4 last octet and IPv6 /64 removed) and never stored raw. Logs are kept 7–180 days at your choice (30 by default) and auto-deleted; everything is removed on uninstall if enabled in Settings. No visitor data leaves your site. 
+ [ScheduleLens - Cron Viewer & Manager](https://devmonowar.github.io/schedulelens-cron-viewer/) — stores its paused-jobs list, the last 100 run-log rows, custom intervals and three settings in your database. The only network call is a loopback check to your own site for the health tab. All data is deleted on uninstall if enabled in Settings. 
 
 ## Contact
 
- Questions about any of this: [devmonowar@gmail.com](mailto:devmonowar@gmail.com) or the [contact page](/contact/).
+ Questions about any of this: [devmonowar@gmail.com](mailto:devmonowar@gmail.com) or the [contact page](https://devmonowar.github.io/contact/).
 
 
 ## https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/
 
 (https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/)
 
-[Home](/) 
- [Blog](/blog/) 
+[Home](https://devmonowar.github.io/) 
+ [Blog](https://devmonowar.github.io/blog/) 
  Advanced Testimonial guide 
 
 # How to add customer testimonials in WordPress: a complete guide to Advanced Testimonial
@@ -1154,18 +1154,18 @@
 
 ## Related guides
 
- [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) 
- [How to install Free Widgets For Elementor](/blog/free-widgets-for-elementor-guide/) 
+ [How to build a fast, accessible slider in WordPress](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/) 
+ [How to install Free Widgets For Elementor](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/) 
 
 ## Keep reading
 
- [How I built a shared demo library for my plugins](/blog/shared-demo-library-for-wordpress-plugins/) — how the ready-made testimonial demos are hosted 
- [The Elementor widgets the free core is missing](/blog/free-widgets-for-elementor-guide/) — the Elementor side of the same idea 
- [How to build a fast, accessible WordPress slider](/blog/general-slider-fast-accessible-wordpress-slider/) — build once, drop it anywhere: the same approach for sliders 
+ [How I built a shared demo library for my plugins](https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/) — how the ready-made testimonial demos are hosted 
+ [The Elementor widgets the free core is missing](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/) — the Elementor side of the same idea 
+ [How to build a fast, accessible WordPress slider](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/) — build once, drop it anywhere: the same approach for sliders 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -1177,8 +1177,8 @@
 
 (https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/)
 
-[Home](/) 
- [Blog](/blog/) 
+[Home](https://devmonowar.github.io/) 
+ [Blog](https://devmonowar.github.io/blog/) 
  AI bot traffic in WordPress 
 
 # AI bot traffic in WordPress — see it, measure it, decide what to do
@@ -1296,8 +1296,8 @@ Disallow: /
 
 (https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/)
 
-[Home](/) 
- [Blog](/blog/) 
+[Home](https://devmonowar.github.io/) 
+ [Blog](https://devmonowar.github.io/blog/) 
  Free Widgets For Elementor guide 
 
 # How to install Free Widgets For Elementor: the widgets Elementor's free core does not include
@@ -1372,7 +1372,7 @@ Disallow: /
 ## Using the demo library
 
  Instead of building sections from scratch, the plugin includes an optional Demo Library — a one-click way to import ready-made Elementor sections, images included, built with these widgets. New demos are added over time without needing a plugin update. 
- To use it, open the plugin's Demo Library screen from the WordPress admin, browse the available sections, and click Import on the one you want. If you are curious how that works under the hood, I wrote about it in [the demo library case study](/blog/shared-demo-library-for-wordpress-plugins/). 
+ To use it, open the plugin's Demo Library screen from the WordPress admin, browse the available sections, and click Import on the one you want. If you are curious how that works under the hood, I wrote about it in [the demo library case study](https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/). 
 
  Ready-made sections you can import in one click, images included. 
 
@@ -1413,18 +1413,18 @@ Disallow: /
 
 ## Related guides
 
- [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) 
- [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) 
+ [How to build a fast, accessible slider in WordPress](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/) 
+ [How to add customer testimonials in WordPress](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/) 
 
 ## Keep reading
 
- [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) — this plugin has no testimonial widget on purpose; that is the one to use 
- [How I built a shared demo library for my plugins](/blog/shared-demo-library-for-wordpress-plugins/) — where the one-click demos come from 
- [Why WordPress sliders are slow](/blog/why-wordpress-sliders-are-slow/) — why loading assets on every page is the thing to avoid 
+ [How to add customer testimonials in WordPress](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/) — this plugin has no testimonial widget on purpose; that is the one to use 
+ [How I built a shared demo library for my plugins](https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/) — where the one-click demos come from 
+ [Why WordPress sliders are slow](https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/) — why loading assets on every page is the thing to avoid 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -1436,8 +1436,8 @@ Disallow: /
 
 (https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/)
 
-[Home](/) 
- [Blog](/blog/) 
+[Home](https://devmonowar.github.io/) 
+ [Blog](https://devmonowar.github.io/blog/) 
  General Slider guide 
 
 # How to build a fast, accessible slider in WordPress with General Slider
@@ -1549,19 +1549,19 @@ Disallow: /
 
 ## Related guides
 
- [Why WordPress sliders are slow — and how to check yours](/blog/why-wordpress-sliders-are-slow/) 
- [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) 
- [How to install Free Widgets For Elementor](/blog/free-widgets-for-elementor-guide/) 
+ [Why WordPress sliders are slow — and how to check yours](https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/) 
+ [How to add customer testimonials in WordPress](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/) 
+ [How to install Free Widgets For Elementor](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/) 
 
 ## Keep reading
 
- [Why WordPress sliders are slow](/blog/why-wordpress-sliders-are-slow/) — why it was worth building another slider at all 
- [How I built a shared demo library for my plugins](/blog/shared-demo-library-for-wordpress-plugins/) — where the one-click demos in this plugin actually come from 
- [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) — the same block-and-shortcode approach, for customer reviews 
+ [Why WordPress sliders are slow](https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/) — why it was worth building another slider at all 
+ [How I built a shared demo library for my plugins](https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/) — where the one-click demos in this plugin actually come from 
+ [How to add customer testimonials in WordPress](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/) — the same block-and-shortcode approach, for customer reviews 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -1573,8 +1573,8 @@ Disallow: /
 
 (https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/)
 
-[Home](/) 
- [Blog](/blog/) 
+[Home](https://devmonowar.github.io/) 
+ [Blog](https://devmonowar.github.io/blog/) 
  How to find unused images in WordPress 
 
 # How to find unused images in WordPress — and delete them safely
@@ -1703,7 +1703,7 @@ OR option_value LIKE '%"id":412%';
  Does it admit when it could not finish? A scan that cannot read a page builder's format should say so and refuse, not quietly file the image under unused. 
  Does it delete in one step? If it does, you have your answer. 
 
- Disclosure. I build one of these, [Janitorix Media Audit](https://wordpress.org/plugins/janitorix-media-audit/). It exists because I asked those six questions about the tools I had been using and did not like my own answers. It is free and open source, and the WordPress.org review it went through is written up in [what the review actually flagged](/blog/wordpress-plugin-review-what-they-flagged/). Use it or do not. The checks above work either way, and I would rather you understood them than trusted anybody's scanner, mine included. 
+ Disclosure. I build one of these, [Janitorix Media Audit](https://wordpress.org/plugins/janitorix-media-audit/). It exists because I asked those six questions about the tools I had been using and did not like my own answers. It is free and open source, and the WordPress.org review it went through is written up in [what the review actually flagged](https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/). Use it or do not. The checks above work either way, and I would rather you understood them than trusted anybody's scanner, mine included. 
 
 ## Common mistakes
 
@@ -1739,8 +1739,8 @@ OR option_value LIKE '%"id":412%';
 
 (https://devmonowar.github.io/blog/llms-txt-wordpress/)
 
-[Home](/) 
- [Blog](/blog/) 
+[Home](https://devmonowar.github.io/) 
+ [Blog](https://devmonowar.github.io/blog/) 
  llms.txt for WordPress 
 
 # llms.txt for WordPress — write one by hand in an hour
@@ -1850,19 +1850,19 @@ OR option_value LIKE '%"id":412%';
 
 ## Related guides
 
- [AI bot traffic in WordPress — see it, measure it, decide what to do](/blog/ai-bot-traffic-wordpress/) 
- [What the WordPress.org plugin review actually flagged in my plugin](/blog/wordpress-plugin-review-what-they-flagged/) 
- [The plugins I build](/plugins/) 
+ [AI bot traffic in WordPress — see it, measure it, decide what to do](https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/) 
+ [What the WordPress.org plugin review actually flagged in my plugin](https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/) 
+ [The plugins I build](https://devmonowar.github.io/plugins/) 
 
 ## Keep reading
 
- [AI bot traffic in WordPress](/blog/ai-bot-traffic-wordpress/) — the companion piece: which bots visit, robots.txt per bot, and the referrals assistants send you 
- [CrawlWatch — AI Bot Insights](/crawlwatch-ai-bot-insights/) — generates this file in one click and keeps it fresh 
- [What the WordPress.org plugin review actually flagged](/blog/wordpress-plugin-review-what-they-flagged/) — the review process behind the plugin above 
+ [AI bot traffic in WordPress](https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/) — the companion piece: which bots visit, robots.txt per bot, and the referrals assistants send you 
+ [CrawlWatch — AI Bot Insights](https://devmonowar.github.io/crawlwatch-ai-bot-insights/) — generates this file in one click and keeps it fresh 
+ [What the WordPress.org plugin review actually flagged](https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/) — the review process behind the plugin above 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -1874,8 +1874,8 @@ OR option_value LIKE '%"id":412%';
 
 (https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/)
 
-[Home](/) 
- [Blog](/blog/) 
+[Home](https://devmonowar.github.io/) 
+ [Blog](https://devmonowar.github.io/blog/) 
  Shared demo library case study 
 
 # How I built a shared demo library for my WordPress plugins
@@ -1965,18 +1965,18 @@ OR option_value LIKE '%"id":412%';
 
 ## Related guides
 
- [How to build a fast, accessible slider in WordPress](/blog/general-slider-fast-accessible-wordpress-slider/) 
- [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) 
+ [How to build a fast, accessible slider in WordPress](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/) 
+ [How to add customer testimonials in WordPress](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/) 
 
 ## Keep reading
 
- [How to build a fast, accessible WordPress slider](/blog/general-slider-fast-accessible-wordpress-slider/) — the first plugin to use it 
- [How to add customer testimonials in WordPress](/blog/advanced-testimonial-wordpress-testimonials-guide/) — the second 
- [The Elementor widgets the free core is missing](/blog/free-widgets-for-elementor-guide/) — and the third 
+ [How to build a fast, accessible WordPress slider](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/) — the first plugin to use it 
+ [How to add customer testimonials in WordPress](https://devmonowar.github.io/blog/advanced-testimonial-wordpress-testimonials-guide/) — the second 
+ [The Elementor widgets the free core is missing](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/) — and the third 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -1988,8 +1988,8 @@ OR option_value LIKE '%"id":412%';
 
 (https://devmonowar.github.io/blog/why-wordpress-sliders-are-slow/)
 
-[Home](/) 
- [Blog](/blog/) 
+[Home](https://devmonowar.github.io/) 
+ [Blog](https://devmonowar.github.io/blog/) 
  Why WordPress sliders are slow 
 
 # Why WordPress sliders are slow — and how to check yours
@@ -2104,7 +2104,7 @@ OR option_value LIKE '%"id":412%';
  Point 5 is last for a reason. Swapping plugins is the most disruptive thing on this list and usually the smallest win. Do the first four, measure again, and there is a fair chance you never get to it. 
  If you do end up switching, judge the dependency rather than the marketing. Open the plugin in the directory, look at what it actually loads, and run the five-minute test on its demo page. 
 
- Disclosure. I build a slider plugin myself — [General Slider](/blog/general-slider-fast-accessible-wordpress-slider/). I built it on Splide rather than jQuery, and made it load nothing on pages without a slider, because these are the four things that annoyed me about every slider I had used before. I have deliberately kept it out of the comparisons above. Measure your own site and make your own decision. 
+ Disclosure. I build a slider plugin myself — [General Slider](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/). I built it on Splide rather than jQuery, and made it load nothing on pages without a slider, because these are the four things that annoyed me about every slider I had used before. I have deliberately kept it out of the comparisons above. Measure your own site and make your own decision. 
 
 ## Common mistakes
 
@@ -2142,18 +2142,18 @@ OR option_value LIKE '%"id":412%';
 
 ## Related guides
 
- [How to build a fast, accessible slider in WordPress with General Slider](/blog/general-slider-fast-accessible-wordpress-slider/) 
- [How to install Free Widgets For Elementor](/blog/free-widgets-for-elementor-guide/) 
+ [How to build a fast, accessible slider in WordPress with General Slider](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/) 
+ [How to install Free Widgets For Elementor](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/) 
 
 ## Keep reading
 
- [How to build a fast, accessible WordPress slider](/blog/general-slider-fast-accessible-wordpress-slider/) — the slider I built after running into every one of these 
- [How to find unused images in WordPress](/blog/how-to-find-unused-images-in-wordpress/) — images are cause four here; this is how to find the ones no page uses 
- [The Elementor widgets the free core is missing](/blog/free-widgets-for-elementor-guide/) — the same load-only-what-the-page-needs rule, applied to Elementor widgets 
+ [How to build a fast, accessible WordPress slider](https://devmonowar.github.io/blog/general-slider-fast-accessible-wordpress-slider/) — the slider I built after running into every one of these 
+ [How to find unused images in WordPress](https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/) — images are cause four here; this is how to find the ones no page uses 
+ [The Elementor widgets the free core is missing](https://devmonowar.github.io/blog/free-widgets-for-elementor-guide/) — the same load-only-what-the-page-needs rule, applied to Elementor widgets 
 
  Written by Monowar Hossain — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as devmonowar . 
  
- [Monowar Hossain](/about/)
+ [Monowar Hossain](https://devmonowar.github.io/about/)
  [GitHub](https://github.com/devmonowar)
  [WordPress.org](https://profiles.wordpress.org/kstmonowar/)
  [LinkedIn](https://www.linkedin.com/in/devmonowar)
@@ -2165,8 +2165,8 @@ OR option_value LIKE '%"id":412%';
 
 (https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/)
 
-[Home](/) 
- [Blog](/blog/) 
+[Home](https://devmonowar.github.io/) 
+ [Blog](https://devmonowar.github.io/blog/) 
  What the WordPress.org plugin review flagged 
 
 # What the WordPress.org plugin review actually flagged in my plugin
