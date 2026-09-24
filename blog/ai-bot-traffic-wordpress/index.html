@@ -207,7 +207,7 @@
         </tbody>
       </table>
     </div>
-    <p>That was the part that surprised me</p> — not that they came, but how long they had been coming while I looked at nothing but the WordPress dashboard. The question was never whether. It was whether anyone was watching. Every name above documents itself — <a href="https://platform.openai.com/docs/bots" rel="noopener">OpenAI's crawler overview</a>, <a href="https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web" rel="noopener">Anthropic's crawling article</a>, <a href="https://docs.perplexity.ai/guides/perplexitybot" rel="noopener">Perplexity's bot guide</a>, <a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers" rel="noopener">Google's crawler list</a> — so when a new name appears in your logs, its own docs are the first place to check what it actually governs.</p>
+    <p>That was the part that surprised me — not that they came, but how long they had been coming while I looked at nothing but the WordPress dashboard. The question was never whether. It was whether anyone was watching. Every name above documents itself — <a href="https://platform.openai.com/docs/bots" rel="noopener">OpenAI's crawler overview</a>, <a href="https://support.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web" rel="noopener">Anthropic's crawling article</a>, <a href="https://docs.perplexity.ai/guides/perplexitybot" rel="noopener">Perplexity's bot guide</a>, <a href="https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers" rel="noopener">Google's crawler list</a> — so when a new name appears in your logs, its own docs are the first place to check what it actually governs.</p>
 
     <h2 id="read-line">Reading one log line</h2>
     <p>A log line looks scary exactly once. Then somebody shows you where to look, and you cannot unsee it. Here is a typical one:</p>
@@ -285,7 +285,7 @@ Disallow: /</code></pre>
       <li><strong>Copying a blocklist without deciding.</strong> Someone else's robots.txt encodes someone else's trade-offs. Decide first, paste second.</li>
       <li><strong>Blocking everything including the citers.</strong> The nuclear option feels decisive and costs you every AI referral you would have had.</li>
       <li><strong>Trusting robots.txt as enforcement.</strong> It is a request. Check the logs afterwards to see who listened.</li>
-      <li><strong>Blocking Google-Extended by accident.</strong> It sits next to Googlebot in every example snippet. Read before you paste, or your search crawler stays welcome while you meant to block training — or the reverse.</li>
+      <li><strong>Blocking Google-Extended by accident.</strong> It sits next to Googlebot in every example snippet. Read before you paste — one careless copy can block AI training crawlers you wanted, or leave Googlebot blocked when you only meant training bots.</li>
       <li><strong>Forgetting the referrals exist.</strong> Half the story is humans arriving from assistants. If you never segment them, you will make the whole decision looking at half the data.</li>
       <li><strong>Writing llms.txt once and never updating it.</strong> A stale summary misquotes you with confidence. Regenerate it when the site changes.</li>
     </ul>
