@@ -134,7 +134,7 @@
     </header>
 
     <div class="note">
-      <p><strong>Summary.</strong> Every plugin I maintain has a "Demo Library" feature that lets users import ready-made content in one click. Instead of bundling those demos inside each plugin, I built one shared, free, static library — JSON plus images — hosted on GitHub Pages, which every plugin fetches from. Here is the problem it solves, how it is structured, and what I would do differently.</p>
+      <p><strong>Summary.</strong> Three plugins I maintain have a "Demo Library" feature that lets users import ready-made content in one click. Instead of bundling those demos inside each plugin, I built one shared, free, static library — JSON plus images — hosted on GitHub Pages, which every plugin fetches from. Here is the problem it solves, how it is structured, and what I would do differently.</p>
     </div>
 
     <nav class="toc" aria-label="Table of contents">
@@ -171,6 +171,11 @@
     ├── demo-library.json
     ├── demos/
     ├── previews/
+    └── assets/
+└── free-widgets-for-elementor/
+    ├── demo-library.json
+    ├── demos/
+    ├── previews/
     └── assets/</code></pre>
     <p>Each plugin gets its own top-level folder, so adding support for a new plugin is just adding a new folder. There is no shared code to touch.</p>
 
@@ -179,7 +184,7 @@
     <p>On import, the plugin downloads that demo's JSON, sideloads every image straight into the site's media library, and creates the actual content — sliders, testimonials, and so on.</p>
     <p>The connection only ever happens when a user opens the Demo Library screen or clicks Import. It is a plain, read-only file request, and it is disclosed to users as an external service in each plugin's <code>readme.txt</code>.</p>
 
-    <p>This is what the user actually sees. Two different plugins, two different sets of demos — but both screens are reading from the same repository, and neither plugin ships a single demo image in its own ZIP.</p>
+    <p>This is what the user actually sees. Three different plugins, three different sets of demos — but all screens are reading from the same repository, and none of them ships a single demo image in its own ZIP.</p>
 
     <figure>
 <picture>
