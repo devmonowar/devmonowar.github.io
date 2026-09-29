@@ -1,12 +1,12 @@
 # Monowar Hossain
 
-> WordPress plugin developer from Dhaka, Bangladesh. He builds free, open-source
-> plugins published on WordPress.org — General Slider, Advanced Testimonial,
-> Free Widgets For Elementor, Janitorix Media Audit, CrawlWatch and ScheduleLens — and writes guides and
+> WordPress plugin and theme developer from Dhaka, Bangladesh. He builds free, open-source
+> plugins and themes published on WordPress.org — General Slider, Advanced Testimonial,
+> Free Widgets For Elementor, Janitorix Media Audit, CrawlWatch, ScheduleLens and the Alo Blog theme — and writes guides and
 > case studies about building them.
 
 This site is hand-written static HTML: no framework, no JavaScript, no CDN and no
-external requests. Every plugin listed here is free and GPL-licensed, with the
+external requests. Every plugin and theme listed here is free and GPL-licensed, with the
 source on GitHub and support handled in the WordPress.org forums.
 
 ## Pages
@@ -20,6 +20,8 @@ source on GitHub and support handled in the WordPress.org forums.
 - [Free Widgets For Elementor](https://devmonowar.github.io/free-widgets-for-elementor/): the widgets the free Elementor core leaves out — free forever, no Pro.
 - [CrawlWatch – AI Bot Insights](https://devmonowar.github.io/crawlwatch-ai-bot-insights/): AI crawler traffic, referrals, readiness score, llms.txt and per-bot robots.txt rules.
 - [ScheduleLens – Cron Viewer & Manager](https://devmonowar.github.io/schedulelens-cron-viewer/): every scheduled job in plain words — run, pause, delete, custom jobs, wp-cron health check.
+- [Themes](https://devmonowar.github.io/themes/): every free WordPress theme he maintains, with what each one does.
+- [Alo Blog](https://devmonowar.github.io/alo-blog/): a free lightweight writing theme — single-column reading list, sidebar, threaded comments, RTL-friendly.
 - [Blog](https://devmonowar.github.io/blog/): guides and case studies on WordPress plugin development.
 - [Contact](https://devmonowar.github.io/contact/): email, plugin support forums, GitHub issues and profile links.
 
@@ -32,6 +34,10 @@ source on GitHub and support handled in the WordPress.org forums.
 - [CrawlWatch – AI Bot Insights](https://wordpress.org/plugins/crawlwatch-ai-bot-insights/): logs which AI crawlers read a WordPress site and which URLs they take, tracks referrals from AI assistants, and generates llms.txt and per-bot robots.txt rules. Nothing leaves the server and no API key is needed. Source: https://github.com/devmonowar/crawlwatch-ai-bot-insights
 - [ScheduleLens – Cron Viewer & Manager](https://wordpress.org/plugins/schedulelens-cron-viewer/): shows every scheduled job in plain words — run, pause, resume or delete jobs, custom jobs without code, wp-cron health check with fix steps. Admin-only, no tracking. Source: https://github.com/devmonowar/schedulelens-cron-viewer
 
+## Themes
+
+- [Alo Blog](https://wordpress.org/themes/alo-blog/): a free lightweight personal writing theme — single-column reading list, sidebar, threaded comments, translation-ready and RTL-friendly. No builder, no slider, no upsells. Source: https://github.com/devmonowar/alo-blog
+
 ## Writing
 
 - [How to find unused images in WordPress](https://devmonowar.github.io/blog/how-to-find-unused-images-in-wordpress/): why "unattached" is not the same as unused, where a reference hides, and how to delete safely.
@@ -43,6 +49,7 @@ source on GitHub and support handled in the WordPress.org forums.
 - [How I built a shared demo library for my WordPress plugins](https://devmonowar.github.io/blog/shared-demo-library-for-wordpress-plugins/): bundling demos inside a plugin forces a release per demo — the static library built instead.
 - [Write llms.txt by hand in an hour](https://devmonowar.github.io/blog/llms-txt-wordpress/): what llms.txt is, the exact format that works, a copyable example, and the mistakes that make one useless.
 - [AI bot traffic in WordPress](https://devmonowar.github.io/blog/ai-bot-traffic-wordpress/): how to see it, measure it, and decide what to do about it.
+- [Alo Blog, my first WordPress theme](https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/): why a theme after six plugins, what the theme review checks, and what is inside.
 
 ## Optional
 

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<title>Alo Blog, My First WordPress Theme</title>
+<meta name="description" content="After six WordPress plugins, I built a theme: Alo Blog, a free lightweight writing theme. Why a theme, what the theme review checks, and what is inside.">
+<link rel="canonical" href="https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Monowar Hossain">
+<meta property="og:title" content="Alo Blog, My First WordPress Theme">
+<meta property="og:description" content="Six plugins in, I wanted to see the other side: a quiet, fast writing theme with no builder, no slider, no upsells.">
+<meta property="og:url" content="https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-09-30">
+<meta property="article:author" content="Monowar Hossain">
+<meta property="og:image" content="https://devmonowar.github.io/assets/img/alo-blog-screenshot.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="Alo Blog, My First WordPress Theme - Monowar Hossain">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Alo Blog, My First WordPress Theme">
+<meta name="twitter:description" content="Six plugins in, I wanted to see the other side: a quiet, fast writing theme with no builder, no slider, no upsells.">
+<meta name="twitter:image" content="https://devmonowar.github.io/assets/img/alo-blog-screenshot.png">
+
+<link rel="alternate" type="application/rss+xml" title="Monowar Hossain — WordPress Guides" href="/feed.xml">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/#post",
+      "headline": "Alo Blog, My First WordPress Theme",
+      "description": "After six WordPress plugins, I built a theme: Alo Blog, a free lightweight writing theme. Why a theme, what the theme review checks, and what is inside.",
+      "datePublished": "2026-09-30",
+      "dateModified": "2026-09-30",
+      "inLanguage": "en",
+      "image": "https://devmonowar.github.io/assets/img/alo-blog-screenshot.png",
+      "mainEntityOfPage": "https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/",
+      "about": { "@id": "https://devmonowar.github.io/alo-blog/#page" },
+      "isPartOf": { "@id": "https://devmonowar.github.io/blog/#blog" },
+      "author": {
+        "@id": "https://devmonowar.github.io/#person",
+        "@type": "Person",
+        "name": "Monowar Hossain",
+        "url": "https://devmonowar.github.io/"
+      },
+      "publisher": {
+        "@id": "https://devmonowar.github.io/#person"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Alo Blog really free?",
+          "url": "https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/#is-alo-blog-really-free",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. No Pro version, no locked features, no upsell screens. The whole theme is on WordPress.org under GPLv2 or later, same as my plugins." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with the block editor?",
+          "url": "https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/#does-it-work-with-the-block-editor",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Editor styles match the front end, there is an accent quote style, and three starter patterns. It is a classic hybrid theme, not a block theme, so the Customizer still works." }
+        },
+        {
+          "@type": "Question",
+          "name": "How is the theme review different from the plugin review?",
+          "url": "https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/#how-is-the-theme-review-different",
+          "acceptedAnswer": { "@type": "Answer", "text": "The plugin review is mostly security and guideline checks on your code. The theme review goes further into presentation: title wrapping, float clearing, submenu accessibility, RTL stylesheets, editor styles. Expect feedback on things a visitor sees, not just things a scanner flags." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://devmonowar.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://devmonowar.github.io/blog/" },
+        { "@type": "ListItem", "position": 3, "name": "Alo Blog, My First WordPress Theme" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">MH</span> Monowar Hossain</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/themes/">Themes</a>
+      <a href="/blog/" aria-current="page">Blog</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="wrap wrap-narrow">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li aria-current="page">Alo Blog, My First WordPress Theme</li>
+    </ol>
+  </nav>
+
+  <article class="article">
+
+    <header class="article-head">
+      <h1>Alo Blog, my first WordPress theme</h1>
+      <p class="meta">
+        <span>By Monowar Hossain</span>
+        <time datetime="2026-09-30">30 September 2026</time>
+      </p>
+    </header>
+
+    <div class="note">
+      <p><strong>Summary.</strong> Six plugins in, I built the thing plugins sit on top of: a theme. Alo Blog is a free, lightweight writing theme — single column, sidebar, no builder, no slider, no upsells. It went live on WordPress.org on 29 September 2026. Here is why I built it, what the theme review caught, and what is inside.</p>
+    </div>
+
+    <nav class="toc" aria-label="Table of contents">
+      <ol>
+        <li><a href="#why-theme">Why a theme after six plugins</a></li>
+        <li><a href="#review">What the theme review checks that the plugin review does not</a></li>
+        <li><a href="#inside">What is inside Alo Blog</a></li>
+        <li><a href="#options">Four options, not a dashboard</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="why-theme">Why a theme after six plugins</h2>
+    <p>Plugins live inside somebody else's design. Every support question I have answered this year eventually turned into a theme question — "it looks broken with my theme", "my theme loads jQuery on every page", "my theme has no sidebar on mobile". After the sixth plugin, I wanted to see the other side of that conversation.</p>
+    <p>So I set one rule before writing anything: the theme must be the kind of theme I would recommend to the people asking those questions. Fast, readable, accessible, and quiet. If a feature needed a settings page to explain itself, it did not go in.</p>
+
+    <h2 id="review">What the theme review checks that the plugin review does not</h2>
+    <p>I have been through the plugin review, so I expected the drill: prefixes, sanitizing, no phoning home. The theme review has all of that, plus a second layer nobody warns you about — presentation. Reviewers actually read your theme like a visitor: long titles that wrap and break layouts, submenus you cannot reach by keyboard, floats that never clear, editor styles that look nothing like the front end.</p>
+    <p>The fixes that came back were things like accessible submenus, title wrapping, float clearing, a real RTL stylesheet, and expanded editor styles. None of them would fail a code scanner. All of them show up on a real site. That is the difference: the plugin review asks "is this safe", the theme review also asks "is this finished".</p>
+
+    <h2 id="inside">What is inside Alo Blog</h2>
+    <ul>
+      <li><strong>Single-column reading list</strong> with a right sidebar on blog and single posts — the layout most personal blogs actually need</li>
+      <li><strong>Accessibility-first:</strong> skip link, visible focus, keyboard-operable menus, screen-reader labels</li>
+      <li><strong>Reader-first typography:</strong> 720px measure, 17px system-font stack, generous line-height — no webfont downloads</li>
+      <li><strong>Writer-friendly details:</strong> sticky featured posts, author box with avatar, tag pills, reading progress bar</li>
+      <li><strong>Block-ready:</strong> editor styles that match the front end, an accent quote style, three starter patterns</li>
+      <li><strong>Privacy-respecting:</strong> zero external requests, zero tracking, zero bundled scripts</li>
+    </ul>
+
+    <figure>
+      <img src="/assets/img/alo-blog-screenshot.png"
+           width="1200" height="900" loading="lazy" decoding="async"
+           alt="Alo Blog theme homepage with a single-column reading list and sidebar">
+      <figcaption>The reading list — nothing shouting.</figcaption>
+    </figure>
+
+    <h2 id="options">Four options, not a dashboard</h2>
+    <p>Appearance, Customize, Theme Options holds exactly four things: footer credit text, page sidebar position, excerpt length, and author box visibility. Themes that ship a hundred options are shipping a hundred decisions the author refused to make. I made mine.</p>
+
+    <p class="card-links">
+      <a href="https://wordpress.org/themes/alo-blog/">Download on WordPress.org</a>
+      <a href="https://github.com/devmonowar/alo-blog">Source on GitHub</a>
+      <a href="/alo-blog/">About the theme</a>
+    </p>
+
+    <h2 id="faq">FAQ</h2>
+    <dl class="faq">
+      <dt id="is-alo-blog-really-free">Is Alo Blog really free?</dt>
+      <dd>Yes. No Pro version, no locked features, no upsell screens. The whole theme is on WordPress.org under GPLv2 or later, same as my plugins.</dd>
+
+      <dt id="does-it-work-with-the-block-editor">Does it work with the block editor?</dt>
+      <dd>Yes. Editor styles match the front end, there is an accent quote style, and three starter patterns. It is a classic hybrid theme, not a block theme, so the Customizer still works.</dd>
+
+      <dt id="how-is-the-theme-review-different">How is the theme review different from the plugin review?</dt>
+      <dd>The plugin review is mostly security and guideline checks on your code. The theme review goes further into presentation: title wrapping, float clearing, submenu accessibility, RTL stylesheets, editor styles. Expect feedback on things a visitor sees, not just things a scanner flags.</dd>
+    </dl>
+
+    <h2 id="conclusion">Conclusion</h2>
+    <p>A theme is a promise about taste, not just code — every default is a decision the user never has to make. Alo Blog is mine: quiet, fast, and finished. If you write on WordPress and your theme feels heavier than your words, try it.</p>
+
+    <nav class="related" aria-label="Related reading">
+      <h2>Keep reading</h2>
+      <ul>
+        <li><a href="/alo-blog/">Alo Blog</a> — the theme page: specs, screenshots, download links</li>
+        <li><a href="/blog/wordpress-plugin-review-what-they-flagged/">What the WordPress.org plugin review actually flagged</a> — the other review queue, and what it catches</li>
+        <li><a href="/themes/">All free themes</a> — everything else I maintain</li>
+      </ul>
+    </nav>
+
+    <div class="author-box">
+<picture>
+      <source srcset="/assets/img/monowar-hossain-400.webp" type="image/webp">
+      <img class="author-photo" src="/assets/img/monowar-hossain-400.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Monowar Hossain">
+      </picture>
+      <div class="author-bio">
+      <p><strong>Written by Monowar Hossain</strong> — WordPress Developer specialising in custom themes, plugins, Elementor, ACF, and performance optimisation. Open Source Contributor. Also known online as <strong>devmonowar</strong>.</p>
+      <p class="card-links">
+        <a href="/about/">Monowar Hossain</a>
+        <a href="https://github.com/devmonowar" rel="me">GitHub</a>
+        <a href="https://profiles.wordpress.org/kstmonowar/" rel="me">WordPress.org</a>
+        <a href="https://www.linkedin.com/in/devmonowar" rel="me">LinkedIn</a>
+      </p>
+      <p class="small muted">Published 30 September 2026 · Last updated 30 September 2026</p>
+      </div>
+    </div>
+
+  </article>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Monowar Hossain · Dhaka, Bangladesh</span>
+    <nav aria-label="Footer">
+      <a href="/about/">About</a>
+      <a href="/plugins/">Plugins</a>
+      <a href="/themes/">Themes</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="https://github.com/devmonowar">GitHub</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

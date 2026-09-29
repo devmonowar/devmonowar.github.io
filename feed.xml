@@ -7,7 +7,7 @@
   <description>Guides and case studies on WordPress plugin development by Monowar Hossain — sliders, testimonials, Elementor widgets and media cleanup.</description>
   <language>en</language>
   <copyright>Copyright 2026 Monowar Hossain</copyright>
-  <lastBuildDate>Tue, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:00:00 +0000</lastBuildDate>
   <atom:link href="https://devmonowar.github.io/feed.xml" rel="self" type="application/rss+xml"/>
 
   <image>
@@ -15,6 +15,15 @@
     <title>Monowar Hossain — WordPress Guides</title>
     <link>https://devmonowar.github.io/blog/</link>
   </image>
+
+  <item>
+    <title>Alo Blog, my first WordPress theme</title>
+    <link>https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/</link>
+    <guid isPermaLink="true">https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/</guid>
+    <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+    <category>Case study</category>
+    <description>Six plugins in, I built the thing plugins sit on top of: Alo Blog, a free lightweight writing theme. Why a theme, what the theme review checks, and what is inside.</description>
+  </item>
 
   <item>
     <title>How to fix missed schedule in WordPress</title>

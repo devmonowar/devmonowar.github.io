@@ -2334,3 +2334,51 @@ $wpdb->prepare( "SELECT … WHERE id IN ( $placeholders )", $ids );
  The check that counts: the shipped ZIP, extracted under its real slug, rather than the working folder. Plenty of warnings, every one of them a deliberate direct database call. No errors, which is the part that matters, because only the Plugin repo category has to pass. 
  
  There was also an afternoon when I was certain I had introduced a bug: a freshly uploaded image would not trash. It was my own 24-hour safety rule doing its job. On a brand-new tes
+
+
+## Themes
+
+(https://devmonowar.github.io/themes/)
+
+# Themes
+
+ Free WordPress themes, held to the same standard as the plugins: no upsells, no locked features, no tracking. One so far, more if they earn their place.
+
+### Alo Blog
+
+ A quiet theme for people who write. A lightweight personal blog theme: single-column reading list, right sidebar on blog and single posts, threaded comments, translation-ready and RTL-friendly. Accessibility-first, reader-first typography, and zero external requests.
+
+ [Download on WordPress.org](https://wordpress.org/themes/alo-blog/)
+ [Source on GitHub](https://github.com/devmonowar/alo-blog)
+ [Launch post](https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/)
+ [Alo Blog - free WordPress blog theme](https://devmonowar.github.io/alo-blog/)
+
+## Alo Blog
+
+(https://devmonowar.github.io/alo-blog/)
+
+# Alo Blog — a quiet theme for people who write
+
+ Alo Blog is my first free WordPress theme — a lightweight personal writing theme. Single-column reading list, right sidebar on blog and single posts, threaded comments, translation-ready and RTL-friendly. No page builder, no slider, no upsells.
+
+ Version 1.0.2, requires WordPress 6.4 or later and PHP 7.4 or later, GPLv2 or later, free.
+
+ What is inside: accessibility-first (skip link, visible focus, keyboard-operable menus, screen-reader labels); reader-first typography (720px measure, 17px system-font stack, generous line-height); writer-friendly details (sticky featured posts, author box with avatar, tag pills, reading progress bar); block-ready (editor styles that match the front end, accent quote style, three starter patterns); privacy-respecting (zero external requests, zero tracking, zero bundled scripts).
+
+ Theme options (Appearance, Customize, Theme Options): footer credit text, page sidebar position, excerpt length, author box visibility.
+
+ [Download on WordPress.org](https://wordpress.org/themes/alo-blog/)
+ [Source on GitHub](https://github.com/devmonowar/alo-blog)
+ [Support forum](https://wordpress.org/support/theme/alo-blog/)
+
+## [Alo Blog, my first WordPress theme](https://devmonowar.github.io/blog/alo-blog-wordpress-blog-theme/)
+
+ Six plugins in, I built the thing plugins sit on top of: a theme. Alo Blog is a free, lightweight writing theme — single column, sidebar, no builder, no slider, no upsells. It went live on WordPress.org on 29 September 2026.
+
+ Why a theme after six plugins: every support question eventually turns into a theme question, so I wanted to see the other side. One rule before writing anything: the theme must be the kind I would recommend to the people asking those questions.
+
+ The theme review vs the plugin review: the plugin review is mostly security and guideline checks; the theme review adds presentation — title wrapping, float clearing, submenu accessibility, RTL stylesheets, editor styles. The plugin review asks "is this safe", the theme review also asks "is this finished".
+
+ [Alo Blog](https://devmonowar.github.io/alo-blog/) — the theme page.
+ [All free themes](https://devmonowar.github.io/themes/) — everything else maintained.
+ [What the WordPress.org plugin review actually flagged](https://devmonowar.github.io/blog/wordpress-plugin-review-what-they-flagged/) — the other review queue.
