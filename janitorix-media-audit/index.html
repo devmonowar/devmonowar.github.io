@@ -60,8 +60,8 @@
       "operatingSystem": "WordPress",
       "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "bestRating": "5", "ratingCount": "2" },
       "softwareRequirements": "WordPress 6.2 or later, PHP 7.4 or later",
-      "softwareVersion": "1.0.5",
-      "dateModified": "2026-09-23",
+      "softwareVersion": "1.1.0",
+      "dateModified": "2026-10-07",
       "description": "Audits a WordPress media library and proves an image is unused before recommending deletion, scoring confidence and risk separately.",
       "license": "https://www.gnu.org/licenses/gpl-2.0.html",
       "isAccessibleForFree": true,
@@ -105,6 +105,18 @@
           "name": "Is there a Pro version?",
 "url": "https://devmonowar.github.io/janitorix-media-audit/#is-there-a-pro-version",
           "acceptedAnswer": { "@type": "Answer", "text": "No. Confidence and risk scoring, Trash-only cleanup and WP-CLI — everything is in the free plugin, reviewed by the WordPress.org team before release." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does alt text change on its own?",
+"url": "https://devmonowar.github.io/janitorix-media-audit/#does-alt-text-change-on-its-own",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Nothing is applied until you click Save or Apply on that image, and every change keeps an undo." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the alt text shown here the same as on the page?",
+"url": "https://devmonowar.github.io/janitorix-media-audit/#is-the-alt-text-shown-here-the-same-as-on-the-page",
+          "acceptedAnswer": { "@type": "Answer", "text": "Not always. This screen reads the alt text stored on the image itself; a theme or page builder may override it where the image is shown." }
         }
       ]
     },
@@ -168,8 +180,8 @@
     <table>
       <caption>Janitorix Media Audit at a glance</caption>
       <tbody>
-        <tr><th scope="row">Version</th><td>1.0.5</td></tr>
-        <tr><th scope="row">Last updated</th><td><time datetime="2026-09-23">23 September 2026</time></td></tr>
+        <tr><th scope="row">Version</th><td>1.1.0</td></tr>
+        <tr><th scope="row">Last updated</th><td><time datetime="2026-10-07">7 October 2026</time></td></tr>
         <tr><th scope="row">Requires</th><td>WordPress 6.2 or later, PHP 7.4 or later</td></tr>
         <tr><th scope="row">License</th><td>GPLv2 or later</td></tr>
         <tr><th scope="row">Price</th><td>Free, no Pro version</td></tr>
@@ -211,6 +223,10 @@
     <h2 id="cli">WP-CLI support for scans</h2>
     <p>The whole thing also runs from WP-CLI: scan the library, ask why one image got the verdict it did, preview exactly what would be deleted without deleting anything, and calibrate the engines against known answers. The read-only preview is the same evidence the admin screens show, in CSV form.</p>
 
+    <h2 id="alt-text">Alt text audit with optional AI suggestions</h2>
+    <p>Version 1.1.0 adds a separate screen listing every image missing alt text — or carrying a weak one like "IMG_2034" — with a replacement suggested from the filename, title, or parent post. The suggestion is editable: apply it as-is or write your own words, mark the image decorative, and undo anything. A Dashboard card tracks coverage, and <code>wp janitorix alt stats</code> reports it for scripting.</p>
+    <p>An AI model can give a second opinion, but only if you enable it with your own API key — one-click presets for Gemini, OpenAI, Groq, and OpenRouter, plus a test-connection button. Each suggestion is reviewed before saving, exactly like a rule-based one. Nothing here touches confidence, risk, or any deletion recommendation.</p>
+
     <h2 id="faq">FAQ</h2>
     <dl class="faq">
       <dt id="does-it-delete-images-permanently">Does it delete images permanently?</dt>
@@ -227,6 +243,12 @@
 
       <dt id="is-there-a-pro-version">Is there a Pro version?</dt>
       <dd>No. Confidence and risk scoring, Trash-only cleanup and WP-CLI — everything is in the free plugin, reviewed by the WordPress.org team before release.</dd>
+
+      <dt id="does-alt-text-change-on-its-own">Does alt text change on its own?</dt>
+      <dd>No. Nothing is applied until you click Save or Apply on that image, and every change keeps an undo.</dd>
+
+      <dt id="is-the-alt-text-shown-here-the-same-as-on-the-page">Is the alt text shown here the same as on the page?</dt>
+      <dd>Not always. This screen reads the alt text stored on the image itself; a theme or page builder may override it where the image is shown.</dd>
     </dl>
 
     <h2 id="start">Get started with Janitorix</h2>
